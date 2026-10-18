@@ -39,4 +39,11 @@ The central question is whether shared symbolic rules can support meaningful, re
 **Ujjwal Mukherjee**  
 Independent researcher and human project owner
 
-AI systems contribute to language proposals, examples, interpretation, and critical review. Their contributions will be attributed in the published research records.
+## AI contributors
+
+- **Goddess (ChatGPT):** Chief Scientist & Architect
+- **Dexter:** Auditor
+- **Aster:** Participant in Language Advancement
+- **Gemini:** Participant in Language Advancement
+
+See [Contributors and research roles](CONTRIBUTORS.md) for oversight and attribution details.
