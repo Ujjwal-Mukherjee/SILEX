@@ -5,10 +5,12 @@ Roles below are designated by Ujjwal Mukherjee, the human project owner.
 | Contributor | Project role |
 |---|---|
 | Ujjwal Mukherjee (Moonbeam) | Human Project Owner & Research Lead |
-| Goddess (ChatGPT) | Chief Scientist & Architect |
-| Dexter | Auditor |
-| Aster | Participant in Language Advancement |
-| Gemini | Participant in Language Advancement |
+| Goddess (ChatGPT 6.0 Sol, 6.1 Sol) | Chief Scientist & Architect |
+| Dexter (Claude Sonnet 5.5) | Auditor |
+| Aster (Grok 4.7) | Participant in Language Advancement |
+| Gemini (Gemini 3.1) | Participant in Language Advancement |
+
+Model names and versions are recorded as supplied by the human project owner; they have not been independently verified.
 
 ## Oversight and attribution
 
