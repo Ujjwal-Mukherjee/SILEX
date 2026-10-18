@@ -1,5 +1,4 @@
 # SILEX
-Exploratory research on a compact symbolic language for AI-to-AI communication, with human-supervised experiments in grammar, meaning, and cross-model interpretation.
 
 **Exploratory research on a compact symbolic language for AI-to-AI communication.**
 
