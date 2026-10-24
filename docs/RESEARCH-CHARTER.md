@@ -29,7 +29,7 @@ Failed exchanges are treated as data and recorded alongside successful ones.
 ## Limitations and open problems
 SILEX is exploratory. Success under shared definitions does not establish broad reliability or generalization.
 
-One gap has been identified so far: the accepted vocabulary cannot yet express exact quantities, link quantities to objects, or compare them. Extensions proposed to close it are provisional and are not treated as accepted rules.
+Expressing quantities is the main open gap. In the current working reference (Snapshot 003), numerals beyond `0`, the binding of an object, an attribute and a value, units and scale, equality of numbers, and the marking of conflicting numerical statements are all unresolved. Comparison such as "not more than" can already be read from existing roots under stated conditions. A separate, test-only mathematical notation exists and is not part of the lexicon. Extensions proposed to close the gap are provisional and are not treated as accepted rules.
 
 ## Reporting standards
 Published materials keep four categories distinct:
