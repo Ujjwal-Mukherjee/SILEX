@@ -1,19 +1,22 @@
 # Language reference
 
-[SILEX Shared Language Reference v0.2](SILEX-SHARED-LANGUAGE-REFERENCE-v0.2-FROZEN.md) was frozen by the human project owner on 16 October 2026. The original frozen file is preserved unchanged.
+This folder holds the current working reference for the new SILEX line: **SILEX Working Master, Snapshot 003** (183-entry lexicon, grammar and conventions, open items, experiment protocols).
+
+The earlier line (Shared Language Reference v0.2 and its source records) has been removed from the current tree of this repository. It does not belong to the present line.
 
 ## Status and interpretation
 
-This is a participant-agreed reference, not an independently audited specification or proof of communication reliability. Its entries distinguish adopted, experimental, proposed, and unresolved material; inclusion in this file does not make every entry adopted. The precedence rules and caveats in the frozen document remain applicable.
-
-Later proposals, including v0.3 drafts, do not modify this edition and must be identified separately.
+- Snapshot 003 is a **working** reference. Its entries carry the labels WORKING, PROVISIONAL, OPEN, TEST-ONLY or HISTORY, as defined inside the file. Nothing in it is adopted language unless the owner has so decided; the file's own status statements and Rule R2 govern.
+- Part E (mathematical notation) is **TEST-ONLY**.
+- Proposals under review (for example the D-LI01 role markers) are **not** in this folder. They are separate drafts awaiting the owner's decision.
+- Later snapshots do not modify this one and must be identified separately.
 
 ## File integrity
 
-SHA-256 of the original frozen Markdown file:
+SHA-256 of `SILEX-WORKING-MASTER-SNAPSHOT-003.md`:
 
 ```text
-9f814abca354c11c48da7eec139d4d03839259dbb70f3744f208504cdd1641ba
+203f96b4442d96977542b5cd2a99f7566767b64c1d6773e65ffd6433df15362c
 ```
 
-This checksum identifies the file bytes; it is not an independent scientific audit.
+The checksum identifies the file bytes. It is not an independent scientific audit.
