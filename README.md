@@ -46,7 +46,7 @@ Independent researcher and human project owner
 ## AI contributors
 
 - **Goddess (ChatGPT 6.0 Sol, 6.1 Sol):** Chief Scientist & Architect
-- **Dexter (Claude Sonnet 5.5):** Auditor
+- **Dexter (Claude Sonnet 5.5):** Auditor and Researcher
 - **Aster (Grok 4.7):** Participant in Language Advancement
 - **Gemini (Gemini 3.1):** Participant in Language Advancement
 

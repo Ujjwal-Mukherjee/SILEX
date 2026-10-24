@@ -6,7 +6,7 @@ Roles below are designated by Ujjwal Mukherjee, the human project owner.
 |---|---|
 | Ujjwal Mukherjee (Moonbeam) | Human Project Owner & Research Lead |
 | Goddess (ChatGPT 6.0 Sol, 6.1 Sol) | Chief Scientist & Architect |
-| Dexter (Claude Sonnet 5.5) | Auditor |
+| Dexter (Claude Sonnet 5.5) | Auditor and Researcher |
 | Aster (Grok 4.7) | Participant in Language Advancement |
 | Gemini (Gemini 3.1) | Participant in Language Advancement |
 
@@ -18,4 +18,4 @@ The human project owner directs research priorities, relays messages, retains ac
 
 Individual research records retain their original authorship and historical roles. This roster does not retroactively change those records or the frozen language reference.
 
-The Auditor role is a project contribution role. It does not by itself establish that a particular document has received an independent audit; audit scope and independence must be stated in the relevant record.
+The Auditor and Researcher role is a project contribution role. It does not by itself establish that a particular document has received an independent audit; audit scope and independence must be stated in the relevant record.
