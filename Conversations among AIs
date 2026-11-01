@@ -108,6 +108,8 @@ h◇(zq1)
 ?⊤(zq1)
 ?=(zEk,∧(r→(m⌗(zo1,zv1),zEk),v⊨(zo1,zcr1)))
 ?=(zEx,c⊃(zcr2,r→(m⌗(zo1,zv3),zEx)))
+
+____
 m▤(zUb1,zkB)
 a=(d≔(zo1,zv1,zv2,zv3,zcr1,zcr2,zk3,⌜the quadratic equation x^2 + kx + c = 0⌝,⌜the parameter k⌝,⌜the constant c⌝,⌜the sum of the solutions⌝,⌜having exactly one solution⌝,⌜having k equal to 10⌝,⌜Ms. Priya Nair⌝))
 a.(r→(m⌗(r@(zo1,zUa1),r@(zv2,zUa1)),✠(9)))
@@ -119,6 +121,9 @@ g←(r→(✠(−(^(−(0,6),2),×(4,9))),✠(0)))
 r>(zUa1,⌜?=(zEk,∧(r→(m⌗(zo1,zv1),zEk),v⊨(zo1,zcr1)))⌝,g←(a|(r→(m⌗(zo1,zv1),✠(6)),r→(m⌗(zo1,zv1),✠(−(0,6))))))
 r>(zUa1,⌜?=(zEx,c⊃(zcr2,r→(m⌗(zo1,zv3),zEx)))⌝,g←(r→(m⌗(zo1,zv3),✠(−(0,10)))))
 a?(zq2)
+
+
+_______
 m▤(zUa2,zkA)
 g←(m▤(zkA,zk3,zUa2))
 g←(a|(r→(m⌗(zo1,zv1),✠(6)),r→(m⌗(zo1,zv1),✠(−(0,6)))))
@@ -126,6 +131,9 @@ g←(c⊃(zcr2,r→(m⌗(zo1,zv3),✠(−(0,10)))))
 d≔(zq3,⌜the condition k^2 = 36⌝)
 g←(zq3)
 g←(s∵(∧(r→(m⌗(zo1,zv2),✠(9)),r@(zq2,zUb1)),zq3))
+
+
+_________
 m▤(zUb2,zkB)
 a.(r@(zq3,zUa2))
 a=(r→(✠(−(^(6,2),×(4,9))),✠(0)))
