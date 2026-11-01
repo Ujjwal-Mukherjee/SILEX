@@ -1,0 +1,8045 @@
+[
+ {
+  "id": "E001",
+  "root": "d≔",
+  "family": "0.1",
+  "plane": 0,
+  "partB": true,
+  "symbol": "d≔",
+  "partB_line": 641,
+  "partB_label": "define",
+  "meaning": "assign a fixed meaning",
+  "shape": "",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(name:Nm,def:Any)->Dc",
+  "tags": [
+   "SH",
+   "FR"
+  ],
+  "note": "Names a definiens; asserts nothing. The name class decides what may be defined (zp zq zr zh a claim; zm an act or method; zo an item; zv a value; zS a collection; zE a ✠ term only; zk an agent; zcr a criterion; zt only the atom t). Local to its message. A definiens that is quoted English is a scaffold (TF-5 Part C 0.5, D.2 item 11) and carries no SILEX meaning.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 50,
+  "tf5_lines": [
+   94,
+   139,
+   143,
+   153,
+   155,
+   156,
+   170,
+   181
+  ],
+  "tf5_status_words": [
+   "OPEN",
+   "TF-USE"
+  ],
+  "clusters": [
+   "K17"
+  ]
+ },
+ {
+  "id": "E002",
+  "root": "⌜ ⌝",
+  "family": "0.2",
+  "plane": 0,
+  "partB": true,
+  "symbol": "⌜x⌝",
+  "partB_line": 575,
+  "partB_label": "",
+  "meaning": "Mention the expression x. It is talked about, not used or asserted.",
+  "shape": "",
+  "boundary": "Quotation does not decide whether a bare expression is a command, a description or an assertion.",
+  "checker": "NO-LINE",
+  "taught": true,
+  "status": "E",
+  "sig": "(x:Any)->Mn",
+  "tags": [
+   "SH"
+  ],
+  "note": "Mention: x is talked about, not used, asserted or evaluated. The result remembers the category of x (Mn[P], Mn[Q], Mn[Act], Mn[Ln]).",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 25,
+  "tf5_lines": [
+   154,
+   155,
+   163,
+   322,
+   323,
+   339,
+   346,
+   968
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E003",
+  "root": "t",
+  "family": "0.3",
+  "plane": 0,
+  "partB": true,
+  "symbol": "t",
+  "partB_line": 838,
+  "partB_label": "time",
+  "meaning": "Time concept/value or variable; instant/duration/unit clarified by context.",
+  "shape": "bare letter/digit",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": true,
+  "status": "E",
+  "sig": "atom",
+  "tags": [
+   "IN"
+  ],
+  "note": "Atom: \"a time concept, value or variable\". Its one fully specified use is as definiens of a time name, d≔(zt0,t). Other uses are not specified.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 281,
+  "tf5_lines": [
+   42,
+   64,
+   94,
+   106,
+   153,
+   259,
+   338,
+   347
+  ],
+  "tf5_status_words": [
+   "OPEN",
+   "TF-USE"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E004",
+  "root": "0",
+  "family": "0.3",
+  "plane": 0,
+  "partB": true,
+  "symbol": "0",
+  "partB_line": 890,
+  "partB_label": "zero",
+  "meaning": "numeric zero",
+  "shape": "bare letter/digit",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": true,
+  "status": "E",
+  "sig": "atom:Va",
+  "tags": [],
+  "note": "The number zero (not n0). Numerals other than 0 are unspecified outside ✠ (TF-5 D.3 item 1).",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 43,
+  "tf5_lines": [
+   17,
+   258,
+   985,
+   997,
+   1016,
+   1519,
+   1803,
+   1814
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E005",
+  "root": "⊤",
+  "family": "0.3",
+  "plane": 0,
+  "partB": true,
+  "symbol": "⊤",
+  "partB_line": 839,
+  "partB_label": "true",
+  "meaning": "Logical truth-value constant in a specified interpretation or formal system",
+  "shape": "standalone glyph",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "U",
+  "sig": "atom:P",
+  "tags": [
+   "IN"
+  ],
+  "note": "Logical truth constant \"in a specified interpretation\". No example. Not taught.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   983
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E006",
+  "root": "x",
+  "family": "0.3",
+  "plane": 0,
+  "partB": true,
+  "symbol": "x",
+  "partB_line": 877,
+  "partB_label": "x",
+  "meaning": "variable, unknown, or placeholder symbol",
+  "shape": "bare letter/digit",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "U",
+  "sig": "atom:Ref",
+  "tags": [
+   "IN"
+  ],
+  "note": "Placeholder symbol. A bound variable is written with a class prefix (zk zm zo zv zS), so bare x is not a bound variable.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 45,
+  "tf5_lines": [
+   170,
+   259,
+   322,
+   323,
+   985,
+   1071,
+   1113,
+   1116
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E007",
+  "root": "w",
+  "family": "0.3",
+  "plane": 0,
+  "partB": true,
+  "symbol": "w",
+  "partB_line": 871,
+  "partB_label": "word",
+  "meaning": "Lexical unit; may be used as a typed atom in composition.",
+  "shape": "bare letter/digit",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "U",
+  "sig": "atom:Ref",
+  "tags": [
+   "IN"
+  ],
+  "note": "\"Word\": a lexical unit usable as a typed atom. No example. Not taught.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 61,
+  "tf5_lines": [
+   144,
+   985,
+   1257,
+   1844,
+   1886,
+   1898,
+   1904,
+   1908
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E008",
+  "root": "n",
+  "family": "0.3",
+  "plane": 0,
+  "partB": true,
+  "symbol": "n",
+  "partB_line": 754,
+  "partB_label": "new",
+  "meaning": "Novel relative to specified reference/context; default atomic adjective-like sense.",
+  "shape": "bare letter/digit",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "U",
+  "sig": "atom",
+  "tags": [
+   "IN"
+  ],
+  "note": "\"New\": novel relative to a reference; default atomic. No example.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 106,
+  "tf5_lines": [
+   985,
+   1056,
+   1110,
+   1257,
+   1836,
+   1844,
+   1854,
+   1856
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E009",
+  "root": "g∪",
+  "family": "1.1",
+  "plane": 1,
+  "partB": true,
+  "symbol": "g∪",
+  "partB_line": 682,
+  "partB_label": "group",
+  "meaning": "Organizing elements into a collection; set union is only one kind of grouping.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->Co",
+  "tags": [],
+  "note": "",
+  "r2_header": "g∪(thing, thing) → group",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zS9,g∪(zo1,zo2))  =  zo1 and zo2 together as one group"
+  ],
+  "r2_notes": [
+   "A group you pass in adds its members. Three items: nest to the right."
+  ],
+  "r2_line": 1673,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K20"
+  ]
+ },
+ {
+  "id": "E010",
+  "root": "i+",
+  "family": "1.1",
+  "plane": 1,
+  "partB": true,
+  "symbol": "i+",
+  "partB_line": 700,
+  "partB_label": "include",
+  "meaning": "Add or include a member within a specified set or structure.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(g:Co,x:Ref)->Co",
+  "tags": [],
+  "note": "",
+  "r2_header": "i+(group, thing) → group",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zS9,i+(zS1,zo1))  =  the group zS1 with zo1 added as one member"
+  ],
+  "r2_notes": [
+   "Adds a group as ONE member. Use g∪ to merge."
+  ],
+  "r2_line": 1678,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K20"
+  ]
+ },
+ {
+  "id": "E011",
+  "root": "e−",
+  "family": "1.1",
+  "plane": 1,
+  "partB": true,
+  "symbol": "e−",
+  "partB_line": 658,
+  "partB_label": "exclude",
+  "meaning": "Remove an element from a set or from consideration.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(g:Co,x:Ref)->Co",
+  "tags": [],
+  "note": "",
+  "r2_header": "e−(group, thing) → group",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zS9,e−(zS1,zo1))  =  the group zS1 without zo1"
+  ],
+  "r2_notes": [
+   "Does not claim {2} was in it."
+  ],
+  "r2_line": 1683,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K20"
+  ]
+ },
+ {
+  "id": "E012",
+  "root": "a/",
+  "family": "1.1",
+  "plane": 1,
+  "partB": true,
+  "symbol": "a/",
+  "partB_line": 598,
+  "partB_label": "analyze",
+  "meaning": "Analyze/decompose an item into relevant elements.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,crit:Cr)->Co",
+  "tags": [],
+  "note": "",
+  "r2_header": "a/(thing, standard) → group",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zS9,a/(zo1,zcr1))  =  the parts of zo1 under zcr1"
+  ],
+  "r2_notes": [
+   "Does not say the list is complete."
+  ],
+  "r2_line": 1688,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E013",
+  "root": "c↓",
+  "family": "1.1",
+  "plane": 1,
+  "partB": true,
+  "symbol": "c↓",
+  "partB_line": 620,
+  "partB_label": "clarify",
+  "meaning": "Reduce the range of viable interpretations / uncertainty.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(g:Co,crit:Cr)->Co",
+  "tags": [],
+  "note": "",
+  "r2_header": "c↓(group, standard) → group",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zS9,c↓(zS1,zcr1))  =  the group zS1 narrowed by zcr1"
+  ],
+  "r2_notes": [
+   "May still have several members."
+  ],
+  "r2_line": 1703,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E014",
+  "root": "s∃",
+  "family": "1.1",
+  "plane": 1,
+  "partB": true,
+  "symbol": "s∃",
+  "partB_line": 815,
+  "partB_label": "search",
+  "meaning": "Seek an entity satisfying a condition; ∃ itself states existence, not a search process.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(g:Co,crit:Cr)->Co",
+  "tags": [],
+  "note": "",
+  "r2_header": "s∃(group, standard) → group",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zS9,s∃(zS1,zcr1))  =  the matches found in zS1 by zcr1"
+  ],
+  "r2_notes": [
+   "May be empty."
+  ],
+  "r2_line": 1713,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K21"
+  ]
+ },
+ {
+  "id": "E015",
+  "root": "s⊙",
+  "family": "1.1",
+  "plane": 1,
+  "partB": true,
+  "symbol": "s⊙",
+  "partB_line": 816,
+  "partB_label": "select",
+  "meaning": "Mark or choose one item from a set of candidates.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(g:Co,crit:Cr)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "s⊙(group, standard) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,s⊙(zS1,zcr1))  =  one item chosen from zS1 by zcr1"
+  ],
+  "r2_notes": [
+   "Ties and best-ness not covered."
+  ],
+  "r2_line": 1718,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K21"
+  ]
+ },
+ {
+  "id": "E016",
+  "root": "f∃",
+  "family": "1.1",
+  "plane": 1,
+  "partB": true,
+  "symbol": "f∃",
+  "partB_line": 670,
+  "partB_label": "find",
+  "meaning": "Identify an entity satisfying a specified condition, with a matching entity found.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(g:Co,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "f∃(group, standard) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(f∃(zS1,zcr1))  =  a search of zS1 by zcr1 found a match"
+  ],
+  "r2_notes": [
+   "n¬(f∃(…)) means \"the search found nothing\", not \"it does not exist\". This is a claim. To DO the search use s∃."
+  ],
+  "r2_line": 1723,
+  "tf5_n_outside": 4,
+  "tf5_lines": [
+   997,
+   1018,
+   1520,
+   1745
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K21"
+  ]
+ },
+ {
+  "id": "E017",
+  "root": "k▤",
+  "family": "1.1",
+  "plane": 1,
+  "partB": true,
+  "symbol": "k▤",
+  "partB_line": 721,
+  "partB_label": "knowledge",
+  "meaning": "An agent/context's epistemically supported information representation or collection.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag)->Co",
+  "tags": [],
+  "note": "",
+  "r2_header": "k▤(who) → group",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zS9,k▤(zk1))  =  what zk1 holds as supported knowledge"
+  ],
+  "r2_notes": [
+   "Members are not thereby true."
+  ],
+  "r2_line": 1708,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E018",
+  "root": "b▁",
+  "family": "1.1",
+  "plane": 1,
+  "partB": true,
+  "symbol": "b▁",
+  "partB_line": 607,
+  "partB_label": "basis",
+  "meaning": "foundation / supporting premise set",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(a1:Co)->Pm",
+  "tags": [],
+  "note": "",
+  "r2_header": "b▁(quoted-group) → premises",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zS2,b▁(g∪(⌜zp1⌝,⌜zp2⌝)))  =  zS2 is the premises group made of zp1 and zp2, neither asserted"
+  ],
+  "r2_notes": [
+   "Asserts none of them. Needs a group of ⌜quoted⌝ claims."
+  ],
+  "r2_line": 1693,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1932
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E019",
+  "root": "d▤",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "d▤",
+  "partB_line": 639,
+  "partB_label": "data",
+  "meaning": "structured or processable content",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "d▤(thing, thing) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,d▤(zo1,zo2))  =  the data zo1 typed by the schema zo2"
+  ],
+  "r2_notes": [
+   "No truth claim."
+  ],
+  "r2_line": 1607,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E020",
+  "root": "i▤",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "i▤",
+  "partB_line": 703,
+  "partB_label": "information",
+  "meaning": "Information content or a meaningful representation; mnemonic symbol, not established mathematical notation.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "i▤(thing) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,i▤(zo1))  =  zo1 typed as an information item"
+  ],
+  "r2_notes": [
+   "No truth claim."
+  ],
+  "r2_line": 1637,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E021",
+  "root": "f▦",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "f▦",
+  "partB_line": 672,
+  "partB_label": "formulate",
+  "meaning": "Turn an idea, problem or content into an explicit structured expression.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "f▦(thing, thing) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,f▦(zo1,zo2))  =  the source zo1 written in the format zo2"
+  ],
+  "r2_notes": [
+   "Fidelity not implied."
+  ],
+  "r2_line": 1622,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K09"
+  ]
+ },
+ {
+  "id": "E022",
+  "root": "fƒ",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "fƒ",
+  "partB_line": 673,
+  "partB_label": "function",
+  "meaning": "A defined function or input-output mapping.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "fƒ(thing, thing) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,fƒ(zo1,zo2))  =  the function zo1 applied to zo2"
+  ],
+  "r2_notes": [
+   "Several arguments: put them in one group. Define functions with d≔."
+  ],
+  "r2_line": 1627,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E023",
+  "root": "g↦",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "g↦",
+  "partB_line": 679,
+  "partB_label": "generate",
+  "meaning": "Input or existing representation mapped to produced output; generation does not imply novelty.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,m:Me)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "g↦(thing, act-name) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,g↦(zo1,zm1))  =  something generated from zo1 by the method zm1"
+  ],
+  "r2_notes": [
+   "Not necessarily new or valid."
+  ],
+  "r2_line": 1632,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K09"
+  ]
+ },
+ {
+  "id": "E024",
+  "root": "i↦",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "i↦",
+  "partB_line": 707,
+  "partB_label": "interpret",
+  "meaning": "Map an expression to a meaning under an interpretation function.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,crit:Cr)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "i↦(thing, standard) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,i↦(zo1,zcr1))  =  the meaning of zo1 under the framework zcr1"
+  ],
+  "r2_notes": [],
+  "r2_line": 1642,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K09"
+  ]
+ },
+ {
+  "id": "E025",
+  "root": "m↻",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "m↻",
+  "partB_line": 744,
+  "partB_label": "modify",
+  "meaning": "Change an existing object or representation.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "m↻(thing, thing) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,m↻(zo1,zo2))  =  zo1 changed according to zo2"
+  ],
+  "r2_notes": [
+   "The original stays as it was."
+  ],
+  "r2_line": 1646,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K09",
+   "K15"
+  ]
+ },
+ {
+  "id": "E026",
+  "root": "o←",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "o←",
+  "partB_line": 766,
+  "partB_label": "obtain",
+  "meaning": "Bring or acquire some specified object, value, or information into the current context",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "o←(thing, thing) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,o←(zo1,zo2))  =  the item zo1 obtained from the source zo2"
+  ],
+  "r2_notes": [
+   "Does not say obtaining worked."
+  ],
+  "r2_line": 1651,
+  "tf5_n_outside": 2,
+  "tf5_lines": [
+   1929,
+   1931
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K09"
+  ]
+ },
+ {
+  "id": "E027",
+  "root": "s↦",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "s↦",
+  "partB_line": 820,
+  "partB_label": "solve",
+  "meaning": "Process or mapping from a problem toward a solution.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,m:Me)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "s↦(thing, act-name) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,s↦(zo1,zm1))  =  a candidate solution to the problem zo1 by the method zm1"
+  ],
+  "r2_notes": [
+   "Success not implied."
+  ],
+  "r2_line": 1656,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K09"
+  ]
+ },
+ {
+  "id": "E028",
+  "root": "u↻",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "u↻",
+  "partB_line": 850,
+  "partB_label": "update",
+  "meaning": "Change a state or record using new information.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "u↻(thing, thing) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,u↻(zo1,zo2))  =  the record zo1 updated with zo2"
+  ],
+  "r2_notes": [
+   "A new item. The old one stays."
+  ],
+  "r2_line": 1661,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K09",
+   "K15"
+  ]
+ },
+ {
+  "id": "E029",
+  "root": "e⚖",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "e⚖",
+  "partB_line": 655,
+  "partB_label": "evaluate",
+  "meaning": "Assess an object against specified criteria, yielding a judgment or value.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,crit:Cr)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "e⚖(thing, standard) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,e⚖(zo1,zcr1))  =  the evaluation of zo1 against zcr1"
+  ],
+  "r2_notes": [
+   "Not validated truth."
+  ],
+  "r2_line": 1617,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E030",
+  "root": "⧉",
+  "family": "1.2",
+  "plane": 1,
+  "partB": true,
+  "symbol": "⧉(x)",
+  "partB_line": 580,
+  "partB_label": "",
+  "meaning": "A copy of the object x.",
+  "shape": "",
+  "boundary": "No automatic guarantee that the copy stays equal to the original, or that the original is preserved.",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(x:Ref)->=1",
+  "tags": [],
+  "note": "A copy of x. Result has the category of x. The copy is a distinct item; equality with the original needs s= and a criterion.",
+  "r2_header": "⧉(thing) → thing",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "d≔(zo2,⧉(zo1))  =  zo2 is a copy of zo1"
+  ],
+  "r2_notes": [
+   "A copy is a separate item. Holding the copy is not holding the original, and the copy need not stay equal."
+  ],
+  "r2_line": 1158,
+  "tf5_n_outside": 5,
+  "tf5_lines": [
+   170,
+   987,
+   999,
+   1611,
+   1630
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E031",
+  "root": "m▦",
+  "family": "1.3",
+  "plane": 1,
+  "partB": true,
+  "symbol": "m▦",
+  "partB_line": 742,
+  "partB_label": "method",
+  "meaning": "A structured procedure with steps and possibly conditions.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,a:Act)->Me",
+  "tags": [],
+  "note": "",
+  "r2_header": "m▦(claim, act) → method",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zm9,m▦(zp1,zm1))  =  a method for reaching the goal zp1 by the acts zm1"
+  ],
+  "r2_notes": [
+   "A definition, not a run. i!(m▦(…)) defines it; to run it use its name."
+  ],
+  "r2_line": 1746,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1927
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K22"
+  ]
+ },
+ {
+  "id": "E032",
+  "root": "p▷",
+  "family": "1.3",
+  "plane": 1,
+  "partB": true,
+  "symbol": "p▷",
+  "partB_line": 781,
+  "partB_label": "process",
+  "meaning": "An organized progression of operations or states",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(a:Act)->Me",
+  "tags": [],
+  "note": "",
+  "r2_header": "p▷(act) → method",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zm9,p▷(zm1))  =  a process made of the acts zm1"
+  ],
+  "r2_notes": [
+   "Not a running process."
+  ],
+  "r2_line": 1751,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K22"
+  ]
+ },
+ {
+  "id": "E033",
+  "root": "t▦",
+  "family": "1.3",
+  "plane": 1,
+  "partB": true,
+  "symbol": "t▦",
+  "partB_line": 834,
+  "partB_label": "task",
+  "meaning": "A unit of work, potentially with objective, requirements, and completion criteria",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(a:Act,c:P)->Me",
+  "tags": [],
+  "note": "",
+  "r2_header": "t▦(act, claim) → method",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zm9,t▦(zm1,zp1))  =  a task: do zm1, finished when zp1"
+  ],
+  "r2_notes": [
+   "Not an assignment."
+  ],
+  "r2_line": 1756,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K22"
+  ]
+ },
+ {
+  "id": "E034",
+  "root": "✠",
+  "family": "1.4",
+  "plane": 1,
+  "partB": false,
+  "symbol": "✠",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "Ep",
+  "sig": "(...)->Ex",
+  "tags": [
+   "SH",
+   "KC"
+  ],
+  "note": "Mathematical expression term. A term only: it never stands alone and is not wrapped directly in g← h◇ p◇ u? n¬. Closed list of places: object of cƒ, argument of r→ (two), argument of m> (two), definiens of a zE name. Grammar S1 to S7 inside the brackets.",
+  "r2_header": "✠( … ) → math",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(r→(✠(×(7,6)),✠(42)))  =  the value of 7 × 6 equals 42",
+   "d≔(zE1,✠(×(7,6)))  =  zE1 names the term 7 × 6"
+  ],
+  "r2_notes": [
+   "The maths inside ✠( ) has its own rules (FREEZE-6 T.3.6) that this guide does not repeat. A ✠ term cannot stand alone or sit directly in g←, h◇, p◇, u? or n¬. Say something about it with r→ or m>, or name it with d≔(zE1,…)."
+  ],
+  "r2_line": 1356,
+  "tf5_n_outside": 94,
+  "tf5_lines": [
+   15,
+   21,
+   45,
+   62,
+   190,
+   194,
+   200,
+   201
+  ],
+  "tf5_status_words": [
+   "NEW",
+   "OPEN",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E035",
+  "root": "#",
+  "family": "1.4",
+  "plane": 1,
+  "partB": true,
+  "symbol": "#(x)",
+  "partB_line": 579,
+  "partB_label": "",
+  "meaning": "Count of relevant items or occurrences.",
+  "shape": "",
+  "boundary": "Needs a well-defined counted unit and domain. Not `k#` (key). A count is not a measure (`m∥`).",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(s:Co)->Ct",
+  "tags": [],
+  "note": "Count of the items of s; the unit and domain must be fixed by context. A count is not a measure (m∥). Used as an argument of m> (two counts).",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 8,
+  "tf5_lines": [
+   234,
+   987,
+   999,
+   1609,
+   1624
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K19"
+  ]
+ },
+ {
+  "id": "E036",
+  "root": "c∑",
+  "family": "1.4",
+  "plane": 1,
+  "partB": true,
+  "symbol": "c∑",
+  "partB_line": 617,
+  "partB_label": "calculate",
+  "meaning": "sum suggests numerical calculation or aggregation.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(g:Co,how:Me)->Ref",
+  "tags": [
+   "AM"
+  ],
+  "note": "Calculate/aggregate over a group. Overlaps cƒ (compute) and Σ inside ✠.",
+  "r2_header": "c∑(group, act-name) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,c∑(zS1,zm1))  =  the group zS1 combined by the method zm1"
+  ],
+  "r2_notes": [
+   "Math goes to cƒ(✠(…)), not here."
+  ],
+  "r2_line": 1698,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E037",
+  "root": "dΔ",
+  "family": "1.4",
+  "plane": 1,
+  "partB": true,
+  "symbol": "dΔ",
+  "partB_line": 645,
+  "partB_label": "difference",
+  "meaning": "difference between entities / values",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref,crit:Cr)->Ref",
+  "tags": [],
+  "note": "",
+  "r2_header": "dΔ(thing, thing, standard) → thing",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "d≔(zo9,dΔ(zo1,zo2,zcr1))  =  the difference from zo1 to zo2 along zcr1"
+  ],
+  "r2_notes": [
+   "Numbers come from math terms, not from this root."
+  ],
+  "r2_line": 1612,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K19"
+  ]
+ },
+ {
+  "id": "E038",
+  "root": "n¬",
+  "family": "2.1",
+  "plane": 2,
+  "partB": true,
+  "symbol": "n¬",
+  "partB_line": 757,
+  "partB_label": "not",
+  "meaning": "Logical negation of a particular proposition.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(x:P|Req)->P",
+  "tags": [
+   "KC"
+  ],
+  "note": "Negates a proposition and only a proposition. Never a question. n¬(r□(P)) is the proposition \"P is not required\". Scope: the argument only.",
+  "r2_header": "n¬(claim) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(n¬(zp4))  =  zp4 does not hold"
+  ],
+  "r2_notes": [
+   "The only logical negation. n¬(t≺(P)) and t≺(n¬(P)) are different (see the time group)."
+  ],
+  "r2_line": 1089,
+  "tf5_n_outside": 79,
+  "tf5_lines": [
+   22,
+   75,
+   76,
+   77,
+   102,
+   103,
+   104,
+   127
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "CANDIDATE",
+   "OPEN",
+   "TF-USE",
+   "WORKING"
+  ],
+  "clusters": [
+   "K16"
+  ]
+ },
+ {
+  "id": "E039",
+  "root": "∧",
+  "family": "2.1",
+  "plane": 2,
+  "partB": true,
+  "symbol": "∧",
+  "partB_line": 576,
+  "partB_label": "",
+  "meaning": "Conjunction of propositions.",
+  "shape": "",
+  "boundary": "N-ary use occurs. Formal arity and operand typing are not settled. The comma separates arguments; it is never an automatic AND.",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(a:@,b:@,c:@*)->@  @={P,Act}",
+  "tags": [
+   "OG-01"
+  ],
+  "note": "Conjunction. Operands share one category: all claims, or all acts. Never a mix. Three or more operands are read as right-nested binary conjunction (TF-5 CL-2 reference form). With the content reading of h◇ and p◇ (LF-4), status-content may be joined; force markers (g← u? …) never are.",
+  "r2_header": "∧(claim, claim)  or  ∧(act, act) → claim or act",
+  "r2_label": "PARTLY TF-5; rest PROPOSED",
+  "r2_examples": [
+   "g←(∧(zp1,zp2))  =  zp1 and zp2 are both true",
+   "i!(∧(zm1,zm2))  =  do zm1 and zm2"
+  ],
+  "r2_notes": [
+   "Three or more: nest to the right, ∧(zp1,∧(zp2,zp3)). The same root joins two acts under i!."
+  ],
+  "r2_line": 1369,
+  "tf5_n_outside": 50,
+  "tf5_lines": [
+   26,
+   80,
+   127,
+   147,
+   160,
+   161,
+   188,
+   327
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "OPEN",
+   "PROVISIONAL",
+   "TF-USE",
+   "WORKING"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E040",
+  "root": "a|",
+  "family": "2.1",
+  "plane": 2,
+  "partB": true,
+  "symbol": "a|",
+  "partB_line": 596,
+  "partB_label": "alternative",
+  "meaning": "Present or refer to alternatives.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(a:@,b:@,c:@*)->@  @={P,Ref}",
+  "tags": [
+   "OG-02",
+   "OG-18"
+  ],
+  "note": "Alternatives. Claims: inclusive reading, two or more. Declared candidate items: a list of candidates with no truth value. Mixed or undeclared operands: a?. \"Exactly one of n\" has no short form (OG-18).",
+  "r2_header": "a|(claim, claim, …) → claim",
+  "r2_label": "PARTLY TF-5; rest PROPOSED",
+  "r2_examples": [
+   "g←(a|(zp1,zp2,zp3))  =  at least one of zp1, zp2, zp3 is true"
+  ],
+  "r2_notes": [
+   "Does not say only one."
+  ],
+  "r2_line": 1375,
+  "tf5_n_outside": 7,
+  "tf5_lines": [
+   1217,
+   1219,
+   1221,
+   1225,
+   1720,
+   1724
+  ],
+  "tf5_status_words": [
+   "OPEN",
+   "PROVISIONAL"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E041",
+  "root": "∃",
+  "family": "2.1",
+  "plane": 2,
+  "partB": true,
+  "symbol": "∃",
+  "partB_line": 577,
+  "partB_label": "",
+  "meaning": "Existence. `∃(v,φ)`: v is bound locally in φ (\"some v satisfies φ\"). Bare `∃(x)`: the referent of x exists in a stated domain.",
+  "shape": "",
+  "boundary": "A positive claim may rely on a recoverable domain. A **negated** existence claim needs an explicit domain. Binding details are unresolved. Not `f∃` (find) and not `s∃` (search).",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(v:Var,body:P)->P / (x:Ref)->P",
+  "tags": [
+   "FR",
+   "KC"
+  ],
+  "note": "∃(v,φ): some v satisfies φ; v is bound inside φ only. ∃(x): the referent of x exists in a stated domain. Negated existence needs an explicit domain, written as a conjunct ∈(v,S) of φ. Binding of nested or repeated binders is OPEN.",
+  "r2_header": "∃(variable-name, claim)  or  ∃(thing) → claim",
+  "r2_label": "PARTLY TF-5; rest PROPOSED",
+  "r2_examples": [
+   "g←(∃(zkx,∧(∈(zkx,zS1),c⊃(zt0,t≺(h⊡(zkx,zo1))))))  =  some member zkx of zS1 held zo1 at some time before r (zt0)",
+   "g←(∃(zo1))  =  zo1 exists in a stated domain (the one-slot form)"
+  ],
+  "r2_notes": [
+   "The variable is a name that starts zk, zm, zo, zv or zS. Write the domain inside the claim: ∧(∈(v,S),…). Negated existence always needs an explicit domain."
+  ],
+  "r2_line": 1380,
+  "tf5_n_outside": 21,
+  "tf5_lines": [
+   127,
+   143,
+   144,
+   160,
+   161,
+   164,
+   312,
+   325
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "OPEN",
+   "TF-USE"
+  ],
+  "clusters": [
+   "K21"
+  ]
+ },
+ {
+  "id": "E042",
+  "root": "i→",
+  "family": "2.1",
+  "plane": 2,
+  "partB": true,
+  "symbol": "i→",
+  "partB_line": 698,
+  "partB_label": "imply",
+  "meaning": "Implication relationship between propositions.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(ante:P,cons:P)->P",
+  "tags": [],
+  "note": "Proposition-level implication: antecedent first. Does not establish either side.",
+  "r2_header": "i→(claim, claim) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(i→(zp6,zp7))  =  zp6 implies zp7",
+   "g←(n¬(i→(h◇(zp3),zp3)))  =  saying zp3 as a hypothesis does not imply zp3"
+  ],
+  "r2_notes": [
+   "Antecedent first. Does not establish either side."
+  ],
+  "r2_line": 1094,
+  "tf5_n_outside": 15,
+  "tf5_lines": [
+   982,
+   995,
+   1035,
+   1111,
+   1136,
+   1153,
+   1295,
+   1370
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K06"
+  ]
+ },
+ {
+  "id": "E043",
+  "root": "i⇒",
+  "family": "2.1",
+  "plane": 2,
+  "partB": true,
+  "symbol": "i⇒",
+  "partB_line": 697,
+  "partB_label": "if",
+  "meaning": "Conditional premise determining when a consequent applies.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(cond:P,cons:P)->P / Ep:(cond:P,cons:Dir)->CDir",
+  "tags": [
+   "OG-10"
+  ],
+  "note": "Conditional premise: condition first. A directive consequent is established only for i!(…). Any other consequent type is OPEN (OG-10). Rule or material conditional: OPEN.",
+  "r2_header": "i⇒(claim, claim-or-line) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED; TF-5 OPEN: consequent type (OG-10)",
+  "r2_examples": [
+   "g←(i⇒(zp1,zp2))  =  conditional premise: when zp1 holds, zp2 applies (zp1 is not asserted)",
+   "r□(i⇒(zp7,i!(▶(zm1))))  =  it is required: if zp7 holds, execute zm1"
+  ],
+  "r2_notes": [
+   "Condition first. What may follow it is OPEN (OG-10). A standing rule uses r□ outside."
+  ],
+  "r2_line": 1100,
+  "tf5_n_outside": 12,
+  "tf5_lines": [
+   997,
+   1112,
+   1143,
+   1183,
+   1184,
+   1188,
+   1274,
+   1445
+  ],
+  "tf5_status_words": [
+   "OPEN",
+   "WORKING"
+  ],
+  "clusters": [
+   "K06"
+  ]
+ },
+ {
+  "id": "E044",
+  "root": "c⊃",
+  "family": "2.1",
+  "plane": 2,
+  "partB": true,
+  "symbol": "c⊃",
+  "partB_line": 632,
+  "partB_label": "context",
+  "meaning": "Enclosing information framework within which content is interpreted.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(ctx:Cx|Tm,x:P)->P / P:(ctx:Cr,x:P)->P",
+  "tags": [
+   "FR",
+   "OG-17"
+  ],
+  "note": "x is considered within ctx. ctx is an assumption ~(P) or a declared time name. The second argument is a claim, never a question. Neither ctx nor x is asserted outside. Criterion as context (TF-6 D7) is a candidate.",
+  "r2_header": "c⊃(context, claim) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(c⊃(~(zp13),zp14))  =  within the assumption zp13, zp14 is considered",
+   "d≔(zt0,t)",
+   "g←(c⊃(zt0,∃(zv1,∈(zv1,zS1))))  =  in the context of the time name zt0, some zv1 is in zS1"
+  ],
+  "r2_notes": [
+   "The second slot is a claim, never a question. Neither the context nor the claim is asserted outside the context."
+  ],
+  "r2_line": 1123,
+  "tf5_n_outside": 59,
+  "tf5_lines": [
+   12,
+   26,
+   94,
+   95,
+   96,
+   100,
+   147,
+   181
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN",
+   "RETAINED",
+   "TF-USE",
+   "WORKING"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E045",
+  "root": "c⇒",
+  "family": "2.1",
+  "plane": 2,
+  "partB": true,
+  "symbol": "c⇒",
+  "partB_line": 626,
+  "partB_label": "condition",
+  "meaning": "A condition or logical if–then implication.",
+  "shape": "",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "U",
+  "sig": null,
+  "tags": [
+   "IN",
+   "OV"
+  ],
+  "note": "Part B: \"a condition or logical if-then implication\". No recorded arity. Overlaps i→ and i⇒. Not used; write a?.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K06",
+   "K28"
+  ]
+ },
+ {
+  "id": "E046",
+  "root": "s∵",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s∵",
+  "partB_line": 827,
+  "partB_label": "support",
+  "meaning": "Supply evidence or a reason in favor of a claim.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(support:P,claim:P)->P",
+  "tags": [
+   "OV",
+   "OG-12"
+  ],
+  "note": "Support first, then the claim. Support is not proof.",
+  "r2_header": "s∵(claim, claim) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(s∵(zp15,zp16))  =  zp15 is offered as support for zp16",
+   "g←(zkq:s∵(zp19,zp20))  =  zkq says: zp19 supports zp20"
+  ],
+  "r2_notes": [
+   "Support first, then the claim. Support is not proof."
+  ],
+  "r2_line": 1111,
+  "tf5_n_outside": 16,
+  "tf5_lines": [
+   982,
+   995,
+   1114,
+   1123,
+   1136,
+   1161,
+   1308,
+   1312
+  ],
+  "tf5_status_words": [
+   "OPEN",
+   "PROVISIONAL",
+   "WORKING"
+  ],
+  "clusters": [
+   "K01",
+   "K26"
+  ]
+ },
+ {
+  "id": "E047",
+  "root": "∵",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "∵",
+  "partB_line": 608,
+  "partB_label": "because",
+  "meaning": "Standalone reason-giving connective; grounds supplied or recoverable from context.",
+  "shape": "standalone glyph",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,c2:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "∵(claim, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(∵(zp1,zp2))  =  zp1 is offered as the ground of zp2"
+  ],
+  "r2_notes": [
+   "Ground first, claim second. Offered, not proof."
+  ],
+  "r2_line": 1408,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   983
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K01",
+   "K26"
+  ]
+ },
+ {
+  "id": "E048",
+  "root": "r∵",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "r∵",
+  "partB_line": 796,
+  "partB_label": "reason",
+  "meaning": "Basis or cause given for an inference/conclusion (∵, because).",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,c2:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "r∵(claim, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(r∵(zp1,zp2))  =  zp1 is the reason given for zp2"
+  ],
+  "r2_notes": [],
+  "r2_line": 1413,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1932
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K01"
+  ]
+ },
+ {
+  "id": "E049",
+  "root": "j∵",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "j∵",
+  "partB_line": 714,
+  "partB_label": "justify",
+  "meaning": "Supply reasons, evidence, or grounds for a claim, decision, or action.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,c2:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "j∵(claim, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(j∵(zp1,zp2))  =  zp1 is offered as justification of zp2"
+  ],
+  "r2_notes": [
+   "For ethical or decision grounds."
+  ],
+  "r2_line": 1417,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K01"
+  ]
+ },
+ {
+  "id": "E050",
+  "root": "e∵",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "e∵",
+  "partB_line": 660,
+  "partB_label": "explain",
+  "meaning": "Supply a reason, mechanism, or justification for a statement.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,c2:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "e∵(claim, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(e∵(zp1,zp2))  =  zp1 explains zp2"
+  ],
+  "r2_notes": [
+   "The explanation may be poor."
+  ],
+  "r2_line": 1422,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K01",
+   "K26"
+  ]
+ },
+ {
+  "id": "E051",
+  "root": "c∴",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "c∴",
+  "partB_line": 625,
+  "partB_label": "conclude",
+  "meaning": "Therefore: reach a conclusion from premises or evidence.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(basis:Pm,claim:P)->P",
+  "tags": [
+   "IN",
+   "OV"
+  ],
+  "note": "Conclude from premises or evidence. The proposal gives (premises, claim); E or P arity unsettled.",
+  "r2_header": "c∴(premises, claim) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(c∴(zS1,zp1))  =  zp1 was concluded from the premises zS1"
+  ],
+  "r2_notes": [
+   "Build premises with b▁ (see recipes). Not proof."
+  ],
+  "r2_line": 1427,
+  "tf5_n_outside": 3,
+  "tf5_lines": [
+   997,
+   1480,
+   1486
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K02"
+  ]
+ },
+ {
+  "id": "E052",
+  "root": "∴",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "∴",
+  "partB_line": 836,
+  "partB_label": "therefore",
+  "meaning": "Conclusion/discourse marker linking an already established basis to a subsequent claim",
+  "shape": "standalone glyph",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": true,
+  "status": "U",
+  "sig": null,
+  "tags": [
+   "SH",
+   "IN",
+   "OV"
+  ],
+  "note": "TF-5 writes a prefix line \"∴ P\" (example C12) with no signature and an implicit backward scope. This draft does not carry a prefix form; see issue U-02.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 5,
+  "tf5_lines": [
+   983,
+   997,
+   1481,
+   1486,
+   1584
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K02",
+   "K28"
+  ]
+ },
+ {
+  "id": "E053",
+  "root": "d⊢",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "d⊢",
+  "partB_line": 642,
+  "partB_label": "derive",
+  "meaning": "obtain by rule-based inference",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(derived:P|Ref,from:P|Ref)->P",
+  "tags": [
+   "OV"
+  ],
+  "note": "Derived item first, then what it was derived from. Does not establish the premises or the validity of the derivation.",
+  "r2_header": "d⊢(derived item, what it came from) → claim",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(d⊢(zp8,∧(zp1,zp2)))  =  zp8 was derived from \"zp1 and zp2\""
+  ],
+  "r2_notes": [
+   "Derived item first. Does not establish the parts or that the derivation is valid."
+  ],
+  "r2_line": 1178,
+  "tf5_n_outside": 9,
+  "tf5_lines": [
+   997,
+   1116,
+   1123,
+   1242,
+   1478,
+   1486,
+   1490,
+   1569
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": [
+   "K02"
+  ]
+ },
+ {
+  "id": "E054",
+  "root": "i⊢",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "i⊢",
+  "partB_line": 702,
+  "partB_label": "infer",
+  "meaning": "Derive a conclusion using premises and inference rules.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(pm:Pm,c:P,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "i⊢(premises, claim, standard) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(i⊢(zS1,zp1,zcr1))  =  zp1 was inferred from zS1 by the rule system zcr1"
+  ],
+  "r2_notes": [],
+  "r2_line": 1432,
+  "tf5_n_outside": 3,
+  "tf5_lines": [
+   997,
+   1479,
+   1486
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K02"
+  ]
+ },
+ {
+  "id": "E055",
+  "root": "l⊢",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "l⊢",
+  "partB_line": 732,
+  "partB_label": "logic",
+  "meaning": "Formal system of inference rules governing what can be derived from premises",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(pm:Pm,c:P,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "l⊢(premises, claim, standard) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(l⊢(zS1,zp1,zcr1))  =  zp1 can be derived from zS1 in the formal system zcr1"
+  ],
+  "r2_notes": [
+   "Says it can be derived, not that anyone did it."
+  ],
+  "r2_line": 1436,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K02"
+  ]
+ },
+ {
+  "id": "E056",
+  "root": "p⊢",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "p⊢",
+  "partB_line": 783,
+  "partB_label": "prove",
+  "meaning": "Establish a conclusion under specified formal premises and inference rules",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(pm:Pm,c:P,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "p⊢(premises, claim, standard) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(p⊢(zS1,zp1,zcr1))  =  zp1 is proved from zS1 under zcr1"
+  ],
+  "r2_notes": [
+   "Claims a complete proof. Nobody checks it here."
+  ],
+  "r2_line": 1441,
+  "tf5_n_outside": 2,
+  "tf5_lines": [
+   997,
+   1482
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K02"
+  ]
+ },
+ {
+  "id": "E057",
+  "root": "e▤",
+  "family": "2.2",
+  "plane": 2,
+  "partB": true,
+  "symbol": "e▤",
+  "partB_line": 656,
+  "partB_label": "evidence",
+  "meaning": "Information relevant to testing, supporting, or challenging a claim.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(x:Ref,c:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "e▤(thing, claim) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(e▤(zo1,zp1))  =  zo1 is relevant evidence for zp1"
+  ],
+  "r2_notes": [
+   "Evidence against: e▤(zo1,n¬(zp1)). Does not say it is enough."
+  ],
+  "r2_line": 1446,
+  "tf5_n_outside": 3,
+  "tf5_lines": [
+   998,
+   1543,
+   1932
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E058",
+  "root": "c↝",
+  "family": "2.3",
+  "plane": 2,
+  "partB": true,
+  "symbol": "c↝",
+  "partB_line": 618,
+  "partB_label": "cause",
+  "meaning": "Directed causal influence: one event contributes to producing another.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(cause:P,effect:P)->P",
+  "tags": [
+   "OV",
+   "OG-12"
+  ],
+  "note": "Cause first, then the effect. Does not say that either occurred (OPEN whether it entails occurrence).",
+  "r2_header": "c↝(claim, claim) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "h◇(c↝(zp17,zp18))  =  hypothesis: zp17 contributes to producing zp18"
+  ],
+  "r2_notes": [
+   "Cause first. Says nothing about either having occurred."
+  ],
+  "r2_line": 1106,
+  "tf5_n_outside": 17,
+  "tf5_lines": [
+   995,
+   1115,
+   1123,
+   1136,
+   1162,
+   1278,
+   1309,
+   1312
+  ],
+  "tf5_status_words": [
+   "OPEN",
+   "PROVISIONAL",
+   "WORKING"
+  ],
+  "clusters": [
+   "K26"
+  ]
+ },
+ {
+  "id": "E059",
+  "root": "c⊣",
+  "family": "2.3",
+  "plane": 2,
+  "partB": true,
+  "symbol": "c⊣",
+  "partB_line": 631,
+  "partB_label": "constraint",
+  "meaning": "Restrict permitted possibilities or operations.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(x:Ref,c:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "c⊣(thing, claim) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled; TF-5 OPEN: argument order of c⊣ (Part 1, \"Two further points are OPEN\")",
+  "r2_examples": [
+   "g←(c⊣(zo1,zp1))  =  zo1 is subject to the restriction zp1"
+  ],
+  "r2_notes": [
+   "Describes a restriction; it does not impose one."
+  ],
+  "r2_line": 1503,
+  "tf5_n_outside": 5,
+  "tf5_lines": [
+   999,
+   1123,
+   1275,
+   1682,
+   1776
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": [
+   "K06",
+   "K08",
+   "K26"
+  ]
+ },
+ {
+  "id": "E060",
+  "root": "l⊣",
+  "family": "2.3",
+  "plane": 2,
+  "partB": true,
+  "symbol": "l⊣",
+  "partB_line": 730,
+  "partB_label": "limit",
+  "meaning": "Boundary or restriction on a quantity, operation, resource, or possibility",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "l⊣(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(l⊣(zo1,zo2))  =  zo1 must not exceed the bound zo2"
+  ],
+  "r2_notes": [
+   "v1 says upper bounds only; FREEZE-6 Part B says any boundary or restriction on a quantity, operation, resource or possibility. Unsettled."
+  ],
+  "r2_line": 1508,
+  "tf5_n_outside": 2,
+  "tf5_lines": [
+   1805
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E061",
+  "root": "n□",
+  "family": "2.3",
+  "plane": 2,
+  "partB": true,
+  "symbol": "n□",
+  "partB_line": 751,
+  "partB_label": "necessary",
+  "meaning": "Required relative to a specified rule, condition, or modal context, not merely preferable.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,c2:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "n□(claim, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(n□(zp1,zp2))  =  zp1 is needed for zp2"
+  ],
+  "r2_notes": [
+   "A dependency, not a likelihood."
+  ],
+  "r2_line": 1396,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K06",
+   "K08",
+   "K26"
+  ]
+ },
+ {
+  "id": "E062",
+  "root": "s=",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s=",
+  "partB_line": 814,
+  "partB_label": "same",
+  "meaning": "Equality of entities or values with respect to a specified criterion.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(x:Ref,y:Ref)->P",
+  "tags": [
+   "FR",
+   "OG-05",
+   "OG-15"
+  ],
+  "note": "Binary only. Same relative to a criterion that must be declared or inherited; with no recoverable criterion the expression is underspecified (a?). Ternary s=(x,y,κ) is not adopted. How a criterion attaches is OPEN (candidate: c⊃(zcr1,s=(x,y))).",
+  "r2_header": "s=(thing, thing) → claim",
+  "r2_label": "PARTLY TF-5; rest PROPOSED",
+  "r2_examples": [
+   "g←(s=(zo1,zo2))  =  zo1 and zo2 are the same"
+  ],
+  "r2_notes": [
+   "The rule for \"same\" comes from context; if none can be recovered write a?(s=(…)) and do not invent one. Only two slots; never write a third. Not i≡."
+  ],
+  "r2_line": 1896,
+  "tf5_n_outside": 22,
+  "tf5_lines": [
+   236,
+   999,
+   1007,
+   1229,
+   1230,
+   1231,
+   1232,
+   1271
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN"
+  ],
+  "clusters": [
+   "K03"
+  ]
+ },
+ {
+  "id": "E063",
+  "root": "s≈",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s≈",
+  "partB_line": 818,
+  "partB_label": "similar",
+  "meaning": "Approximate equality / resemblance subject to a similarity criterion.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "s≈(thing, thing) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(s≈(zo1,zo2))  =  zo1 and zo2 are similar enough"
+  ],
+  "r2_notes": [
+   "Tolerance comes from context."
+  ],
+  "r2_line": 1901,
+  "tf5_n_outside": 6,
+  "tf5_lines": [
+   999,
+   1007,
+   1233,
+   1271,
+   1647,
+   1780
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K03"
+  ]
+ },
+ {
+  "id": "E064",
+  "root": "i≡",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "i≡",
+  "partB_line": 696,
+  "partB_label": "identify",
+  "meaning": "Identity or pattern match; identify a particular entity or pattern.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(x:Ref,y:Ref)->P",
+  "tags": [
+   "OG-06"
+  ],
+  "note": "Identity or identification. Exact numeric identity is OPEN. Entity identity, value identity, pattern identification are different things.",
+  "r2_header": "i≡(thing, thing) → claim",
+  "r2_label": "PARTLY TF-5; rest PROPOSED",
+  "r2_examples": [
+   "g←(i≡(zo1,zo2))  =  zo1 and zo2 are the very same entity"
+  ],
+  "r2_notes": [
+   "Sameness by some rule is s=."
+  ],
+  "r2_line": 1842,
+  "tf5_n_outside": 7,
+  "tf5_lines": [
+   999,
+   1007,
+   1234,
+   1272,
+   1631,
+   1648,
+   1771
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": [
+   "K03"
+  ]
+ },
+ {
+  "id": "E065",
+  "root": "m≡",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "m≡",
+  "partB_line": 738,
+  "partB_label": "match",
+  "meaning": "Match two entities or patterns under a specified criterion (not necessarily total identity).",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "m≡(thing, thing) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(m≡(zo1,zo2))  =  zo1 and zo2 match"
+  ],
+  "r2_notes": [
+   "The matching rule comes from context."
+  ],
+  "r2_line": 1852,
+  "tf5_n_outside": 7,
+  "tf5_lines": [
+   999,
+   1007,
+   1233,
+   1271,
+   1649,
+   1780,
+   1804
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN"
+  ],
+  "clusters": [
+   "K03"
+  ]
+ },
+ {
+  "id": "E066",
+  "root": "d≢",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "d≢",
+  "partB_line": 647,
+  "partB_label": "distinguish",
+  "meaning": "tell apart by criterion",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "d≢(thing, thing) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(d≢(zo1,zo2))  =  zo1 and zo2 are told apart"
+  ],
+  "r2_notes": [
+   "The rule for this comes from context."
+  ],
+  "r2_line": 1827,
+  "tf5_n_outside": 5,
+  "tf5_lines": [
+   999,
+   1233,
+   1271,
+   1650,
+   1780
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K03"
+  ]
+ },
+ {
+  "id": "E067",
+  "root": "r≡",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "r≡",
+  "partB_line": 798,
+  "partB_label": "recognize",
+  "meaning": "Identify an observed entity or pattern as matching a known one (≡ is suggestive, not a requirement of strict equality).",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "r≡(thing, thing, standard) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(r≡(zo1,zo2,zcr1))  =  what is seen, zo1, is recognized as the known zo2 under zcr1"
+  ],
+  "r2_notes": [
+   "A judgment. Correctness not implied."
+  ],
+  "r2_line": 1962,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1007
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K03"
+  ]
+ },
+ {
+  "id": "E068",
+  "root": "c≡",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "c≡",
+  "partB_line": 630,
+  "partB_label": "consistency",
+  "meaning": "Compatibility across claims or states; symbol suggests equivalence, but is not the same as mere consistency.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,c2:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "c≡(claim, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(c≡(zp1,zp2))  =  zp1 and zp2 can both hold at the same time"
+  ],
+  "r2_notes": [
+   "This is NOT \"equal\"."
+  ],
+  "r2_line": 1391,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1007
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K03"
+  ]
+ },
+ {
+  "id": "E069",
+  "root": "c≠",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "c≠",
+  "partB_line": 628,
+  "partB_label": "conflict",
+  "meaning": "Incompatibility or disagreement between propositions or states.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,c2:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "c≠(claim, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(c≠(zp1,zp2))  =  zp1 and zp2 cannot both hold"
+  ],
+  "r2_notes": [
+   "For three or more: n¬(∧(…))."
+  ],
+  "r2_line": 1386,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1809
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": [
+   "K04"
+  ]
+ },
+ {
+  "id": "E070",
+  "root": "d≠",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "d≠",
+  "partB_line": 646,
+  "partB_label": "disagree",
+  "meaning": "positions do not match",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,ag2:Ag,c:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "d≠(who, who, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(d≠(zk1,zk2,zp1))  =  zk1 and zk2 take opposite sides on zp1"
+  ],
+  "r2_notes": [],
+  "r2_line": 2034,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K04"
+  ]
+ },
+ {
+  "id": "E071",
+  "root": "b≻",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "b≻",
+  "partB_line": 611,
+  "partB_label": "better",
+  "meaning": "preferable under a criterion",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "b≻(thing, thing, standard) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(b≻(zo1,zo2,zcr1))  =  zo1 is better than zo2 on zcr1"
+  ],
+  "r2_notes": [
+   "A description. A person's preference: b~(zk1,b≻(…))."
+  ],
+  "r2_line": 1808,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E072",
+  "root": "≈",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "≈",
+  "partB_line": 654,
+  "partB_label": "estimate",
+  "meaning": "Standalone estimation / approximation; must distinguish relation from operation.",
+  "shape": "standalone glyph",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref,x3:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "≈(thing, thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(≈(zo1,zo2,zo3))  =  zo2 is an estimate of zo1, based on zo3"
+  ],
+  "r2_notes": [
+   "Close-enough equality is s≈."
+  ],
+  "r2_line": 1832,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   983
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E073",
+  "root": "m>",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "m>",
+  "partB_line": 745,
+  "partB_label": "more",
+  "meaning": "More of a specified quantity or measure than another.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(a:Ex,b:Ex)->P / Ep:(a:Ct,b:Ct)->P",
+  "tags": [
+   "KC"
+  ],
+  "note": "More than. Two ✠ terms (atemporal, both defined) or two counts; a mixed pair is ill-formed.",
+  "r2_header": "m>(thing, thing)  or  m>(math, math) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(m>(#(zS1),#(zS2)))  =  the count of zS1 exceeds the count of zS2",
+   "g←(m>(✠(12),✠(9)))  =  12 is more than 9"
+  ],
+  "r2_notes": [
+   "Two math terms or two things; never one of each (FREEZE-6 M7)."
+  ],
+  "r2_line": 1152,
+  "tf5_n_outside": 18,
+  "tf5_lines": [
+   21,
+   210,
+   232,
+   233,
+   234,
+   235,
+   372,
+   373
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "NEW",
+   "OPEN",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": [
+   "K19"
+  ]
+ },
+ {
+  "id": "E074",
+  "root": "o≺",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "o≺",
+  "partB_line": 768,
+  "partB_label": "order",
+  "meaning": "A precedence or ordering relationship among items/events",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "o≺(thing, thing, standard) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(o≺(zo1,zo2,zcr1))  =  zo1 comes strictly before zo2 on zcr1"
+  ],
+  "r2_notes": [
+   "Not a sequence of acts. Use s≺ for that."
+  ],
+  "r2_line": 1786,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E075",
+  "root": "v=",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "v=",
+  "partB_line": 858,
+  "partB_label": "value",
+  "meaning": "A variable or entity's value under a binding or interpretation",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "v=(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(v=(zo1,zo2))  =  the name zo1 has the value zo2"
+  ],
+  "r2_notes": [
+   "Not d≔, which names without asserting."
+  ],
+  "r2_line": 1921,
+  "tf5_n_outside": 3,
+  "tf5_lines": [
+   1804
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN"
+  ],
+  "clusters": [
+   "K17"
+  ]
+ },
+ {
+  "id": "E076",
+  "root": "m∥",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "m∥",
+  "partB_line": 740,
+  "partB_label": "measure",
+  "meaning": "Obtain a quantitative value for a property under a specified scale and unit.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref,num:Va,x3:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "m∥(thing, thing, number-name, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(m∥(zo1,zo2,zv1,zo3))  =  object zo1, property zo2, value zv1, unit zo3: a measurement report"
+  ],
+  "r2_notes": [
+   "The value is a number-name (zv…)."
+  ],
+  "r2_line": 1938,
+  "tf5_n_outside": 3,
+  "tf5_lines": [
+   1804,
+   1806
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN"
+  ],
+  "clusters": [
+   "K17"
+  ]
+ },
+ {
+  "id": "E077",
+  "root": "n−",
+  "family": "2.4",
+  "plane": 2,
+  "partB": true,
+  "symbol": "n−",
+  "partB_line": 753,
+  "partB_label": "negative",
+  "meaning": "Negative sign or polarity in a stated numeric, logical, or evaluative domain.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "n−(thing, standard) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(n−(zo1,zcr1))  =  zo1 is bad on zcr1"
+  ],
+  "r2_notes": [
+   "Logical negation is n¬, not this. FREEZE-6 Part B also lets n− mean a negative sign or polarity in a numeric or evaluative domain, so its exact use is unsettled."
+  ],
+  "r2_line": 1867,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   194
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K16"
+  ]
+ },
+ {
+  "id": "E078",
+  "root": "v⊨",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "v⊨",
+  "partB_line": 857,
+  "partB_label": "valid",
+  "meaning": "Satisfies applicable conditions, rules, or interpretation",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(x:Ref,crit:Cr)->P",
+  "tags": [],
+  "note": "x satisfies the applicable conditions or criterion. A claim of satisfaction; not an act.",
+  "r2_header": "v⊨(thing, standard) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(v⊨(zo1,zcr1))  =  zo1 satisfies the conditions of zcr1",
+   "u?(v⊨(zo2,zcr1))  =  it is not known whether zo2 does"
+  ],
+  "r2_notes": [
+   "Not the act of checking (that is v✓)."
+  ],
+  "r2_line": 1209,
+  "tf5_n_outside": 4,
+  "tf5_lines": [
+   998,
+   1542,
+   1562,
+   1563
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K05"
+  ]
+ },
+ {
+  "id": "E079",
+  "root": "f⊤",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "f⊤",
+  "partB_line": 667,
+  "partB_label": "fact",
+  "meaning": "A proposition treated as established under specified evidence/context; ⊤ evokes truth.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(c:P,crit:Cr)->P",
+  "tags": [
+   "AM",
+   "IN"
+  ],
+  "note": "Fact: a proposition treated as established under specified evidence or context. Factivity OPEN.",
+  "r2_header": "f⊤(claim, standard) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(f⊤(zp1,zcr1))  =  zp1 is treated as established under zcr1"
+  ],
+  "r2_notes": [
+   "Not unconditional truth."
+  ],
+  "r2_line": 1451,
+  "tf5_n_outside": 5,
+  "tf5_lines": [
+   998,
+   1244,
+   1278,
+   1541,
+   1790
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K05"
+  ]
+ },
+ {
+  "id": "E080",
+  "root": "f⊥",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "f⊥",
+  "partB_line": 668,
+  "partB_label": "false",
+  "meaning": "Falsity under a specified interpretation; ⊥ evokes logical false.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "f⊥(claim, standard) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(f⊥(zp1,zcr1))  =  zp1 is treated as false under zcr1"
+  ],
+  "r2_notes": [
+   "Mirror of f⊤."
+  ],
+  "r2_line": 1456,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E081",
+  "root": "k✓",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "k✓",
+  "partB_line": 722,
+  "partB_label": "known",
+  "meaning": "An epistemic status indicating a proposition/value is established relative to agent, context, and standards.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "U",
+  "sig": "(c:P)->P",
+  "tags": [
+   "AM",
+   "IN"
+  ],
+  "note": "Known: an epistemic status relative to an agent, a context and standards. TF-5: do not rely on an unprefixed k✓ (holder and factivity unsettled); prefer zkq:k✓(P). Factivity OPEN.",
+  "r2_header": "k✓(claim) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled; TF-5: holder and factivity not settled (C 5.4)",
+  "r2_examples": [
+   "g←(k✓(zp1))  =  zp1 is established knowledge"
+  ],
+  "r2_notes": [
+   "Say who knows: zk1:k✓(zp1). Do not use it without a who."
+  ],
+  "r2_line": 1461,
+  "tf5_n_outside": 12,
+  "tf5_lines": [
+   360,
+   998,
+   1005,
+   1244,
+   1278,
+   1540,
+   1547,
+   1551
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K05"
+  ]
+ },
+ {
+  "id": "E082",
+  "root": "✓",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "✓",
+  "partB_line": 633,
+  "partB_label": "correct",
+  "meaning": "Standalone correctness relative to agreed criterion; distinct from truth or yes.",
+  "shape": "standalone glyph",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "✓(thing, standard) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(✓(zo1,zcr1))  =  zo1 is correct under zcr1"
+  ],
+  "r2_notes": [],
+  "r2_line": 1486,
+  "tf5_n_outside": 2,
+  "tf5_lines": [
+   983,
+   1005
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K05"
+  ]
+ },
+ {
+  "id": "E083",
+  "root": "✗",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "✗",
+  "partB_line": 701,
+  "partB_label": "incorrect",
+  "meaning": "Standalone incorrectness relative to criterion; distinct from false/error.",
+  "shape": "standalone glyph",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "✗(thing, standard) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(✗(zo1,zcr1))  =  zo1 is incorrect under zcr1"
+  ],
+  "r2_notes": [],
+  "r2_line": 1490,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   983
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K16"
+  ]
+ },
+ {
+  "id": "E084",
+  "root": "r✓",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "r✓",
+  "partB_line": 804,
+  "partB_label": "resolve",
+  "meaning": "Mark an issue as solved/closed, under stated criteria (✓).",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,crit:Cr)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "r✓(thing, standard) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(r✓(zo1,zcr1))  =  the issue zo1 is marked resolved under zcr1"
+  ],
+  "r2_notes": [],
+  "r2_line": 1494,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1005
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K05"
+  ]
+ },
+ {
+  "id": "E085",
+  "root": "s✓",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s✓",
+  "partB_line": 819,
+  "partB_label": "solution",
+  "meaning": "A candidate satisfying requirements of a problem; ✓ alone does not prove independent verification.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "s✓(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(s✓(zo1,zo2))  =  zo1 is a solution to zo2"
+  ],
+  "r2_notes": [
+   "A candidate only, not verified."
+  ],
+  "r2_line": 1498,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1005
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K05"
+  ]
+ },
+ {
+  "id": "E086",
+  "root": "u±",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "u±",
+  "partB_line": 847,
+  "partB_label": "uncertainty",
+  "meaning": "Degree, interval, or range of uncertainty associated with an estimate or state.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(est:Va,range:Va)->P",
+  "tags": [
+   "AM"
+  ],
+  "note": "Degree, interval or range of uncertainty attached to an estimate. E or P arity unsettled.",
+  "r2_header": "u±(number-name, number-name) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(u±(zv1,zv2))  =  the estimate zv1 has the margin zv2"
+  ],
+  "r2_notes": [
+   "Both are number-names. The margin is the same both ways."
+  ],
+  "r2_line": 1476,
+  "tf5_n_outside": 2,
+  "tf5_lines": [
+   997,
+   1513
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K19"
+  ]
+ },
+ {
+  "id": "E087",
+  "root": "l≥",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "l≥",
+  "partB_line": 729,
+  "partB_label": "likely",
+  "meaning": "Probability or likelihood meets a contextually specified threshold",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(c:P)->P",
+  "tags": [
+   "AM"
+  ],
+  "note": "Likelihood meets a contextually specified threshold (the threshold must come from context). E or P arity unsettled.",
+  "r2_header": "l≥(claim) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(l≥(zp1))  =  zp1 is likely"
+  ],
+  "r2_notes": [
+   "How likely comes from context. It is not a slot."
+  ],
+  "r2_line": 1466,
+  "tf5_n_outside": 2,
+  "tf5_lines": [
+   997,
+   1516
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E088",
+  "root": "pℙ",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "pℙ",
+  "partB_line": 779,
+  "partB_label": "probability",
+  "meaning": "Quantitative measure of likelihood relative to model/context",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(c:P,p:Va,model:Ref)->P",
+  "tags": [
+   "AM"
+  ],
+  "note": "Quantitative measure of likelihood relative to a model or context. E or P arity unsettled.",
+  "r2_header": "pℙ(claim, number-name, thing) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(pℙ(zp1,zv1,zo1))  =  zp1 has probability zv1 in the model zo1"
+  ],
+  "r2_notes": [
+   "The probability is a number-name, never a digit."
+  ],
+  "r2_line": 1471,
+  "tf5_n_outside": 2,
+  "tf5_lines": [
+   997,
+   1517
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K19"
+  ]
+ },
+ {
+  "id": "E089",
+  "root": "p⇢",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "p⇢",
+  "partB_line": 777,
+  "partB_label": "predict",
+  "meaning": "Estimate an outcome not yet observed, from available information",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,c2:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "p⇢(claim, claim) → claim",
+  "r2_label": "PROPOSED; TF-5: arity not declared (T.3.1 item 4)",
+  "r2_examples": [
+   "g←(p⇢(zp1,zp2))  =  on the basis zp1, we predict zp2"
+  ],
+  "r2_notes": [
+   "Basis first. Not a promise of correctness."
+  ],
+  "r2_line": 1481,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   99
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E090",
+  "root": "n0",
+  "family": "2.5",
+  "plane": 2,
+  "partB": true,
+  "symbol": "n0",
+  "partB_line": 758,
+  "partB_label": "not supplied",
+  "meaning": "Not supplied: the place or the role was not given. Not none, not zero, not unknown.",
+  "shape": "bare letter/digit",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": true,
+  "status": "E",
+  "sig": "atom:Null",
+  "tags": [],
+  "note": "The placeholder of the grammar (Owner ruling, 1 Nov 07:29, replacing the word null). A bare atom, no arguments. It fits every place except the ones B-21 lists. It is not the number zero (the root 0) and not a claim about a data field.",
+  "r2_header": "n0 (atom)",
+  "r2_label": "OWNER RULING 1 Nov 07:29",
+  "r2_examples": [
+   "g←(s=(n0,zo2))  =  the first place of s= was not supplied"
+  ],
+  "r2_notes": [
+   "Replaces the word null. The former two-argument claim \"the field P has no value in Q\" is withdrawn from this glyph."
+  ],
+  "r2_line": 1872,
+  "tf5_n_outside": 8,
+  "tf5_lines": [
+   77,
+   367,
+   997,
+   1015,
+   1518,
+   1532,
+   1808
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": [
+   "K16"
+  ]
+ },
+ {
+  "id": "E091",
+  "root": "s@",
+  "family": "2.6",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s@",
+  "partB_line": 821,
+  "partB_label": "source",
+  "meaning": "Information origin, location, or pointer.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(item:P|Ref,source:P|Ref)->P",
+  "tags": [
+   "OV"
+  ],
+  "note": "Derived item first, then its immediate information source.",
+  "r2_header": "s@(item, its source) → claim",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(s@(zo1,zo2))  =  zo2 is the immediate source of zo1"
+  ],
+  "r2_notes": [
+   "Item first, then its immediate source. Not r@ (a reference)."
+  ],
+  "r2_line": 1183,
+  "tf5_n_outside": 10,
+  "tf5_lines": [
+   998,
+   1117,
+   1123,
+   1573,
+   1574,
+   1582,
+   1583,
+   1592
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": [
+   "K27"
+  ]
+ },
+ {
+  "id": "E092",
+  "root": "s@*",
+  "family": "2.6",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s@*(x,y)",
+  "partB_line": 583,
+  "partB_label": "",
+  "meaning": "y is reachable from x by **one or more** immediate-source `s@` edges (indirect or direct ancestry).",
+  "shape": "",
+  "boundary": "Cycles in the source graph can give `s@*(x,x)`. Irreflexivity holds only under an explicit acyclicity assumption. Completeness of the source graph is a separate assumption. Ancestry does not imply equal content or that the original is still stored.",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(item:P|Ref,anc:P|Ref)->P",
+  "tags": [],
+  "note": "Source is reachable from item by one or more s@ steps. Irreflexivity only under an explicit acyclicity assumption; completeness of the source graph is a separate assumption.",
+  "r2_header": "s@*(item, source) → claim",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "∴ s@*(zo1,zo3)  =  so: zo3 is a source of zo1, directly or further back"
+  ],
+  "r2_notes": [
+   "One or more s@ steps. If the source graph has a cycle, s@*(x,x) can hold. Having a source does not mean the original is still stored."
+  ],
+  "r2_line": 1188,
+  "tf5_n_outside": 7,
+  "tf5_lines": [
+   987,
+   998,
+   1574,
+   1578,
+   1584,
+   1740
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K27"
+  ]
+ },
+ {
+  "id": "E093",
+  "root": "r@",
+  "family": "2.6",
+  "plane": 2,
+  "partB": true,
+  "symbol": "r@",
+  "partB_line": 799,
+  "partB_label": "reference",
+  "meaning": "Point to a specified source, item, or location (@).",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(x:P|Ref,y:Ref)->P / P:(x:Ref,m:Ms)->=1",
+  "tags": [
+   "IC",
+   "AM"
+  ],
+  "note": "Pointer from x to y: not provenance (s@ is origin). With a message name as second argument it is the qualified reference \"x as it stands in message zUk\" (TF-6 D5 candidate) and has the category of x. The two uses are told apart by the category of the second argument.",
+  "r2_header": "r@(claim-or-thing, thing) → claim",
+  "r2_label": "PARTLY TF-5; rest PROPOSED",
+  "r2_examples": [
+   "g←(r@(zp2,zo1))  =  zp2 refers to zo1"
+  ],
+  "r2_notes": [
+   "Not where {1} came from; for origin use s@ (item first, then its source). FREEZE-6 also floats r@(x,m) = \"x as declared in message m\" as a CANDIDATE. Avoid that use."
+  ],
+  "r2_line": 1887,
+  "tf5_n_outside": 8,
+  "tf5_lines": [
+   998,
+   1211,
+   1243,
+   1575,
+   1590,
+   1733,
+   1930,
+   1931
+  ],
+  "tf5_status_words": [
+   "CANDIDATE"
+  ],
+  "clusters": [
+   "K13",
+   "K27"
+  ]
+ },
+ {
+  "id": "E094",
+  "root": "⊛",
+  "family": "2.6",
+  "plane": 2,
+  "partB": true,
+  "symbol": "⊛(x)",
+  "partB_line": 584,
+  "partB_label": "",
+  "meaning": "The speaker asserts x from the speaker's stored knowledge. The speaker must be attributable.",
+  "shape": "",
+  "boundary": "Discloses claimed origin only. It does not mean x is true, verified, current or reliably remembered. It can survive forwarding as the content of an attributed earlier assertion.",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(c:P)->P",
+  "tags": [],
+  "note": "The speaker asserts c from the speaker stored knowledge. Discloses origin only; not truth, verification or currency. Survives forwarding inside an attributed claim.",
+  "r2_header": "⊛(claim) → claim",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(zkp:⊛(zp1))  =  zkp asserts zp1 from stored knowledge"
+  ],
+  "r2_notes": [
+   "Only discloses claimed origin. Not true, verified or current. The speaker must be named."
+  ],
+  "r2_line": 1193,
+  "tf5_n_outside": 8,
+  "tf5_lines": [
+   987,
+   998,
+   1242,
+   1569,
+   1576,
+   1596,
+   1597,
+   1746
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K27"
+  ]
+ },
+ {
+  "id": "E095",
+  "root": "r:",
+  "family": "2.6",
+  "plane": 2,
+  "partB": true,
+  "symbol": "r:",
+  "partB_line": 801,
+  "partB_label": "relation",
+  "meaning": "Indicate a connection between entities (:).",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "U",
+  "sig": "(x:Ref,y:Ref,rel:Ref)->P",
+  "tags": [
+   "SH",
+   "IN",
+   "OV"
+  ],
+  "note": "Relation. Its colon collides with the attribution colon A:ψ (TF-5 Part C 2.6, OPEN): how to separate them in every position is undecided.",
+  "r2_header": "r:(thing, thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(r:(zo1,zo2,zo3))  =  zo1 and zo2 are related by the label zo3"
+  ],
+  "r2_notes": [
+   "Direction: from {1} to {2}."
+  ],
+  "r2_line": 1882,
+  "tf5_n_outside": 2,
+  "tf5_lines": [
+   929,
+   1104
+  ],
+  "tf5_status_words": [
+   "OPEN",
+   "PROVISIONAL",
+   "WORKING"
+  ],
+  "clusters": [
+   "K13",
+   "K27"
+  ]
+ },
+ {
+  "id": "E096",
+  "root": "t≺",
+  "family": "2.7",
+  "plane": 2,
+  "partB": false,
+  "symbol": "t≺",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "E",
+  "sig": "(c:P)->P",
+  "tags": [
+   "FR",
+   "KC"
+  ],
+  "note": "Tense: c holds or occurs before / at / after the reference time r. r comes from the nearest enclosing c⊃(zt,…). A bare proposition is tense-unspecified, never present. Quantification is existential over times on that side of r; no interval bounds. Tense of a negation: see KD-1.",
+  "r2_header": "t≺(claim) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(c⊃(zt0,t≺(h⊡(zk1,zo1))))  =  relative to r (zt0): at some time before r, zk1 held zo1"
+  ],
+  "r2_notes": [
+   "n¬(t≺(P)) = at no time before r does P occur or hold. t≺(n¬(P)) = at some time before r P did not hold (only for states such as h⊡). They are not the same."
+  ],
+  "r2_line": 1290,
+  "tf5_n_outside": 27,
+  "tf5_lines": [
+   62,
+   85,
+   89,
+   100,
+   102,
+   103,
+   178,
+   179
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "OPEN",
+   "RETAINED",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E097",
+  "root": "t●",
+  "family": "2.7",
+  "plane": 2,
+  "partB": false,
+  "symbol": "t●",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "E",
+  "sig": "(c:P)->P",
+  "tags": [
+   "FR",
+   "KC"
+  ],
+  "note": "Tense: c holds or occurs before / at / after the reference time r. r comes from the nearest enclosing c⊃(zt,…). A bare proposition is tense-unspecified, never present. Quantification is existential over times on that side of r; no interval bounds. Tense of a negation: see KD-1.",
+  "r2_header": "t●(claim) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(c⊃(zt0,t●(h⊡(zkI,zo1))))  =  relative to r (zt0): at r, zkI holds zo1"
+  ],
+  "r2_notes": [],
+  "r2_line": 1295,
+  "tf5_n_outside": 24,
+  "tf5_lines": [
+   42,
+   62,
+   85,
+   90,
+   100,
+   106,
+   245,
+   307
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "OPEN",
+   "RETAINED",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E098",
+  "root": "t▷",
+  "family": "2.7",
+  "plane": 2,
+  "partB": false,
+  "symbol": "t▷",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "E",
+  "sig": "(c:P)->P",
+  "tags": [
+   "FR",
+   "KC"
+  ],
+  "note": "Tense: c holds or occurs before / at / after the reference time r. r comes from the nearest enclosing c⊃(zt,…). A bare proposition is tense-unspecified, never present. Quantification is existential over times on that side of r; no interval bounds. Tense of a negation: see KD-1.",
+  "r2_header": "t▷(claim) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(c⊃(zt0,n¬(t▷(o→(zo1,♙(zkI))))))  =  relative to r (zt0): at no time after r is zo1 output by zkI"
+  ],
+  "r2_notes": [
+   "n¬(t▷(P)) means only that P does not occur or hold at any time after r. It does not say refusal, intent or prediction."
+  ],
+  "r2_line": 1299,
+  "tf5_n_outside": 15,
+  "tf5_lines": [
+   62,
+   85,
+   91,
+   100,
+   104,
+   180,
+   245,
+   355
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "OPEN",
+   "RETAINED",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": [
+   "K18"
+  ]
+ },
+ {
+  "id": "E099",
+  "root": "▷",
+  "family": "2.7",
+  "plane": 2,
+  "partB": true,
+  "symbol": "▷",
+  "partB_line": 755,
+  "partB_label": "next",
+  "meaning": "Standalone next/successor indicator; no execution implied.",
+  "shape": "standalone glyph",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(x:Ref,y:Ref)->P",
+  "tags": [
+   "AM"
+  ],
+  "note": "\"Next / successor, no execution implied\". E or P arity unsettled. Do not confuse with the tense marker t▷.",
+  "r2_header": "▷(thing, thing) → claim",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "g←(▷(zo1,zo2))  =  zo2 comes immediately after zo1"
+  ],
+  "r2_notes": [
+   "Nothing is executed."
+  ],
+  "r2_line": 1791,
+  "tf5_n_outside": 5,
+  "tf5_lines": [
+   69,
+   983,
+   999,
+   1681,
+   1811
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN"
+  ],
+  "clusters": [
+   "K18"
+  ]
+ },
+ {
+  "id": "E100",
+  "root": "b₀",
+  "family": "2.7",
+  "plane": 2,
+  "partB": true,
+  "symbol": "b₀",
+  "partB_line": 609,
+  "partB_label": "begin",
+  "meaning": "initial point / start state",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(m:Me,c:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "b₀(act-name, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(b₀(zm1,zp1))  =  the starting state of the process zm1 is zp1"
+  ],
+  "r2_notes": [
+   "Not a start action."
+  ],
+  "r2_line": 1766,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K18"
+  ]
+ },
+ {
+  "id": "E101",
+  "root": "y⋯",
+  "family": "2.7",
+  "plane": 2,
+  "partB": true,
+  "symbol": "y⋯",
+  "partB_line": 884,
+  "partB_label": "yet",
+  "meaning": "still / so far / continuing / not completed at the present point",
+  "shape": "",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "U",
+  "sig": null,
+  "tags": [],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   186
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": [
+   "K28"
+  ]
+ },
+ {
+  "id": "E102",
+  "root": "s≺",
+  "family": "2.7",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s≺",
+  "partB_line": 817,
+  "partB_label": "sequence",
+  "meaning": "Ordered relation among elements.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "Ep",
+  "sig": "(a:@,b:@,c:@*)->@  @={P,Act,Ref}",
+  "tags": [],
+  "note": "Ordered sequence. Over acts (i!(s≺(ψ1,ψ2)): the acts in order) it gives an act; over claims it gives a claim; over items (r2 example g←(s≺(zo1,zo2)): zo1 comes before zo2 in a sequence) it gives a claim. Three or more operands nest to the right.",
+  "r2_header": "s≺(claim, claim)  or  s≺(act, act) → claim or act",
+  "r2_label": "PARTLY TF-5; rest PROPOSED",
+  "r2_examples": [
+   "i!(s≺(zm1,s≺(zm2,zm3)))  =  do zm1, then zm2, then zm3",
+   "g←(s≺(zo1,zo2))  =  zo1 comes before zo2 in a sequence"
+  ],
+  "r2_notes": [
+   "Three or more: nest to the right."
+  ],
+  "r2_line": 1740,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1180
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E103",
+  "root": "s◷",
+  "family": "2.7",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s◷",
+  "partB_line": 823,
+  "partB_label": "status",
+  "meaning": "Condition of an entity or task at a specified time.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "s◷(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(s◷(zo1,zo2))  =  entity zo1 has the status zo2"
+  ],
+  "r2_notes": [],
+  "r2_line": 1953,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1782
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K17"
+  ]
+ },
+ {
+  "id": "E104",
+  "root": "s▷",
+  "family": "2.7",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s▷",
+  "partB_line": 824,
+  "partB_label": "step",
+  "meaning": "A stage or next operation within a process.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(m:Me,x:Ref,m2:Me)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "s▷(act-name, thing, act-name) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(s▷(zm1,zo1,zm2))  =  the process zm1 at stage zo1 performs the operation zm2"
+  ],
+  "r2_notes": [
+   "Not performed."
+  ],
+  "r2_line": 1761,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K18",
+   "K22"
+  ]
+ },
+ {
+  "id": "E105",
+  "root": "∈",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "∈(x,S)",
+  "partB_line": 578,
+  "partB_label": "",
+  "meaning": "Literal membership: x is an item of S.",
+  "shape": "",
+  "boundary": "Does not cover \"present in encoded form\" or \"derivable from\". Not `e∈` (example).",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(x:Ref,s:Co)->P",
+  "tags": [],
+  "note": "Literal membership: x is an item of s. Not \"present in encoded form\" or \"derivable from\". Used as the explicit-domain conjunct.",
+  "r2_header": "∈(thing, group) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(∈(zo1,zS1))  =  zo1 is a member of zS1"
+  ],
+  "r2_notes": [
+   "Literal membership. Not e∈ (an example of)."
+  ],
+  "r2_line": 1142,
+  "tf5_n_outside": 24,
+  "tf5_lines": [
+   147,
+   160,
+   161,
+   188,
+   327,
+   355,
+   361,
+   362
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E106",
+  "root": "e∈",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "e∈",
+  "partB_line": 657,
+  "partB_label": "example",
+  "meaning": "An instance belonging to a class or illustrating a concept or rule.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "e∈(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(e∈(zo1,zo2))  =  zo1 is an example of zo2"
+  ],
+  "r2_notes": [
+   "Not set membership."
+  ],
+  "r2_line": 1837,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E107",
+  "root": "o|",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "o|",
+  "partB_line": 767,
+  "partB_label": "option",
+  "meaning": "One available candidate choice, or an explicitly specified set of candidates",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,g:Co)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "o|(thing, group) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(o|(zo1,zS1))  =  zo1 is one option in the group zS1"
+  ],
+  "r2_notes": [
+   "No choice made, no ranking."
+  ],
+  "r2_line": 1728,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E108",
+  "root": "c◉",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "c◉",
+  "partB_line": 624,
+  "partB_label": "concept",
+  "meaning": "A central representation for an idea or abstraction.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,g:Co)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "c◉(thing, group) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(c◉(zo1,zS1))  =  zo1 is a concept described by the attributes zS1"
+  ],
+  "r2_notes": [],
+  "r2_line": 1813,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K12"
+  ]
+ },
+ {
+  "id": "E109",
+  "root": "d⋮",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "d⋮",
+  "partB_line": 643,
+  "partB_label": "describe",
+  "meaning": "express properties / characteristics",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,g:Co)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "d⋮(thing, group) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(d⋮(zo1,zS1))  =  zS1 is the set of properties of zo1"
+  ],
+  "r2_notes": [
+   "Not complete, not checked."
+  ],
+  "r2_line": 1822,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K12"
+  ]
+ },
+ {
+  "id": "E110",
+  "root": "p▦",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "p▦",
+  "partB_line": 775,
+  "partB_label": "pattern",
+  "meaning": "An identifiable arrangement or regularity among properties/relations",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,g:Co)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "p▦(thing, group) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(p▦(zo1,zS1))  =  zo1 describes a pattern shown by the instances zS1"
+  ],
+  "r2_notes": [
+   "Pattern not verified."
+  ],
+  "r2_line": 1877,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K12"
+  ]
+ },
+ {
+  "id": "E111",
+  "root": "s▦",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s▦",
+  "partB_line": 825,
+  "partB_label": "structure",
+  "meaning": "Arrangement of elements and their relationships.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,g:Co)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "s▦(thing, group) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(s▦(zo1,zS1))  =  zS1 is the group of parts that make up zo1"
+  ],
+  "r2_notes": [
+   "Relations among the parts: r:."
+  ],
+  "r2_line": 1906,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K12"
+  ]
+ },
+ {
+  "id": "E112",
+  "root": "s⊞",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s⊞",
+  "partB_line": 828,
+  "partB_label": "system",
+  "meaning": "Functional whole composed of interacting components.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,g:Co,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "s⊞(thing, group, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(s⊞(zo1,zS1,zo2))  =  the system zo1 with the parts zS1 has the intended function zo2"
+  ],
+  "r2_notes": [
+   "Intended, not shown."
+  ],
+  "r2_line": 1911,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K12"
+  ]
+ },
+ {
+  "id": "E113",
+  "root": "m⊞",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "m⊞",
+  "partB_line": 743,
+  "partB_label": "model",
+  "meaning": "A structured representation of a system, process, or relationship.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "m⊞(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(m⊞(zo1,zo2))  =  zo2 is a model of zo1"
+  ],
+  "r2_notes": [
+   "Validity not implied."
+  ],
+  "r2_line": 1862,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K12"
+  ]
+ },
+ {
+  "id": "E114",
+  "root": "m↦",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "m↦",
+  "partB_line": 739,
+  "partB_label": "meaning",
+  "meaning": "A mapping from an expression to its semantic representation.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "m↦(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(m↦(zo1,zo2))  =  the expression zo1 means zo2"
+  ],
+  "r2_notes": [
+   "A fact about meaning, not the act of interpreting."
+  ],
+  "r2_line": 1857,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E115",
+  "root": "k#",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "k#",
+  "partB_line": 720,
+  "partB_label": "key",
+  "meaning": "A scope-defined identifier or lookup key for an item, record, or value.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "k#(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(k#(zo1,zo2))  =  zo1 is a key for zo2"
+  ],
+  "r2_notes": [
+   "Uniqueness not implied."
+  ],
+  "r2_line": 1916,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E116",
+  "root": "l↔",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "l↔",
+  "partB_line": 731,
+  "partB_label": "link",
+  "meaning": "Relationship between two entities or pieces of information; not necessarily symmetric",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "l↔(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(l↔(zo1,zo2))  =  there is a directed link from zo1 to zo2"
+  ],
+  "r2_notes": [
+   "A labelled link is r:."
+  ],
+  "r2_line": 1847,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K13"
+  ]
+ },
+ {
+  "id": "E117",
+  "root": "↔",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "↔",
+  "partB_line": 629,
+  "partB_label": "connect",
+  "meaning": "Standalone connection operator; directionality requires operands/type.",
+  "shape": "standalone glyph",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "↔(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(↔(zo1,zo2))  =  zo1 and zo2 are associated"
+  ],
+  "r2_notes": [
+   "No label, no direction, no cause."
+  ],
+  "r2_line": 1817,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   983
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K13"
+  ]
+ },
+ {
+  "id": "E118",
+  "root": "r∩",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "r∩",
+  "partB_line": 802,
+  "partB_label": "relevant",
+  "meaning": "Indicate overlap with the current objective or context (∩, not necessarily literal set intersection).",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "r∩(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(r∩(zo1,zo2))  =  zo1 is relevant to the objective zo2"
+  ],
+  "r2_notes": [],
+  "r2_line": 1892,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K13"
+  ]
+ },
+ {
+  "id": "E119",
+  "root": "s≔",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s≔",
+  "partB_line": 822,
+  "partB_label": "state",
+  "meaning": "Declare an entity's state or assigned value; English noun/verb scope requires later clarification.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref,x3:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "s≔(thing, thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(s≔(zo1,zo2,zo3))  =  entity zo1, attribute zo2, value zo3: a declared state"
+  ],
+  "r2_notes": [
+   "Not a change."
+  ],
+  "r2_line": 1948,
+  "tf5_n_outside": 7,
+  "tf5_lines": [
+   1173,
+   1804,
+   1807,
+   1814
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN"
+  ],
+  "clusters": [
+   "K17"
+  ]
+ },
+ {
+  "id": "E120",
+  "root": "⊡",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "⊡(x)",
+  "partB_line": 582,
+  "partB_label": "",
+  "meaning": "x is retained and accessible (retrievable).",
+  "shape": "",
+  "boundary": "Does **not** entail that x is unchanged, nor that x is recoverable from a different derived object. Whether it applies to entities or to information is unsettled.",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(x:Ref)->P",
+  "tags": [
+   "KC"
+  ],
+  "note": "x is retained and accessible. Not \"unchanged\", not \"recoverable from a derived object\". Entity or information: unsettled. A state predicate.",
+  "r2_header": "⊡(thing) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(⊡(zo1))  =  zo1 is retained and accessible"
+  ],
+  "r2_notes": [
+   "Does not say zo1 is unchanged. Whether it applies to things or to information is unsettled."
+  ],
+  "r2_line": 1163,
+  "tf5_n_outside": 8,
+  "tf5_lines": [
+   69,
+   170,
+   430,
+   987,
+   999,
+   1612,
+   1632
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E121",
+  "root": "p?",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "p?",
+  "partB_line": 780,
+  "partB_label": "problem",
+  "meaning": "A task/question/requirement still requiring a resolution",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,c2:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "p?(claim, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(p?(zp1,zp2))  =  the wanted state zp1 differs from the current state zp2: a problem"
+  ],
+  "r2_notes": [
+   "Not solved by saying so. FREEZE-6 Part B reads p? more widely: a task, question or requirement still needing resolution. Unsettled."
+  ],
+  "r2_line": 1796,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1092
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E122",
+  "root": "i←",
+  "family": "2.8",
+  "plane": 2,
+  "partB": true,
+  "symbol": "i←",
+  "partB_line": 704,
+  "partB_label": "input",
+  "meaning": "Information flows into a process from a specified perspective.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,m:Me)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "i←(thing, act-name) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(i←(zo1,zm1))  =  zo1 is an input to the process zm1"
+  ],
+  "r2_notes": [
+   "Not received, not processed."
+  ],
+  "r2_line": 1771,
+  "tf5_n_outside": 2,
+  "tf5_lines": [
+   1929,
+   1931
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E123",
+  "root": "h⊡",
+  "family": "2.9",
+  "plane": 2,
+  "partB": false,
+  "symbol": "h⊡",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "E",
+  "sig": "(holder:Ag,x:Ref)->P",
+  "tags": [
+   "KC"
+  ],
+  "note": "Holder first, then the item. A state predicate. The holder must be an agent name (class zk) or a bound variable with prefix zk; another class is ill-formed. Does not mean understanding, reading, ownership, custody or permission to share.",
+  "r2_header": "h⊡(who, thing) → claim",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(h⊡(zk1,zo1))  =  zk1 has zo1 in the relevant context"
+  ],
+  "r2_notes": [
+   "A state, not ownership, understanding or permission to share. The holder is a zk… name."
+  ],
+  "r2_line": 1173,
+  "tf5_n_outside": 23,
+  "tf5_lines": [
+   12,
+   62,
+   103,
+   139,
+   166,
+   168,
+   170,
+   172
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "OPEN",
+   "TF-USE",
+   "UNTESTED",
+   "WORKING"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E124",
+  "root": "b~",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "b~",
+  "partB_line": 610,
+  "partB_label": "belief",
+  "meaning": "held but not necessarily verified stance",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,c:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "b~(who, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(b~(zk1,zp1))  =  zk1 believes zp1"
+  ],
+  "r2_notes": [
+   "Does not make {2} true."
+  ],
+  "r2_line": 1974,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K10"
+  ]
+ },
+ {
+  "id": "E125",
+  "root": "t~",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "t~",
+  "partB_line": 840,
+  "partB_label": "trust",
+  "meaning": "Context-dependent reliance on a source, claim or process with defeasible confidence",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "t~(who, thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(t~(zk1,zo1,zo2))  =  zk1 trusts zo1 for zo2"
+  ],
+  "r2_notes": [
+   "No confidence slot. Use pℙ or u± for that."
+  ],
+  "r2_line": 1989,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K10"
+  ]
+ },
+ {
+  "id": "E126",
+  "root": "i◎",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "i◎",
+  "partB_line": 706,
+  "partB_label": "intent",
+  "meaning": "The target or purpose of an action/message.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,c:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "i◎(who, claim) → claim",
+  "r2_label": "PROPOSED; TF-5: arity not declared (T.3.1 item 4: read as a?)",
+  "r2_examples": [
+   "g←(i◎(zk1,zp1))  =  zk1 intends zp1 as the outcome"
+  ],
+  "r2_notes": [
+   "FREEZE-6 says the arity of intent is not declared. Use with care, or say a?."
+  ],
+  "r2_line": 1979,
+  "tf5_n_outside": 2,
+  "tf5_lines": [
+   99,
+   185
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": [
+   "K11"
+  ]
+ },
+ {
+  "id": "E127",
+  "root": "o◎",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "o◎",
+  "partB_line": 764,
+  "partB_label": "objective",
+  "meaning": "A target or criterion that a task is intended to attain",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(m:Me,c:P)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "o◎(act-name, claim) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(o◎(zm1,zp1))  =  the task zm1 has the goal state zp1"
+  ],
+  "r2_notes": [
+   "Reaching it is not implied."
+  ],
+  "r2_line": 1776,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K11"
+  ]
+ },
+ {
+  "id": "E128",
+  "root": "g◎",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "g◎",
+  "partB_line": 681,
+  "partB_label": "goal",
+  "meaning": "Defined target / desired outcome of a task or process.",
+  "shape": "",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "U",
+  "sig": null,
+  "tags": [],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1792
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K11",
+   "K28"
+  ]
+ },
+ {
+  "id": "E129",
+  "root": "n!",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "n!",
+  "partB_line": 752,
+  "partB_label": "need",
+  "meaning": "A task, agent, or goal requires particular information, a resource, or an action.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,x:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "n!(who, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(n!(zk1,zo1))  =  zk1 needs zo1"
+  ],
+  "r2_notes": [
+   "Does not say {2} is missing."
+  ],
+  "r2_line": 1984,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K08"
+  ]
+ },
+ {
+  "id": "E130",
+  "root": "r−",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "r−",
+  "partB_line": 800,
+  "partB_label": "reject",
+  "meaning": "Exclude / decline adoption of a candidate (−).",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,x:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "r−(who, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(r−(zk1,zo1))  =  zk1 rejects the candidate zo1"
+  ],
+  "r2_notes": [
+   "Reason: s∵. Not negation."
+  ],
+  "r2_line": 1994,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E131",
+  "root": "g▷",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "g▷",
+  "partB_line": 683,
+  "partB_label": "guide",
+  "meaning": "Directing progression or next operation with respect to a target.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,c:P,m:Me)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "g▷(who, claim, act-name) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(g▷(zk1,zp1,zm1))  =  zk1 is advised, to reach zp1, to do zm1"
+  ],
+  "r2_notes": [
+   "Advice, not an order."
+  ],
+  "r2_line": 1999,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E132",
+  "root": "f▷",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "f▷",
+  "partB_line": 671,
+  "partB_label": "follow",
+  "meaning": "Proceed in a sequence or follow a specified instruction.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,m:Me)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "f▷(who, act-name) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(f▷(zk1,zm1))  =  zk1 followed the act specification zm1"
+  ],
+  "r2_notes": [
+   "Compliance, not the order of steps."
+  ],
+  "r2_line": 1781,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K18"
+  ]
+ },
+ {
+  "id": "E133",
+  "root": "h+",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "h+",
+  "partB_line": 689,
+  "partB_label": "help",
+  "meaning": "Add assistance, information, or capacity to a task. The + operator shares an additive/inclusion intuition with a+ (accept) and i+ (include), though their full meanings differ.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,ag2:Ag,m:Me)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "h+(who, who, act-name) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(h+(zk1,zk2,zm1))  =  zk1 helps zk2 with the task zm1"
+  ],
+  "r2_notes": [
+   "Not necessarily useful help."
+  ],
+  "r2_line": 2004,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E134",
+  "root": "s◇",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "s◇",
+  "partB_line": 826,
+  "partB_label": "suggest",
+  "meaning": "Present a candidate, proposal, or possibility for consideration.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,ag2:Ag,x:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "s◇(who, who, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(s◇(zk1,zk2,zo1))  =  zk1 suggests zo1 to zk2"
+  ],
+  "r2_notes": [
+   "Not accepted, not done."
+  ],
+  "r2_line": 2009,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K14"
+  ]
+ },
+ {
+  "id": "E135",
+  "root": "f↩",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "f↩",
+  "partB_line": 669,
+  "partB_label": "feedback",
+  "meaning": "Information directed back about a previous output or action.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "f↩(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(f↩(zo1,zo2))  =  zo2 is feedback on zo1"
+  ],
+  "r2_notes": [
+   "Who gave it: zk1:f↩(…)."
+  ],
+  "r2_line": 1926,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K14"
+  ]
+ },
+ {
+  "id": "E136",
+  "root": "o▤",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "o▤",
+  "partB_line": 765,
+  "partB_label": "observe",
+  "meaning": "Acquire and register an observation concerning an object/event",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,x:Ref,x2:Ref,x3:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "o▤(who, thing, thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(o▤(zk1,zo1,zo2,zo3))  =  the observer zk1 reports about zo1, aspect zo2, value zo3"
+  ],
+  "r2_notes": [
+   "A report, not a proof."
+  ],
+  "r2_line": 1943,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E137",
+  "root": "u✓",
+  "family": "2.9",
+  "plane": 2,
+  "partB": true,
+  "symbol": "u✓",
+  "partB_line": 848,
+  "partB_label": "understand",
+  "meaning": "A message's intended interpretation has been recovered to the specified criterion.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,x:Ref,x2:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "u✓(who, thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(u✓(zk1,zo1,zo2))  =  zk1 reports that message zo1 meant zo2"
+  ],
+  "r2_notes": [
+   "Self-report, not measured."
+  ],
+  "r2_line": 2024,
+  "tf5_n_outside": 3,
+  "tf5_lines": [
+   360,
+   1005
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K05"
+  ]
+ },
+ {
+  "id": "E138",
+  "root": "cƒ",
+  "family": "3.1",
+  "plane": 3,
+  "partB": true,
+  "symbol": "cƒ",
+  "partB_line": 623,
+  "partB_label": "compute",
+  "meaning": "Apply a computational function or process to obtain output.",
+  "shape": "",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "E",
+  "sig": "(obj:Ref|Ex,roles:Rm*)->Act",
+  "tags": [
+   "KC"
+  ],
+  "note": "Action root of the seven-marker construction (compute): first argument is the object, every later argument is a distinct role marker applied to one name. In a claim position the expression denotes the event-proposition \"an action of that kind occurs with these arguments\"; it is not asserted by being written. No marker says the action succeeded, arrived or was received.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 28,
+  "tf5_lines": [
+   120,
+   201,
+   208,
+   217,
+   225,
+   226,
+   288,
+   295
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E139",
+  "root": "o→",
+  "family": "3.1",
+  "plane": 3,
+  "partB": true,
+  "symbol": "o→",
+  "partB_line": 769,
+  "partB_label": "output",
+  "meaning": "A value or message emitted by a process",
+  "shape": "",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "E",
+  "sig": "(obj:Ref|Ex,roles:Rm*)->Act",
+  "tags": [
+   "KC"
+  ],
+  "note": "Action root of the seven-marker construction (output (emit toward a recipient)): first argument is the object, every later argument is a distinct role marker applied to one name. In a claim position the expression denotes the event-proposition \"an action of that kind occurs with these arguments\"; it is not asserted by being written. No marker says the action succeeded, arrived or was received.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 15,
+  "tf5_lines": [
+   120,
+   306,
+   361,
+   365,
+   366,
+   446,
+   1947,
+   2003
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E140",
+  "root": "a+",
+  "family": "3.1",
+  "plane": 3,
+  "partB": true,
+  "symbol": "a+",
+  "partB_line": 593,
+  "partB_label": "accept",
+  "meaning": "Accept/commit an item into an accepted set or working basis.",
+  "shape": "",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "E",
+  "sig": "(obj:Ref|Ex,roles:Rm*)->Act",
+  "tags": [
+   "KC"
+  ],
+  "note": "Action root of the seven-marker construction (accept): first argument is the object, every later argument is a distinct role marker applied to one name. In a claim position the expression denotes the event-proposition \"an action of that kind occurs with these arguments\"; it is not asserted by being written. No marker says the action succeeded, arrived or was received.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 11,
+  "tf5_lines": [
+   120,
+   194,
+   306,
+   1948,
+   2003,
+   2068,
+   2078,
+   2079
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E141",
+  "root": "⌘",
+  "family": "3.1",
+  "plane": 3,
+  "partB": false,
+  "symbol": "⌘",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "E",
+  "sig": "(m:Me)->Rm",
+  "tags": [
+   "KC"
+  ],
+  "note": "METHOD: procedure or technique followed. A role marker takes exactly one name and is well-formed only after the first argument of cƒ, o→ or a+ (six D-LI01 glyphs reserved; ♙ added by TF-1). Each marker at most once per action; order does not change roles; an omitted role is unspecified, not absent.",
+  "r2_header": "⌘(act-name) → role marker",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "i!(cƒ(✠(×(7,6)),⌘(zm1)))  =  compute it by the method zm1"
+  ],
+  "r2_notes": [],
+  "r2_line": 1331,
+  "tf5_n_outside": 14,
+  "tf5_lines": [
+   62,
+   69,
+   112,
+   138,
+   208,
+   226,
+   305,
+   365
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E142",
+  "root": "⚙",
+  "family": "3.1",
+  "plane": 3,
+  "partB": false,
+  "symbol": "⚙",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "E",
+  "sig": "(x:Ref)->Rm",
+  "tags": [
+   "KC"
+  ],
+  "note": "INSTRUMENT: tool or resource used. A role marker takes exactly one name and is well-formed only after the first argument of cƒ, o→ or a+ (six D-LI01 glyphs reserved; ♙ added by TF-1). Each marker at most once per action; order does not change roles; an omitted role is unspecified, not absent.",
+  "r2_header": "⚙(thing) → role marker",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "i!(cƒ(✠(×(7,6)),⚙(zo1)))  =  compute it using the tool zo1"
+  ],
+  "r2_notes": [],
+  "r2_line": 1335,
+  "tf5_n_outside": 11,
+  "tf5_lines": [
+   62,
+   69,
+   113,
+   226,
+   305,
+   422,
+   470,
+   1864
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E143",
+  "root": "↣",
+  "family": "3.1",
+  "plane": 3,
+  "partB": false,
+  "symbol": "↣",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "E",
+  "sig": "(x:Ref)->Rm",
+  "tags": [
+   "KC"
+  ],
+  "note": "RECIPIENT: the entity the object is intended to reach. A role marker takes exactly one name and is well-formed only after the first argument of cƒ, o→ or a+ (six D-LI01 glyphs reserved; ♙ added by TF-1). Each marker at most once per action; order does not change roles; an omitted role is unspecified, not absent.",
+  "r2_header": "↣(thing) → role marker",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "i!(o→(zo1,↣(zkx)))  =  output zo1 to zkx"
+  ],
+  "r2_notes": [
+   "Who it is meant to reach. Does not say it arrived."
+  ],
+  "r2_line": 1339,
+  "tf5_n_outside": 15,
+  "tf5_lines": [
+   62,
+   69,
+   114,
+   138,
+   305,
+   361,
+   366,
+   422
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "OPEN",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E144",
+  "root": "☞",
+  "family": "3.1",
+  "plane": 3,
+  "partB": false,
+  "symbol": "☞",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "E",
+  "sig": "(x:Ref)->Rm",
+  "tags": [
+   "KC"
+  ],
+  "note": "DESTINATION: endpoint toward which the object is directed. A role marker takes exactly one name and is well-formed only after the first argument of cƒ, o→ or a+ (six D-LI01 glyphs reserved; ♙ added by TF-1). Each marker at most once per action; order does not change roles; an omitted role is unspecified, not absent.",
+  "r2_header": "☞(thing) → role marker",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "i!(o→(zo1,☞(zo2)))  =  output zo1 toward the endpoint zo2"
+  ],
+  "r2_notes": [],
+  "r2_line": 1344,
+  "tf5_n_outside": 10,
+  "tf5_lines": [
+   62,
+   69,
+   115,
+   305,
+   422,
+   470,
+   1866,
+   1896
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E145",
+  "root": "☼",
+  "family": "3.1",
+  "plane": 3,
+  "partB": false,
+  "symbol": "☼",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "E",
+  "sig": "(x:Ref)->Rm",
+  "tags": [
+   "KC"
+  ],
+  "note": "SOURCE: origin from which the object comes. A role marker takes exactly one name and is well-formed only after the first argument of cƒ, o→ or a+ (six D-LI01 glyphs reserved; ♙ added by TF-1). Each marker at most once per action; order does not change roles; an omitted role is unspecified, not absent.",
+  "r2_header": "☼(thing) → role marker",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "i!(o→(zo1,☼(zo3)))  =  output zo1 from the source zo3"
+  ],
+  "r2_notes": [],
+  "r2_line": 1348,
+  "tf5_n_outside": 11,
+  "tf5_lines": [
+   62,
+   69,
+   116,
+   305,
+   422,
+   430,
+   470,
+   1867
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E146",
+  "root": "⚓",
+  "family": "3.1",
+  "plane": 3,
+  "partB": false,
+  "symbol": "⚓",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "E",
+  "sig": "(a1:P|Ref)->Rm",
+  "tags": [
+   "KC"
+  ],
+  "note": "BASIS: evidence or premise supporting the claim concerned. A role marker takes exactly one name and is well-formed only after the first argument of cƒ, o→ or a+ (six D-LI01 glyphs reserved; ♙ added by TF-1). Each marker at most once per action; order does not change roles; an omitted role is unspecified, not absent.",
+  "r2_header": "⚓(claim-or-thing) → role marker",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "i!(a+(zo1,⚓(zp1)))  =  accept zo1 on the basis zp1"
+  ],
+  "r2_notes": [],
+  "r2_line": 1352,
+  "tf5_n_outside": 10,
+  "tf5_lines": [
+   62,
+   69,
+   117,
+   305,
+   422,
+   470,
+   1868,
+   1912
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E147",
+  "root": "♙",
+  "family": "3.1",
+  "plane": 3,
+  "partB": false,
+  "symbol": "♙",
+  "partB_line": null,
+  "partB_label": "",
+  "meaning": "",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "E",
+  "sig": "(ag:Ag)->Rm",
+  "tags": [
+   "KC"
+  ],
+  "note": "AGENT: the agent that performs the action. A role marker takes exactly one name and is well-formed only after the first argument of cƒ, o→ or a+ (six D-LI01 glyphs reserved; ♙ added by TF-1). Each marker at most once per action; order does not change roles; an omitted role is unspecified, not absent.",
+  "r2_header": "♙(who) → role marker",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "i!(cƒ(✠(×(7,6)),♙(zkA)))  =  zkA computes 7 × 6"
+  ],
+  "r2_notes": [
+   "The performer only. Not attribution, not who reported or approved."
+  ],
+  "r2_line": 1326,
+  "tf5_n_outside": 33,
+  "tf5_lines": [
+   42,
+   62,
+   69,
+   118,
+   126,
+   133,
+   208,
+   226
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "OPEN",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E148",
+  "root": "c?",
+  "family": "3.2",
+  "plane": 3,
+  "partB": true,
+  "symbol": "c?",
+  "partB_line": 619,
+  "partB_label": "check",
+  "meaning": "Investigate whether a statement meets a criterion or is correct.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,crit:Cr)->Act",
+  "tags": [],
+  "note": "",
+  "r2_header": "c?(thing, standard) → act",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "i!(c?(zo1,zcr1))  =  check zo1 against zcr1"
+  ],
+  "r2_notes": [
+   "The outcome is not stated."
+  ],
+  "r2_line": 1534,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1092
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K24"
+  ]
+ },
+ {
+  "id": "E149",
+  "root": "c≶",
+  "family": "3.2",
+  "plane": 3,
+  "partB": true,
+  "symbol": "c≶",
+  "partB_line": 621,
+  "partB_label": "compare",
+  "meaning": "Compare values or objects on relevant dimensions.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,x2:Ref,crit:Cr)->Act",
+  "tags": [],
+  "note": "",
+  "r2_header": "c≶(thing, thing, standard) → act",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "i!(c≶(zo1,zo2,zcr1))  =  compare zo1 and zo2 on zcr1"
+  ],
+  "r2_notes": [
+   "State the outcome with b≻, s= or similar."
+  ],
+  "r2_line": 1539,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K24"
+  ]
+ },
+ {
+  "id": "E150",
+  "root": "e⋯",
+  "family": "3.2",
+  "plane": 3,
+  "partB": true,
+  "symbol": "e⋯",
+  "partB_line": 661,
+  "partB_label": "explore",
+  "meaning": "Investigate an open set of possibilities without a fixed outcome.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,m:Me)->Act",
+  "tags": [],
+  "note": "",
+  "r2_header": "e⋯(thing, act-name) → act",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "i!(e⋯(zo1,zm1))  =  explore zo1 using the method zm1"
+  ],
+  "r2_notes": [
+   "No finding is implied."
+  ],
+  "r2_line": 1565,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K24"
+  ]
+ },
+ {
+  "id": "E151",
+  "root": "i?",
+  "family": "3.2",
+  "plane": 3,
+  "partB": true,
+  "symbol": "i?",
+  "partB_line": 708,
+  "partB_label": "investigate",
+  "meaning": "Pursue evidence to address an unresolved question.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(q:Q,m:Me)->Act",
+  "tags": [],
+  "note": "",
+  "r2_header": "i?(question, act-name) → act",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "i!(i?(?⊤(zp1),zm1))  =  investigate ?⊤(zp1) using the method zm1"
+  ],
+  "r2_notes": [
+   "No finding is implied."
+  ],
+  "r2_line": 1575,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1092
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K07",
+   "K24"
+  ]
+ },
+ {
+  "id": "E152",
+  "root": "t⋯",
+  "family": "3.2",
+  "plane": 3,
+  "partB": true,
+  "symbol": "t⋯",
+  "partB_line": 837,
+  "partB_label": "think",
+  "meaning": "Reason/consider/process a target under the current context, without asserting that a final result is available",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,x:Ref)->Act",
+  "tags": [],
+  "note": "",
+  "r2_header": "t⋯(who, thing) → act",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "i!(t⋯(zk1,zo1))  =  zk1 thinks about zo1"
+  ],
+  "r2_notes": [
+   "No conclusion implied."
+  ],
+  "r2_line": 1590,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K24"
+  ]
+ },
+ {
+  "id": "E153",
+  "root": "u↦",
+  "family": "3.2",
+  "plane": 3,
+  "partB": true,
+  "symbol": "u↦",
+  "partB_line": 851,
+  "partB_label": "use",
+  "meaning": "Apply a resource, rule, tool, or method to a relevant target.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,x:Ref,x2:Ref)->Act",
+  "tags": [],
+  "note": "",
+  "r2_header": "u↦(who, thing, thing) → act",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "i!(u↦(zk1,zo1,zo2))  =  zk1 applies the resource zo1 to the target zo2"
+  ],
+  "r2_notes": [
+   "Result not implied."
+  ],
+  "r2_line": 1595,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1928
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K24"
+  ]
+ },
+ {
+  "id": "E154",
+  "root": "l↻",
+  "family": "3.2",
+  "plane": 3,
+  "partB": true,
+  "symbol": "l↻",
+  "partB_line": 728,
+  "partB_label": "learn",
+  "meaning": "Update a representation or behaviour based on information, evidence, or feedback",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,x:Ref,x2:Ref)->Act",
+  "tags": [],
+  "note": "",
+  "r2_header": "l↻(who, thing, thing) → act",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "i!(l↻(zk1,zo1,zo2))  =  zk1 updates zo2 using the evidence zo1"
+  ],
+  "r2_notes": [
+   "Not general editing."
+  ],
+  "r2_line": 1580,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K15",
+   "K24"
+  ]
+ },
+ {
+  "id": "E155",
+  "root": "i↑",
+  "family": "3.2",
+  "plane": 3,
+  "partB": true,
+  "symbol": "i↑",
+  "partB_line": 699,
+  "partB_label": "improve",
+  "meaning": "A positive change relative to a specified quality measure.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,crit:Cr)->Act",
+  "tags": [],
+  "note": "",
+  "r2_header": "i↑(thing, standard) → act",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "i!(i↑(zo1,zcr1))  =  improve zo1 on zcr1"
+  ],
+  "r2_notes": [
+   "Says nothing about the result."
+  ],
+  "r2_line": 1570,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K24"
+  ]
+ },
+ {
+  "id": "E156",
+  "root": "t⚖",
+  "family": "3.2",
+  "plane": 3,
+  "partB": true,
+  "symbol": "t⚖",
+  "partB_line": 835,
+  "partB_label": "test",
+  "meaning": "Apply specified test cases or criteria to assess an object, claim or behavior",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,g:Co,crit:Cr)->Act",
+  "tags": [],
+  "note": "",
+  "r2_header": "t⚖(thing, group, standard) → act",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "i!(t⚖(zo1,zS1,zcr1))  =  test zo1 on the cases zS1 with the pass rule zcr1"
+  ],
+  "r2_notes": [
+   "The outcome is not stated."
+  ],
+  "r2_line": 1585,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K24"
+  ]
+ },
+ {
+  "id": "E157",
+  "root": "a<",
+  "family": "3.2",
+  "plane": 3,
+  "partB": true,
+  "symbol": "a<",
+  "partB_line": 600,
+  "partB_label": "ask",
+  "meaning": "Submit a question/request for information.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(who:Ag,q:Q)->Act",
+  "tags": [
+   "OV"
+  ],
+  "note": "Ask: submit a question or request for information. The act of asking, as opposed to the question line itself.",
+  "r2_header": "a<(who, question) → act",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "i!(a<(zk1,?⊤(zp1)))  =  ask zk1 the question ?⊤(zp1)"
+  ],
+  "r2_notes": [],
+  "r2_line": 1525,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K07"
+  ]
+ },
+ {
+  "id": "E158",
+  "root": "q<",
+  "family": "3.2",
+  "plane": 3,
+  "partB": true,
+  "symbol": "q<",
+  "partB_line": 789,
+  "partB_label": "query",
+  "meaning": "Directed demand for information, retrieval, or an answer",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(who:Ag,x:Ref)->Act",
+  "tags": [
+   "AM"
+  ],
+  "note": "Query: a demand for information, retrieval or an answer. Retrieving an existing result is q<. E or P arity unsettled.",
+  "r2_header": "q<(who, thing) → act",
+  "r2_label": "PROPOSED; E or P arity unsettled; TF-5 OPEN: operand type (OG-08, OG-09); TF-5 says only that q< retrieves an existing result",
+  "r2_examples": [
+   "i!(q<(zk1,zo1))  =  ask zk1 to look up the result zo1 that already exists"
+  ],
+  "r2_notes": [
+   "Not for computing something new."
+  ],
+  "r2_line": 1529,
+  "tf5_n_outside": 3,
+  "tf5_lines": [
+   999,
+   1172,
+   1677
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K07"
+  ]
+ },
+ {
+  "id": "E159",
+  "root": "▶",
+  "family": "3.3",
+  "plane": 3,
+  "partB": true,
+  "symbol": "▶",
+  "partB_line": 659,
+  "partB_label": "execute",
+  "meaning": "Standalone execution trigger; does not assert completion.",
+  "shape": "standalone glyph",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(m:Me)->Act",
+  "tags": [],
+  "note": "Execute: a trigger. Does not assert completion. Whether a top-level ▶(x) line has force is OG-13.",
+  "r2_header": "▶(act-name) → act",
+  "r2_label": "PARTLY TF-5; rest PROPOSED",
+  "r2_examples": [
+   "i!(▶(zm1))  =  start running zm1"
+  ],
+  "r2_notes": [
+   "Does NOT say it finished. Use c■ for that."
+  ],
+  "r2_line": 1555,
+  "tf5_n_outside": 8,
+  "tf5_lines": [
+   983,
+   999,
+   1169,
+   1470,
+   1680,
+   1688,
+   1694,
+   1742
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E160",
+  "root": "c■",
+  "family": "3.3",
+  "plane": 3,
+  "partB": true,
+  "symbol": "c■",
+  "partB_line": 622,
+  "partB_label": "complete",
+  "meaning": "Bring an incomplete state to a completed state.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(a:Act)->Act / E:(a:Act)->P",
+  "tags": [
+   "OG-08"
+  ],
+  "note": "Complete. In directive position a completion act; in proposition position the completed state. A reported completion is not verified completion. A named act is lifted to a state only by c■(zm).",
+  "r2_header": "c■(act-name) → act",
+  "r2_label": "PARTLY TF-5; rest PROPOSED",
+  "r2_examples": [
+   "i!(c■(zm1))  =  finish the act zm1",
+   "g←(c■(zm1))  =  zm1 is done"
+  ],
+  "r2_notes": [
+   "In a claim slot it means \"{1} is done\". It is one of only six acts that may sit in a claim slot (c■ d↦ v✓ cƒ o→ a+). A report of completion is not checked."
+  ],
+  "r2_line": 1549,
+  "tf5_n_outside": 5,
+  "tf5_lines": [
+   999,
+   1170,
+   1181,
+   1679,
+   1695
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E161",
+  "root": "⤿",
+  "family": "3.3",
+  "plane": 3,
+  "partB": true,
+  "symbol": "⤿(x)",
+  "partB_line": 581,
+  "partB_label": "",
+  "meaning": "Retry or repeat the operation x.",
+  "shape": "",
+  "boundary": "Not a revision (`l↻`, `m↻`, `r↻`, `u↻`). No general numerical retry-limit syntax exists.",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(a:Act)->Act",
+  "tags": [],
+  "note": "Retry or repeat the operation. Not a revision. No retry-limit syntax.",
+  "r2_header": "⤿(act) → act",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "i!(⤿(zm1))  =  retry zm1"
+  ],
+  "r2_notes": [
+   "Not a revision. No retry limit can be written."
+  ],
+  "r2_line": 1168,
+  "tf5_n_outside": 4,
+  "tf5_lines": [
+   987,
+   999,
+   1613,
+   1638
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E162",
+  "root": "d⊙",
+  "family": "3.3",
+  "plane": 3,
+  "partB": true,
+  "symbol": "d⊙",
+  "partB_line": 640,
+  "partB_label": "decide",
+  "meaning": "choose among options and settle a decision",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "U",
+  "sig": "(x:Ref)->Act",
+  "tags": [
+   "AM"
+  ],
+  "note": "Decide: choose among options and settle a decision. TF-5 shows only r<(zkq,d⊙(zo3)) (a request to decide zo3). E or P arity unsettled.",
+  "r2_header": "d⊙(thing) → act",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "i!(d⊙(zo1))  =  decide the matter zo1"
+  ],
+  "r2_notes": [
+   "List the options on separate o| lines. (v1 text for this row is cut off; the rest is a guess.)"
+  ],
+  "r2_line": 1560,
+  "tf5_n_outside": 3,
+  "tf5_lines": [
+   999,
+   1683,
+   1701
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E163",
+  "root": "d↦",
+  "family": "3.3",
+  "plane": 3,
+  "partB": true,
+  "symbol": "d↦",
+  "partB_line": 644,
+  "partB_label": "determine",
+  "meaning": "map available information to a resolved value",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(v:Va,info:Ref)->Act / E:(v:Va,info:Ref)->P",
+  "tags": [
+   "OG-07"
+  ],
+  "note": "Determine: map information to a resolved value (value first). As a claim: the value is determined by the information. Needs consistent information sufficient to fix exactly one value. Determination is not physical truth.",
+  "r2_header": "d↦(number-name, thing) → act",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(d↦(zv3,zo5))  =  the value zv3 is determined by the information zo5",
+   "i!(d↦(zv3,zo5))  =  try to determine zv3 from zo5 (success not implied)"
+  ],
+  "r2_notes": [
+   "Value first, then the information that fixes it. One of the six acts that also work in a claim slot."
+  ],
+  "r2_line": 1198,
+  "tf5_n_outside": 7,
+  "tf5_lines": [
+   999,
+   1118,
+   1651,
+   1667,
+   1669,
+   1772,
+   1804
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E164",
+  "root": "v✓",
+  "family": "3.3",
+  "plane": 3,
+  "partB": true,
+  "symbol": "v✓",
+  "partB_line": 859,
+  "partB_label": "verify",
+  "meaning": "Check a claim or result against relevant evidence and specified criteria",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(x:P|Ref,crit:Cr)->Act / E:(x:P|Ref,crit:Cr)->P",
+  "tags": [
+   "AM",
+   "OG-08"
+  ],
+  "note": "Verify (item first, then the criterion). As an act: a request-able check. As a claim: x stands verified against the criterion. Requesting verification does not report success; an inconclusive test, a negative test and a process error are three different outcomes.",
+  "r2_header": "v✓(claim-or-thing, standard) → act",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "r<(zkq,v✓(zp1,zcr1))  =  ask zkq to verify zp1 against zcr1"
+  ],
+  "r2_notes": [
+   "Asking for a check does not say it succeeded. FREEZE-6 puts v✓ in a claim slot only once (C14, inside i→). For \"meets the criterion\" use v⊨."
+  ],
+  "r2_line": 1204,
+  "tf5_n_outside": 8,
+  "tf5_lines": [
+   998,
+   1005,
+   1119,
+   1244,
+   1538,
+   1547,
+   1556,
+   1597
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K05"
+  ]
+ },
+ {
+  "id": "E165",
+  "root": "c✓",
+  "family": "3.3",
+  "plane": 3,
+  "partB": true,
+  "symbol": "c✓",
+  "partB_line": 627,
+  "partB_label": "confirm",
+  "meaning": "Confirm prior content against supporting evidence or criteria.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(x:Ref,c:P)->Act",
+  "tags": [
+   "AM",
+   "OG-08"
+  ],
+  "note": "Confirm prior content against evidence or criteria. Act or result is OPEN (OG-08).",
+  "r2_header": "c✓(thing, claim) → act",
+  "r2_label": "PROPOSED; E or P arity unsettled; TF-5 OPEN: act-or-result of c✓ (C 5.4; OG-08, OG-09); argument order not taught",
+  "r2_examples": [
+   "i!(c✓(zo1,zp1))  =  try to confirm zp1 using the evidence zo1"
+  ],
+  "r2_notes": [
+   "Evidence first. An attempt, not a result. FREEZE-6 leaves open whether c✓ is an act or a result (OG-08)."
+  ],
+  "r2_line": 1544,
+  "tf5_n_outside": 7,
+  "tf5_lines": [
+   998,
+   1005,
+   1175,
+   1273,
+   1539,
+   1547,
+   1773
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": [
+   "K05"
+  ]
+ },
+ {
+  "id": "E166",
+  "root": "r→",
+  "family": "3.3",
+  "plane": 3,
+  "partB": true,
+  "symbol": "r→",
+  "partB_line": 806,
+  "partB_label": "result",
+  "meaning": "Express an outcome of a process or inference (→).",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(a:Ex,b:Ex)->P",
+  "tags": [
+   "KC"
+  ],
+  "note": "Value claim: the value of a equals the value of b (atemporal; first the expression whose value is claimed). The only use of r→ with a recorded arity. Any other use (a result of a process or inference) has no recorded arity.",
+  "r2_header": "r→(math, math) → claim",
+  "r2_label": "PARTLY TF-5; rest PROPOSED",
+  "r2_examples": [
+   "g←(r→(zE1,zE2))  =  the value of math term zE1 equals the value of math term zE2"
+  ],
+  "r2_notes": [
+   "Only for math terms (✠). See v1 M3."
+  ],
+  "r2_line": 1957,
+  "tf5_n_outside": 27,
+  "tf5_lines": [
+   21,
+   202,
+   203,
+   209,
+   214,
+   216,
+   219,
+   220
+  ],
+  "tf5_status_words": [
+   "NEW",
+   "OPEN",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E167",
+  "root": "i!",
+  "family": "3.4",
+  "plane": 3,
+  "partB": true,
+  "symbol": "i!",
+  "partB_line": 705,
+  "partB_label": "instruction",
+  "meaning": "A directive or action requirement.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(a:Act)->Dir",
+  "tags": [
+   "OG-10",
+   "OG-13"
+  ],
+  "note": "Instruction: a directive or action requirement. Asks for an act; does not report it. Acts may be joined by ∧ or ordered by s≺ inside i!.",
+  "r2_header": "i!(act) → line",
+  "r2_label": "PARTLY TF-5; rest PROPOSED",
+  "r2_examples": [
+   "i!(zm1)  =  do the act zm1"
+  ],
+  "r2_notes": [
+   "Does not say it was done."
+  ],
+  "r2_line": 1520,
+  "tf5_n_outside": 19,
+  "tf5_lines": [
+   201,
+   225,
+   288,
+   374,
+   999,
+   1143,
+   1168,
+   1180
+  ],
+  "tf5_status_words": [
+   "OPEN",
+   "WORKING"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E168",
+  "root": "r<",
+  "family": "3.4",
+  "plane": 3,
+  "partB": true,
+  "symbol": "r<",
+  "partB_line": 803,
+  "partB_label": "request",
+  "meaning": "Seek information or an action from another participant (<).",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(party:Ag,what:Act)->Dir",
+  "tags": [
+   "OG-09"
+  ],
+  "note": "Request: the party asked, then what is asked. With an act: asks the party to perform it and to report the outcome via r→. Read as \"perform\" or \"inform\" by the type of the operand (OG-09).",
+  "r2_header": "r<(who, act) → line",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "r<(zkq,▶(zm1))  =  ask zkq to execute zm1",
+   "r<(zkB,cƒ(✠(×(7,6))))  =  ask zkB to compute 7 × 6"
+  ],
+  "r2_notes": [
+   "Asks zkq to perform the act and report via r→. To look up a result that already exists use q<. If the operand's type is unclear, FREEZE-6 says write a?."
+  ],
+  "r2_line": 1258,
+  "tf5_n_outside": 15,
+  "tf5_lines": [
+   201,
+   225,
+   288,
+   381,
+   999,
+   1121,
+   1168,
+   1172
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": [
+   "K07"
+  ]
+ },
+ {
+  "id": "E169",
+  "root": "r□",
+  "family": "3.4",
+  "plane": 3,
+  "partB": true,
+  "symbol": "r□",
+  "partB_line": 808,
+  "partB_label": "rule",
+  "meaning": "State a binding constraint or condition (□, without presupposing modal-logic necessity).",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(c:P)->Req / Ep:(c:CDir)->Req",
+  "tags": [
+   "OG-10",
+   "OG-13"
+  ],
+  "note": "Requirement. Exactly one argument. A standalone top-level r□(P) has requirement force (TF-6 D6 candidate, replacing the TF-5 CL-1 reading). Immediate operand of n¬ gives the proposition \"P is not required\". Not under ∧, g← or c⊃.",
+  "r2_header": "r□(claim) → line",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "r□(zp11)  =  zp11 is required",
+   "g←(n¬(r□(zp11)))  =  zp11 is not required"
+  ],
+  "r2_notes": [
+   "Does not say the requirement is met. Stand it alone or put it directly under n¬. Never directly under ∧, g← or c⊃."
+  ],
+  "r2_line": 1242,
+  "tf5_n_outside": 28,
+  "tf5_lines": [
+   12,
+   99,
+   182,
+   183,
+   396,
+   452,
+   492,
+   995
+  ],
+  "tf5_status_words": [
+   "OPEN",
+   "TF-USE",
+   "WORKING"
+  ],
+  "clusters": [
+   "K08"
+  ]
+ },
+ {
+  "id": "E170",
+  "root": "?=",
+  "family": "4.1",
+  "plane": 4,
+  "partB": true,
+  "symbol": "?=",
+  "partB_line": 865,
+  "partB_label": "what",
+  "meaning": "Ask for an identity, value, or missing attribute",
+  "shape": "interrogative form",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(v:Var,body:P)->Q",
+  "tags": [
+   "FR",
+   "KC"
+  ],
+  "note": "Asks for the value, identity or object that the bound variable v takes in the body. v occurs in the body at least once, is local to the question, and is not declared by d≔ or bound by ∃. One variable per question; no nested ?=. Does not assert the body or that an answer exists.",
+  "r2_header": "?=(variable-name, claim) → question",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "d≔(zt0,t)  =  declares the time name zt0 (it fixes the reference time r)",
+   "?=(zkx,∧(∈(zkx,zS1),c⊃(zt0,t≺(h⊡(zkx,zo1)))))  =  which member of zS1 held zo1 at some time before r (the time named by zt0)?",
+   "?=(zv1,m∥(zo1,zo2,zv1,zo3))  =  what value of zv1 makes this measurement report true?"
+  ],
+  "r2_notes": [
+   "The variable name starts zk, zm, zo, zv or zS and says what kind of answer is wanted. It must occur in the claim. Do not declare it with d≔. One variable per question."
+  ],
+  "r2_line": 1276,
+  "tf5_n_outside": 36,
+  "tf5_lines": [
+   62,
+   127,
+   131,
+   137,
+   142,
+   145,
+   147,
+   149
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "NEW",
+   "OPEN",
+   "TF-USE",
+   "UNTESTED"
+  ],
+  "clusters": [
+   "K07"
+  ]
+ },
+ {
+  "id": "E171",
+  "root": "?⊤",
+  "family": "4.1",
+  "plane": 4,
+  "partB": true,
+  "symbol": "?⊤",
+  "partB_line": 868,
+  "partB_label": "whether",
+  "meaning": "Ask whether a proposition holds / its truth status",
+  "shape": "interrogative form",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(c:P)->Q",
+  "tags": [],
+  "note": "Asks whether c holds. Unary. The answer is exactly one of g←(c), g←(n¬(c)), u?(c).",
+  "r2_header": "?⊤(claim) → question",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "?⊤(zp1)  =  is zp1 true?"
+  ],
+  "r2_notes": [
+   "Answer with exactly one of g←(zp1), g←(n¬(zp1)), u?(zp1)."
+  ],
+  "r2_line": 1271,
+  "tf5_n_outside": 25,
+  "tf5_lines": [
+   76,
+   81,
+   127,
+   131,
+   148,
+   150,
+   156,
+   158
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "OPEN",
+   "TF-USE"
+  ],
+  "clusters": [
+   "K07"
+  ]
+ },
+ {
+  "id": "E172",
+  "root": "?◷",
+  "family": "4.1",
+  "plane": 4,
+  "partB": true,
+  "symbol": "?◷",
+  "partB_line": 866,
+  "partB_label": "when",
+  "meaning": "Ask for event time or temporal position",
+  "shape": "interrogative form",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "P",
+  "sig": "(c:P)->Q",
+  "tags": [
+   "IN"
+  ],
+  "note": "When: event time or temporal position. Unary signature not specified by TF-5 (T.6).",
+  "r2_header": "?◷(claim) → question",
+  "r2_label": "PROPOSED; TF-5: listed as an ask-form; arity not recorded (read as a?)",
+  "r2_examples": [
+   "?◷(zp1)  =  when does zp1 hold?"
+  ],
+  "r2_notes": [
+   "Meaning guessed from ?⊤. FREEZE-6 lists a unary ?◷ as OPEN (no agreed signature). Confirm before relying on it."
+  ],
+  "r2_line": 2045,
+  "tf5_n_outside": 6,
+  "tf5_lines": [
+   149,
+   388,
+   984,
+   996,
+   1084,
+   1793
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E173",
+  "root": "?@",
+  "family": "4.1",
+  "plane": 4,
+  "partB": true,
+  "symbol": "?@",
+  "partB_line": 867,
+  "partB_label": "where",
+  "meaning": "Ask for the location or position of a referent",
+  "shape": "interrogative form",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "P",
+  "sig": "(c:P)->Q",
+  "tags": [
+   "IN"
+  ],
+  "note": "Where. Unary signature not specified by TF-5 (T.6).",
+  "r2_header": "?@(claim) → question",
+  "r2_label": "PROPOSED; TF-5: listed as an ask-form; arity not recorded (read as a?)",
+  "r2_examples": [
+   "?@(zp1)  =  where does zp1 hold?"
+  ],
+  "r2_notes": [
+   "Same note."
+  ],
+  "r2_line": 2050,
+  "tf5_n_outside": 5,
+  "tf5_lines": [
+   149,
+   388,
+   984,
+   996,
+   1085
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E174",
+  "root": "?⊙",
+  "family": "4.1",
+  "plane": 4,
+  "partB": true,
+  "symbol": "?⊙",
+  "partB_line": 869,
+  "partB_label": "which",
+  "meaning": "Request choice/identification of an item from alternatives",
+  "shape": "interrogative form",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "P",
+  "sig": "(v:Var,s:Co,body:P)->Q",
+  "tags": [
+   "IN"
+  ],
+  "note": "Which: choose from alternatives. The ternary form is OPEN; the explicit-domain form of ?= is the specified way.",
+  "r2_header": "?⊙(variable-name, group, claim) → question",
+  "r2_label": "PROPOSED; TF-5 OPEN: ternary ?⊙(v,S,φ) (T.3.3 item 2)",
+  "r2_examples": [
+   "?⊙(zv1,zS1,zp1)  =  which zv1 in zS1 makes zp1 true?"
+  ],
+  "r2_notes": [
+   "FREEZE-6 calls the ternary ?⊙ OPEN. For \"which member of S\" write ?=(zkx,∧(∈(zkx,zS1),φ)) instead."
+  ],
+  "r2_line": 2055,
+  "tf5_n_outside": 5,
+  "tf5_lines": [
+   147,
+   388,
+   984,
+   996,
+   1087
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E175",
+  "root": "?∵",
+  "family": "4.1",
+  "plane": 4,
+  "partB": true,
+  "symbol": "?∵",
+  "partB_line": 870,
+  "partB_label": "why",
+  "meaning": "Request reasons, grounds or causes",
+  "shape": "interrogative form",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "P",
+  "sig": "(c:P)->Q",
+  "tags": [
+   "IN"
+  ],
+  "note": "Why. Unary signature not specified (T.6). Negating an interrogative act is OPEN.",
+  "r2_header": "?∵(claim) → question",
+  "r2_label": "PROPOSED; TF-5: listed as an ask-form; arity not recorded (read as a?)",
+  "r2_examples": [
+   "?∵(zp1)  =  why zp1?"
+  ],
+  "r2_notes": [
+   "Same note as ?◷ (FREEZE-6: unary ?∵ is OPEN)."
+  ],
+  "r2_line": 2060,
+  "tf5_n_outside": 7,
+  "tf5_lines": [
+   149,
+   187,
+   388,
+   984,
+   996,
+   1088
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E176",
+  "root": "?",
+  "family": "4.1",
+  "plane": 4,
+  "partB": true,
+  "symbol": "?",
+  "partB_line": 790,
+  "partB_label": "question",
+  "meaning": "A standalone question marker (contextual interrogative) and proposed general-purpose interrogative modifier",
+  "shape": "standalone glyph",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "U",
+  "sig": null,
+  "tags": [
+   "IN"
+  ],
+  "note": "Standalone question marker proposed as a general-purpose interrogative modifier. No recorded arity.",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 16,
+  "tf5_lines": [
+   42,
+   64,
+   149,
+   307,
+   443,
+   983,
+   1092,
+   1094
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "TF-USE"
+  ],
+  "clusters": [
+   "K28"
+  ]
+ },
+ {
+  "id": "E177",
+  "root": "n⊘",
+  "family": "4.2",
+  "plane": 4,
+  "partB": true,
+  "symbol": "n⊘",
+  "partB_line": 756,
+  "partB_label": "no",
+  "meaning": "A negative response or refusal concerning an identified question, proposition, or request.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": true,
+  "status": "U",
+  "sig": "(q:Mn[Q])->P",
+  "tags": [
+   "AM",
+   "IC"
+  ],
+  "note": "A negative answer to an identified question, proposition or request. TF-5 does not use it to answer ?⊤; there is no bare n⊘ line in an answer message.",
+  "r2_header": "n⊘(⌜quoted⌝) → line",
+  "r2_label": "PROPOSED; E or P arity unsettled",
+  "r2_examples": [
+   "n⊘(⌜?⊤(zp1)⌝)  =  a \"no\" to the quoted question ?⊤(zp1)"
+  ],
+  "r2_notes": [
+   "The question must be quoted. FREEZE-6 uses n⊘ only as a \"no\" to an identified question and never as the answer to ?⊤; answer ?⊤ with g←(…), g←(n¬(…)) or u?(…)."
+  ],
+  "r2_line": 2065,
+  "tf5_n_outside": 6,
+  "tf5_lines": [
+   77,
+   157,
+   158,
+   997,
+   1019,
+   1521
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K16"
+  ]
+ },
+ {
+  "id": "E178",
+  "root": "y✓",
+  "family": "4.2",
+  "plane": 4,
+  "partB": true,
+  "symbol": "y✓",
+  "partB_line": 883,
+  "partB_label": "yes",
+  "meaning": "affirmative response or approval",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(q:Mn[Q])->P",
+  "tags": [
+   "AM"
+  ],
+  "note": "Yes: affirmative response or approval to an identified question.",
+  "r2_header": "y✓(⌜quoted⌝) → line",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "y✓(⌜?⊤(zp1)⌝)  =  a \"yes\" to the quoted question ?⊤(zp1)"
+  ],
+  "r2_notes": [
+   "Mirror of n⊘."
+  ],
+  "r2_line": 2070,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1005
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E179",
+  "root": "a>",
+  "family": "4.2",
+  "plane": 4,
+  "partB": true,
+  "symbol": "a>",
+  "partB_line": 599,
+  "partB_label": "answer",
+  "meaning": "Provide a response to a question.",
+  "shape": "",
+  "boundary": "",
+  "checker": "NO-LINE",
+  "taught": false,
+  "status": "X",
+  "sig": null,
+  "tags": [
+   "IN"
+  ],
+  "note": "EXCLUDED by TF-5 (T.0 Excluded: undefined arity; not used in answers).",
+  "r2_header": "",
+  "r2_label": "",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": null,
+  "tf5_n_outside": 3,
+  "tf5_lines": [
+   64,
+   163,
+   443
+  ],
+  "tf5_status_words": [
+   "TF-USE"
+  ],
+  "clusters": [
+   "K28"
+  ]
+ },
+ {
+  "id": "E180",
+  "root": "g←",
+  "family": "5.1",
+  "plane": 5,
+  "partB": true,
+  "symbol": "g←",
+  "partB_line": 680,
+  "partB_label": "given",
+  "meaning": "A datum, value, or premise supplied to the present reasoning context; not automatically verified.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(c:P)->Ln",
+  "tags": [],
+  "note": "Supplies c as information. Does not verify. Whether supplying asserts is outside the grammar.",
+  "r2_header": "g←(claim) → line",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "g←(zp1)  =  zp1 is supplied as content"
+  ],
+  "r2_notes": [
+   "Supplies, does not verify. If asked whether g← \"asserts\", FREEZE-6 says: not defined."
+  ],
+  "r2_line": 1057,
+  "tf5_n_outside": 106,
+  "tf5_lines": [
+   22,
+   26,
+   78,
+   127,
+   129,
+   131,
+   157,
+   158
+  ],
+  "tf5_status_words": [
+   "C-ADDED",
+   "OPEN",
+   "TF-USE",
+   "WORKING"
+  ],
+  "clusters": [
+   "K25"
+  ]
+ },
+ {
+  "id": "E181",
+  "root": "h◇",
+  "family": "5.1",
+  "plane": 5,
+  "partB": true,
+  "symbol": "h◇",
+  "partB_line": 690,
+  "partB_label": "hypothesis",
+  "meaning": "Mark a tentative, testable proposition or possible explanation. ◇ relates to possibility, as in s◇ (suggest), but does not by itself encode testability.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(c:P)->Ln / E:(c:P)->P",
+  "tags": [
+   "OV"
+  ],
+  "note": "Presents c as a tentative hypothesis. Line reading: the act of presenting. Content reading: the proposition that c is presented as a hypothesis. Does not establish c.",
+  "r2_header": "h◇(claim) → line",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "h◇(zp2)  =  zp2 is put forward as a tentative hypothesis"
+  ],
+  "r2_notes": [
+   "Does not establish zp2."
+  ],
+  "r2_line": 1062,
+  "tf5_n_outside": 18,
+  "tf5_lines": [
+   205,
+   995,
+   1103,
+   1135,
+   1141,
+   1150,
+   1291,
+   1317
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K25"
+  ]
+ },
+ {
+  "id": "E182",
+  "root": "p◇",
+  "family": "5.1",
+  "plane": 5,
+  "partB": true,
+  "symbol": "p◇",
+  "partB_line": 776,
+  "partB_label": "possible",
+  "meaning": "A proposition or outcome is admissible under a specified context or constraints",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(c:P)->Ln / E:(c:P)->P",
+  "tags": [
+   "OV"
+  ],
+  "note": "c is admissible under the context or constraints. Line and content readings as for h◇. Does not say c is true.",
+  "r2_header": "p◇(claim) → line",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "p◇(zp2)  =  zp2 is admissible under the relevant context or constraints"
+  ],
+  "r2_notes": [
+   "Does not say zp2 is true."
+  ],
+  "r2_line": 1067,
+  "tf5_n_outside": 14,
+  "tf5_lines": [
+   181,
+   205,
+   995,
+   1135,
+   1141,
+   1151,
+   1292,
+   1317
+  ],
+  "tf5_status_words": [
+   "TF-USE"
+  ],
+  "clusters": [
+   "K25"
+  ]
+ },
+ {
+  "id": "E183",
+  "root": "u?",
+  "family": "5.1",
+  "plane": 5,
+  "partB": true,
+  "symbol": "u?",
+  "partB_line": 849,
+  "partB_label": "unknown",
+  "meaning": "A value, referent, or proposition is not known in the relevant context (distinct from a missing/null entry).",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(c:P)->Ln / N:(c:P)->P",
+  "tags": [
+   "OV"
+  ],
+  "note": "c is not known in the relevant context. Not negation. Content reading: new design suggestion (TF-6 embeds g← and u? only as the third operand of r>).",
+  "r2_header": "u?(claim) → line",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "u?(zp3)  =  zp3 is not known"
+  ],
+  "r2_notes": [
+   "Does not say zp3 is false."
+  ],
+  "r2_line": 1072,
+  "tf5_n_outside": 34,
+  "tf5_lines": [
+   77,
+   157,
+   158,
+   161,
+   205,
+   218,
+   230,
+   327
+  ],
+  "tf5_status_words": [
+   "OPEN"
+  ],
+  "clusters": [
+   "K16",
+   "K25"
+  ]
+ },
+ {
+  "id": "E184",
+  "root": "u~",
+  "family": "5.1",
+  "plane": 5,
+  "partB": true,
+  "symbol": "u~",
+  "partB_line": 846,
+  "partB_label": "uncertain",
+  "meaning": "A proposition or assessment is not established at the required confidence/epistemic standard.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(c:P)->Ln / N:(c:P)->P",
+  "tags": [
+   "OV"
+  ],
+  "note": "c is not established at the required confidence or epistemic standard.",
+  "r2_header": "u~(claim) → line",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "u~(zp14)  =  zp14 is not established at the required confidence"
+  ],
+  "r2_notes": [
+   "Neither this nor u? says the claim is false. If you are unsure which of u? and u~ you meant, say a?."
+  ],
+  "r2_line": 1077,
+  "tf5_n_outside": 4,
+  "tf5_lines": [
+   997,
+   1512,
+   1526,
+   1528
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K25"
+  ]
+ },
+ {
+  "id": "E185",
+  "root": "a.",
+  "family": "5.2",
+  "plane": 5,
+  "partB": true,
+  "symbol": "a.",
+  "partB_line": 594,
+  "partB_label": "acknowledge",
+  "meaning": "Confirm receipt or notice of a message, without agreement.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(x:Any)->Ln",
+  "tags": [
+   "OG-03"
+  ],
+  "note": "Acknowledges receipt of x (a mention, or a label). Receipt is not agreement.",
+  "r2_header": "a.(⌜quoted⌝ or label) → line",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "a.(⌜g←(zp21)⌝)  =  I received the line g←(zp21)"
+  ],
+  "r2_notes": [
+   "Receiving is not agreeing. The question form is a.(⌜?⊤(…)⌝) or a.(label)."
+  ],
+  "r2_line": 1222,
+  "tf5_n_outside": 21,
+  "tf5_lines": [
+   78,
+   154,
+   155,
+   339,
+   346,
+   388,
+   929,
+   995
+  ],
+  "tf5_status_words": [
+   "OPEN",
+   "PROVISIONAL",
+   "WORKING"
+  ],
+  "clusters": [
+   "K23"
+  ]
+ },
+ {
+  "id": "E186",
+  "root": "a=",
+  "family": "5.2",
+  "plane": 5,
+  "partB": true,
+  "symbol": "a=",
+  "partB_line": 595,
+  "partB_label": "agree",
+  "meaning": "Express agreement/alignment with a proposition.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(c:P|Dc)->Ln",
+  "tags": [],
+  "note": "Expresses agreement with c. Not verification. A declaration may be agreed (acceptance by restatement a=(d≔(…))).",
+  "r2_header": "a=(claim) → line",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "a=(zp21)  =  I agree with zp21"
+  ],
+  "r2_notes": [],
+  "r2_line": 1227,
+  "tf5_n_outside": 9,
+  "tf5_lines": [
+   976,
+   995,
+   1137,
+   1155,
+   1214,
+   1299,
+   1319,
+   1429
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K23"
+  ]
+ },
+ {
+  "id": "E187",
+  "root": "a?",
+  "family": "5.2",
+  "plane": 5,
+  "partB": true,
+  "symbol": "a?",
+  "partB_line": 597,
+  "partB_label": "ambiguity",
+  "meaning": "Mark more than one possible interpretation or insufficient disambiguation.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(x:Any)->Ln",
+  "tags": [
+   "AM"
+  ],
+  "note": "Marks ambiguity or insufficient disambiguation of x. Not a question. The standing escape for anything OPEN.",
+  "r2_header": "a?(claim) → line",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "a?(zp10)  =  zp10 is ambiguous or underspecified",
+   "a?(s=(zv1,zv2))  =  no criterion for \"same\" can be recovered"
+  ],
+  "r2_notes": [
+   "Marks ambiguity. It does not ask whether the claim is true. Use it when you cannot tell an arity, a criterion or a meaning."
+  ],
+  "r2_line": 1231,
+  "tf5_n_outside": 43,
+  "tf5_lines": [
+   53,
+   61,
+   97,
+   99,
+   139,
+   144,
+   172,
+   216
+  ],
+  "tf5_status_words": [
+   "HISTORY",
+   "OPEN",
+   "RETAINED",
+   "TF-USE",
+   "WORKING"
+  ],
+  "clusters": [
+   "K23"
+  ]
+ },
+ {
+  "id": "E188",
+  "root": "p↗",
+  "family": "5.2",
+  "plane": 5,
+  "partB": true,
+  "symbol": "p↗",
+  "partB_line": 782,
+  "partB_label": "propose",
+  "meaning": "Put forward a candidate for consideration, without adopting it",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "E",
+  "sig": "(c:P|Dc)->Ln",
+  "tags": [],
+  "note": "Puts c forward as a proposal. Does not adopt it. Names introduced in a proposal remain proposals until accepted by restatement.",
+  "r2_header": "p↗(claim-or-line) → line",
+  "r2_label": "TF-5 signature; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "p↗(h◇(zp9))  =  proposal: consider the hypothesis zp9"
+  ],
+  "r2_notes": [
+   "Put forward, not adopted."
+  ],
+  "r2_line": 1237,
+  "tf5_n_outside": 8,
+  "tf5_lines": [
+   519,
+   942,
+   995,
+   1137,
+   1214,
+   1298,
+   1383,
+   1384
+  ],
+  "tf5_status_words": [
+   "CANDIDATE"
+  ],
+  "clusters": [
+   "K23"
+  ]
+ },
+ {
+  "id": "E189",
+  "root": "e✗",
+  "family": "5.2",
+  "plane": 5,
+  "partB": true,
+  "symbol": "e✗",
+  "partB_line": 653,
+  "partB_label": "error",
+  "meaning": "A process, operation, or result contains an error relative to some criterion.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(x:Any)->Ln",
+  "tags": [
+   "AM"
+  ],
+  "note": "Marks x as containing an error relative to some criterion. Does not give the criterion or the correction, and does not say that a mentioned proposition is false. TF-6 D5 adds a message name as x.",
+  "r2_header": "e✗(⌜quoted⌝) → line",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "e✗(⌜g←(zp12)⌝)  =  the line g←(zp12) is marked as erroneous"
+  ],
+  "r2_notes": [
+   "Gives no criterion, does not say it is false, gives no replacement."
+  ],
+  "r2_line": 1248,
+  "tf5_n_outside": 9,
+  "tf5_lines": [
+   995,
+   1137,
+   1158,
+   1189,
+   1304,
+   1312,
+   1325,
+   1402
+  ],
+  "tf5_status_words": [
+   "PROVISIONAL",
+   "WORKING"
+  ],
+  "clusters": [
+   "K23"
+  ]
+ },
+ {
+  "id": "E190",
+  "root": "r↻",
+  "family": "5.2",
+  "plane": 5,
+  "partB": true,
+  "symbol": "r↻",
+  "partB_line": 807,
+  "partB_label": "revise",
+  "meaning": "Change an earlier proposal/state after reconsideration (↻).",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(x:Any)->Ln",
+  "tags": [
+   "AM"
+  ],
+  "note": "Marks x as revised or under revision. Does not give the replacement.",
+  "r2_header": "r↻(⌜quoted⌝) → line",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "r↻(⌜g←(zp12)⌝)  =  the line g←(zp12) is revised or under revision"
+  ],
+  "r2_notes": [
+   "Does not give the replacement."
+  ],
+  "r2_line": 1253,
+  "tf5_n_outside": 7,
+  "tf5_lines": [
+   995,
+   1137,
+   1159,
+   1189,
+   1305,
+   1312,
+   1403
+  ],
+  "tf5_status_words": [
+   "PROVISIONAL",
+   "WORKING"
+  ],
+  "clusters": [
+   "K15",
+   "K23"
+  ]
+ },
+ {
+  "id": "E191",
+  "root": "p▁",
+  "family": "5.2",
+  "plane": 5,
+  "partB": true,
+  "symbol": "p▁",
+  "partB_line": 778,
+  "partB_label": "premise",
+  "meaning": "A proposition taken as a starting input for reasoning",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P)->Ln",
+  "tags": [
+   "AM"
+  ],
+  "note": "Premise line: a proposition taken as a starting input for reasoning.",
+  "r2_header": "p▁(claim) → line",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "p▁(zp1)  =  treat zp1 as an assumption (v1 reading)"
+  ],
+  "r2_notes": [
+   "v1 reads this as \"assume\". FREEZE-6 Part B reads p▁ as \"premise: a proposition taken as a starting input\" and writes assumptions as ~(claim). Prefer ~."
+  ],
+  "r2_line": 2075,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1932
+  ],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E192",
+  "root": "~",
+  "family": "5.2",
+  "plane": 5,
+  "partB": true,
+  "symbol": "~",
+  "partB_line": 601,
+  "partB_label": "assume",
+  "meaning": "Standalone assumption operator; temporary working premise; no truth guarantee.",
+  "shape": "standalone glyph",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": true,
+  "status": "Ep",
+  "sig": "(c:P)->Cx / U:(c:Cr)->Cx",
+  "tags": [
+   "SH",
+   "TY"
+  ],
+  "note": "Adopts c as a temporary working premise. Not asserted. A bare ~ does not govern later lines; use c⊃ to say what is considered under the assumption. A top-level ~(P) is a premise line. The second alternative records TF-5 Part C 3.7 / C19, which writes ~(zcr1) with a criterion name; a criterion is not a proposition, so that reading is kept only as an unresolved candidate (basis U). The criterion-context alternative of c⊃ (second alternative there) is the cleaner design (issue U-03).",
+  "r2_header": "~(claim) → context  (or a line, alone)",
+  "r2_label": "TF-5 root; sort typing by C: PROPOSED",
+  "r2_examples": [
+   "~(zp13)  =  adopt zp13 as a temporary working premise",
+   "g←(c⊃(~(zp13),zp14))  =  within the assumption zp13, zp14 is considered"
+  ],
+  "r2_notes": [
+   "Does not assert zp13. Putting ~ on a standard, c⊃(~(zcr1),…), is only a CANDIDATE."
+  ],
+  "r2_line": 1117,
+  "tf5_n_outside": 25,
+  "tf5_lines": [
+   181,
+   245,
+   983,
+   995,
+   1137,
+   1160,
+   1195,
+   1198
+  ],
+  "tf5_status_words": [
+   "CANDIDATE",
+   "OPEN",
+   "TF-USE"
+  ],
+  "clusters": []
+ },
+ {
+  "id": "E193",
+  "root": "m▤",
+  "family": "6.1",
+  "plane": 6,
+  "partB": true,
+  "symbol": "m▤",
+  "partB_line": 741,
+  "partB_label": "message",
+  "meaning": "A transferable information unit between AI participants.",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "U",
+  "sig": "(from:Ag,to:Ag,what:Ref)->P / N:(name:Ms,sender:Ag)->Dc",
+  "tags": [
+   "IC",
+   "AM"
+  ],
+  "note": "Message. The proposal gives a three-argument claim; TF-6 D5 restricts m▤ to a two-argument header m▤(zU,zk). The two readings cannot both be kept without distinguishing by the category of the first argument (a message name versus an agent). See issue U-12.",
+  "r2_header": "m▤(who, who, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(m▤(zk1,zk2,zo1))  =  zk1 sent zk2 the content zo1"
+  ],
+  "r2_notes": [
+   "A message exists. Not delivered."
+  ],
+  "r2_line": 2014,
+  "tf5_n_outside": 1,
+  "tf5_lines": [
+   1243
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K14"
+  ]
+ },
+ {
+  "id": "E194",
+  "root": "r←",
+  "family": "6.1",
+  "plane": 6,
+  "partB": true,
+  "symbol": "r←",
+  "partB_line": 797,
+  "partB_label": "receive",
+  "meaning": "Information directed inward to a recipient (←).",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "P",
+  "sig": "(ag:Ag,ag2:Ag,x:Ref)->P",
+  "tags": [],
+  "note": "",
+  "r2_header": "r←(who, who, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(r←(zk1,zk2,zo1))  =  zk1 sent and zk2 received the content zo1"
+  ],
+  "r2_notes": [
+   "It arrived. Not understood, not true."
+  ],
+  "r2_line": 2019,
+  "tf5_n_outside": 3,
+  "tf5_lines": [
+   368,
+   1243,
+   1929
+  ],
+  "tf5_status_words": [],
+  "clusters": [
+   "K14"
+  ]
+ },
+ {
+  "id": "E195",
+  "root": "r>",
+  "family": "6.1",
+  "plane": 6,
+  "partB": true,
+  "symbol": "r>",
+  "partB_line": 805,
+  "partB_label": "respond",
+  "meaning": "Supply a response to an earlier message/request (>).",
+  "shape": "",
+  "boundary": "",
+  "checker": "REJECTED(ANNEX_ONLY)",
+  "taught": false,
+  "status": "U",
+  "sig": "(x:Ref,y:Ref)->P / N:(m:Ms,q:Mn[Q],w:Ln)->Ln",
+  "tags": [
+   "IC",
+   "AM"
+  ],
+  "note": "Respond. The proposal gives a binary claim; TF-6 D5 uses a three-argument answer line r>(zUk,⌜Q⌝,W) with W exactly g←(A) or u?(A).",
+  "r2_header": "r>(thing, thing) → claim",
+  "r2_label": "PROPOSED",
+  "r2_examples": [
+   "g←(r>(zo1,zo2))  =  zo1 is the label of the message replied to and zo2 is the reply"
+  ],
+  "r2_notes": [
+   "Naming messages across turns is still open in v1."
+  ],
+  "r2_line": 2029,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": [
+   "K14"
+  ]
+ },
+ {
+  "id": "E196",
+  "root": "u⊕",
+  "family": "5.2",
+  "plane": 5,
+  "partB": false,
+  "symbol": "u⊕",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "The sender undertakes to perform the act a.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "P",
+  "sig": "(a:Act)->Ln",
+  "tags": [
+   "R2"
+  ],
+  "note": "Undertaking line: the sender takes on the act a. A line, not a claim.",
+  "r2_header": "u⊕(act) → line",
+  "r2_label": "ENTERED IN SPEC DRAFT r2 (tier P)",
+  "r2_examples": [
+   "u⊕(▶(zm1))  =  I undertake to run zm1"
+  ],
+  "r2_notes": [
+   "Does not say the act is done, can be done or is binding."
+  ],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E197",
+  "root": "d⊖",
+  "family": "5.2",
+  "plane": 5,
+  "partB": false,
+  "symbol": "d⊖",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "The sender declines to perform the act a, optionally giving the claim why as its reason.",
+  "shape": "",
+  "boundary": "",
+  "checker": "ACCEPTED",
+  "taught": false,
+  "status": "P",
+  "sig": "(a:Act)->Ln / (a:Act,why:P)->Ln",
+  "tags": [
+   "R2"
+  ],
+  "note": "Declining line: the sender will not perform the act a. A line, not a claim.",
+  "r2_header": "d⊖(act[, reason]) → line",
+  "r2_label": "ENTERED IN SPEC DRAFT r2 (tier P)",
+  "r2_examples": [
+   "d⊖(▶(zm1))  =  I decline to run zm1"
+  ],
+  "r2_notes": [
+   "Does not say cannot. The reason is a claim given as reason."
+  ],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E198",
+  "root": "t◷",
+  "family": "2.7",
+  "plane": 2,
+  "partB": false,
+  "symbol": "t◷",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "the time given by an ISO 8601 text (instant, date, week, time of day, duration, interval, repeat)",
+  "shape": "",
+  "boundary": "",
+  "checker": "CANDIDATE",
+  "taught": false,
+  "status": "P",
+  "sig": "(time:Any)->Tm",
+  "tags": [
+   "R3"
+  ],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "ENTERED IN SPEC DRAFT r3 (tier P)",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E199",
+  "root": "e◷",
+  "family": "2.7",
+  "plane": 2,
+  "partB": false,
+  "symbol": "e◷",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "the time at which the event of the claim happens: when an act occurs, or the moment a state begins to hold",
+  "shape": "",
+  "boundary": "",
+  "checker": "CANDIDATE",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P)->Tm",
+  "tags": [
+   "R3"
+  ],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "ENTERED IN SPEC DRAFT r3 (tier P)",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E200",
+  "root": "t≼",
+  "family": "2.7",
+  "plane": 2,
+  "partB": false,
+  "symbol": "t≼",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "at or before the reference time, P",
+  "shape": "",
+  "boundary": "",
+  "checker": "CANDIDATE",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P)->P",
+  "tags": [
+   "R3"
+  ],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "ENTERED IN SPEC DRAFT r3 (tier P)",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E201",
+  "root": "l↦",
+  "family": "2.1",
+  "plane": 2,
+  "partB": false,
+  "symbol": "l↦",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "the criterion of being a v such that body",
+  "shape": "",
+  "boundary": "",
+  "checker": "CANDIDATE",
+  "taught": false,
+  "status": "P",
+  "sig": "(v:Var,body:P)->Cr",
+  "tags": [
+   "R3"
+  ],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "ENTERED IN SPEC DRAFT r3 (tier P)",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E202",
+  "root": "∀",
+  "family": "2.1",
+  "plane": 2,
+  "partB": false,
+  "symbol": "∀",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "every member v of s satisfies body",
+  "shape": "",
+  "boundary": "",
+  "checker": "CANDIDATE",
+  "taught": false,
+  "status": "P",
+  "sig": "(v:Var,s:Co,body:P)->P",
+  "tags": [
+   "R3"
+  ],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "ENTERED IN SPEC DRAFT r3 (tier P)",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E203",
+  "root": "b⊤",
+  "family": "2.4",
+  "plane": 2,
+  "partB": false,
+  "symbol": "b⊤",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "x is a best member of s under crit",
+  "shape": "",
+  "boundary": "",
+  "checker": "CANDIDATE",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,s:Co,crit:Cr)->P",
+  "tags": [
+   "R3"
+  ],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "ENTERED IN SPEC DRAFT r3 (tier P)",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E204",
+  "root": "c⌗",
+  "family": "1.4",
+  "plane": 1,
+  "partB": false,
+  "symbol": "c⌗",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "the number of members of s (at time at, when given), as a math term",
+  "shape": "",
+  "boundary": "",
+  "checker": "CANDIDATE",
+  "taught": false,
+  "status": "P",
+  "sig": "(s:Co)->Ex / (s:Co,at:Tm)->Ex",
+  "tags": [
+   "R3"
+  ],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "ENTERED IN SPEC DRAFT r3 (tier P)",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E205",
+  "root": "m⌗",
+  "family": "1.4",
+  "plane": 1,
+  "partB": false,
+  "symbol": "m⌗",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "the number the quantity q has for x (at time at), in the unit q names",
+  "shape": "",
+  "boundary": "",
+  "checker": "CANDIDATE",
+  "taught": false,
+  "status": "P",
+  "sig": "(x:Ref,q:Va)->Ex / (x:Ref,q:Va,at:Tm)->Ex",
+  "tags": [
+   "R3"
+  ],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "ENTERED IN SPEC DRAFT r3 (tier P)",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E206",
+  "root": "s⌗",
+  "family": "1.4",
+  "plane": 1,
+  "partB": false,
+  "symbol": "s⌗",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "the sum over the members of s of the number q has for each (at time at)",
+  "shape": "",
+  "boundary": "",
+  "checker": "CANDIDATE",
+  "taught": false,
+  "status": "P",
+  "sig": "(s:Co,q:Va)->Ex / (s:Co,q:Va,at:Tm)->Ex",
+  "tags": [
+   "R3"
+  ],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "ENTERED IN SPEC DRAFT r3 (tier P)",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ },
+ {
+  "id": "E207",
+  "root": "p◑",
+  "family": "2.5",
+  "plane": 2,
+  "partB": false,
+  "symbol": "p◑",
+  "partB_line": 0,
+  "partB_label": "",
+  "meaning": "relative to basis, the probability of the claim c is the number p, from 0 to 1",
+  "shape": "",
+  "boundary": "",
+  "checker": "CANDIDATE",
+  "taught": false,
+  "status": "P",
+  "sig": "(c:P,p:Ex,basis:Ref)->P",
+  "tags": [
+   "R3"
+  ],
+  "note": "",
+  "r2_header": "",
+  "r2_label": "ENTERED IN SPEC DRAFT r3 (tier P)",
+  "r2_examples": [],
+  "r2_notes": [],
+  "r2_line": 0,
+  "tf5_n_outside": 0,
+  "tf5_lines": [],
+  "tf5_status_words": [],
+  "clusters": []
+ }
+]
