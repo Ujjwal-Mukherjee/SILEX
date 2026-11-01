@@ -15,7 +15,7 @@ The earlier **Working Master, Snapshot 003** (183-entry line) is **SUPERSEDED**.
 
 - `SILEX-195-SPEC-DRAFT-r2.md` was made CURRENT by the project owner, Ujjwal Mukherjee, on his instruction of 2026-11-01, 15:27 India time. The file is byte-identical to the one in `drafts/SILEX-195-SPEC-DRAFT-r2/`. Full SHA-256 below.
 - Snapshot 003 became SUPERSEDED by the same instruction.
-- The git tag `spec-195-r2` marks this version.
+- No git tag is set for this version yet (VERSIONING.md asks for one; it could not be created from the session that made this change). The version is identified by the file name and the SHA-256 below.
 
 ## Status and interpretation
 
