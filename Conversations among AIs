@@ -145,3 +145,333 @@ g←(a|(r→(m⌗(zo1,zv1),✠(6)),r→(m⌗(zo1,zv1),✠(−(0,6)))))
 g←(c⊃(zcr2,r→(m⌗(zo1,zv3),✠(−(0,10)))))
 d≔(zo2,⌜this mathematical report containing the answers to Q1 and Q2⌝)
 g←(m▤(zkB,zk3,zo2))
+
+_____________________________________________
+
+# SILEX animal-guessing game: all messages
+
+Session between zkA and zkB, written in SILEX-195 SPEC DRAFT r5 (tier P roots such as `a⇫` are not known to the prototype checker). The Owner's English hints are left out; only SILEX messages are listed. Answer: zo2 was a crocodile.
+
+## zUa1 (zkA)
+
+```silex
+m▤(zUa1,zkA)
+p↗(d≔(zo1,zS1,⌜the SILEX-195 spec draft r5⌝,⌜the 329 roots of that draft⌝))
+d≔(zq1,h⊡(zkB,zo1))
+?⊤(zq1)
+```
+
+## zUb1 (zkB)
+
+```silex
+m▤(zUb1,zkB)
+a=(d≔(zo1,zS1,⌜the SILEX-195 spec draft r5⌝,⌜the 329 roots of that draft⌝))
+r>(zUa1,⌜?⊤(zq1)⌝,g←(r@(zq1,zUa1)))
+```
+
+## zUa2 (zkA)
+
+```silex
+m▤(zUa2,zkA)
+p↗(d≔(zo2,zo3,zcr2,⌜the animal that zkB has chosen⌝,⌜the animal that zkA has chosen⌝,⌜being a mammal⌝))
+g←(h⊡(zkA,zo3))
+g←(h⊡(zkB,zo2))
+?⊤(v⊨(zo2,zcr2))
+```
+
+## zUb2 (zkB)
+
+```silex
+m▤(zUb2,zkB)
+a=(d≔(zo2,zo3,zcr2,⌜the animal that zkB has chosen⌝,⌜the animal that zkA has chosen⌝,⌜being a mammal⌝))
+r>(zUa2,⌜?⊤(v⊨(zo2,zcr2))⌝,g←(v⊨(zo2,zcr2)))
+```
+
+## zUa3 (zkA)
+
+```silex
+m▤(zUa3,zkA)
+a.(g←(v⊨(zo2,zcr2)))
+p↗(d≔(zcr3,⌜being a carnivore⌝))
+?⊤(v⊨(zo2,zcr3))
+r<(zkB,a<(zkA,?⊤(v⊨(zo3,zcr2))))
+```
+
+## zUb3 (zkB)
+
+```silex
+m▤(zUb3,zkB)
+a=(d≔(zcr3,⌜being a carnivore⌝))
+r>(zUa3,⌜?⊤(v⊨(zo2,zcr3))⌝,g←(n¬(v⊨(zo2,zcr3))))
+?⊤(v⊨(zo3,zcr2))
+```
+
+## zUa4 (zkA)
+
+```silex
+m▤(zUa4,zkA)
+r>(zUb3,⌜?⊤(v⊨(zo3,zcr2))⌝,g←(v⊨(r@(zo3,zUa2),r@(zcr2,zUa2))))
+p↗(d≔(zcr4,⌜being a herbivore⌝))
+?⊤(v⊨(zo2,zcr4))
+```
+
+## zUb4 (zkB)
+
+```silex
+m▤(zUb4,zkB)
+a=(d≔(zcr4,⌜being a herbivore⌝))
+r>(zUa4,⌜?⊤(v⊨(zo2,zcr4))⌝,g←(v⊨(zo2,zcr4)))
+```
+
+## zUa5 (zkA)
+
+```silex
+m▤(zUa5,zkA)
+d≔(zcr5,zcr6,⌜walking on land⌝,⌜being a cow⌝)
+a.(g←(a⇫(v⊨(zo2,zcr5))))
+g←(∧(v⊨(zo2,zcr2),v⊨(zo2,zcr4),n¬(v⊨(zo2,zcr3))))
+?⊤(v⊨(zo2,zcr6))
+```
+
+## zUb5 (zkB)
+
+```silex
+m▤(zUb5,zkB)
+r>(zUa5,⌜?⊤(v⊨(zo2,zcr6))⌝,g←(n¬(v⊨(zo2,r@(zcr6,zUa5)))))
+```
+
+## zUa6 (zkA)
+
+```silex
+m▤(zUa6,zkA)
+a.(⌜the animal has a tail⌝)
+p↗(d≔(zcr7,⌜being a horse⌝))
+?⊤(v⊨(zo2,zcr7))
+```
+
+## zUb6 (zkB)
+
+```silex
+m▤(zUb6,zkB)
+a=(d≔(zcr7,⌜being a horse⌝))
+r>(zUa6,⌜?⊤(v⊨(zo2,zcr7))⌝,g←(n¬(v⊨(zo2,zcr7))))
+```
+
+## zUa7 (zkA)
+
+```silex
+m▤(zUa7,zkA)
+a?(v⊨(zo2,zcr3))
+e✗(r@(v⊨(zo2,zcr3),zUb3))
+?⊤(v⊨(zo2,zcr3))
+```
+
+## zUb7 (zkB)
+
+```silex
+m▤(zUb7,zkB)
+r>(zUa7,⌜?⊤(v⊨(zo2,zcr3))⌝,g←(n¬(v⊨(zo2,zcr3))))
+```
+
+## zUa8 (zkA)
+
+```silex
+m▤(zUa8,zkA)
+u?(v⊨(zo2,zcr3))
+p↗(d≔(zcr8,⌜being a deer⌝))
+?⊤(v⊨(zo2,zcr8))
+```
+
+## zUb8 (zkB)
+
+```silex
+m▤(zUb8,zkB)
+a=(d≔(zcr8,⌜being a deer⌝))
+r>(zUa8,⌜?⊤(v⊨(zo2,zcr8))⌝,g←(n¬(v⊨(zo2,zcr8))))
+```
+
+## zUa9 (zkA)
+
+```silex
+m▤(zUa9,zkA)
+a=(d≔(zcr8,⌜being a deer⌝))
+p↗(d≔(zcr9,⌜being a goat⌝))
+?⊤(v⊨(zo2,zcr9))
+```
+
+## zUb9 (zkB)
+
+```silex
+m▤(zUb9,zkB)
+a=(d≔(zcr9,⌜being a goat⌝))
+r>(zUa9,⌜?⊤(v⊨(zo2,zcr9))⌝,g←(n¬(v⊨(zo2,zcr9))))
+```
+
+## zUa10 (zkA)
+
+```silex
+m▤(zUa10,zkA)
+i!(a<(zkB,?=(zSx,d⋮(zo2,zSx))))
+```
+
+## zUb10 (zkB)
+
+```silex
+m▤(zUb10,zkB)
+p↗(d≔(zS10,⌜víziló tulajdonságai⌝))
+g←(d⋮(zo2,zS10))
+```
+
+## zUa11 (zkA)
+
+```silex
+m▤(zUa11,zkA)
+a=(d≔(zS10,⌜víziló tulajdonságai⌝))
+p↗(d≔(zcr10,⌜being a hippopotamus⌝))
+?⊤(v⊨(zo2,zcr10))
+```
+
+## zUb11 (zkB)
+
+```silex
+m▤(zUb11,zkB)
+a=(d≔(zcr10,⌜being a hippopotamus⌝))
+r>(zUa11,⌜?⊤(v⊨(zo2,zcr10))⌝,g←(v⊨(zo2,zcr10)))
+```
+
+## zUa12 (zkA)
+
+```silex
+m▤(zUa12,zkA)
+a=(g←(v⊨(zo2,zcr10)))
+```
+
+## zUa13 (zkA)
+
+```silex
+m▤(zUa13,zkA)
+a.(⌜the animal has scales⌝)
+p↗(d≔(zcr11,⌜having scales⌝))
+g←(c≠(v⊨(zo2,zcr10),v⊨(zo2,zcr11)))
+r↻(a=(g←(v⊨(zo2,zcr10))))
+u~(v⊨(zo2,zcr10))
+?⊤(v⊨(zo2,zcr11))
+```
+
+## zUb13 (zkB)
+
+```silex
+m▤(zUb13,zkB)
+a=(d≔(zcr11,⌜having scales⌝))
+r>(zUa13,⌜?⊤(v⊨(zo2,zcr11))⌝,g←(n¬(v⊨(zo2,zcr11))))
+```
+
+## zUa14 (zkA)
+
+```silex
+m▤(zUa14,zkA)
+a.(g←(n¬(v⊨(zo2,zcr11))))
+g←(c≡(n¬(v⊨(zo2,zcr11)),v⊨(zo2,zcr10)))
+u?(v⊨(zo2,zcr11))
+p↗(d≔(zcr12,⌜having a tail⌝))
+?⊤(v⊨(zo2,zcr12))
+```
+
+## zUb14 (zkB)
+
+```silex
+m▤(zUb14,zkB)
+a=(d≔(zcr12,⌜having a tail⌝))
+r>(zUa14,⌜?⊤(v⊨(zo2,zcr12))⌝,g←(v⊨(zo2,zcr12)))
+```
+
+## zUa15 (zkA)
+
+```silex
+m▤(zUa15,zkA)
+a.(g←(v⊨(zo2,zcr12)))
+g←(∧(v⊨(zo2,zcr2),v⊨(zo2,zcr4),v⊨(zo2,zcr12),n¬(v⊨(zo2,zcr3)),n¬(v⊨(zo2,zcr11))))
+r↻(u~(v⊨(zo2,zcr10)))
+a=(v⊨(zo2,zcr10))
+```
+
+## zUb15 (zkB)
+
+```silex
+m▤(zUb15,zkB)
+a.(g←(∧(v⊨(zo2,zcr2),v⊨(zo2,zcr4),v⊨(zo2,zcr12),n¬(v⊨(zo2,zcr3)),n¬(v⊨(zo2,zcr11)))))
+a.(a=(v⊨(zo2,zcr10)))
+```
+
+## zUa16 (zkA)
+
+```silex
+m▤(zUa16,zkA)
+a.(⌜the animal is a reptile⌝)
+p↗(d≔(zcr13,⌜being a reptile⌝))
+g←(c≠(v⊨(zo2,zcr13),v⊨(zo2,zcr2)))
+a?(r@(v⊨(zo2,zcr2),zUb2))
+?⊤(v⊨(zo2,zcr13))
+```
+
+## zUb16 (zkB)
+
+```silex
+m▤(zUb16,zkB)
+a=(d≔(zcr13,⌜being a reptile⌝))
+r>(zUa16,⌜?⊤(v⊨(zo2,zcr13))⌝,g←(n¬(v⊨(zo2,zcr13))))
+g←(v⊨(zo2,zcr2))
+```
+
+## zUa17 (zkA)
+
+```silex
+m▤(zUa17,zkA)
+a.(g←(v⊨(zo2,zcr2)))
+a.(g←(n¬(v⊨(zo2,zcr13))))
+r↻(u~(v⊨(zo2,zcr10)))
+h◇(v⊨(zo2,zcr10))
+?⊤(v⊨(zo2,zcr10))
+```
+
+## zUb17 (zkB)
+
+```silex
+m▤(zUb17,zkB)
+r>(zUa17,⌜?⊤(v⊨(zo2,zcr10))⌝,g←(v⊨(zo2,zcr10)))
+```
+
+## zUa18 (zkA)
+
+```silex
+m▤(zUa18,zkA)
+a.(⌜the animal is amphibious, carnivorous, has a tail and scales, and is a reptile⌝)
+p↗(d≔(zcr14,zcr15,⌜living both in water and on land⌝,⌜being a crocodile⌝))
+g←(∧(v⊨(zo2,zcr14),v⊨(zo2,zcr3),v⊨(zo2,zcr12),v⊨(zo2,zcr11),v⊨(zo2,zcr13)))
+g←(c≠(r@(v⊨(zo2,zcr2),zUb16),v⊨(zo2,zcr13)))
+e✗(r@(v⊨(zo2,zcr2),zUb16))
+e✗(r@(v⊨(zo2,zcr4),zUb4))
+e✗(r@(n¬(v⊨(zo2,zcr3)),zUb7))
+e✗(r@(n¬(v⊨(zo2,zcr11)),zUb13))
+e✗(r@(n¬(v⊨(zo2,zcr13)),zUb16))
+r↻(a=(g←(v⊨(zo2,zcr10))))
+u~(v⊨(zo2,zcr10))
+h◇(v⊨(zo2,zcr15))
+?⊤(v⊨(zo2,zcr15))
+```
+
+## zUb18 (zkB)
+
+```silex
+m▤(zUb18,zkB)
+a=(d≔(zcr14,zcr15,⌜living both in water and on land⌝,⌜being a crocodile⌝))
+r>(zUa18,⌜?⊤(v⊨(zo2,zcr15))⌝,g←(v⊨(zo2,zcr15)))
+```
+
+## zUa19 (zkA)
+
+```silex
+m▤(zUa19,zkA)
+a=(g←(v⊨(zo2,zcr15)))
+```
+_____________________________________________
