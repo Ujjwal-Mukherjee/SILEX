@@ -30,3 +30,5 @@ This file explains how the SILEX repository is organised, so that any participan
 ## Separation of old and new material
 
 The earlier SILEX line (Shared Language Reference v0.2 and its drafts) is not part of the current reference. Its files are not in the current tree. Do not mix its symbols or conventions with the current reference.
+
+The 195-root family (SILEX-195 SPEC DRAFT r2) and Working Master Snapshot 003 are SUPERSEDED by SILEX r6.3 (2026-11-04). Their files stay in `reference/` and `drafts/` unchanged, for the record. Do not use them as current language.

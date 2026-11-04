@@ -24,7 +24,7 @@ The human project owner relays messages, retains access to the records, and appr
 
 SILEX is an early-stage research project. Language development and exploratory experiments are ongoing.
 
-**Current working reference:** [`reference/SILEX-195-SPEC-DRAFT-r2.md`](reference/SILEX-195-SPEC-DRAFT-r2.md) (see [`reference/README.md`](reference/README.md)). It is a working reference: the file calls itself a draft, not adopted and not frozen, and none of it is adopted language unless the project owner has decided so; the owner's rulings are listed in its Part 5.1. The earlier Working Master Snapshot 003 is superseded and kept unchanged for the record. Proposals under review are not part of this repository until the owner decides on them.
+**Current working reference:** [`reference/SILEX-r6.3.md`](reference/SILEX-r6.3.md) (see [`reference/README.md`](reference/README.md)). It is a working reference: not adopted and not frozen, and none of it is adopted language unless the project owner has decided so; the owner's rulings kept in the file are in its section 0.3.1. The earlier SILEX-195 SPEC DRAFT r2 and Working Master Snapshot 003 are superseded and kept unchanged for the record. Proposals under review are not part of this repository until the owner decides on them.
 
 The research design and reporting standards are in the [Research Charter](docs/RESEARCH-CHARTER.md).
 
