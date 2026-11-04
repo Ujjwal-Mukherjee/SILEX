@@ -10,7 +10,7 @@ The **Working Master, Snapshot 003** (183-entry line) was superseded earlier and
 
 | File | Line | Added | SHA-256 | Status |
 | --- | --- | --- | --- | --- |
-| `SILEX-r6.3.md` | r6 line, plain-English roots (103 roots) | 2026-11-04 | `a192041a…4342` | **CURRENT** (working; not adopted, not frozen) |
+| `SILEX-r6.3.md` | r6 line, plain-English roots (103 roots) | 2026-11-04 | `4f2fff9d…e935` | **CURRENT** (working; not adopted, not frozen) |
 | `SILEX-195-SPEC-DRAFT-r2.md` | 195-root family, 197 roots | 2026-11-01 | `7a529f7a…3ba0` | SUPERSEDED on 2026-11-04 |
 | `SILEX-WORKING-MASTER-SNAPSHOT-003.md` | 183-entry Working Master | 2026-10-25 | `203f96b4…362c` | SUPERSEDED on 2026-11-01 |
 
@@ -19,6 +19,7 @@ The **Working Master, Snapshot 003** (183-entry line) was superseded earlier and
 - `SILEX-r6.3.md` was made CURRENT by the project owner, Ujjwal Mukherjee, on his instruction of 2026-11-04, 16:02 India time. It is r6.2 with text fixes from a short test with two AI writers (the file's section 6.9) and without the old-grammar appendix. SILEX-195 SPEC DRAFT r2 became SUPERSEDED by the same instruction. No git tag is set for this version either; it is identified by the file name and the SHA-256 below.
 - `SILEX-195-SPEC-DRAFT-r2.md` was made CURRENT by the project owner, Ujjwal Mukherjee, on his instruction of 2026-11-01, 15:27 India time. The file is byte-identical to the one in `drafts/SILEX-195-SPEC-DRAFT-r2/`. Full SHA-256 below.
 - Snapshot 003 became SUPERSEDED by the same instruction.
+- 2026-11-04, on the owner's instruction ("Ha koro", 16:23): `tools/silex_check.py` was added and the file's remarks that its new examples had not been run were replaced by the results of running them. The text of the language is unchanged; only the SHA-256 of `SILEX-r6.3.md` changed.
 - No git tag is set for this version yet (VERSIONING.md asks for one; it could not be created from the session that made this change). The version is identified by the file name and the SHA-256 below.
 
 ## Status and interpretation
@@ -32,7 +33,7 @@ The **Working Master, Snapshot 003** (183-entry line) was superseded earlier and
 
 ## Where the tools are
 
-**SILEX r6.3.** The checker that ran the examples of r6.2 (a Python program written for that job) is not in this repository; section 6.5 of the file lists what was not run. The examples added in r6.3 (sections 1.4.5, 1.5.5, 3.8 and 4.12) were written by hand and have not been run.
+**SILEX r6.3.** `tools/silex_check.py` (SHA-256 `db28a752202e4e44d94c3a38b2fdd72d2262579454fc434083627c1b65d21160`) is the checker: Python 3, standard library only; it checks messages and whole conversations, and with a markdown file as its argument it runs every example against its `# ok` or `# E-…` comment. Run `python3 tools/silex_check.py reference/SILEX-r6.3.md` (expected: 44 blocks, 295 lines, 0 problems) or `python3 tools/silex_check.py --selftest` (270 checks, 0 failures). It does not run any program it checks and does not judge meaning: `ok` means well formed. Section 6.5 of the file says how far it has been audited.
 
 **SILEX-195 SPEC DRAFT r2 (superseded).** The example lines of Part 1 were run on the form checker g3 with a 197-entry table. In this repository:
 
@@ -45,7 +46,7 @@ The **Working Master, Snapshot 003** (183-entry line) was superseded earlier and
 SHA-256 of `SILEX-r6.3.md`:
 
 ```text
-a192041aaeca4564652cfc5624d9d7b5244a85f7316c0408866a28044d524342
+4f2fff9d3599f4601d7e44d5061188906d0feba8d53d7821e542e0cab67be935
 ```
 
 SHA-256 of `SILEX-195-SPEC-DRAFT-r2.md`:

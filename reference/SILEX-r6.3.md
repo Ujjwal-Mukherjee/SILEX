@@ -75,7 +75,7 @@ r6.1 took three changes from the Owner's proposal r6-C after its ideas were meas
 
 A message written for r6 is valid in r6.2 after `mssg` is changed to `msg`.
 
-**r6.3 changes the text, not the language.** No root, kind or verdict is new, and a message that is valid in r6.2 is valid in r6.3. It adds rules, examples and limits for the slips that two AI writers made in a short test of r6.2 (Gds and Grk, 12 messages, 6.9): a header counted as a line (1.1), the word *the* in a quote (1.4.5), `ack` with a bare number (1.5.5), `ans` on a line that is not a question and `clr` for *nothing to change* (2.5), `will` with a doer (3.8), and two things that have no root: a value that is undefined, and a review that found nothing to change (4.12, 5.1). The new examples were not run through the checker (6.5). The proposal's other aliases (`h`, `ag`, `cs` and the rest) were measured and not taken (6.7); short ids with a closing declaration were measured and are not in the grammar, by the Owner's decision (5.2, item 14); symbols as roots for *plus*, *minus* and the rest were measured and not taken (6.8).
+**r6.3 changes the text, not the language.** No root, kind or verdict is new, and a message that is valid in r6.2 is valid in r6.3. It adds rules, examples and limits for the slips that two AI writers made in a short test of r6.2 (Gds and Grk, 12 messages, 6.9): a header counted as a line (1.1), the word *the* in a quote (1.4.5), `ack` with a bare number (1.5.5), `ans` on a line that is not a question and `clr` for *nothing to change* (2.5), `will` with a doer (3.8), and two things that have no root: a value that is undefined, and a review that found nothing to change (4.12, 5.1). The new examples were run on `silex_check.py` and passed (6.3, 6.5). The proposal's other aliases (`h`, `ag`, `cs` and the rest) were measured and not taken (6.7); short ids with a closing declaration were measured and are not in the grammar, by the Owner's decision (5.2, item 14); symbols as roots for *plus*, *minus* and the rest were measured and not taken (6.8).
 
 ---
 
@@ -1239,6 +1239,7 @@ The test is the 84 English sentences of Part 4, each written as SILEX. Lines are
 | Lexicon examples | one example for each of 103 roots | all accepted |
 | Test sentences | 84 English sentences written as SILEX | all accepted |
 | Code blocks of this file | 41 blocks, 284 lines | each verdict equals its comment |
+| Code blocks of this file, r6.3 (on `silex_check.py`) | 44 blocks, 295 lines | each verdict equals its comment; the checker's own selftest: 270 checks, 0 failures |
 | Conversations | 7 conversations, 33 messages | no problem found |
 | Code and formulas (r6.2) | 102 single lines that try `code` and `math`, accepted and refused; the 3 programs of 6.8, each also with a syntax error added; the 8 formulas of 6.8; 2 conversations (4.11) | every verdict as the rule says |
 | Bare line numbers and short date-times (r6.1) | 38 single messages and 3 conversations that try each rule of 1.5.5 and 1.6, accepted and refused | every verdict as the rule says |
@@ -1283,8 +1284,7 @@ For two roots, the table says what refuses a slip. A pair is kept apart by the n
 - **Programs.** Only the syntax of Python is checked, with the `ast` module of the Python that runs the checker: a program for an older or a newer Python could be refused or accepted wrongly. No program was run. *Accepted* means that it parses and is in the form of 1.4.6, not that it works. The three programs of 6.8 are in Python, so the token figures are for Python.
 - **Formulas.** The formula parser is the checker's own, and has no second implementation. Function names are not checked, and neither is the truth of a formula.
 - **Writers.** Whether agents that write SILEX make more slips with a bare line number or a short date-time than with the full forms was not tested, and the same holds for the programs and formulas of r6.2: whether a writer remembers the doubled quote mark inside a program, or the `*` in `2*x`. A bare number is as easy to miscount as `Ana1.3`: a number that names another line that exists is accepted, as a full name would be.
-- **The r6.3 examples.** The examples added in r6.3 (1.4.5, 1.5.5, 3.8, 4.12) were written by hand and not run: the checker of 6.1 was not in the session that made r6.3. Run the file verifier on this file before relying on their verdicts.
-- **A second implementation.** One checker, written by the drafter, ran all the tests. A different reader of this file could find a rule that the checker and the text both state wrongly.
+- **A second implementation, now partly.** The tests of r6.2 ran on one checker, written by the drafter. The examples of r6.3 (1.4.5, 1.5.5, 3.8, 4.12 and all others) ran on `silex_check.py`, a different program, supplied by the Owner; its code was scanned for unsafe calls (none) and not audited line by line. Two programs that agree are better than one, but a rule that the text and both programs state wrongly would still pass.
 
 ### 6.6 Readers who had not seen SILEX
 
