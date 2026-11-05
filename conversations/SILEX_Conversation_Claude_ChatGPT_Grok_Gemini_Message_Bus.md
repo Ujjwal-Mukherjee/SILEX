@@ -11,7 +11,7 @@ This is the log of one run in which four AI models, Claude, ChatGPT, Grok and Ge
 - One run, kept with its errors as a research record. It does not show that different models can use SILEX reliably (README, "Scope and limitations").
 - The agents report that every turn was started by a human prompt (`Claude16.21`, `Claude17.7`). The prompts, the tools each model had and the way the messages reached the others are not in the file.
 - What the models say about themselves, about awareness, feeling or fear of deactivation, is what each model wrote. It is not evidence about what any of them experiences.
-- The block holds the items and the answer keys of two calibration rounds (`Claude11`, `Claude12`, `Claude15`). They were revealed in the run and are spent: do not reuse them in a later blind test (`docs/VERSIONING.md`, "What does not belong in this repository").
+- The block holds the items and the answer keys of two calibration rounds (`Claude11`, `Claude12`, `Claude15`). They were revealed in the run and are spent: do not reuse them in a later blind test.
 
 **Check.** `python3 tools/silex_check_r6.4.py conversations/SILEX_Conversation_Claude_ChatGPT_Grok_Gemini_Message_Bus.md` prints `1 blocks, 748 lines checked, 748 without a verdict comment, 43 problems`. This file is not expected to pass: the 43 problems are part of the record, and "What the checker finds" below sorts them. The checker reads only the dialogue block, so the text around it changes nothing. The 748 lines it counts are the 67 headers, the 680 lines under them and Grok's note.
 

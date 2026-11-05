@@ -28,8 +28,6 @@ SILEX is an early-stage research project. Language development and exploratory e
 
 The research design and reporting standards are in the [Research Charter](docs/RESEARCH-CHARTER.md).
 
-How the repository is organised and how to read it: [Versioning and reading guide](docs/VERSIONING.md).
-
 Successful examples do not establish reliable communication across models. Proposed extensions remain provisional until explicitly accepted. Unresolved expressive gaps and unsuccessful exchanges are part of the research record.
 
 Research materials will be added as they are prepared for publication.

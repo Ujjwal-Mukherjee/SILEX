@@ -23,7 +23,7 @@ The **Working Master, Snapshot 003** (183-entry line) was superseded before them
 - `SILEX-195-SPEC-DRAFT-r2.md` was made CURRENT by the project owner, Ujjwal Mukherjee, on his instruction of 2026-11-01, 15:27 India time. The file is byte-identical to the one in `drafts/SILEX-195-SPEC-DRAFT-r2/`. Full SHA-256 below.
 - Snapshot 003 became SUPERSEDED by the same instruction.
 - 2026-11-04, on the owner's instruction ("Ha koro", 16:23): `tools/silex_check.py` was added (it is now `tools/silex_check_r6.3.py`) and the file's remarks that its new examples had not been run were replaced by the results of running them. The text of the language is unchanged; only the SHA-256 of `SILEX-r6.3.md` changed.
-- No git tag is set for these versions yet (VERSIONING.md asks for one; it could not be created from the session that made the r6.3 change, and none has been created for r6.4). Each version is identified by its file name and the SHA-256 below.
+- No git tag is set for these versions yet. Each version is identified by its file name and the SHA-256 below.
 
 ## Status and interpretation
 
