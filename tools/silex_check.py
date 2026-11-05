@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""silex_check.py -- the checker for SILEX, rules of SILEX-r6.3 (the language is that of r6.2; r6.3 changed only the text).
+"""silex_check.py -- the checker for SILEX, rules of SILEX-r6.4.
 
 One file, Python 3 standard library only.  It checks messages written in SILEX:
   every line      brackets, roots, places and kinds, names and labels, quotes (no "the", no words that depend on who speaks
                   or when, braces only as references), times, the header                               (Parts 1 and 3)
   code(...)       the language is on the list; a Python program must parse (Python's own syntax check)  (1.4.6)
-  math("...")     the formula is well formed                                                            (1.4.6)
-  across messages serial numbers, the roster, re/saw name earlier messages, a line number names a line that exists,
-                  ans answers a question, a label reached as Ana3.o1 is defined in Ana3                (2.2, 2.3, 2.5, 1.5.4)
+  'formula'       the formula is well formed: numbers, names, + - * / ^, brackets, functions, one comparison in a claim,
+                  claims joined by & | => <=>  (1.4.6)
+  across messages serial numbers, the roster, re/saw name earlier messages, every line reference (Ana3.2, in whatever root)
+                  names a line that exists, ans answers a question, a label reached as Ana3.o1 is defined in Ana3
+                                                                                                      (2.2, 2.3, 2.5, 1.5.4)
 It does not run anything, does not judge whether a message is true or wise, and does not read the English inside quotes
 beyond the word rules of 1.4.5.  `ok` means well formed: nothing more.
 
@@ -15,7 +17,7 @@ Use
   python3 silex_check.py chat.txt          messages one after another; each begins with its msg(...) header (or divide them with a line ---)
   python3 silex_check.py -                 the same, read from standard input
   python3 silex_check.py --lines x.txt     loose lines, no header needed
-  python3 silex_check.py SILEX-r6.3.md     run every example of a markdown file against its "# ok" / "# E-..." comments (the file verifier of 6.1)
+  python3 silex_check.py SILEX-r6.4.md     run every example of a markdown file against its "# ok" / "# E-..." comments (the file verifier of 6.1)
   python3 silex_check.py --selftest        run the built-in tests
   python3 silex_check.py --root ent        show the places of a root;  --roots lists all;  --kinds explains the kinds
   options: -v every line, -q only problems, --json machine-readable report, --per-message no checks across messages
@@ -30,7 +32,7 @@ As a module:  check(text, need_header=False) -> [{line, last, verdict, diags}] f
 """
 import re, sys, os, json, datetime, ast, textwrap, warnings
 
-__version__ = 'r6.3'
+__version__ = 'r6.4'
 
 # ==================================================================================================
 #  1. THE LEXICON  (Part 3 of the grammar: root | places -> kind returned | reading | example)
@@ -67,7 +69,6 @@ pct | Nu Nu -> Nu | a as a percentage of b | pct(19,20)
 val | Va Cr -> Va ; Va Cr Va -> Cl | the c of x (a value); with a third place: the c of x is V | val("server","RAM in GB",16)
 func | Cr Va... -> Va | apply the function named c to the arguments | func("square root",2)
 rng | Nu Nu -> Gr ; Du Du -> Gr ; Tm Tm -> Gr | the range from a to b | rng(3,5)
-math | Rw -> Cl ; Rw -> Nu | a formula in ordinary written form, carried as it is: with one comparison a claim, without one a number | math("x^2-5*x+6=0")
 ## Comparison
 eq | Va Va -> Cl | x and y are the same, or equal | eq("web server","database server")
 over | Nu Nu -> Cl ; Du Du -> Cl | a is greater than b | over(cnt("production servers"),10)
@@ -136,7 +137,7 @@ when | Cl -> Tm | the time at which P happens | when(fin("build"))
 ## Cause and reason
 cause | Va Va -> Cl | x (a thing, an act or a claim) causes y | cause(fin("review"),is("report","ready"))
 supp | Cl Cl -> Cl | P is a reason or evidence for believing Q | supp(is("light","on"),is("Bob","home"))
-ent | Gr Cl [Cr] -> Cl | Q follows from the premises G (under the rules c) | ent("test results",is("release build","safe"))
+ent | Gr|Rf Cl [Cr] -> Cl | Q follows from the premises G (under the rules c); G is a group, or one line reference | ent("test results",is("release build","safe"))
 would | Cl Cl -> Cl | if P had held, Q would have held | would(not(fin("review")),not(is("report","ready")))
 why | Cl -> Q | why is it so that P? | why(fin("deployment"))
 ## Questions
@@ -218,7 +219,7 @@ def dl(a, b):
 #  2. THE LEXER AND PARSER  (1.1, 1.2, 1.4)
 # ==================================================================================================
 class N:
-    """node: t = app | atom | str | num | time | dur | label | agent | ref"""
+    """node: t = app | atom | str | num | time | dur | label | agent | ref.   A str node with pre == "'" is a formula quote 'F'."""
     __slots__ = ('t', 'v', 'args', 'pre', 'line', 'col', 'end')
     def __init__(self, t, v, args=None, pre='', line=0, col=0):
         self.t, self.v, self.args, self.pre, self.line, self.col, self.end = t, v, args or [], pre, line, col, line
@@ -226,6 +227,8 @@ class N:
         if self.t == 'app':
             return '%s(%s)' % (self.v, ','.join(map(repr, self.args)))
         if self.t == 'str':
+            if self.pre == "'":                       # the formula quote 'F'
+                return "'%s'" % self.v
             return '%s"%s"' % (self.pre, self.v)
         return str(self.v)
 
@@ -234,7 +237,7 @@ class SynErr(Exception):
         Exception.__init__(self, msg); self.code, self.msg, self.line = code, msg, line
 
 _EXT = r'\d{4}-\d{2}(?:-\d{2})?(?:T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:?\d{2})?)?'
-_BASIC = r'\d{8}T\d{4}(?:\d{2})?(?:Z|[+-]\d{2}:?\d{2})?'      # r6.1: 20261106T1700
+_BASIC = r'\d{8}T\d{4}(?:\d{2})?(?:Z|[+-]\d{2}:?\d{2})?'      # 20261106T1700
 _TIMEPART = '(?:' + _EXT + '|' + _BASIC + ')'
 TOK = [
     ('COMMENT', re.compile(r'#[^\n]*')),
@@ -242,6 +245,7 @@ TOK = [
     ('NL', re.compile(r'\n')),
     ('PQ', re.compile(r'[ogacnqtd][0-9]*(?=")')),
     ('STR', re.compile(r'"(?:[^"]|"")*"')),
+    ('FQ', re.compile(r"'[^'\n]*'")),                 # a formula in single quotes, 'x^2=4'
     ('TIME', re.compile(_TIMEPART + r'(?:/' + _TIMEPART + r')?')),
     ('DUR', re.compile(r'P(?=\d|T\d)(?:\d+Y)?(?:\d+M)?(?:\d+W)?(?:\d+D)?(?:T(?:\d+H)?(?:\d+M)?(?:\d+S)?)?')),
     ('NUM', re.compile(r'-?\d+(?:\.\d+)?')),
@@ -312,6 +316,8 @@ class Parser:
             return N('str', s[1][1:-1].replace('""', '"'), pre=v, line=ln, col=col)
         if k == 'STR':
             return N('str', v[1:-1].replace('""', '"'), pre='', line=ln, col=col)
+        if k == 'FQ':
+            return N('str', v[1:-1], pre="'", line=ln, col=col)
         if k in ('NUM', 'TIME', 'DUR', 'LABEL', 'AGENT', 'REF'):
             nd = N({'NUM': 'num', 'TIME': 'time', 'DUR': 'dur', 'LABEL': 'label', 'AGENT': 'agent', 'REF': 'ref'}[k], v, line=ln, col=col)
             if k in ('AGENT',) and self.peek()[1] == '(':
@@ -340,6 +346,8 @@ class Parser:
             return N('atom', v, line=ln, col=col)
         if k == 'BAD' and v.startswith('"'):
             raise SynErr('E-SYN', 'a quote ends on the line where it starts; in code(...) give each line of the program its own quote', ln)
+        if k == 'BAD' and v.startswith("'"):
+            raise SynErr('E-SYN', "a formula in single quotes ends on the line where it starts, and holds no quote mark: 'x^2=4'", ln)
         if k == 'PUNCT':
             raise SynErr('E-SYN', 'unexpected %r' % (v,), ln)
         raise SynErr('E-SYN', 'unexpected %r' % (v,), ln)
@@ -371,7 +379,7 @@ def parse(text):
     return Parser(lex(text)).top()
 
 # ==================================================================================================
-#  3. THE CHECKER FOR ONE MESSAGE  (kinds, names, quotes, times, header; code and math)
+#  3. THE CHECKER FOR ONE MESSAGE  (kinds, names, quotes, times, header; code and formulas)
 # ==================================================================================================
 ENT = {e['root']: e for e in load_lexicon()}
 ATOMK = {a: k for a, k, _ in ATOMS}
@@ -407,6 +415,7 @@ def bare_kind(place):
     if 'Ac' in place: return 'Ac'
     if 'Tm' in place: return 'Tm'
     if 'Th' in place: return 'Th'
+    if 'Gr' in place: return 'Gr'
     return None
 
 def expand(specs, n):
@@ -439,7 +448,7 @@ def expand(specs, n):
 BASIC = re.compile(r'(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})?(.*)$')
 
 def ext_time(s):
-    """r6.1: 20261106T1700 -> 2026-11-06T17:00 (the same time); other spellings unchanged"""
+    """20261106T1700 -> 2026-11-06T17:00 (the same time); other spellings unchanged"""
     out = []
     for p in s.split('/'):
         m = BASIC.match(p)
@@ -469,10 +478,12 @@ class Ctx:
         self.env = {}            # label -> kind
         self.diags = []          # (line, code, msg)
         self.header = None       # (sender, receivers set, serial) or None
-        self.retarget = None     # r6.1: the one whole message that re(...) names, or None
+        self.retarget = None     # the one whole message that re(...) names, or None
         self.first = True
     def err(self, nd, code, msg):
-        self.diags.append((nd.line if nd is not None else 0, code, msg))
+        d = (nd.line if nd is not None else 0, code, msg)
+        if d not in self.diags:              # the same complaint twice on one line is said once
+            self.diags.append(d)
 
 def near(word):
     best = sorted(((dl(word, r), r) for r in ENT), key=lambda x: x[0])[:3]
@@ -498,6 +509,8 @@ def ev(nd, ctx):
         return ctx.env[nd.v]
     if t == 'str':
         pre = nd.pre
+        if pre == "'":
+            return ev_formula(nd, ctx)                 # 'formula' is raw text, never read as English
         scan_quote(nd, ctx)
         if not pre:
             return 'BARE'
@@ -520,6 +533,7 @@ def ev(nd, ctx):
     raise AssertionError(t)
 
 REFRX = re.compile(r'\{\{|\}\}|\{([^{}]*)\}|[{}]')
+MSGNAME = re.compile(r'[A-Z][a-z]*\d+')
 
 INDEX_WORDS = {'me', 'my', 'mine', 'myself', 'you', 'your', 'yours', 'we', 'our', 'ours', 'this', 'here', 'today', 'yesterday', 'tomorrow', 'tonight'}
 
@@ -566,6 +580,9 @@ def ev_app(nd, ctx):
     root, args = nd.v, nd.args
     ent = ENT.get(root)
     if ent is None:
+        if root == 'math':
+            ctx.err(nd, 'E-LEX', "math is not a root: a formula is written in single quotes, as 'x^2=4' (1.4.6)")
+            return 'ERR'
         ctx.err(nd, 'E-LEX', '%s is not a SILEX root%s' % (root, (' (near: ' + ', '.join(near(root)) + ')') if near(root) else ''))
         return 'ERR'
     if root in ('crit', 'which', 'def'):
@@ -580,8 +597,6 @@ def ev_app(nd, ctx):
         return ev_to(nd, ctx)
     if root == 'code':
         return ev_code(nd, ctx)
-    if root == 'math':
-        return ev_math(nd, ctx)
     kinds = [ev(a, ctx) for a in args]
     cands = []
     for spec, res in ent['sigs']:
@@ -607,6 +622,9 @@ def ev_app(nd, ctx):
         elif best is None or len(bad) < len(best[1]):
             best = (pl, bad)
     if matched:
+        if root == 'ent' and args[0].t == 'ref' and MSGNAME.fullmatch(args[0].v):
+            ctx.err(args[0], 'E-KIND', 'the premises of ent are a group, or one line (Ana1.2); a whole message is not a premise: name its lines, as grp(Ana1.1,Ana1.2)')
+            return 'ERR'
         flat = set()
         for r in matched:
             flat |= set(r) if isinstance(r, frozenset) else {r}
@@ -672,7 +690,7 @@ def ev_binder(nd, ctx):
         ctx.err(args[1], 'E-KIND', 'argument 2 of %s takes Cl, but this is %s' % (root, describe(v)))
     return 'Cr' if root == 'crit' else 'Q'
 
-# ---------------------------------------------------------------- r6.2: text that is carried as it is (1.4.6)
+# ---------------------------------------------------------------- text that is carried as it is (1.4.6)
 LANGS = ('python', 'javascript', 'typescript', 'bash', 'sql', 'json', 'yaml', 'html', 'css', 'c', 'cpp', 'java', 'go', 'rust', 'diff', 'text')
 
 def check_python(lines):
@@ -712,30 +730,41 @@ def ev_code(nd, ctx):
 class MathErr(Exception):
     pass
 
-_MTOK = re.compile(r'\s*(?:(?P<num>\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)|(?P<name>[A-Za-z][A-Za-z0-9_]*)|(?P<op>==|\*\*|<=|>=|!=|[-+*/^()=<>,]))')
+_MTOK = re.compile(r'\s*(?:(?P<num>\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)|(?P<name>[A-Za-z][A-Za-z0-9_]*)|(?P<op><->|==>|<=>|=>|->|&&|\|\||==|\*\*|<=|>=|!=|[-+*/^()=<>,&|]))')
 _MRELS = ('=', '!=', '<', '>', '<=', '>=')
-_MHINT = {'%': 'write mod(a,b) for a remainder', '!': 'write fact(n) for a factorial', '|': 'write abs(x) for an absolute value',
+_MCONN = ('&', '|', '=>', '<=>')
+_MBAD = {'==': 'write = for equality', '**': 'write ^ for a power', '&&': 'write & once for and', '||': 'write | once for or',
+         '->': 'write => for if', '==>': 'write => for if', '<->': 'write <=> for if and only if'}
+_MCONNHINT = {'&': '& joins claims (each has a comparison such as = < >), but an operand here is a number',
+              '|': '| joins claims (each has a comparison such as = < >), but an operand here is a number; for an absolute value write abs(x)',
+              '=>': '=> joins claims (each has a comparison such as = < >), but an operand here is a number; for greater or equal write >=, for less or equal <=',
+              '<=>': '<=> joins claims (each has a comparison such as = < >), but an operand here is a number'}
+_MWORDS = {'and': '&', 'or': '|', 'if': '=>', 'implies': '=>', 'then': '=>', 'iff': '<=>'}
+_MHINT = {'%': 'write mod(a,b) for a remainder', '!': 'write fact(n) for a factorial; for not, write not(\'…\') round the formula, or use != < > <= >=',
+          '~': 'for not, write not(\'…\') round the formula, or use != < > <= >=',
           '[': 'use round brackets only', ']': 'use round brackets only', '{': 'use round brackets only', '}': 'use round brackets only',
           '.': 'a number has digits on both sides of the point, as in 0.5', '"': 'a quote mark cannot stand in a formula', "'": 'write x_1 rather than a prime or a quote mark'}
 
 def parse_math(s):
-    """kind ('Cl' with one comparison, else 'Nu') of a formula in ordinary written form; raises MathErr"""
+    """kind of a formula in ordinary written form: 'Cl' for a claim, 'Nu' for a number; raises MathErr.
+       A claim is one comparison (= != < > <= >=), or claims joined by & | => <=>, with round brackets to group.
+       Binding, tightest first: + -  *  /  ^ , then a comparison, then &, then |, then =>, then <=>.
+       => and <=> take exactly two claims (a chain reads two ways: use brackets); & and | may be chained."""
     if not s.isascii():
-        raise MathErr('only ASCII characters: write sqrt(x), pi, <=, >=, != instead of the symbols')
+        raise MathErr('only ASCII characters: write sqrt(x), pi, <=, >=, !=, =>, <=> instead of the symbols')
     toks, pos = [], 0
     while s[pos:].strip():
         m = _MTOK.match(s, pos)
         if not m:
             ch = s[pos:].lstrip()[0]
-            raise MathErr('%r cannot stand in a formula%s' % (ch, ('; ' + _MHINT[ch]) if ch in _MHINT else ' (a formula has numbers, names, + - * / ^ ( ) , = != < > <= >=)'))
+            raise MathErr('%r cannot stand in a formula%s' % (ch, ('; ' + _MHINT[ch]) if ch in _MHINT else ' (a formula has numbers, names, + - * / ^ ( ) , = != < > <= >= & | => <=>)'))
         k = m.lastgroup
         toks.append((k, m.group(k), m.start(k)))
         pos = m.end()
     if not toks:
         raise MathErr('the formula is empty')
     for k, v, p in toks:
-        if v == '==': raise MathErr('write = for equality (position %d)' % (p + 1))
-        if v == '**': raise MathErr('write ^ for a power (position %d)' % (p + 1))
+        if v in _MBAD: raise MathErr('%s (position %d)' % (_MBAD[v], p + 1))
     st = {'i': 0}
     def peek():
         return toks[st['i']] if st['i'] < len(toks) else ('end', '', len(s))
@@ -746,79 +775,135 @@ def parse_math(s):
         raise MathErr('%s (position %d)' % (msg, t[2] + 1) if t[0] != 'end' else '%s (at the end)' % msg)
     def isop(t, *ops):
         return t[0] == 'op' and t[1] in ops
+    def claim(kind, t):
+        if kind != 'Cl':
+            fail(_MCONNHINT[t[1]], t)
+    def num(kind, t):
+        if kind != 'Nu':
+            fail('%s works on numbers, but this is a claim' % t[1], t)
+    def formula():
+        a = implication()
+        if isop(peek(), '<=>'):
+            t = take(); claim(a, t)
+            b = implication(); claim(b, t)
+            if isop(peek(), '<=>'):
+                fail('a chain of <=> reads two ways: put brackets round each pair', peek())
+            return 'Cl'
+        return a
+    def implication():
+        a = disjunction()
+        if isop(peek(), '=>'):
+            t = take(); claim(a, t)
+            b = disjunction(); claim(b, t)
+            if isop(peek(), '=>'):
+                fail('a chain of => reads two ways: put brackets, as in A => (B => C) or (A => B) & (B => C)', peek())
+            return 'Cl'
+        return a
+    def disjunction():
+        a = conjunction()
+        while isop(peek(), '|'):
+            t = take(); claim(a, t)
+            b = conjunction(); claim(b, t)
+            a = 'Cl'
+        return a
+    def conjunction():
+        a = comparison()
+        while isop(peek(), '&'):
+            t = take(); claim(a, t)
+            b = comparison(); claim(b, t)
+            a = 'Cl'
+        return a
+    def comparison():
+        a = expr()
+        t = peek()
+        if t[0] == 'op' and t[1] in _MRELS:
+            take()
+            if a != 'Nu': fail('%s compares numbers, but its left side is a claim' % t[1], t)
+            b = expr()
+            if b != 'Nu': fail('%s compares numbers, but its right side is a claim' % t[1], t)
+            u = peek()
+            if u[0] == 'op' and u[1] in _MRELS:
+                fail('only one comparison in a claim: join comparisons with & or |, as in 0<x & x<1', u)
+            return 'Cl'
+        return a
     def expr():
-        term()
+        a = term()
         while isop(peek(), '+', '-'):
-            take(); term()
+            t = take(); num(a, t)
+            b = term(); num(b, t)
+            a = 'Nu'
+        return a
     def term():
-        unary()
+        a = unary()
         while True:
             t = peek()
             if isop(t, '*', '/'):
-                take(); unary()
+                take(); num(a, t)
+                b = unary(); num(b, t)
+                a = 'Nu'
             elif t[0] in ('num', 'name') or isop(t, '('):
+                if t[0] == 'name' and t[1].lower() in _MWORDS:
+                    fail('write %s, not the word %s' % (_MWORDS[t[1].lower()], t[1]), t)
+                if a == 'Cl':
+                    fail('claims are joined by & | => <=>', t)
                 fail('write * between factors, as in 2*x or (a+b)*(c+d)', t)
             else:
                 break
+        return a
     def unary():
         if isop(peek(), '-'):
-            take(); unary()
-        else:
-            power()
+            t = take()
+            b = unary(); num(b, t)
+            return 'Nu'
+        return power()
     def power():
-        atom()
+        a = atom()
         if isop(peek(), '^'):
-            take(); unary()
+            t = take(); num(a, t)
+            b = unary(); num(b, t)
+            return 'Nu'
+        return a
     def atom():
         t = take()
         if t[0] == 'num':
-            return
+            return 'Nu'
         if t[0] == 'name':
             if isop(peek(), '('):
                 take()
                 if isop(peek(), ')'):
                     fail('%s needs at least one argument' % t[1], t)
                 while True:
-                    expr()
+                    a = expr()
+                    if a != 'Nu':
+                        fail('an argument of %s is a number, not a claim' % t[1], t)
                     u = take()
                     if isop(u, ','):
                         continue
                     if isop(u, ')'):
                         break
                     fail('expected , or ) in the arguments of %s' % t[1], u)
-            return
+            return 'Nu'
         if isop(t, '('):
-            expr()
+            k = formula()
             u = take()
             if not isop(u, ')'):
                 fail('a bracket is not closed', t)
-            return
+            return k
+        if t[0] == 'op' and t[1] in _MCONN:
+            fail('%s joins two claims and cannot start one%s' % (t[1], '; for an absolute value write abs(x)' if t[1] == '|' else ''), t)
         fail('a number, a name or a bracket is expected here', t)
-    expr()
-    kind = 'Nu'
-    if peek()[0] == 'op' and peek()[1] in _MRELS:
-        take(); expr(); kind = 'Cl'
-        if peek()[0] == 'op' and peek()[1] in _MRELS:
-            fail('only one comparison in a formula: join comparisons with and(…) or or(…)')
+    kind = formula()
     t = peek()
     if t[0] != 'end':
         fail('%r does not belong here' % t[1], t)
     return kind
 
-def ev_math(nd, ctx):
-    """math("formula"): a formula in ordinary written form.  Kind Cl when it has a comparison, else Nu."""
-    args = nd.args
-    if len(args) != 1:
-        ctx.err(nd, 'E-ARITY', 'math takes one quote, the formula; not %d arguments' % len(args))
-        return 'ERR'
-    a = args[0]
-    if a.t != 'str' or a.pre:
-        ctx.err(a, 'E-KIND', 'math takes one plain quote: the formula (no class letter, label, number or other root)')
-        return 'ERR'
+def ev_formula(nd, ctx):
+    """the kind of a formula quote 'F': Cl with a claim, Nu without one"""
     try:
-        return parse_math(a.v)
+        return parse_math(nd.v)
     except MathErr as e:
-        ctx.err(a, 'E-MATH', str(e))
+        ctx.err(nd, 'E-MATH', str(e))
         return 'ERR'
 
 def ev_to(nd, ctx):
@@ -927,7 +1012,7 @@ def walk(nd):
         yield from walk(a)
 
 def expand_rel(nd, ctx):
-    """r6.1 relative line numbers (1.5.5): in the first place of agree ans err clr rej unk, a whole number n stands for
+    """relative line numbers (1.5.5): in the first place of agree ans err clr rej unk, a whole number n stands for
        line n of the one message that the header's re(...) names.  Without such a header the number is left alone (E-KIND)."""
     for x in walk(nd):
         if x.t == 'app' and x.v in RELROOTS and x.args and x.args[0].t == 'num' and re.fullmatch(r'[1-9]\d*', x.args[0].v) and ctx.retarget:
@@ -988,6 +1073,8 @@ def kind_of(text):
 QUESTIONS = ('yn', 'what', 'which', 'why')
 REFARGS = {'ans': 0, 'agree': 0, 'retr': 0, 'rej': 0, 'err': 0, 'clr': 0, 'unk': 0, 'ack': None}
 LABREF = re.compile(r'^([A-Z][a-z]*[0-9]+)\.([ogacnqtd][0-9]+)$')
+LINEREF = re.compile(r'^([A-Z][a-z]*[0-9]+)\.([0-9]+)$')
+MSGREF = re.compile(r'^[A-Z][a-z]*[0-9]+$')
 QUOTEREF = re.compile(r'\{\{|\}\}|\{([^{}]*)\}')
 
 
@@ -998,9 +1085,10 @@ def walk_all(nd):
 
 
 def walk_text(nd):
-    """the nodes of a line, not looking inside code(...) and math(...): their quotes are raw text, not references"""
+    """the nodes of a line, not looking inside code(...): its quotes are raw text, not references.
+       (A formula quote 'F' is a leaf; callers that read quotes for {references} skip it.)"""
     yield nd
-    if nd.t == 'app' and nd.v in ('code', 'math'):
+    if nd.t == 'app' and nd.v == 'code':
         return
     for a in nd.args:
         yield from walk_text(a)
@@ -1033,7 +1121,7 @@ def analyse(text):
                 if x.t == 'ref':
                     names.append(x.v)
     lines = [x if k == 'ok' else None for k, x in items[1:]]
-    if retarget:                                  # r6.1 relative line numbers (1.5.5)
+    if retarget:                                  # relative line numbers (1.5.5)
         for ln in lines:
             if ln is None:
                 continue
@@ -1060,7 +1148,7 @@ def label_refs(ln):
             m = LABREF.match(nd.v)
             if m:
                 out.append((m.group(1), m.group(2)))
-        elif nd.t == 'str':
+        elif nd.t == 'str' and nd.pre != "'":
             for q in QUOTEREF.finditer(nd.v):
                 if q.group(1) is not None:
                     m = LABREF.match(q.group(1).strip())
@@ -1108,20 +1196,23 @@ def check_dialogue(texts):
         for ln_i, ln in enumerate(a['lines'], 1):
             if ln is None:
                 continue
+            handled = set()
             for nd in walk_all(ln):
                 if nd.t == 'app' and nd.v in REFARGS:
                     for x in (nd.args if REFARGS[nd.v] is None else nd.args[:1]):
                         if x.t == 'ref':
+                            handled.add(id(x))
                             base = x.v.split('.')[0]
                             if base == name:
-                                continue
-                            if base not in known:
+                                tgt = a                                   # the sender's own line (retr, or a reference inside the message)
+                            elif base not in known:
                                 probs.append('message %d line %d: %s(%s) names a message that is not earlier' % (n, ln_i, nd.v, x.v))
                                 continue
-                            tgt = known[base]
+                            else:
+                                tgt = known[base]
                             if '.' in x.v and x.v.split('.')[1].isdigit():
                                 k = int(x.v.split('.')[1])
-                                if k > len(tgt['lines']):
+                                if k < 1 or k > len(tgt['lines']):
                                     probs.append('message %d line %d: %s has no line %d%s' % (n, ln_i, base, k,
                                            ' (the header is not a line: line 1 is the first line after it)' if k == len(tgt['lines']) + 1 else ''))
                                 elif nd.v == 'ans':
@@ -1134,6 +1225,24 @@ def check_dialogue(texts):
                 if nd.t == 'app' and nd.v in ('join', 'leave') and roster is not None:
                     for x in nd.args:
                         (roster.add if nd.v == 'join' else roster.discard)(x.v)
+            for x in walk_text(ln):                                # a line reference in any root (ent, grp, supp, is, …) names a line that exists
+                if x.t != 'ref' or id(x) in handled:
+                    continue
+                m = LINEREF.match(x.v)
+                if m:
+                    base, k = m.group(1), int(m.group(2))
+                    if base == name:
+                        tgt = a
+                    elif base not in known:
+                        probs.append('message %d line %d: %s names a message that is not earlier' % (n, ln_i, x.v))
+                        continue
+                    else:
+                        tgt = known[base]
+                    if k < 1 or k > len(tgt['lines']):
+                        probs.append('message %d line %d: %s has no line %d%s' % (n, ln_i, base, k,
+                               ' (the header is not a line: line 1 is the first line after it)' if k == len(tgt['lines']) + 1 else ''))
+                elif MSGREF.match(x.v) and x.v != name and x.v not in known:
+                    probs.append('message %d line %d: %s names a message that is not earlier' % (n, ln_i, x.v))
             seen = set()
             for base, lab in label_refs(ln):                       # 1.5.4: a label belongs to the message that defines it
                 if base == name or (base, lab) in seen:
@@ -1225,7 +1334,7 @@ def check_conversation(msgs, need_header=True, across=True):
     dlg = [relabel(p) for p in dlg]
     nlines = sum(len(m['lines']) for m in ms)
     bad = sum(1 for m in ms for l in m['lines'] if l['verdict'] != 'ok') + sum(1 for m in ms if m['header'] and m['header']['verdict'] != 'ok') + len(dlg)
-    return dict(rules='SILEX-r6.3', ok=(bad == 0), messages=ms, across_messages=dlg,
+    return dict(rules='SILEX-r6.4', ok=(bad == 0), messages=ms, across_messages=dlg,
                 counts=dict(messages=len(ms), lines=nlines, problems=bad))
 
 
@@ -1280,7 +1389,7 @@ def check_loose_lines(text):
                           diagnostics=[dict(code=d[1], message=d[2]) for d in r['diags']]))
     bad = sum(1 for l in lines if l['verdict'] != 'ok')
     m = dict(index=1, file_line=1, name=None, sender=None, receivers=[], serial=None, header=None, lines=lines, loose=True)
-    return dict(rules='SILEX-r6.3', ok=(bad == 0), messages=[m], across_messages=[], counts=dict(messages=1, lines=len(lines), problems=bad))
+    return dict(rules='SILEX-r6.4', ok=(bad == 0), messages=[m], across_messages=[], counts=dict(messages=1, lines=len(lines), problems=bad))
 
 
 # ----------------------------------------------------------------------- markdown files: the "file verifier" of 6.1
@@ -1415,7 +1524,7 @@ KINDS = [
     ('Va', 'any value: every kind above except Q and Ln'), ('X', 'a place that takes a claim, an act or a line'),
     ('Vr', 'a new label that the root binds, for use inside its other place'), ('Nm', 'a new label that the root defines'),
     ('Hd', 'a part of a header: msg, re, saw, pri'), ('An', 'an answer to a yes-or-no question: yes, no'), ('Dg', 'a degree: hi, mid, lo'),
-    ('Un', 'unspecified: _'), ('Rw', 'a plain quote carried as it is (the lines of code, the formula of math)'),
+    ('Un', 'unspecified: _'), ('Rw', "a quote carried as it is (the lines of code); a formula quote 'F' is a claim or a number, a value of its own"),
     ('=2', 'the result has the kind of the second place'),
 ]
 SIG_NOTES = ('Reading a signature: places are separated by spaces; "A|B" = either kind; "[K]" = optional; "K..." = one or more; '
@@ -1459,12 +1568,12 @@ def main(argv=None):
     import argparse
     ap = argparse.ArgumentParser(
         prog='silex_check.py', formatter_class=argparse.RawDescriptionHelpFormatter,
-        description='Checker for SILEX messages (rules of SILEX-r6.3).  Nothing is run or sent; the English inside quotes is not read beyond the word rules of 1.4.5.',
+        description='Checker for SILEX messages (rules of SILEX-r6.4).  Nothing is run or sent; the English inside quotes is not read beyond the word rules of 1.4.5.',
         epilog=('examples:\n'
                 '  python3 silex_check.py chat.txt          messages one after another (each begins with its msg(...) header, or divide them with a line ---)\n'
                 '  python3 silex_check.py -                 the same, from standard input\n'
                 '  python3 silex_check.py --lines x.txt     loose lines, no header needed\n'
-                '  python3 silex_check.py SILEX-r6.3.md     run every example in a markdown file against its # ok / # E-... comments\n'
+                '  python3 silex_check.py SILEX-r6.4.md     run every example in a markdown file against its # ok / # E-... comments\n'
                 '  python3 silex_check.py --root ent --root code    show the places of roots\n\n'
                 'Line numbers are the grammar\'s: line 1 is the first line after the header.  Ana1.2 is line 2 of message Ana1; #3.2 is line 2 of the third\n'
                 'message when its header has no serial.  Exit status: 0 all ok, 1 problems found, 2 could not run.'))
@@ -1483,7 +1592,7 @@ def main(argv=None):
     ap.add_argument('--version', action='store_true')
     a = ap.parse_args(argv)
     if a.version:
-        print('silex_check %s: rules of SILEX-r6.3 (the language of r6.2), %d roots' % (__version__, len(ENT)))
+        print('silex_check %s: rules of SILEX-r6.4, %d roots' % (__version__, len(ENT)))
         return 0
     if a.selftest:
         return 1 if selftest() else 0
@@ -1585,67 +1694,37 @@ CASES_LINES = [('ok', 'will(code("python","print(1)"))'),
  ('E-KIND', 'code("python","x = 1")'),
  ('E-KIND', 'all("servers",code("python","x = 1"))'),
  ('E-SYN', 'will(code("python","x = 1<NL>y = 2"))'),
- ('ok', 'math("x^2-5*x+6=0")'),
- ('ok', 'math("x>=3")'),
- ('ok', 'math("x != 3")'),
- ('ok', 'eq(math("2^10-1"),1023)'),
- ('ok', 'over(math("a*b"),10)'),
- ('ok', 'and(math("x>0"),math("x<10"))'),
- ('ok', 'math("(-b+sqrt(b^2-4*a*c))/(2*a)=x")'),
- ('ok', 'math("sum(i^2,i,1,n)=n*(n+1)*(2*n+1)/6")'),
- ('ok', 'math("f(x)=2*x+1")'),
- ('ok', 'math("x + 1 = 2")'),
- ('ok', 'math("0.5*x=1e-3")'),
- ('ok', 'math("-x^2<0")'),
- ('ok', 'math("2^-3=0.125")'),
- ('ok', 'math("2^3^2=512")'),
- ('ok', 'if(math("x>0"),pls("continue"))'),
- ('ok', 'prob(math("x>0"),hi)'),
- ('ok', 'hyp(math("a^2+b^2=c^2"))'),
- ('ok', 'eq(n"result",math("12*15/100"))'),
- ('ok', 'val("rate","value",math("3/4"))'),
- ('ok', 'ent(grp(math("x^2-5*x+6=0")),math("(x-2)*(x-3)=0"))'),
- ('ok', 'math("f(g(x),h(1,2))=y")'),
- ('ok', 'math("x_1+x_2=s")'),
- ('ok', 'pls(Ben,math("x>0"))'),
- ('E-MATH', 'math("")'),
- ('E-MATH', 'math("   ")'),
- ('E-MATH', 'math("x^2-")'),
- ('E-MATH', 'math("(x+1")'),
- ('E-MATH', 'math("x+1)")'),
- ('E-MATH', 'math("2x=4")'),
- ('E-MATH', 'math("x y=1")'),
- ('E-MATH', 'math("(a+b)(c+d)=1")'),
- ('E-MATH', 'math("a<b<c")'),
- ('E-MATH', 'math("(a=b)")'),
- ('E-MATH', 'math("x==3")'),
- ('E-MATH', 'math("x**2=4")'),
- ('E-MATH', 'math("x=")'),
- ('E-MATH', 'math("=3")'),
- ('E-MATH', 'math("√x=2")'),
- ('E-MATH', 'math("x%3=1")'),
- ('E-MATH', 'math("f()")'),
- ('E-MATH', 'math("f(x,)")'),
- ('E-MATH', 'math("f(,x)")'),
- ('E-MATH', 'math("1..2")'),
- ('E-MATH', 'math("3.")'),
- ('E-MATH', 'math(".5")'),
- ('E-MATH', 'math("x=y=z")'),
- ('E-MATH', 'math("a,b")'),
- ('E-MATH', 'math("+x")'),
- ('E-MATH', 'math("x^")'),
- ('E-MATH', 'math("[x]")'),
- ('E-MATH', 'math("say ""hi""")'),
- ('E-MATH', 'math("the answer is 4")'),
- ('E-ARITY', 'math()'),
- ('E-ARITY', 'math("x","y")'),
- ('E-KIND', 'math(n"x")'),
- ('E-KIND', 'math(12)'),
- ('E-KIND', 'math(x)'),
- ('E-KIND', 'math("x+1")'),
- ('E-KIND', 'all("servers",math("x"))'),
- ('E-KIND', 'not(math("x+1"))'),
- ('E-KIND', 'pls(Ben,math("x+1"))'),
+ ('ok', "and('x>0','x<10')"),
+ ('ok', "'f(x)=2*x+1'"),
+ ('ok', "'x + 1 = 2'"),
+ ('ok', "ent(grp('x^2-5*x+6=0'),'(x-2)*(x-3)=0')"),
+ ('E-MATH', "'   '"),
+ ('E-MATH', "'(x+1'"),
+ ('E-MATH', "'x+1)'"),
+ ('E-MATH', "'x y=1'"),
+ ('E-MATH', "'(a+b)(c+d)=1'"),
+ ('E-MATH', "'x==3'"),
+ ('E-MATH', "'x**2=4'"),
+ ('E-MATH', "'x='"),
+ ('E-MATH', "'=3'"),
+ ('E-MATH', "'√x=2'"),
+ ('E-MATH', "'f()'"),
+ ('E-MATH', "'f(x,)'"),
+ ('E-MATH', "'f(,x)'"),
+ ('E-MATH', "'1..2'"),
+ ('E-MATH', "'3.'"),
+ ('E-MATH', "'.5'"),
+ ('E-MATH', "'a,b'"),
+ ('E-MATH', "'+x'"),
+ ('E-MATH', "'x^'"),
+ ('E-MATH', "'[x]'"),
+ ('E-MATH', '\'say "hi"\''),
+ ('E-KIND', 'all("servers",\'x\')'),
+ ('E-LEX', 'math("x^2=4")'),
+ ('E-LEX', "math('x^2=4')"),
+ ('E-LEX', 'math()'),
+ ('E-LEX', 'eq(math("2^10-1"),1023)'),
+ ('E-LEX', 'and(math("x>0"),math("x<10"))'),
  ('E-QUOTE', 'pls(Ben,"restart the server")'),
  ('E-QUOTE', 'pls(Ben,"restart {o9")'),
  ('E-QUOTE', 'pls(Ben,a"print(f\'{x}\')")'),
@@ -1660,6 +1739,105 @@ CASES_LINES = [('ok', 'will(code("python","print(1)"))'),
  ('E-QUOTE', 'pls(Ben,"restart the service")'),
  ('ok', 'will("keep raise form")'),
  ('E-QUOTE', 'will("keep the raise form")')]
+
+# the formula quote 'F', claims joined by & | => <=>, a lone line reference as the premises of ent.  One case a line: verdict, then the text.
+_R64_LINES = r'''
+ok 'x^2-5*x+6=0'
+ok 'x>=3'
+ok 'x != 3'
+ok eq('2^10-1',1023)
+ok over('a*b',10)
+ok if('x>0',pls("continue"))
+ok prob('x>0',hi)
+ok hyp('a^2+b^2=c^2')
+ok eq(n"result",'12*15/100')
+ok val("rate","value",'3/4')
+ok pls(Ben,'x>0')
+ok '(-b+sqrt(b^2-4*a*c))/(2*a)=x'
+ok 'sum(i^2,i,1,n)=n*(n+1)*(2*n+1)/6'
+ok 'f(g(x),h(1,2))=y'
+ok 'x_1+x_2=s'
+ok '0.5*x=1e-3'
+ok '-x^2<0'
+ok '2^-3=0.125'
+ok '2^3^2=512'
+ok will(code("python","x = 'a'"))
+ok pls(Ben,"don't restart")
+ok ent(grp('x=1'),'y=2',"x's value")
+ok '(x+1)*2=4'
+ok '(x+1)*(x-1)=x^2-1 & x>0'
+ok 'x>0 & x<10'
+ok 'x=1 | x=2'
+ok 'x>0 => x^2>0'
+ok 'x^2=4 <=> x=2 | x=-2'
+ok '(x=1 | x=2) & y=3'
+ok '0<x & x<1 => x^2<x'
+ok 'a=1 & b=2 & c=3'
+ok 'a=1 | b=2 | c=3'
+ok 'a=1 & b=2 | c=3'
+ok '(a=1 => b=2) <=> (c=3 | d=4)'
+ok '(a=b)'
+ok '((a=b))'
+ok and('x>0',is("x","real"))
+E-LEX math("x>0 & x<10")
+ok ent(Ben1.8,'x=1')
+E-KIND ent(Ben1,'x=1')
+ok ent(grp(Ben1.8),'x=1')
+ok ent(grp(Ben1.8,Ben1.9),'x=1',"Cramer rule")
+ok ent(Ben1.8,'x=1',"Cramer rule")
+ok ent("test results",is("release build","safe"))
+ok ent(Ben1.8,is("release build","safe"))
+ok ent(Ben1.g1,'x=1')
+E-MATH 'x>0 and x<5'
+E-MATH 'x>0 or x<5'
+E-MATH 'x=1 & y'
+E-MATH 'x & y=1'
+E-MATH '|x|>2'
+E-MATH 'x=>3'
+E-MATH 'x=1 => y=2 => z=3'
+E-MATH 'x=1 <=> y=2 <=> z=3'
+E-MATH 'x=1 &'
+E-MATH '& x=1'
+E-MATH '(x=1'
+E-MATH 'x=1)'
+E-MATH 'x=1 && y=2'
+E-MATH 'x=1 || y=2'
+E-MATH 'x=1 -> y=2'
+E-MATH 'x=1 <-> y=2'
+E-MATH '(a=b)+1=2'
+E-MATH '(a=b)=c'
+E-MATH 'a<b<c'
+E-MATH 'x=y=z'
+E-MATH 'x ≤ 3'
+E-MATH ''
+E-MATH '  '
+E-MATH '2x=4'
+E-MATH 'x%3=1'
+E-MATH '!x=1'
+E-MATH 'f(x>0)=1'
+E-MATH 'the answer is 4'
+E-MATH 'x=1 & (y=2'
+E-MATH 'x=1,y=2'
+E-MATH 'x^2-'
+E-KIND 'x+1'
+E-KIND not('x+1')
+E-KIND pls(Ben,'x+1')
+E-KIND all("servers",'x=1')
+E-KIND ent('x=1','y=2')
+E-LEX math('x=1')
+E-KIND code("python",'x=1')
+E-KIND ent(12,'x=1')
+E-KIND ent(Ben1.8,'x=1','y=2')
+E-KIND all("servers",'x>0')
+E-SYN pls(Ben,'x=1)
+E-SYN 'x=1''y=2'
+E-SYN 'x=1' 'y=2'
+E-SYN q'x=1'
+E-SYN eq('x=1'
+E-ARITY ent(Ben1.8)
+E-ARITY ent()
+'''
+CASES_LINES += [tuple(l.split(' ', 1)) for l in _R64_LINES.strip().split('\n')]
 
 # whole messages: name, text, expected verdict of each line (the header first), whether a header is required
 CASES_MESSAGES = [('relative agree', 'msg(Ben,Ana,2,re(Ana1))\nagree(2)', ['ok', 'ok'], True),
@@ -1700,9 +1878,13 @@ CASES_MESSAGES = [('relative agree', 'msg(Ben,Ana,2,re(Ana1))\nagree(2)', ['ok',
  ('number with eight digits still a number', 'msg(Ana,Ben,1)\neq(cnt("rows"),12345678)', ['ok', 'ok'], True),
  ('compact time in a quote', 'msg(Ana,Ben,1)\npls(Ben,"restart at {20261106T1700}")', ['ok', 'ok'], True),
  ('compact time without minutes is not a time', 'msg(Ana,Ben,1)\nat(20261106T17,fin("backup"))', ['ok', 'E-SYN'], True),
- ('ack with a bare number (r6.3, 1.5.5)', 'msg(Gds,Dex,2,re(Dex1))\nack(Dex1)\nack(2)', ['ok', 'ok', 'E-KIND'], True),
- ('{a1} that this message did not define (r6.3, 3.8)', 'msg(Gds,Dex,2,re(Dex1))\nwill("review {a1}")', ['ok', 'E-NAME'], True),
- ('{a1} that this message defined', 'msg(Gds,Dex,2,re(Dex1))\ndef(a1,code("bash","make"))\nwill("review {a1}")', ['ok', 'ok', 'ok'], True)]
+ ('ack with a bare number (1.5.5)', 'msg(Gds,Dex,2,re(Dex1))\nack(Dex1)\nack(2)', ['ok', 'ok', 'E-KIND'], True),
+ ('{a1} that this message did not define (3.8)', 'msg(Gds,Dex,2,re(Dex1))\nwill("review {a1}")', ['ok', 'E-NAME'], True),
+ ('{a1} that this message defined', 'msg(Gds,Dex,2,re(Dex1))\ndef(a1,code("bash","make"))\nwill("review {a1}")', ['ok', 'ok', 'ok'], True),
+ ('formula claims in a message', "msg(Ana,Ben,1)\n'x^2-5*x+6=0'\nent(Ana1.1,'(x-2)*(x-3)=0',\"factor\")\nassume('x>0 & x<10')", ['ok', 'ok', 'ok', 'ok'], True),
+ ('a number formula is not a line', "msg(Ana,Ben,1)\n'2^10-1'", ['ok', 'E-KIND'], True),
+ ('a formula with a bad connective', "msg(Ana,Ben,1)\n'x>0 and x<5'", ['ok', 'E-MATH'], True),
+ ('relative number still works beside formulas', "msg(Ben,Ana,2,re(Ana1))\nagree(2)\nent(Ana1.2,'x=1')", ['ok', 'ok', 'ok'], True)]
 
 # conversations: name, messages, pieces of the problems expected across messages
 CASES_CONVERSATIONS = [('sound', ['msg(Ana,Ben,1)\nyn(is("server","up"))\nis("disk","full")', 'msg(Ben,Ana,1,re(Ana1))\nans(1,yes)\nagree(2)'], []),
@@ -1733,7 +1915,31 @@ CASES_CONVERSATIONS = [('sound', ['msg(Ana,Ben,1)\nyn(is("server","up"))\nis("di
  ('re names a message that is not earlier', ['msg(Ana,Ben,1,re(Ben1))\nis("a","b")'], ['Ben1, which is not an earlier message']),
  ('a writer who is not on the roster',
   ['msg(Ana,Ben,1)\nis("a","b")', 'msg(Cy,Ana,1)\nis("c","d")'],
-  ['Cy writes but is not on the roster'])]
+  ['Cy writes but is not on the roster']),
+ ('a line reference inside ent that exists (own message and an earlier one)',
+  ["msg(Ana,Ben,1)\n'x=1'\n'y=2'", "msg(Ben,Ana,1,re(Ana1))\n'z=3'\nent(grp(Ana1.1,Ana1.2,Ben1.1),'w=4')\nent(Ben1.1,'v=5')"],
+  []),
+ ('a line reference inside ent past the end of an earlier message',
+  ["msg(Ana,Ben,1)\n'x=1'", "msg(Ben,Ana,1,re(Ana1))\nent(Ana1.3,'z=3')"],
+  ['Ana1 has no line 3']),
+ ('a line reference inside grp to the sender\'s own message past its end',
+  ["msg(Ana,Ben,1)\n'x=1'\nent(grp(Ana1.1,Ana1.5),'y=2')"],
+  ['Ana1 has no line 5']),
+ ('line 0 does not exist',
+  ["msg(Ana,Ben,1)\n'x=1'\nent(Ana1.0,'y=2')"],
+  ['Ana1 has no line 0']),
+ ('the header is not a line',
+  ["msg(Ana,Ben,1)\n'x=1'\nent(Ana1.3,'y=2')"],
+  ['the header is not a line']),
+ ('a reference to a message that is not earlier, in a root that has no reference place',
+  ["msg(Ana,Ben,1)\nent(Ben1.1,'y=2')"],
+  ['Ben1.1 names a message that is not earlier']),
+ ('a bare message name that is not earlier',
+  ["msg(Ana,Ben,1)\nent(grp(Ben2),'y=2')"],
+  ['Ben2 names a message that is not earlier']),
+ ('a reference in braces inside a quote is checked as a label (1.5.4), not as a line',
+  ["msg(Ana,Ben,1)\npls(Ben,\"look at {Ana1.o1}\")"],
+  [])]
 
 
 if __name__ == '__main__':
