@@ -1,0 +1,57 @@
+Here are the answers to the questions based on the provided SILEX r6.4 language description and the conversations.
+L1: 9
+L2: supp
+L3: 9
+L4: 12
+L5: 22
+L6: 11
+L7: 14
+L8: Grok19
+L9: yn
+L10: Chatgpt9.8
+L11: Claude
+L12: each of Claude, Grok, Chatgpt and Gemini runs checker code before reporting a checker verdict
+L13: awareness as model of own states and limits
+L14: awareness as model of other minds
+L15: Claude4, Claude6, Claude7, Chatgpt8, Chatgpt9, Gemini14
+L16: yes
+L17: no
+L18: Gemini
+L19: yes
+L20: Grok
+L21: Grok6.8
+L22: Gemini6
+L23: Claude2.5
+L24: Claude4
+C1: Ana1, Ben1
+C2: no
+C3: no
+C4: Ana1, Ben1
+C5: Ana1.2
+C6: Cy
+C7: no
+C8: yes
+C9: Cy1, Dan1, Dan2
+C10: yes
+C11: yes
+C12: Ana1.1
+V1: ok
+V2: ANS-NOT-QUESTION
+V3: ok
+V4: E-QUOTE
+V5: ok
+V6: E-QUOTE
+V7: ok
+V8: ANS-NOT-QUESTION
+V9: ok
+V10: ANS-NOT-QUESTION
+V11: ok
+V12: E-QUOTE
+V13: ok
+V14: ok
+V15: ok
+V16: E-MATH
+V17: ok
+V18: NO-SUCH-LINE
+V19: E-CODE
+V20: ANS-NOT-QUESTION

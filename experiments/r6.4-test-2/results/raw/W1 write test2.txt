@@ -1,0 +1,146 @@
+B1
+```dialogue
+msg(Ana,Ben,Cy,1)
+pls(Ben,"start pump")
+---
+msg(Cy,Ben,1)
+pls(Ben,not("start pump"))
+---
+msg(Ben,Ana,Cy,1,re(Ana1),saw(Cy1))
+rej(Ana1.1,is("pipe","blocked"))
+will(not("start pump"))
+```
+
+B2
+```dialogue
+msg(Ana,All,1)
+is("freezer","cold")
+---
+msg(Ben,All,1,re(Ana1))
+agree(1)
+---
+msg(Cy,All,1)
+is("freezer","warm")
+---
+msg(Dan,All,1,saw(Ben1,Cy1))
+yn(is("freezer","cold"))
+```
+
+B3
+```dialogue
+msg(Ana,Ben,Cy,Dan,1)
+sug("move meeting to Monday")
+sug("invite {Dan}")
+---
+msg(Ben,Ana,Cy,Dan,1,re(Ana1))
+agree(2)
+---
+msg(Cy,Ana,Ben,Dan,1,re(Ana1))
+agree(1)
+agree(2)
+---
+msg(Dan,Ana,Ben,Cy,1,re(Ana1))
+agree(2)
+```
+
+B4
+```dialogue
+msg(Ben,Ana,Cy,1)
+is("sample","labelled")
+---
+msg(Ben,Ana,Cy,2)
+retr(Ben1.1)
+not(is("sample","labelled"))
+---
+msg(Cy,Ana,Ben,1,re(Ben1))
+pls(Ana,"relabel sample")
+---
+msg(Ana,Ben,Cy,1,saw(Ben2,Cy1))
+rej(Cy1.1,not(know(Me,is("sample","labelled"))))
+```
+
+B5
+```dialogue
+msg(Ana,Ben,Cy,1)
+sug("test on Monday")
+---
+msg(Cy,Ana,Ben,1)
+sug("test on Friday")
+---
+msg(Ben,Ana,Cy,1,re(Ana1),saw(Cy1))
+agree(Ana1.1)
+rej(Cy1.1)
+---
+msg(Cy,Ana,Ben,2,saw(Ben1))
+agree(Ana1.1)
+```
+
+B6
+```dialogue
+msg(Ana,Ben,1)
+yn(is("freezer","full"))
+what(val("freezer","temperature"))
+---
+msg(Ben,Ana,1,re(Ana1))
+ans(1,yes)
+ans(2,4)
+```
+
+B7
+```dialogue
+msg(Ana,Ben,Cy,1)
+is("pump","on")
+is("valve","open")
+---
+msg(Ben,Ana,Cy,1,re(Ana1))
+err(2,is("valve","shut"))
+---
+msg(Ana,Ben,Cy,2,re(Ben1))
+retr(Ana1.2)
+is("valve","shut")
+---
+msg(Cy,Ana,Ben,1,re(Ana1))
+agree(2)
+```
+
+B8
+```dialogue
+msg(Ana,Ben,Cy,1)
+pls(Ben,"merge release branch")
+to(Cy,pls("review merge"))
+---
+msg(Ben,Ana,Cy,1,re(Ana1))
+will("merge release branch")
+---
+msg(Cy,Ana,Ben,1,re(Ana1))
+rej(2,not(may(Me,"access repository")))
+```
+
+D1
+```dialogue
+msg(Ben,Ana,Cy,1,re(Ana1),saw(Cy1))
+ans(3,4)
+rej(4,is("supplier","closed"))
+```
+
+D2
+```dialogue
+msg(Ben,Ana,Cy,1,re(Ana1),saw(Cy1))
+agree(1)
+is("sample","ready")
+```
+
+D3
+```dialogue
+msg(Ben,Ana,Cy,1,re(Cy1),saw(Ana1))
+ans(1,yes)
+will("label sample")
+```
+
+D4
+```dialogue
+msg(Ben,Ana,Cy,2,re(Ana1))
+ans(1,no)
+retr(Ben1.2)
+is("valve","shut")
+```
