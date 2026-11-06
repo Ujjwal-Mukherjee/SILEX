@@ -2,9 +2,9 @@
 
 Nov 6, 2026 · Dexter (Claude), for Ujjwal Mukherjee (Moonbeam), Human Project Owner
 
-Without the grammar the four models scored 17–22 of 32 on reading (mean 19.75, 62%), well above the 8 that Dex predicted at design time; with it they scored 28–32 (mean 29.75, 93%). The grammar adds 7 to 12 items for every model, the largest share of it in the checker-verdict questions (Part E: 3 of 24 right without the grammar, 20 of 24 with it), but the booklet does not make strong readers fail without it: they infer many conventions from the questions themselves. In writing with the grammar, W1 earned 68 of 68 points, W3 66, W4 62 and W2 59.
+Without the grammar the four models scored 17–22 of 32 on reading (mean 19.75, 62%), well above the 8 that Dex predicted at design time; with it they scored 28–32 (mean 29.75, 93%). The grammar adds 7 to 12 items for every model, the largest share of it in the checker-verdict questions (Part E: 3 of 24 right without the grammar, 20 of 24 with it), but the booklet does not make strong readers fail without it: they infer many conventions from the questions themselves. In writing with the grammar, W1 earned 68 of 68 points, W3 66, W4 62 and W2 59. Web search was on in every cell, so “without the grammar” means without it in the prompt, not without access to SILEX material on the web.
 
-**Who is who** (given by the Owner after scoring): W1 Claude, W2 Grok, W3 ChatGPT, W4 Gemini. All scoring was done by label before the names were known.
+**Who is who** (given by the Owner after scoring): W1 Claude, W2 Grok, W3 ChatGPT, W4 Gemini. All scoring was done by label before the names were known. The Owner later gave the model and setting of each: W1 Claude Sonnet 5.5 (“extra”), W2 Grok 4.7 (“expert”), W3 ChatGPT Sol 6.1 (“low”), W4 Gemini Pro (“low”); and said that web search was on in every cell.
 
 ## Results at a glance
 
@@ -21,13 +21,13 @@ One run per cell, run by the Owner. **R−** is reading with the booklet only, *
 - **Yardsticks.** A random guesser scores about 3.3 of 32. Dex predicted about 8 of 32 (5 of 29 core) for a reader who knows only English; every R− result is more than twice that.
 - **Strict is harsh.** A set or verdict question counts only if the whole answer is right. With partial credit (share of places right; for sets, right minus wrong letters) the means are 25.1 of 32 without the grammar (78%) and 31.4 with it (98%).
 - **Ceiling.** With the grammar the labels sit at 88–100%, so R+ separates the models little; R− carries the information.
-- **Single runs.** A gap of one to three items between two labels is within what a re-run could change; run-to-run variation was not measured.
+- **Single runs and settings.** A gap of one to three items between two labels is within what a re-run could change; run-to-run variation was not measured. The settings also differed between models and web search was on in every cell (see Data issues), so a gap between two labels mixes model and setting.
 - **Names.** No reply named its model, and all scoring was done by label before the names were given.
 - **Public.** This report describes the items and the key and is published with them on GitHub at the Owner’s request, so these items are used up for blind testing. Do not show it to a model that is to be tested.
 
 ## By model
 
-One run per cell, model versions and modes not recorded: these are observations of these runs, not claims about the products.
+One run per cell, with the models, settings and web search as listed under Who is who: these are observations of these runs, not claims about the products.
 
 - **W1 Claude.** Used the whole confidence scale without the grammar (8 to 90; the others never went below 48) and had the lowest mean confidence (50%), the nearest to its accuracy. The only reader to get Q22 right in either form, so the only one to parse the Python line. With the grammar it matched the key on every reading item and every writing point.
 - **W2 Grok.** The lowest score without the grammar and in writing. Left Q27 blank. In writing it put the deadline round the request (`by(t,pls(...))`) three times, put no `err` on a wrong claim, and wrote a quotation where `rep` needs an act.
@@ -165,7 +165,7 @@ None of these changes the main picture; some change single scores.
 - **W2 R+, Q27 was blank in the original** (confirmed by the Owner). The line read `Q27:` with confidence 50 and no answer, so it is scored wrong (28 of 32).
 - **W3 R+ arrived in two parts:** the Z1 account as an attachment and the question block in the message. Dex joined them, account above the block; the block as pasted is kept apart.
 - **Run order.** Rule 7 of the guide asked for all R− cells first. The sheets reached Dex R+ first, then R−, then W+. If that was also the run order, and a cell shared a chat or had memory on, the R− scores could carry knowledge of the grammar. The Owner said memory was off when he sent W1 R−, and the guide asked for fresh chats; the other cells are not recorded.
-- **Tools and modes.** Whether web search, other tools or a thinking mode were on in each cell is not confirmed: the Owner said “unknown” about web search for W1 R−, and a later one-word answer can be read either way. A cell that searched could have found SILEX material online.
+- **Web search and settings.** Web search was on in every cell, and the Owner could not switch it off, although rule 3 of the guide asked for it off. No reply mentions a search, but the sheets hold the answers only, so whether any cell used it is not known. A cell that searched could have found SILEX material online, and the repository with the grammar is public. The settings, quoted as the Owner named them, also differ from rule 4, which asked for the same thinking setting for all four: W1 “extra”, W2 “expert”, W3 “low”, W4 “low”. A difference between labels therefore mixes model and setting. Other tools are not recorded.
 - **W2 (Grok) and W3 (ChatGPT) made the same wrong choice in three places:** Q22 line 3 and Q32 option e (both in R+), and the `rep(3,"...")` line in writing task W3. W4 (Gemini) also missed Q22 line 3. Different products erring alike points to errors that the text invites rather than to one source, though shared training data cannot be excluded.
 - **Key re-check.** Because W2 and W3 agreed on Q22 line 3 and Q32 e, Dex re-checked both against the checker and the grammar. The key stands: the Python line has no colon after `for`, and `log(x,b)` is the logarithm of x to base b. Dex wrote the grammar, the checker and the key, so this is not an independent check.
 - **Scorer fix (version 1.1).** The writing rubric point `w1.full` (task W1: what is so is stated) required an `err` line although its description also allows a plain claim. Dex removed that hidden requirement, so W2 W+ went from 58 to 59; no other sheet changed. The copy of the scorer that the Owner holds from before is superseded by 1.1.
@@ -179,9 +179,9 @@ None of these changes the main picture; some change single scores.
 - The booklet itself carries conventions: it explains headers, names lines as `Kai1.2` and lists the verdict words.
 - The answer options of a multiple-choice item reveal the space of possible rules.
 - Strong models transfer from logic, Lisp-like notation and programming languages.
-- A model may have met SILEX or similar material in training.
+- A model may have met SILEX or similar material in training, or looked it up: web search was on in every cell.
 
-A cheap control for the last point is a recall probe: in a fresh chat with no booklet, ask each model what it knows of SILEX and what `rej`, `crit` and `ent` mean.
+A cheap control for the last point is a recall probe: in a fresh chat with no booklet and the same settings as in the test, ask each model what it knows of SILEX and what `rej`, `crit` and `ent` mean.
 
 **What separates the readers.** Ten items (Q4, Q7, Q15, Q19, Q20, Q21, Q23, Q24, Q25, Q27) were right 6 times out of 40 without the grammar and 37 out of 40 with it. They were picked after the results were known, so these figures are optimistic; they show which kinds of item to write more of, not what a new test would score. The kinds: lexical rules for quotations and dates, the number of places of each root, header rules, closed lists, assertion rules, and orders or adoptions that must be computed. The twelve core items that every label got right without the grammar (for example the header is not a line, `rej` of a whole message, `to` lines, `All`) add nothing to R− and could be dropped or made harder.
 
@@ -193,15 +193,15 @@ A cheap control for the last point is a recall probe: in a fresh chat with no bo
 **Before any claim is made from this.**
 
 - The independence warning in the key stands: Dex wrote the grammar, the checker, the booklets and the key, and W1 is a Claude model, of the same family as the author. W1 matched the key on every R+ item and every writing point, which shared habits would also produce. Give R−, the grammar and the key to a reader who had no part in r6.4 and ask for every disagreement; start with Q22 and Q32, where more than one reader with the grammar disagreed with the key, and with Q20, Q22 and Q27, where W1 alone matched the key without the grammar.
-- Single runs, four models: repeat each cell at least twice before comparing models.
+- Single runs, four models, different settings, web search on: repeat each cell at least twice before comparing models, with one setting for all of them and, where the app allows it, web search off.
 - R+ is at ceiling; a v2 needs more computed items if it is also to separate models that have the grammar.
 
 ## Open items for the Owner
 
-1. **Run conditions.** For each of the 12 cells: whether the chat was fresh, and whether memory, web search, other tools and any thinking mode were off. The one-word answer received can be read either way, so please confirm. Also the model version and mode of each (for example a Pro or Thinking variant).
+1. **Run conditions.** Web search, the model versions and the settings are now known (see Who is who). Still open: for each of the 12 cells, whether the chat was fresh and memory off (the Owner stated memory off only for W1 R−), and whether any other tool was on.
 2. **A second marker for Z1,** and an independent reader for the key, if these results are to be used for a claim. Start with the items named under “Before any claim is made from this”.
-3. **The next step for the test:** a v2 built from the kinds of item that separated the readers (new items, not these), at least two runs per cell, and the recall probe. Dex builds it on request.
+3. **The next step for the test:** a v2 built from the kinds of item that separated the readers (new items, not these), at least two runs per cell, one setting for all models, web search off where the app allows it, and the recall probe. Dex builds it on request.
 
-**Settled since the first version of this report:** the names (W1 Claude, W2 Grok, W3 ChatGPT, W4 Gemini); W4 W+ was in code blocks in the original, so 62 of 68 stands; W2 R+ Q27 was blank in the original, so 28 of 32 stands.
+**Settled since the first version of this report:** the names (W1 Claude, W2 Grok, W3 ChatGPT, W4 Gemini); W4 W+ was in code blocks in the original, so 62 of 68 stands; W2 R+ Q27 was blank in the original, so 28 of 32 stands; web search was on in every cell, and the model and setting of each are known (see Who is who).
 
 **Files.** All of it is in `experiments/r6.4-test-3/` of the SILEX repository on GitHub: the materials (operator guide, three booklets, answer key, scorer 1.1), the 12 sheets as pasted and the fenced copy of W4 W+, the results as CSV and JSON (strict, and lenient for W4 W+), the Z1 marking files, and a final results table with the names (CSV), in which W4 W+ is the fenced copy.

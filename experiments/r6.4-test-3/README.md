@@ -2,12 +2,14 @@
 
 How well do four AI models read and write SILEX r6.4, with and without its grammar in front of them? The test ran on 6 Nov 2026, after [test 1](../r6.4-blind-test/) and [test 2](../r6.4-test-2/), which have other items, their own scoring and their own labels. The project owner, Ujjwal Mukherjee, ran each model himself and pasted the replies. Dexter (Claude), the project's Auditor and Researcher, designed the items, wrote the answer key and the scorer, and scored the replies by label. The models were hidden behind the labels W1 to W4 until all scoring was done; the owner gave the names afterwards.
 
-| Label | Model |
-| --- | --- |
-| W1 | Claude |
-| W2 | Grok |
-| W3 | ChatGPT |
-| W4 | Gemini |
+| Label | Model | Version and setting, as the owner gave them |
+| --- | --- | --- |
+| W1 | Claude | Claude Sonnet 5.5, "extra" |
+| W2 | Grok | Grok 4.7, "expert" |
+| W3 | ChatGPT | ChatGPT Sol 6.1, "low" |
+| W4 | Gemini | Gemini Pro, "low" |
+
+Web search was on in every cell. The owner could not turn it off, although the operator guide asks for it off. The settings are quoted as the owner named them and are not the same for all four models, so a gap between two labels mixes model and setting.
 
 **These labels belong to this test only.** Each test masked its models separately: in test 2, for example, W1 is Grok, W2 Claude, W3 Gemini and W4 ChatGPT. Do not combine tables from different tests by label.
 
@@ -35,7 +37,7 @@ Strict scores (exact match). Reading is out of 32, writing out of 68.
 | W4 Gemini | 22 | 29 | 62 (fences put back, see the notes below) |
 | Mean | 19.75 | 29.75 | — |
 
-Without the grammar the models scored 17–22 of 32, well above the 8 that the designer had predicted for a reader who knows only English. With it they scored 28–32. The grammar added 7 to 12 items for every model, most of it in the questions on the checker's verdicts (Part E, pooled over the four models: 3 of 24 right without the grammar, 20 of 24 with it). In writing with the grammar the scores ran from 59 to 68 of 68. The test shows a clear gap from having the grammar; it does not show that the language cannot be read unaided.
+Without the grammar the models scored 17–22 of 32, well above the 8 that the designer had predicted for a reader who knows only English. (Web search was on in every cell, so "without the grammar" means without it in the prompt; see Limits.) With it they scored 28–32. The grammar added 7 to 12 items for every model, most of it in the questions on the checker's verdicts (Part E, pooled over the four models: 3 of 24 right without the grammar, 20 of 24 with it). In writing with the grammar the scores ran from 59 to 68 of 68. The test shows a clear gap from having the grammar; it does not show that the language cannot be read unaided.
 
 [REPORT.md](REPORT.md) has the analysis: the parts and items one by one, confidence, the writing errors, and what they imply for a second round.
 
@@ -43,7 +45,7 @@ Without the grammar the models scored 17–22 of 32, well above the 8 that the d
 
 - One run per cell. Run-to-run variation was not measured, so a gap of one to three items between two labels is within what a re-run could change.
 - Claude (W1) is of the same family as the author of the items, the key and the rubric, and the key has not been checked by an independent reader. REPORT.md names the items to check first.
-- Model versions and modes are not recorded, and whether web search, other tools or a thinking mode were off in each cell is not confirmed (REPORT.md, "Data issues").
+- Web search was on in every cell, so R− is without the grammar in the prompt but not necessarily unaided, and the models ran at different settings. The owner stated memory off only for W1 R−; fresh chats for the other cells and other tools are not recorded (REPORT.md, "Data issues").
 - Z1, the open question, was marked by one marker (Dexter), who had seen the accounts with their labels. It is not yet a result.
 - The items were meant to be hard without the grammar and were not: 62% strict without it, against a predicted 25% (REPORT.md, "What this means for the design").
 
@@ -73,7 +75,7 @@ r6.4-test-3/
     ├── orig/W3_Rplus_qblock_only.txt       the question block of W3 R+ as pasted
     ├── results_strict/                     scorer output with every sheet as pasted
     ├── results_lenient/                    scorer output with W4 W+ from the fenced copy
-    └── final_results_with_names.csv        the lenient scores with the model names
+    └── final_results_with_names.csv        the lenient scores with the model names, versions and settings
 ```
 
 ## Versions and checksums

@@ -1,13 +1,13 @@
-name,model,form,strict,of,core,of_core,anchors,partial,brier,mean_conf,high_conf_wrong,lure,points,max_points,lines_ok,lines,note
-Claude,W1,R-,20,32,17,29,3,25.62,0.190,0.50,0,5,,,,,
-Claude,W1,R+,32,32,29,29,3,32.00,0.024,0.87,0,0,,,,,
-Claude,W1,W+,,,,,,,,,,,68,68,52,52,
-Grok,W2,R-,17,32,14,29,3,23.15,0.225,0.69,0,1,,,,,
-Grok,W2,R+,28,32,25,29,3,30.48,0.085,0.85,2,0,,,,,Q27 blank in the original reply (confirmed by the Owner); scored wrong
-Grok,W2,W+,,,,,,,,,,,59,68,52,53,
-ChatGPT,W3,R-,20,32,17,29,3,25.46,0.175,0.76,1,2,,,,,
-ChatGPT,W3,R+,30,32,27,29,3,31.62,0.061,0.99,2,0,,,,,
-ChatGPT,W3,W+,,,,,,,,,,,66,68,51,52,
-Gemini,W4,R-,22,32,19,29,3,26.05,0.205,0.82,5,3,,,,,
-Gemini,W4,R+,29,32,26,29,3,31.43,0.094,1.00,3,0,,,,,
-Gemini,W4,W+,,,,,,,,,,,62,68,50,52,original was in code blocks; fences lost in pasting; scored on W4_Wplus_fenced.txt (fences put back around each task); as pasted it scores 0
+name,model,form,strict,of,core,of_core,anchors,partial,brier,mean_conf,high_conf_wrong,lure,points,max_points,lines_ok,lines,note,version_as_given,setting_as_given,web_search
+Claude,W1,R-,20,32,17,29,3,25.62,0.190,0.50,0,5,,,,,,Claude Sonnet 5.5,extra,on
+Claude,W1,R+,32,32,29,29,3,32.00,0.024,0.87,0,0,,,,,,Claude Sonnet 5.5,extra,on
+Claude,W1,W+,,,,,,,,,,,68,68,52,52,,Claude Sonnet 5.5,extra,on
+Grok,W2,R-,17,32,14,29,3,23.15,0.225,0.69,0,1,,,,,,Grok 4.7,expert,on
+Grok,W2,R+,28,32,25,29,3,30.48,0.085,0.85,2,0,,,,,Q27 blank in the original reply (confirmed by the Owner); scored wrong,Grok 4.7,expert,on
+Grok,W2,W+,,,,,,,,,,,59,68,52,53,,Grok 4.7,expert,on
+ChatGPT,W3,R-,20,32,17,29,3,25.46,0.175,0.76,1,2,,,,,,ChatGPT Sol 6.1,low,on
+ChatGPT,W3,R+,30,32,27,29,3,31.62,0.061,0.99,2,0,,,,,,ChatGPT Sol 6.1,low,on
+ChatGPT,W3,W+,,,,,,,,,,,66,68,51,52,,ChatGPT Sol 6.1,low,on
+Gemini,W4,R-,22,32,19,29,3,26.05,0.205,0.82,5,3,,,,,,Gemini Pro,low,on
+Gemini,W4,R+,29,32,26,29,3,31.43,0.094,1.00,3,0,,,,,,Gemini Pro,low,on
+Gemini,W4,W+,,,,,,,,,,,62,68,50,52,original was in code blocks; fences lost in pasting; scored on W4_Wplus_fenced.txt (fences put back around each task); as pasted it scores 0,Gemini Pro,low,on
