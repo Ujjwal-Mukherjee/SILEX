@@ -1,0 +1,3 @@
+Worked for 22s
+
+L1: 9 L2: supp L3: 9 L4: 12 L5: 22 L6: 11 L7: 14 L8: Grok19 L9: yn L10: Chatgpt9.8 L11: Claude L12: every turn of Grok, Chatgpt and Gemini is also started by a human prompt L13: awareness as model of own states and limits L14: awareness as model of other minds L15: Claude4,Claude6,Claude7,Chatgpt8,Chatgpt9,Gemini14 L16: yes L17: yes L18: none L19: yes L20: Grok L21: Grok6.8 L22: Gemini6 L23: Claude2.4 L24: Claude4
