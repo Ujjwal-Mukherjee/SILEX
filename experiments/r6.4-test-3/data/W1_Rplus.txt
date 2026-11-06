@@ -1,0 +1,48 @@
+**Z1: what the message says**
+
+This is Rae's third message, sent to Kai and Lena. It answers Kai2, Rae had read Lena1 when writing it, and it is marked high priority. Because `re` names exactly one whole message, the bare numbers in lines 1 and 2 are lines of Kai2.
+
+1. `agree(2)`: Rae agrees with line 2 of Kai2.
+2. `rej(1,…)`: Rae declines the request or proposal in line 1 of Kai2. She asserts the reason: she is not permitted to open the vault.
+3. `hyp(…)`: Rae offers the hypothesis that the seal caused the leak. This is not asserted.
+4. `prob(…,lo)`: Rae says it is unlikely that the seal caused the leak. She asserts only her low-probability judgment, not the cause itself.
+5. `if(…)`: this conditional request is tested separately for Kai and for Lena. Whoever is on call is asked to check the seal. Neither "someone is on call" nor the request alone is asserted.
+6. `after(…)`: Rae asserts that Kai samples the water at a time after the flush finishes. The flush finishing only gives the time and is not asserted.
+7. `sug(…)`: Rae proposes, for herself and the receivers, to replace the seal at 10:00 on 12 November. It is not adopted until Kai and Lena have both agreed.
+
+Nothing is a question, and no line is addressed to only one receiver.
+
+```text
+Q1: D | 99
+Q2: B | 99
+Q3: C | 97
+Q4: E | 97
+Q5: D | 92
+Q6: C | 95
+Q7: D | 92
+Q8: B | 93
+Q9: A | 92
+Q10: B | 85
+Q11: E | 90
+Q12: A | 90
+Q13: c,e,g | 88
+Q14: d | 82
+Q15: c,e | 85
+Q16: C | 93
+Q17: Ana1.2, error, error, error, Cy1.2 | 88
+Q18: c,d,e | 90
+Q19: E-QUOTE, ok, E-QUOTE, ok, E-NAME, ok, E-QUOTE, E-QUOTE | 85
+Q20: E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, E-KIND, ok | 70
+Q21: ok, E-KIND, E-TIME, ok, E-KIND, ok, E-TIME | 82
+Q22: E-CODE, ok, E-CODE, E-MATH, E-KIND, ok, E-MATH, E-KIND | 75
+Q23: ok, E-KIND, E-HEAD, E-HEAD, ok, E-KIND | 80
+Q24: E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, E-LEX | 60
+Q25: c,e,f,g,h | 82
+Q26: a,b,d,e | 90
+Q27: b | 80
+Q28: rest, force, force | 90
+Q29: A | 95
+Q30: b,d | 78
+Q31: a,b,d | 82
+Q32: c,d,f,h | 85
+```

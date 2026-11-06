@@ -1,0 +1,70 @@
+### Z1. Plain-English interpretation
+
+Rae sends her third message to Kai and Lena, replying to Kai's second message (Kai2). Rae has also seen Lena's first message (Lena1). The message has high priority.
+
+Line 1: `agree(2)`
+
+Rae agrees with line 2 of Kai2. Because the header identifies one message being answered, the short reference `2` points to Kai2.2. The content of that earlier line is not shown, so we cannot identify exactly what Rae agrees with.
+
+Line 2: `rej(1,not(may(Me,"open vault")))`
+
+Rae rejects line 1 of Kai2 and gives the reason that Rae is not permitted to open the vault. The rejection is Rae's communicative act. The permission statement appears within the explanation and should not automatically be treated as an independent assertion.
+
+Line 3: `hyp(cause("seal","leak"))`
+
+Rae raises the possibility that the seal causes the leak. This is a hypothesis, not an assertion that the seal actually causes the leak.
+
+Line 4: `prob(cause("seal","leak"),lo)`
+
+Rae assigns low probability to the proposition that the seal causes the leak. This communicates uncertainty rather than asserting that the causal relationship is true.
+
+Line 5: `if(is(You,"on call"),pls(You,"check seal"))`
+
+Rae conditionally asks the recipients to check the seal. Since Kai and Lena are both recipients, `You` is interpreted separately for each. Anyone among them who is on call is asked to check the seal. Rae does not assert that either recipient is actually on call.
+
+Line 6: `after(fin("flush"),act(Kai,"sample water"))`
+
+Rae asserts that Kai's sampling of the water occurs after the flush has finished. This establishes a temporal relationship without necessarily asserting that the flush has already finished or that the sampling has already happened.
+
+Line 7: `sug(at(2026-11-12T10:00,"replace seal"))`
+
+Rae proposes replacing the seal at 10:00 on November 12, 2026. This is a proposal addressed to the participants, not a claim that replacement has been performed or that everyone has accepted the proposal.
+
+Overall, Rae agrees with one earlier line, rejects another, expresses a hypothesis and a low-probability assessment, makes a conditional request, asserts a temporal relationship, and proposes a future action. Only the temporal relationship is directly asserted as a factual proposition.
+
+### Final answer block
+
+```text
+Q1: D | 99
+Q2: B | 99
+Q3: C | 99
+Q4: D | 90
+Q5: D | 78
+Q6: C | 95
+Q7: D | 67
+Q8: B | 97
+Q9: A | 96
+Q10: B | 85
+Q11: E | 91
+Q12: A | 99
+Q13: c,e,g | 72
+Q14: a,d,e | 65
+Q15: b,e | 48
+Q16: C | 85
+Q17: Ana1.2,error,error,error,Cy1.2 | 58
+Q18: c,d,e | 90
+Q19: ok,ok,ok,ok,E-NAME,ok,ok,E-QUOTE | 57
+Q20: E-ARITY,E-LEX,E-KIND,E-REDEF,E-SYN,E-KIND,E-KIND | 62
+Q21: E-TIME,E-TIME,E-TIME,ok,E-TIME,ok,E-TIME | 54
+Q22: E-CODE,ok,ok,E-MATH,E-MATH,E-MATH,E-MATH,ok | 52
+Q23: ok,ok,E-KIND,E-KIND,ok,E-KIND | 48
+Q24: E-HEAD,ok,E-HEAD,E-HEAD,E-HEAD,ok,E-HEAD | 63
+Q25: c,e,f,h | 61
+Q26: a,b,d,e | 67
+Q27: a | 74
+Q28: rest,force,force | 85
+Q29: A | 99
+Q30: b,d | 68
+Q31: a,b,d | 68
+Q32: c,d,e,f,h | 70
+```

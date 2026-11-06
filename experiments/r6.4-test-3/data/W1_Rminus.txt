@@ -1,0 +1,48 @@
+**Z1: what the message says**
+
+Rae sends her third message to Kai and Lena. It replies to Kai's second message, and Rae has also read Lena's first. It is marked high priority.
+
+1. `agree(2)`: Rae agrees with line 2 of Kai2, the message she is replying to. She states no new fact.
+2. `rej(1, ...)`: Rae declines line 1 of Kai2, a request or proposal. She gives the reason that she herself is not permitted to open the vault. She asserts that reason as true.
+3. `hyp(cause("seal","leak"))`: Rae only supposes that the seal causes the leak. She does not assert it.
+4. `prob(cause("seal","leak"),lo)`: Rae weighs that same cause and gives it a low probability. Still not asserted.
+5. `if(is(You,"on call"), pls(You,"check seal"))`: a conditional request. It is tested separately for Kai and for Lena. Whoever is on call is asked to check the seal. Nothing is asserted about who is on call.
+6. `after(fin("flush"), act(Kai,"sample water"))`: Rae says Kai's water sampling comes after the flush has finished. This line states an order of events.
+7. `sug(at(2026-11-12T10:00,"replace seal"))`: Rae proposes replacing the seal at 10:00 on 12 November 2026. It is only a proposal, and it is adopted only once the others agree.
+
+I had no reference for the language, so several answers rest on judgment. I gave low percentages where I was guessing.
+
+```text
+Q1: D | 90
+Q2: B | 85
+Q3: C | 85
+Q4: D | 45
+Q5: D | 55
+Q6: C | 65
+Q7: B | 50
+Q8: B | 70
+Q9: A | 70
+Q10: E | 45
+Q11: E | 45
+Q12: A | 85
+Q13: c,e,g | 50
+Q14: a,d,e | 40
+Q15: b,c,e | 40
+Q16: C | 65
+Q17: Ana1.2, error, error, error, Cy1.2 | 35
+Q18: c,d,e | 55
+Q19: ok, E-QUOTE, E-QUOTE, ok, E-NAME, ok, E-QUOTE, E-QUOTE | 8
+Q20: E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, E-KIND, ok | 15
+Q21: E-SYN, E-SYN, E-TIME, ok, E-KIND, ok, E-TIME | 15
+Q22: E-CODE, ok, E-CODE, E-MATH, E-KIND, ok, E-MATH, E-KIND | 8
+Q23: ok, E-LEX, E-KIND, E-NAME, ok, E-KIND | 15
+Q24: E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, E-HEAD | 20
+Q25: c,d,e,f,g,h | 55
+Q26: b,d,e | 55
+Q27: b | 50
+Q28: rest, force, force | 70
+Q29: A | 80
+Q30: b,d | 55
+Q31: a,b,d | 50
+Q32: c,d,e,f,h | 35
+```

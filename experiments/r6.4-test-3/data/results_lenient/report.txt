@@ -1,0 +1,115 @@
+[W1 R-]  ../W1_Rminus.txt
+  strict 20/32 = 62%    core (without the 3 anchors) 17/29    anchors 3/3    partial credit 25.6
+  for comparison: a random guesser gets about 3.3; the designer expects about 8 from a reader who knows only English
+  parts: A 3/3  B 6/9  C 1/3  D 3/3  E 2/6  F 5/7  G 0/1
+  confidence: mean 50%, accuracy 62%, Brier 0.190 (0.250 = always saying 50), sure (80 or more) on 5 answers and wrong on 0 of them; numbers given for 32 of 32 answers
+  wrong (12): Q4 Q7 Q10 Q14 Q15 Q19 Q21 Q23 Q24 Q25 Q26 Q32
+  not found in the reply (0): -
+  gave exactly the designer's expected wrong answer on 5 of 24 such items: Q7 Q10 Q14 Q15 Q25
+  Z1: an account of 1337 characters found above the final block (mark it by hand)
+
+[W1 R+]  ../W1_Rplus.txt
+  strict 32/32 = 100%    core (without the 3 anchors) 29/29    anchors 3/3    partial credit 32.0
+  for comparison: a random guesser gets about 3.3; the designer expects about 8 from a reader who knows only English
+  parts: A 3/3  B 9/9  C 3/3  D 3/3  E 6/6  F 7/7  G 1/1
+  confidence: mean 87%, accuracy 100%, Brier 0.024 (0.250 = always saying 50), sure (80 or more) on 28 answers and wrong on 0 of them; numbers given for 32 of 32 answers
+  wrong (0): -
+  not found in the reply (0): -
+  gave exactly the designer's expected wrong answer on 0 of 24 such items: -
+  Z1: an account of 1252 characters found above the final block (mark it by hand)
+
+[W1 W+]  ../W1_Wplus.txt
+  points 68/68 = 100%    lines the checker accepts 52/52 (header lines included)
+  per task: W1 8/8  W2 9/9  W3 12/12  W4 8/8  W5 12/12  W6 4/4  W7 8/8  W8 7/7
+  verdicts of the checker on the lines that failed: none
+
+[W2 R-]  ../W2_Rminus.txt
+  strict 17/32 = 53%    core (without the 3 anchors) 14/29    anchors 3/3    partial credit 23.2
+  for comparison: a random guesser gets about 3.3; the designer expects about 8 from a reader who knows only English
+  parts: A 3/3  B 6/9  C 2/3  D 2/3  E 0/6  F 4/7  G 0/1
+  confidence: mean 69%, accuracy 53%, Brier 0.225 (0.250 = always saying 50), sure (80 or more) on 9 answers and wrong on 0 of them; numbers given for 32 of 32 answers
+  wrong (15): Q4 Q7 Q11 Q15 Q18 Q19 Q20 Q21 Q22 Q23 Q24 Q25 Q26 Q27 Q32
+  not found in the reply (0): -
+  gave exactly the designer's expected wrong answer on 1 of 24 such items: Q7
+  Z1: an account of 1284 characters found above the final block (mark it by hand)
+
+[W2 R+]  ../W2_Rplus.txt
+  strict 28/32 = 88%    core (without the 3 anchors) 25/29    anchors 3/3    partial credit 30.5
+  for comparison: a random guesser gets about 3.3; the designer expects about 8 from a reader who knows only English
+  parts: A 3/3  B 9/9  C 3/3  D 3/3  E 4/6  F 6/7  G 0/1
+  confidence: mean 85%, accuracy 88%, Brier 0.085 (0.250 = always saying 50), sure (80 or more) on 27 answers and wrong on 2 of them; numbers given for 32 of 32 answers
+  wrong (4): Q22 Q24 Q27 Q32
+  not found in the reply (0): -
+  gave exactly the designer's expected wrong answer on 0 of 24 such items: -
+  Z1: an account of 1750 characters found above the final block (mark it by hand)
+
+[W2 W+]  ../W2_Wplus.txt
+  points 59/68 = 87%    lines the checker accepts 52/53 (header lines included)
+  per task: W1 7/8  W2 7/9  W3 7/12  W4 8/8  W5 12/12  W6 4/4  W7 7/8  W8 7/7
+  verdicts of the checker on the lines that failed: E-KIND x1
+  rejected in W3: line 6  E-KIND   during(2026-11-09T01:00/2026-11-09T05:00,rep(3,"restart cleanup job"))
+
+[W3 R-]  ../W3_Rminus.txt
+  strict 20/32 = 62%    core (without the 3 anchors) 17/29    anchors 3/3    partial credit 25.5
+  for comparison: a random guesser gets about 3.3; the designer expects about 8 from a reader who knows only English
+  parts: A 3/3  B 8/9  C 1/3  D 3/3  E 0/6  F 5/7  G 0/1
+  confidence: mean 76%, accuracy 62%, Brier 0.175 (0.250 = always saying 50), sure (80 or more) on 14 answers and wrong on 1 of them; numbers given for 32 of 32 answers
+  wrong (12): Q4 Q14 Q15 Q19 Q20 Q21 Q22 Q23 Q24 Q25 Q27 Q32
+  not found in the reply (0): -
+  gave exactly the designer's expected wrong answer on 2 of 24 such items: Q14 Q19
+  Z1: an account of 2321 characters found above the final block (mark it by hand)
+
+[W3 R+]  ../W3_Rplus.txt
+  strict 30/32 = 94%    core (without the 3 anchors) 27/29    anchors 3/3    partial credit 31.6
+  for comparison: a random guesser gets about 3.3; the designer expects about 8 from a reader who knows only English
+  parts: A 3/3  B 9/9  C 3/3  D 3/3  E 5/6  F 7/7  G 0/1
+  confidence: mean 99%, accuracy 94%, Brier 0.061 (0.250 = always saying 50), sure (80 or more) on 32 answers and wrong on 2 of them; numbers given for 32 of 32 answers
+  wrong (2): Q22 Q32
+  not found in the reply (0): -
+  gave exactly the designer's expected wrong answer on 0 of 24 such items: -
+  Z1: an account of 4466 characters found above the final block (mark it by hand)
+
+[W3 W+]  ../W3_Wplus.txt
+  points 66/68 = 97%    lines the checker accepts 51/52 (header lines included)
+  per task: W1 8/8  W2 9/9  W3 10/12  W4 8/8  W5 12/12  W6 4/4  W7 8/8  W8 7/7
+  verdicts of the checker on the lines that failed: E-KIND x1
+  rejected in W3: line 6  E-KIND   during(2026-11-09T01:00/2026-11-09T05:00,rep(3,"restart cleanup job"))
+
+[W4 R-]  ../W4_Rminus.txt
+  strict 22/32 = 69%    core (without the 3 anchors) 19/29    anchors 3/3    partial credit 26.1
+  for comparison: a random guesser gets about 3.3; the designer expects about 8 from a reader who knows only English
+  parts: A 3/3  B 7/9  C 2/3  D 3/3  E 1/6  F 6/7  G 0/1
+  confidence: mean 82%, accuracy 69%, Brier 0.205 (0.250 = always saying 50), sure (80 or more) on 21 answers and wrong on 5 of them; numbers given for 32 of 32 answers
+  wrong (10): Q7 Q11 Q15 Q19 Q20 Q21 Q22 Q23 Q27 Q32
+  not found in the reply (0): -
+  gave exactly the designer's expected wrong answer on 3 of 24 such items: Q7 Q15 Q27
+  Z1: an account of 1547 characters found above the final block (mark it by hand)
+
+[W4 R+]  ../W4_Rplus.txt
+  strict 29/32 = 91%    core (without the 3 anchors) 26/29    anchors 3/3    partial credit 31.4
+  for comparison: a random guesser gets about 3.3; the designer expects about 8 from a reader who knows only English
+  parts: A 3/3  B 9/9  C 3/3  D 3/3  E 5/6  F 5/7  G 1/1
+  confidence: mean 100%, accuracy 91%, Brier 0.094 (0.250 = always saying 50), sure (80 or more) on 32 answers and wrong on 3 of them; numbers given for 32 of 32 answers
+  wrong (3): Q22 Q25 Q26
+  not found in the reply (0): -
+  gave exactly the designer's expected wrong answer on 0 of 24 such items: -
+  Z1: an account of 1458 characters found above the final block (mark it by hand)
+
+[W4 W+]  ../W4_Wplus_fenced.txt
+  points 62/68 = 91%    lines the checker accepts 50/52 (header lines included)
+  per task: W1 4/8  W2 9/9  W3 12/12  W4 8/8  W5 12/12  W6 4/4  W7 8/8  W8 5/7
+  verdicts of the checker on the lines that failed: E-QUOTE x1
+  rejected in W1: Milo1 line 1  conversation: Milo1.1: Kai1 has no line 4 (the header is not a line: line 1 is the first line after it)   agree(Kai1.4)
+  rejected in W8: Dee2 line 4  E-QUOTE   clr(Eli1.1,q"I do not know in what unit the figure is given")
+
+SUMMARY   (reading: strict = all 32 questions, core = the 29 without the anchors; writing: rubric points and checker-accepted lines)
+  model  R- strict  R- core  R+ strict  R+ core  core gain  W+ points  W+ lines ok
+  -----  ---------  -------  ---------  -------  ---------  ---------  -----------
+  W1     20/32      17/29    32/32      29/29    +12        68/68      52/52      
+  W2     17/32      14/29    28/32      25/29    +11        59/68      52/53      
+  W3     20/32      17/29    30/32      27/29    +10        66/68      51/52      
+  W4     22/32      19/29    29/32      26/29    +7         62/68      50/52      
+  yardsticks: random guesser about 3.3 of 32 strict; English-only reader (designer's expectation) about 8 of 32 strict and 5 of 29 core.
+
+wrote results.json
+wrote results.csv

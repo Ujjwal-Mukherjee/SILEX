@@ -1,0 +1,46 @@
+Z1 account
+
+Rae’s third message is addressed to Kai and Lena (both receive every line). It replies to Kai2, records that Rae has seen Lena1, and is marked high priority.
+
+- Line 1 (`agree(2)`): Rae adopts line 2 of the message she is answering (Kai2). This is an assertion of agreement.
+- Line 2 (`rej(1,not(may(Me,"open vault")))`): Rae rejects line 1 of Kai2 and asserts, as the ground of the rejection, that she herself is not permitted to open the vault.
+- Line 3 (`hyp(cause("seal","leak"))`): Rae offers the hypothesis that a seal is the cause of a leak. The causal claim is only mentioned, not asserted.
+- Line 4 (`prob(cause("seal","leak"),lo)`): Rae assigns a low probability to the same causal claim. The claim itself remains unasserted.
+- Line 5 (`if(is(You,"on call"),pls(You,"check seal"))`): Conditional request addressed separately to each receiver. For whichever of Kai or Lena satisfies “on call,” that agent is asked to check the seal. No fact is asserted.
+- Line 6 (`after(fin("flush"),act(Kai,"sample water"))`): Rae asserts the temporal relation that Kai’s sampling of water occurs after the flush finishes.
+- Line 7 (`sug(at(2026-11-12T10:00,"replace seal"))`): Rae proposes that the seal be replaced at the stated time. The proposal is offered, not yet adopted.
+
+```text
+Q1: D | 95
+Q2: B | 90
+Q3: C | 92
+Q4: D | 70
+Q5: D | 65
+Q6: C | 80
+Q7: B | 75
+Q8: B | 85
+Q9: A | 80
+Q10: B | 60
+Q11: D | 70
+Q12: A | 85
+Q13: c,e,g | 55
+Q14: d | 65
+Q15: c | 50
+Q16: C | 80
+Q17: Ana1.2, error, error, error, Cy1.2 | 70
+Q18: d,e | 75
+Q19: ok, ok, ok, E-QUOTE, E-NAME, ok, ok, E-SYN | 60
+Q20: E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, ok, E-ARITY | 55
+Q21: E-TIME, E-TIME, E-TIME, ok, E-KIND, ok, E-TIME | 70
+Q22: ok, E-QUOTE, ok, E-MATH, E-MATH, ok, E-MATH, ok | 55
+Q23: ok, ok, E-HEAD, E-NAME, ok, ok | 65
+Q24: E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, ok | 60
+Q25: b,f,h | 55
+Q26: a,e | 65
+Q27: a | 60
+Q28: rest, force, force | 75
+Q29: A | 85
+Q30: b,d | 70
+Q31: a,b,d | 55
+Q32: c,d,e,f,h | 50
+```

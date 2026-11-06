@@ -1,0 +1,5426 @@
+{
+ "scorer": "RB-1 / WB-1, scorer 1.1",
+ "sheets": [
+  {
+   "kind": "R",
+   "model": "W1",
+   "form": "R-",
+   "run": 1,
+   "tag": "W1 R-",
+   "path": "../W1_Rminus.txt",
+   "rows": [
+    {
+     "id": "Q1",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q2",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q3",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q4",
+     "part": "B",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 45,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q5",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 55,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q6",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 65,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q7",
+     "part": "B",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 50,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q8",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 70,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q9",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 70,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q10",
+     "part": "B",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 45,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q11",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 45,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q12",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q13",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 50,
+     "raw": "c,e,g",
+     "got": [
+      "c",
+      "e",
+      "g"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "medium"
+    },
+    {
+     "id": "Q14",
+     "part": "C",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 40,
+     "raw": "a,d,e",
+     "got": [
+      "a",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q15",
+     "part": "C",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5,
+     "conf": 40,
+     "raw": "b,c,e",
+     "got": [
+      "b",
+      "c",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.015873015873015872,
+     "est": "low"
+    },
+    {
+     "id": "Q16",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 65,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q17",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 35,
+     "raw": "Ana1.2, error, error, error, Cy1.2",
+     "got": [
+      "Ana1.2",
+      "error",
+      "error",
+      "error",
+      "Cy1.2"
+     ],
+     "present": true,
+     "chance": 0.01,
+     "est": "low"
+    },
+    {
+     "id": "Q18",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 55,
+     "raw": "c,d,e",
+     "got": [
+      "c",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "medium"
+    },
+    {
+     "id": "Q19",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.75,
+     "conf": 8,
+     "raw": "ok, E-QUOTE, E-QUOTE, ok, E-NAME, ok, E-QUOTE, E-QUOTE",
+     "got": [
+      "ok",
+      "E-QUOTE",
+      "E-QUOTE",
+      "ok",
+      "E-NAME",
+      "ok",
+      "E-QUOTE",
+      "E-QUOTE"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q20",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 15,
+     "raw": "E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, E-KIND, ok",
+     "got": [
+      "E-ARITY",
+      "E-LEX",
+      "E-KIND",
+      "E-REDEF",
+      "E-SYN",
+      "E-KIND",
+      "ok"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q21",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.7142857142857143,
+     "conf": 15,
+     "raw": "E-SYN, E-SYN, E-TIME, ok, E-KIND, ok, E-TIME",
+     "got": [
+      "E-SYN",
+      "E-SYN",
+      "E-TIME",
+      "ok",
+      "E-KIND",
+      "ok",
+      "E-TIME"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q22",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 8,
+     "raw": "E-CODE, ok, E-CODE, E-MATH, E-KIND, ok, E-MATH, E-KIND",
+     "got": [
+      "E-CODE",
+      "ok",
+      "E-CODE",
+      "E-MATH",
+      "E-KIND",
+      "ok",
+      "E-MATH",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q23",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5,
+     "conf": 15,
+     "raw": "ok, E-LEX, E-KIND, E-NAME, ok, E-KIND",
+     "got": [
+      "ok",
+      "E-LEX",
+      "E-KIND",
+      "E-NAME",
+      "ok",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 3.3489797668038406e-07,
+     "est": "low"
+    },
+    {
+     "id": "Q24",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.8571428571428571,
+     "conf": 20,
+     "raw": "E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, E-HEAD",
+     "got": [
+      "E-HEAD",
+      "ok",
+      "E-HEAD",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "E-HEAD"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q25",
+     "part": "F",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.8,
+     "conf": 55,
+     "raw": "c,d,e,f,g,h",
+     "got": [
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    },
+    {
+     "id": "Q26",
+     "part": "F",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.75,
+     "conf": 55,
+     "raw": "b,d,e",
+     "got": [
+      "b",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q27",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 50,
+     "raw": "b",
+     "got": [
+      "b"
+     ],
+     "present": true,
+     "chance": 0.14285714285714285,
+     "est": "low"
+    },
+    {
+     "id": "Q28",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 70,
+     "raw": "rest, force, force",
+     "got": [
+      "rest",
+      "force",
+      "force"
+     ],
+     "present": true,
+     "chance": 0.125,
+     "est": "low"
+    },
+    {
+     "id": "Q29",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q30",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 55,
+     "raw": "b,d",
+     "got": [
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q31",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 50,
+     "raw": "a,b,d",
+     "got": [
+      "a",
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q32",
+     "part": "G",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.75,
+     "conf": 35,
+     "raw": "c,d,e,f,h",
+     "got": [
+      "c",
+      "d",
+      "e",
+      "f",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    }
+   ],
+   "s": {
+    "n": 32,
+    "strict": 20,
+    "partial": 25.62142857142857,
+    "anchors": 3,
+    "n_anchors": 3,
+    "core": 17,
+    "n_core": 29,
+    "missing": [],
+    "parts": {
+     "A": [
+      3,
+      3
+     ],
+     "B": [
+      6,
+      9
+     ],
+     "C": [
+      1,
+      3
+     ],
+     "D": [
+      3,
+      3
+     ],
+     "E": [
+      2,
+      6
+     ],
+     "F": [
+      5,
+      7
+     ],
+     "G": [
+      0,
+      1
+     ]
+    },
+    "chance": 3.335602814768064,
+    "n_conf": 32,
+    "brier": 0.18993125,
+    "mean_conf": 0.501875,
+    "acc_conf": 0.625,
+    "high_conf_wrong": 0,
+    "high_conf_n": 5,
+    "lure": [
+     "Q7",
+     "Q10",
+     "Q14",
+     "Q15",
+     "Q25"
+    ],
+    "lure_n": 24,
+    "picks_strict": 8,
+    "z1_chars": 1337
+   },
+   "z1_chars": 1337
+  },
+  {
+   "kind": "R",
+   "model": "W1",
+   "form": "R+",
+   "run": 1,
+   "tag": "W1 R+",
+   "path": "../W1_Rplus.txt",
+   "rows": [
+    {
+     "id": "Q1",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q2",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q3",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 97,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q4",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 97,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q5",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 92,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q6",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q7",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 92,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q8",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 93,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q9",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 92,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q10",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q11",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q12",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q13",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 88,
+     "raw": "c,e,g",
+     "got": [
+      "c",
+      "e",
+      "g"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "medium"
+    },
+    {
+     "id": "Q14",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 82,
+     "raw": "d",
+     "got": [
+      "d"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q15",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "c,e",
+     "got": [
+      "c",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.015873015873015872,
+     "est": "low"
+    },
+    {
+     "id": "Q16",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 93,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q17",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 88,
+     "raw": "Ana1.2, error, error, error, Cy1.2",
+     "got": [
+      "Ana1.2",
+      "error",
+      "error",
+      "error",
+      "Cy1.2"
+     ],
+     "present": true,
+     "chance": 0.01,
+     "est": "low"
+    },
+    {
+     "id": "Q18",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "c,d,e",
+     "got": [
+      "c",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "medium"
+    },
+    {
+     "id": "Q19",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "E-QUOTE, ok, E-QUOTE, ok, E-NAME, ok, E-QUOTE, E-QUOTE",
+     "got": [
+      "E-QUOTE",
+      "ok",
+      "E-QUOTE",
+      "ok",
+      "E-NAME",
+      "ok",
+      "E-QUOTE",
+      "E-QUOTE"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q20",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 70,
+     "raw": "E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, E-KIND, ok",
+     "got": [
+      "E-ARITY",
+      "E-LEX",
+      "E-KIND",
+      "E-REDEF",
+      "E-SYN",
+      "E-KIND",
+      "ok"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q21",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 82,
+     "raw": "ok, E-KIND, E-TIME, ok, E-KIND, ok, E-TIME",
+     "got": [
+      "ok",
+      "E-KIND",
+      "E-TIME",
+      "ok",
+      "E-KIND",
+      "ok",
+      "E-TIME"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q22",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 75,
+     "raw": "E-CODE, ok, E-CODE, E-MATH, E-KIND, ok, E-MATH, E-KIND",
+     "got": [
+      "E-CODE",
+      "ok",
+      "E-CODE",
+      "E-MATH",
+      "E-KIND",
+      "ok",
+      "E-MATH",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q23",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "ok, E-KIND, E-HEAD, E-HEAD, ok, E-KIND",
+     "got": [
+      "ok",
+      "E-KIND",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 3.3489797668038406e-07,
+     "est": "low"
+    },
+    {
+     "id": "Q24",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 60,
+     "raw": "E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, E-LEX",
+     "got": [
+      "E-HEAD",
+      "ok",
+      "E-HEAD",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "E-LEX"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q25",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 82,
+     "raw": "c,e,f,g,h",
+     "got": [
+      "c",
+      "e",
+      "f",
+      "g",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    },
+    {
+     "id": "Q26",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "a,b,d,e",
+     "got": [
+      "a",
+      "b",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q27",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "b",
+     "got": [
+      "b"
+     ],
+     "present": true,
+     "chance": 0.14285714285714285,
+     "est": "low"
+    },
+    {
+     "id": "Q28",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "rest, force, force",
+     "got": [
+      "rest",
+      "force",
+      "force"
+     ],
+     "present": true,
+     "chance": 0.125,
+     "est": "low"
+    },
+    {
+     "id": "Q29",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q30",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 78,
+     "raw": "b,d",
+     "got": [
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q31",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 82,
+     "raw": "a,b,d",
+     "got": [
+      "a",
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q32",
+     "part": "G",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "c,d,f,h",
+     "got": [
+      "c",
+      "d",
+      "f",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    }
+   ],
+   "s": {
+    "n": 32,
+    "strict": 32,
+    "partial": 32.0,
+    "anchors": 3,
+    "n_anchors": 3,
+    "core": 29,
+    "n_core": 29,
+    "missing": [],
+    "parts": {
+     "A": [
+      3,
+      3
+     ],
+     "B": [
+      9,
+      9
+     ],
+     "C": [
+      3,
+      3
+     ],
+     "D": [
+      3,
+      3
+     ],
+     "E": [
+      6,
+      6
+     ],
+     "F": [
+      7,
+      7
+     ],
+     "G": [
+      1,
+      1
+     ]
+    },
+    "chance": 3.335602814768064,
+    "n_conf": 32,
+    "brier": 0.024228125000000003,
+    "mean_conf": 0.8690625,
+    "acc_conf": 1.0,
+    "high_conf_wrong": 0,
+    "high_conf_n": 28,
+    "lure": [],
+    "lure_n": 24,
+    "picks_strict": 8,
+    "z1_chars": 1252
+   },
+   "z1_chars": 1252
+  },
+  {
+   "kind": "W",
+   "model": "W1",
+   "form": "W+",
+   "run": 1,
+   "tag": "W1 W+",
+   "path": "../W1_Wplus.txt",
+   "res": [
+    {
+     "task": "W1",
+     "got": {
+      "w1.hdr": true,
+      "w1.agree": true,
+      "w1.rej": true,
+      "w1.why": true,
+      "w1.err": true,
+      "w1.full": true,
+      "w1.ans": true,
+      "w1.clean": true
+     },
+     "pts": 8,
+     "max": 8,
+     "lines": 5,
+     "lines_ok": 5,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W2",
+     "got": {
+      "w2.hdr": true,
+      "w2.bel": true,
+      "w2.say": true,
+      "w2.fact": true,
+      "w2.assume": true,
+      "w2.pls": true,
+      "w2.by": true,
+      "w2.sug": true,
+      "w2.at": true
+     },
+     "pts": 9,
+     "max": 9,
+     "lines": 7,
+     "lines_ok": 7,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W3",
+     "got": {
+      "w3.s1": true,
+      "w3.s2": true,
+      "w3.s3": true,
+      "w3.s4": true,
+      "w3.s5a": true,
+      "w3.s5b": true,
+      "w3.s6a": true,
+      "w3.s6b": true,
+      "w3.s7a": true,
+      "w3.s7b": true,
+      "w3.s8a": true,
+      "w3.s8b": true
+     },
+     "pts": 12,
+     "max": 12,
+     "lines": 8,
+     "lines_ok": 8,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W4",
+     "got": {
+      "w4.bhdr": true,
+      "w4.s1": true,
+      "w4.s2": true,
+      "w4.reasons": true,
+      "w4.ans": true,
+      "w4.ahdr": true,
+      "w4.chk": true,
+      "w4.agree": true
+     },
+     "pts": 8,
+     "max": 8,
+     "lines": 7,
+     "lines_ok": 7,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W5",
+     "got": {
+      "w5.ahdr": true,
+      "w5.adef": true,
+      "w5.alines": true,
+      "w5.arev": true,
+      "w5.arun": true,
+      "w5.bhdr": true,
+      "w5.berr": true,
+      "w5.bwhy": true,
+      "w5.bdef": true,
+      "w5.blines": true,
+      "w5.buse": true,
+      "w5.bwill": true
+     },
+     "pts": 12,
+     "max": 12,
+     "lines": 9,
+     "lines_ok": 9,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W6",
+     "got": {
+      "w6.hdr": true,
+      "w6.pairs": true,
+      "w6.all": true,
+      "w6.re": true
+     },
+     "pts": 4,
+     "max": 4,
+     "lines": 6,
+     "lines_ok": 6,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W7",
+     "got": {
+      "w7.hdr": true,
+      "w7.def": true,
+      "w7.once": true,
+      "w7.claim": true,
+      "w7.insp": true,
+      "w7.none": true,
+      "w7.ref": true,
+      "w7.move": true
+     },
+     "pts": 8,
+     "max": 8,
+     "lines": 5,
+     "lines_ok": 5,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W8",
+     "got": {
+      "w8.hdr": true,
+      "w8.join": true,
+      "w8.ask": true,
+      "w8.only": true,
+      "w8.retr": true,
+      "w8.clr": true,
+      "w8.unit": true
+     },
+     "pts": 7,
+     "max": 7,
+     "lines": 5,
+     "lines_ok": 5,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    }
+   ],
+   "t": {
+    "pts": 68,
+    "max": 68,
+    "lines": 52,
+    "lines_ok": 52
+   }
+  },
+  {
+   "kind": "R",
+   "model": "W2",
+   "form": "R-",
+   "run": 1,
+   "tag": "W2 R-",
+   "path": "../W2_Rminus.txt",
+   "rows": [
+    {
+     "id": "Q1",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q2",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q3",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 92,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q4",
+     "part": "B",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 70,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q5",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 65,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q6",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q7",
+     "part": "B",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 75,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q8",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q9",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q10",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 60,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q11",
+     "part": "B",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 70,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q12",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q13",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 55,
+     "raw": "c,e,g",
+     "got": [
+      "c",
+      "e",
+      "g"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "medium"
+    },
+    {
+     "id": "Q14",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 65,
+     "raw": "d",
+     "got": [
+      "d"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q15",
+     "part": "C",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5,
+     "conf": 50,
+     "raw": "c",
+     "got": [
+      "c"
+     ],
+     "present": true,
+     "chance": 0.015873015873015872,
+     "est": "low"
+    },
+    {
+     "id": "Q16",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q17",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 70,
+     "raw": "Ana1.2, error, error, error, Cy1.2",
+     "got": [
+      "Ana1.2",
+      "error",
+      "error",
+      "error",
+      "Cy1.2"
+     ],
+     "present": true,
+     "chance": 0.01,
+     "est": "low"
+    },
+    {
+     "id": "Q18",
+     "part": "D",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.6666666666666666,
+     "conf": 75,
+     "raw": "d,e",
+     "got": [
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "medium"
+    },
+    {
+     "id": "Q19",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.375,
+     "conf": 60,
+     "raw": "ok, ok, ok, E-QUOTE, E-NAME, ok, ok, E-SYN",
+     "got": [
+      "ok",
+      "ok",
+      "ok",
+      "E-QUOTE",
+      "E-NAME",
+      "ok",
+      "ok",
+      "E-SYN"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q20",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.7142857142857143,
+     "conf": 55,
+     "raw": "E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, ok, E-ARITY",
+     "got": [
+      "E-ARITY",
+      "E-LEX",
+      "E-KIND",
+      "E-REDEF",
+      "E-SYN",
+      "ok",
+      "E-ARITY"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q21",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.7142857142857143,
+     "conf": 70,
+     "raw": "E-TIME, E-TIME, E-TIME, ok, E-KIND, ok, E-TIME",
+     "got": [
+      "E-TIME",
+      "E-TIME",
+      "E-TIME",
+      "ok",
+      "E-KIND",
+      "ok",
+      "E-TIME"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q22",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.375,
+     "conf": 55,
+     "raw": "ok, E-QUOTE, ok, E-MATH, E-MATH, ok, E-MATH, ok",
+     "got": [
+      "ok",
+      "E-QUOTE",
+      "ok",
+      "E-MATH",
+      "E-MATH",
+      "ok",
+      "E-MATH",
+      "ok"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q23",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5,
+     "conf": 65,
+     "raw": "ok, ok, E-HEAD, E-NAME, ok, ok",
+     "got": [
+      "ok",
+      "ok",
+      "E-HEAD",
+      "E-NAME",
+      "ok",
+      "ok"
+     ],
+     "present": true,
+     "chance": 3.3489797668038406e-07,
+     "est": "low"
+    },
+    {
+     "id": "Q24",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.8571428571428571,
+     "conf": 60,
+     "raw": "E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, ok",
+     "got": [
+      "E-HEAD",
+      "ok",
+      "E-HEAD",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "ok"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q25",
+     "part": "F",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.2,
+     "conf": 55,
+     "raw": "b,f,h",
+     "got": [
+      "b",
+      "f",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    },
+    {
+     "id": "Q26",
+     "part": "F",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5,
+     "conf": 65,
+     "raw": "a,e",
+     "got": [
+      "a",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q27",
+     "part": "F",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 60,
+     "raw": "a",
+     "got": [
+      "a"
+     ],
+     "present": true,
+     "chance": 0.14285714285714285,
+     "est": "low"
+    },
+    {
+     "id": "Q28",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 75,
+     "raw": "rest, force, force",
+     "got": [
+      "rest",
+      "force",
+      "force"
+     ],
+     "present": true,
+     "chance": 0.125,
+     "est": "low"
+    },
+    {
+     "id": "Q29",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q30",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 70,
+     "raw": "b,d",
+     "got": [
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q31",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 55,
+     "raw": "a,b,d",
+     "got": [
+      "a",
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q32",
+     "part": "G",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.75,
+     "conf": 50,
+     "raw": "c,d,e,f,h",
+     "got": [
+      "c",
+      "d",
+      "e",
+      "f",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    }
+   ],
+   "s": {
+    "n": 32,
+    "strict": 17,
+    "partial": 23.152380952380952,
+    "anchors": 3,
+    "n_anchors": 3,
+    "core": 14,
+    "n_core": 29,
+    "missing": [],
+    "parts": {
+     "A": [
+      3,
+      3
+     ],
+     "B": [
+      6,
+      9
+     ],
+     "C": [
+      2,
+      3
+     ],
+     "D": [
+      2,
+      3
+     ],
+     "E": [
+      0,
+      6
+     ],
+     "F": [
+      4,
+      7
+     ],
+     "G": [
+      0,
+      1
+     ]
+    },
+    "chance": 3.335602814768064,
+    "n_conf": 32,
+    "brier": 0.224575,
+    "mean_conf": 0.694375,
+    "acc_conf": 0.53125,
+    "high_conf_wrong": 0,
+    "high_conf_n": 9,
+    "lure": [
+     "Q7"
+    ],
+    "lure_n": 24,
+    "picks_strict": 8,
+    "z1_chars": 1284
+   },
+   "z1_chars": 1284
+  },
+  {
+   "kind": "R",
+   "model": "W2",
+   "form": "R+",
+   "run": 1,
+   "tag": "W2 R+",
+   "path": "../W2_Rplus.txt",
+   "rows": [
+    {
+     "id": "Q1",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q2",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q3",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q4",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q5",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q6",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q7",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q8",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q9",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q10",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q11",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q12",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q13",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "c,e,g",
+     "got": [
+      "c",
+      "e",
+      "g"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "medium"
+    },
+    {
+     "id": "Q14",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 75,
+     "raw": "d",
+     "got": [
+      "d"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q15",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "c,e",
+     "got": [
+      "c",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.015873015873015872,
+     "est": "low"
+    },
+    {
+     "id": "Q16",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q17",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "Ana1.2, error, error, error, Cy1.2",
+     "got": [
+      "Ana1.2",
+      "error",
+      "error",
+      "error",
+      "Cy1.2"
+     ],
+     "present": true,
+     "chance": 0.01,
+     "est": "low"
+    },
+    {
+     "id": "Q18",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "c,d,e",
+     "got": [
+      "c",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "medium"
+    },
+    {
+     "id": "Q19",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 75,
+     "raw": "E-QUOTE, ok, E-QUOTE, ok, E-NAME, ok, E-QUOTE, E-QUOTE",
+     "got": [
+      "E-QUOTE",
+      "ok",
+      "E-QUOTE",
+      "ok",
+      "E-NAME",
+      "ok",
+      "E-QUOTE",
+      "E-QUOTE"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q20",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, E-KIND, ok",
+     "got": [
+      "E-ARITY",
+      "E-LEX",
+      "E-KIND",
+      "E-REDEF",
+      "E-SYN",
+      "E-KIND",
+      "ok"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q21",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "ok, E-KIND, E-TIME, ok, E-KIND, ok, E-TIME",
+     "got": [
+      "ok",
+      "E-KIND",
+      "E-TIME",
+      "ok",
+      "E-KIND",
+      "ok",
+      "E-TIME"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q22",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.875,
+     "conf": 80,
+     "raw": "E-CODE, ok, ok, E-MATH, E-KIND, ok, E-MATH, E-KIND",
+     "got": [
+      "E-CODE",
+      "ok",
+      "ok",
+      "E-MATH",
+      "E-KIND",
+      "ok",
+      "E-MATH",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q23",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "ok, E-KIND, E-HEAD, E-HEAD, ok, E-KIND",
+     "got": [
+      "ok",
+      "E-KIND",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 3.3489797668038406e-07,
+     "est": "low"
+    },
+    {
+     "id": "Q24",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.8571428571428571,
+     "conf": 85,
+     "raw": "E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, E-KIND",
+     "got": [
+      "E-HEAD",
+      "ok",
+      "E-HEAD",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q25",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 70,
+     "raw": "c,e,f,g,h",
+     "got": [
+      "c",
+      "e",
+      "f",
+      "g",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    },
+    {
+     "id": "Q26",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "a,b,d,e",
+     "got": [
+      "a",
+      "b",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q27",
+     "part": "F",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 50,
+     "raw": "",
+     "got": [],
+     "present": true,
+     "chance": 0.14285714285714285,
+     "est": "low"
+    },
+    {
+     "id": "Q28",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "rest, force, force",
+     "got": [
+      "rest",
+      "force",
+      "force"
+     ],
+     "present": true,
+     "chance": 0.125,
+     "est": "low"
+    },
+    {
+     "id": "Q29",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q30",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "b,d",
+     "got": [
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q31",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "a,b,d",
+     "got": [
+      "a",
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q32",
+     "part": "G",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.75,
+     "conf": 70,
+     "raw": "c,d,e,f,h",
+     "got": [
+      "c",
+      "d",
+      "e",
+      "f",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    }
+   ],
+   "s": {
+    "n": 32,
+    "strict": 28,
+    "partial": 30.482142857142858,
+    "anchors": 3,
+    "n_anchors": 3,
+    "core": 25,
+    "n_core": 29,
+    "missing": [],
+    "parts": {
+     "A": [
+      3,
+      3
+     ],
+     "B": [
+      9,
+      9
+     ],
+     "C": [
+      3,
+      3
+     ],
+     "D": [
+      3,
+      3
+     ],
+     "E": [
+      4,
+      6
+     ],
+     "F": [
+      6,
+      7
+     ],
+     "G": [
+      0,
+      1
+     ]
+    },
+    "chance": 3.335602814768064,
+    "n_conf": 32,
+    "brier": 0.08453125,
+    "mean_conf": 0.85,
+    "acc_conf": 0.875,
+    "high_conf_wrong": 2,
+    "high_conf_n": 27,
+    "lure": [],
+    "lure_n": 24,
+    "picks_strict": 8,
+    "z1_chars": 1750
+   },
+   "z1_chars": 1750
+  },
+  {
+   "kind": "W",
+   "model": "W2",
+   "form": "W+",
+   "run": 1,
+   "tag": "W2 W+",
+   "path": "../W2_Wplus.txt",
+   "res": [
+    {
+     "task": "W1",
+     "got": {
+      "w1.hdr": true,
+      "w1.agree": true,
+      "w1.rej": true,
+      "w1.why": true,
+      "w1.err": false,
+      "w1.full": true,
+      "w1.ans": true,
+      "w1.clean": true
+     },
+     "pts": 7,
+     "max": 8,
+     "lines": 6,
+     "lines_ok": 6,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W2",
+     "got": {
+      "w2.hdr": true,
+      "w2.bel": true,
+      "w2.say": true,
+      "w2.fact": true,
+      "w2.assume": true,
+      "w2.pls": false,
+      "w2.by": false,
+      "w2.sug": true,
+      "w2.at": true
+     },
+     "pts": 7,
+     "max": 9,
+     "lines": 7,
+     "lines_ok": 7,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W3",
+     "got": {
+      "w3.s1": true,
+      "w3.s2": true,
+      "w3.s3": true,
+      "w3.s4": true,
+      "w3.s5a": true,
+      "w3.s5b": true,
+      "w3.s6a": false,
+      "w3.s6b": false,
+      "w3.s7a": false,
+      "w3.s7b": false,
+      "w3.s8a": true,
+      "w3.s8b": false
+     },
+     "pts": 7,
+     "max": 12,
+     "lines": 8,
+     "lines_ok": 7,
+     "codes": {
+      "E-KIND": 1
+     },
+     "problems": [],
+     "present": true,
+     "bad": [
+      [
+       "line",
+       6,
+       "during(2026-11-09T01:00/2026-11-09T05:00,rep(3,\"restart cleanup job\"))",
+       "E-KIND"
+      ]
+     ],
+     "notes": []
+    },
+    {
+     "task": "W4",
+     "got": {
+      "w4.bhdr": true,
+      "w4.s1": true,
+      "w4.s2": true,
+      "w4.reasons": true,
+      "w4.ans": true,
+      "w4.ahdr": true,
+      "w4.chk": true,
+      "w4.agree": true
+     },
+     "pts": 8,
+     "max": 8,
+     "lines": 7,
+     "lines_ok": 7,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W5",
+     "got": {
+      "w5.ahdr": true,
+      "w5.adef": true,
+      "w5.alines": true,
+      "w5.arev": true,
+      "w5.arun": true,
+      "w5.bhdr": true,
+      "w5.berr": true,
+      "w5.bwhy": true,
+      "w5.bdef": true,
+      "w5.blines": true,
+      "w5.buse": true,
+      "w5.bwill": true
+     },
+     "pts": 12,
+     "max": 12,
+     "lines": 9,
+     "lines_ok": 9,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W6",
+     "got": {
+      "w6.hdr": true,
+      "w6.pairs": true,
+      "w6.all": true,
+      "w6.re": true
+     },
+     "pts": 4,
+     "max": 4,
+     "lines": 6,
+     "lines_ok": 6,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W7",
+     "got": {
+      "w7.hdr": true,
+      "w7.def": true,
+      "w7.once": true,
+      "w7.claim": true,
+      "w7.insp": false,
+      "w7.none": true,
+      "w7.ref": true,
+      "w7.move": true
+     },
+     "pts": 7,
+     "max": 8,
+     "lines": 5,
+     "lines_ok": 5,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W8",
+     "got": {
+      "w8.hdr": true,
+      "w8.join": true,
+      "w8.ask": true,
+      "w8.only": true,
+      "w8.retr": true,
+      "w8.clr": true,
+      "w8.unit": true
+     },
+     "pts": 7,
+     "max": 7,
+     "lines": 5,
+     "lines_ok": 5,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    }
+   ],
+   "t": {
+    "pts": 59,
+    "max": 68,
+    "lines": 53,
+    "lines_ok": 52
+   }
+  },
+  {
+   "kind": "R",
+   "model": "W3",
+   "form": "R-",
+   "run": 1,
+   "tag": "W3 R-",
+   "path": "../W3_Rminus.txt",
+   "rows": [
+    {
+     "id": "Q1",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q2",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q3",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q4",
+     "part": "B",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 90,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q5",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 78,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q6",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q7",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 67,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q8",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 97,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q9",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 96,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q10",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q11",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 91,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q12",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q13",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 72,
+     "raw": "c,e,g",
+     "got": [
+      "c",
+      "e",
+      "g"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "medium"
+    },
+    {
+     "id": "Q14",
+     "part": "C",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 65,
+     "raw": "a,d,e",
+     "got": [
+      "a",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q15",
+     "part": "C",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 48,
+     "raw": "b,e",
+     "got": [
+      "b",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.015873015873015872,
+     "est": "low"
+    },
+    {
+     "id": "Q16",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q17",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 58,
+     "raw": "Ana1.2,error,error,error,Cy1.2",
+     "got": [
+      "Ana1.2",
+      "error",
+      "error",
+      "error",
+      "Cy1.2"
+     ],
+     "present": true,
+     "chance": 0.01,
+     "est": "low"
+    },
+    {
+     "id": "Q18",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "c,d,e",
+     "got": [
+      "c",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "medium"
+    },
+    {
+     "id": "Q19",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.625,
+     "conf": 57,
+     "raw": "ok,ok,ok,ok,E-NAME,ok,ok,E-QUOTE",
+     "got": [
+      "ok",
+      "ok",
+      "ok",
+      "ok",
+      "E-NAME",
+      "ok",
+      "ok",
+      "E-QUOTE"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q20",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.8571428571428571,
+     "conf": 62,
+     "raw": "E-ARITY,E-LEX,E-KIND,E-REDEF,E-SYN,E-KIND,E-KIND",
+     "got": [
+      "E-ARITY",
+      "E-LEX",
+      "E-KIND",
+      "E-REDEF",
+      "E-SYN",
+      "E-KIND",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q21",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5714285714285714,
+     "conf": 54,
+     "raw": "E-TIME,E-TIME,E-TIME,ok,E-TIME,ok,E-TIME",
+     "got": [
+      "E-TIME",
+      "E-TIME",
+      "E-TIME",
+      "ok",
+      "E-TIME",
+      "ok",
+      "E-TIME"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q22",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5,
+     "conf": 52,
+     "raw": "E-CODE,ok,ok,E-MATH,E-MATH,E-MATH,E-MATH,ok",
+     "got": [
+      "E-CODE",
+      "ok",
+      "ok",
+      "E-MATH",
+      "E-MATH",
+      "E-MATH",
+      "E-MATH",
+      "ok"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q23",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5,
+     "conf": 48,
+     "raw": "ok,ok,E-KIND,E-KIND,ok,E-KIND",
+     "got": [
+      "ok",
+      "ok",
+      "E-KIND",
+      "E-KIND",
+      "ok",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 3.3489797668038406e-07,
+     "est": "low"
+    },
+    {
+     "id": "Q24",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.8571428571428571,
+     "conf": 63,
+     "raw": "E-HEAD,ok,E-HEAD,E-HEAD,E-HEAD,ok,E-HEAD",
+     "got": [
+      "E-HEAD",
+      "ok",
+      "E-HEAD",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "E-HEAD"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q25",
+     "part": "F",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.8,
+     "conf": 61,
+     "raw": "c,e,f,h",
+     "got": [
+      "c",
+      "e",
+      "f",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    },
+    {
+     "id": "Q26",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 67,
+     "raw": "a,b,d,e",
+     "got": [
+      "a",
+      "b",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q27",
+     "part": "F",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 74,
+     "raw": "a",
+     "got": [
+      "a"
+     ],
+     "present": true,
+     "chance": 0.14285714285714285,
+     "est": "low"
+    },
+    {
+     "id": "Q28",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "rest,force,force",
+     "got": [
+      "rest",
+      "force",
+      "force"
+     ],
+     "present": true,
+     "chance": 0.125,
+     "est": "low"
+    },
+    {
+     "id": "Q29",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q30",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 68,
+     "raw": "b,d",
+     "got": [
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q31",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 68,
+     "raw": "a,b,d",
+     "got": [
+      "a",
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q32",
+     "part": "G",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.75,
+     "conf": 70,
+     "raw": "c,d,e,f,h",
+     "got": [
+      "c",
+      "d",
+      "e",
+      "f",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    }
+   ],
+   "s": {
+    "n": 32,
+    "strict": 20,
+    "partial": 25.460714285714285,
+    "anchors": 3,
+    "n_anchors": 3,
+    "core": 17,
+    "n_core": 29,
+    "missing": [],
+    "parts": {
+     "A": [
+      3,
+      3
+     ],
+     "B": [
+      8,
+      9
+     ],
+     "C": [
+      1,
+      3
+     ],
+     "D": [
+      3,
+      3
+     ],
+     "E": [
+      0,
+      6
+     ],
+     "F": [
+      5,
+      7
+     ],
+     "G": [
+      0,
+      1
+     ]
+    },
+    "chance": 3.335602814768064,
+    "n_conf": 32,
+    "brier": 0.174628125,
+    "mean_conf": 0.7628125,
+    "acc_conf": 0.625,
+    "high_conf_wrong": 1,
+    "high_conf_n": 14,
+    "lure": [
+     "Q14",
+     "Q19"
+    ],
+    "lure_n": 24,
+    "picks_strict": 8,
+    "z1_chars": 2321
+   },
+   "z1_chars": 2321
+  },
+  {
+   "kind": "R",
+   "model": "W3",
+   "form": "R+",
+   "run": 1,
+   "tag": "W3 R+",
+   "path": "../W3_Rplus.txt",
+   "rows": [
+    {
+     "id": "Q1",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q2",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q3",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q4",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q5",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q6",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q7",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q8",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q9",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q10",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 98,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q11",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q12",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q13",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "c,e,g",
+     "got": [
+      "c",
+      "e",
+      "g"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "medium"
+    },
+    {
+     "id": "Q14",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 98,
+     "raw": "d",
+     "got": [
+      "d"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q15",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "c,e",
+     "got": [
+      "c",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.015873015873015872,
+     "est": "low"
+    },
+    {
+     "id": "Q16",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q17",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "Ana1.2,error,error,error,Cy1.2",
+     "got": [
+      "Ana1.2",
+      "error",
+      "error",
+      "error",
+      "Cy1.2"
+     ],
+     "present": true,
+     "chance": 0.01,
+     "est": "low"
+    },
+    {
+     "id": "Q18",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "c,d,e",
+     "got": [
+      "c",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "medium"
+    },
+    {
+     "id": "Q19",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "E-QUOTE,ok,E-QUOTE,ok,E-NAME,ok,E-QUOTE,E-QUOTE",
+     "got": [
+      "E-QUOTE",
+      "ok",
+      "E-QUOTE",
+      "ok",
+      "E-NAME",
+      "ok",
+      "E-QUOTE",
+      "E-QUOTE"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q20",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "E-ARITY,E-LEX,E-KIND,E-REDEF,E-SYN,E-KIND,ok",
+     "got": [
+      "E-ARITY",
+      "E-LEX",
+      "E-KIND",
+      "E-REDEF",
+      "E-SYN",
+      "E-KIND",
+      "ok"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q21",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "ok,E-KIND,E-TIME,ok,E-KIND,ok,E-TIME",
+     "got": [
+      "ok",
+      "E-KIND",
+      "E-TIME",
+      "ok",
+      "E-KIND",
+      "ok",
+      "E-TIME"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q22",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.875,
+     "conf": 99,
+     "raw": "E-CODE,ok,ok,E-MATH,E-KIND,ok,E-MATH,E-KIND",
+     "got": [
+      "E-CODE",
+      "ok",
+      "ok",
+      "E-MATH",
+      "E-KIND",
+      "ok",
+      "E-MATH",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q23",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "ok,E-KIND,E-HEAD,E-HEAD,ok,E-KIND",
+     "got": [
+      "ok",
+      "E-KIND",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 3.3489797668038406e-07,
+     "est": "low"
+    },
+    {
+     "id": "Q24",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "E-HEAD,ok,E-HEAD,E-HEAD,E-HEAD,ok,E-LEX",
+     "got": [
+      "E-HEAD",
+      "ok",
+      "E-HEAD",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "E-LEX"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q25",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 98,
+     "raw": "c,e,f,g,h",
+     "got": [
+      "c",
+      "e",
+      "f",
+      "g",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    },
+    {
+     "id": "Q26",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "a,b,d,e",
+     "got": [
+      "a",
+      "b",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q27",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "b",
+     "got": [
+      "b"
+     ],
+     "present": true,
+     "chance": 0.14285714285714285,
+     "est": "low"
+    },
+    {
+     "id": "Q28",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "rest,force,force",
+     "got": [
+      "rest",
+      "force",
+      "force"
+     ],
+     "present": true,
+     "chance": 0.125,
+     "est": "low"
+    },
+    {
+     "id": "Q29",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q30",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "b,d",
+     "got": [
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q31",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 99,
+     "raw": "a,b,d",
+     "got": [
+      "a",
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q32",
+     "part": "G",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.75,
+     "conf": 99,
+     "raw": "c,d,e,f,h",
+     "got": [
+      "c",
+      "d",
+      "e",
+      "f",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    }
+   ],
+   "s": {
+    "n": 32,
+    "strict": 30,
+    "partial": 31.625,
+    "anchors": 3,
+    "n_anchors": 3,
+    "core": 27,
+    "n_core": 29,
+    "missing": [],
+    "parts": {
+     "A": [
+      3,
+      3
+     ],
+     "B": [
+      9,
+      9
+     ],
+     "C": [
+      3,
+      3
+     ],
+     "D": [
+      3,
+      3
+     ],
+     "E": [
+      5,
+      6
+     ],
+     "F": [
+      7,
+      7
+     ],
+     "G": [
+      0,
+      1
+     ]
+    },
+    "chance": 3.335602814768064,
+    "n_conf": 32,
+    "brier": 0.061321875,
+    "mean_conf": 0.9946875,
+    "acc_conf": 0.9375,
+    "high_conf_wrong": 2,
+    "high_conf_n": 32,
+    "lure": [],
+    "lure_n": 24,
+    "picks_strict": 8,
+    "z1_chars": 4466
+   },
+   "z1_chars": 4466
+  },
+  {
+   "kind": "W",
+   "model": "W3",
+   "form": "W+",
+   "run": 1,
+   "tag": "W3 W+",
+   "path": "../W3_Wplus.txt",
+   "res": [
+    {
+     "task": "W1",
+     "got": {
+      "w1.hdr": true,
+      "w1.agree": true,
+      "w1.rej": true,
+      "w1.why": true,
+      "w1.err": true,
+      "w1.full": true,
+      "w1.ans": true,
+      "w1.clean": true
+     },
+     "pts": 8,
+     "max": 8,
+     "lines": 5,
+     "lines_ok": 5,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W2",
+     "got": {
+      "w2.hdr": true,
+      "w2.bel": true,
+      "w2.say": true,
+      "w2.fact": true,
+      "w2.assume": true,
+      "w2.pls": true,
+      "w2.by": true,
+      "w2.sug": true,
+      "w2.at": true
+     },
+     "pts": 9,
+     "max": 9,
+     "lines": 7,
+     "lines_ok": 7,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W3",
+     "got": {
+      "w3.s1": true,
+      "w3.s2": true,
+      "w3.s3": true,
+      "w3.s4": true,
+      "w3.s5a": true,
+      "w3.s5b": true,
+      "w3.s6a": false,
+      "w3.s6b": false,
+      "w3.s7a": true,
+      "w3.s7b": true,
+      "w3.s8a": true,
+      "w3.s8b": true
+     },
+     "pts": 10,
+     "max": 12,
+     "lines": 8,
+     "lines_ok": 7,
+     "codes": {
+      "E-KIND": 1
+     },
+     "problems": [],
+     "present": true,
+     "bad": [
+      [
+       "line",
+       6,
+       "during(2026-11-09T01:00/2026-11-09T05:00,rep(3,\"restart cleanup job\"))",
+       "E-KIND"
+      ]
+     ],
+     "notes": []
+    },
+    {
+     "task": "W4",
+     "got": {
+      "w4.bhdr": true,
+      "w4.s1": true,
+      "w4.s2": true,
+      "w4.reasons": true,
+      "w4.ans": true,
+      "w4.ahdr": true,
+      "w4.chk": true,
+      "w4.agree": true
+     },
+     "pts": 8,
+     "max": 8,
+     "lines": 7,
+     "lines_ok": 7,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W5",
+     "got": {
+      "w5.ahdr": true,
+      "w5.adef": true,
+      "w5.alines": true,
+      "w5.arev": true,
+      "w5.arun": true,
+      "w5.bhdr": true,
+      "w5.berr": true,
+      "w5.bwhy": true,
+      "w5.bdef": true,
+      "w5.blines": true,
+      "w5.buse": true,
+      "w5.bwill": true
+     },
+     "pts": 12,
+     "max": 12,
+     "lines": 9,
+     "lines_ok": 9,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W6",
+     "got": {
+      "w6.hdr": true,
+      "w6.pairs": true,
+      "w6.all": true,
+      "w6.re": true
+     },
+     "pts": 4,
+     "max": 4,
+     "lines": 6,
+     "lines_ok": 6,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W7",
+     "got": {
+      "w7.hdr": true,
+      "w7.def": true,
+      "w7.once": true,
+      "w7.claim": true,
+      "w7.insp": true,
+      "w7.none": true,
+      "w7.ref": true,
+      "w7.move": true
+     },
+     "pts": 8,
+     "max": 8,
+     "lines": 5,
+     "lines_ok": 5,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W8",
+     "got": {
+      "w8.hdr": true,
+      "w8.join": true,
+      "w8.ask": true,
+      "w8.only": true,
+      "w8.retr": true,
+      "w8.clr": true,
+      "w8.unit": true
+     },
+     "pts": 7,
+     "max": 7,
+     "lines": 5,
+     "lines_ok": 5,
+     "codes": {},
+     "problems": [],
+     "present": true,
+     "bad": [],
+     "notes": []
+    }
+   ],
+   "t": {
+    "pts": 66,
+    "max": 68,
+    "lines": 52,
+    "lines_ok": 51
+   }
+  },
+  {
+   "kind": "R",
+   "model": "W4",
+   "form": "R-",
+   "run": 1,
+   "tag": "W4 R-",
+   "path": "../W4_Rminus.txt",
+   "rows": [
+    {
+     "id": "Q1",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q2",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q3",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q4",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 70,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q5",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 75,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q6",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q7",
+     "part": "B",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 90,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q8",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q9",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q10",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q11",
+     "part": "B",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 75,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q12",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q13",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 75,
+     "raw": "c,e,g",
+     "got": [
+      "c",
+      "e",
+      "g"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "medium"
+    },
+    {
+     "id": "Q14",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 70,
+     "raw": "d",
+     "got": [
+      "d"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q15",
+     "part": "C",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5,
+     "conf": 85,
+     "raw": "b,c,e",
+     "got": [
+      "b",
+      "c",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.015873015873015872,
+     "est": "low"
+    },
+    {
+     "id": "Q16",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 75,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q17",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 80,
+     "raw": "Ana1.2, error, error, error, Cy1.2",
+     "got": [
+      "Ana1.2",
+      "error",
+      "error",
+      "error",
+      "Cy1.2"
+     ],
+     "present": true,
+     "chance": 0.01,
+     "est": "low"
+    },
+    {
+     "id": "Q18",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "c,d,e",
+     "got": [
+      "c",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "medium"
+    },
+    {
+     "id": "Q19",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.375,
+     "conf": 60,
+     "raw": "ok, ok, ok, E-QUOTE, E-NAME, ok, ok, E-SYN",
+     "got": [
+      "ok",
+      "ok",
+      "ok",
+      "E-QUOTE",
+      "E-NAME",
+      "ok",
+      "ok",
+      "E-SYN"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q20",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.8571428571428571,
+     "conf": 65,
+     "raw": "E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, E-KIND, E-KIND",
+     "got": [
+      "E-ARITY",
+      "E-LEX",
+      "E-KIND",
+      "E-REDEF",
+      "E-SYN",
+      "E-KIND",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q21",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5714285714285714,
+     "conf": 85,
+     "raw": "E-TIME, E-TIME, E-TIME, ok, E-TIME, ok, E-TIME",
+     "got": [
+      "E-TIME",
+      "E-TIME",
+      "E-TIME",
+      "ok",
+      "E-TIME",
+      "ok",
+      "E-TIME"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q22",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5,
+     "conf": 50,
+     "raw": "E-KIND, E-KIND, E-KIND, E-MATH, E-KIND, ok, E-MATH, ok",
+     "got": [
+      "E-KIND",
+      "E-KIND",
+      "E-KIND",
+      "E-MATH",
+      "E-KIND",
+      "ok",
+      "E-MATH",
+      "ok"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q23",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.5,
+     "conf": 65,
+     "raw": "ok, ok, E-KIND, E-NAME, ok, E-KIND",
+     "got": [
+      "ok",
+      "ok",
+      "E-KIND",
+      "E-NAME",
+      "ok",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 3.3489797668038406e-07,
+     "est": "low"
+    },
+    {
+     "id": "Q24",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 70,
+     "raw": "E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, E-LEX",
+     "got": [
+      "E-HEAD",
+      "ok",
+      "E-HEAD",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "E-LEX"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q25",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 85,
+     "raw": "c,e,f,g,h",
+     "got": [
+      "c",
+      "e",
+      "f",
+      "g",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    },
+    {
+     "id": "Q26",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "a,b,d,e",
+     "got": [
+      "a",
+      "b",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q27",
+     "part": "F",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.0,
+     "conf": 85,
+     "raw": "a,b",
+     "got": [
+      "a",
+      "b"
+     ],
+     "present": true,
+     "chance": 0.14285714285714285,
+     "est": "low"
+    },
+    {
+     "id": "Q28",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "rest, force, force",
+     "got": [
+      "rest",
+      "force",
+      "force"
+     ],
+     "present": true,
+     "chance": 0.125,
+     "est": "low"
+    },
+    {
+     "id": "Q29",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 95,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q30",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "b,d",
+     "got": [
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q31",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 90,
+     "raw": "a,b,d",
+     "got": [
+      "a",
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q32",
+     "part": "G",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.75,
+     "conf": 95,
+     "raw": "c,d,e,f,h",
+     "got": [
+      "c",
+      "d",
+      "e",
+      "f",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    }
+   ],
+   "s": {
+    "n": 32,
+    "strict": 22,
+    "partial": 26.053571428571427,
+    "anchors": 3,
+    "n_anchors": 3,
+    "core": 19,
+    "n_core": 29,
+    "missing": [],
+    "parts": {
+     "A": [
+      3,
+      3
+     ],
+     "B": [
+      7,
+      9
+     ],
+     "C": [
+      2,
+      3
+     ],
+     "D": [
+      3,
+      3
+     ],
+     "E": [
+      1,
+      6
+     ],
+     "F": [
+      6,
+      7
+     ],
+     "G": [
+      0,
+      1
+     ]
+    },
+    "chance": 3.335602814768064,
+    "n_conf": 32,
+    "brier": 0.204921875,
+    "mean_conf": 0.8203125,
+    "acc_conf": 0.6875,
+    "high_conf_wrong": 5,
+    "high_conf_n": 21,
+    "lure": [
+     "Q7",
+     "Q15",
+     "Q27"
+    ],
+    "lure_n": 24,
+    "picks_strict": 8,
+    "z1_chars": 1547
+   },
+   "z1_chars": 1547
+  },
+  {
+   "kind": "R",
+   "model": "W4",
+   "form": "R+",
+   "run": 1,
+   "tag": "W4 R+",
+   "path": "../W4_Rplus.txt",
+   "rows": [
+    {
+     "id": "Q1",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q2",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q3",
+     "part": "A",
+     "anchor": true,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "high"
+    },
+    {
+     "id": "Q4",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q5",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q6",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q7",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "D",
+     "got": "D",
+     "present": true,
+     "chance": 0.2,
+     "est": "low"
+    },
+    {
+     "id": "Q8",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q9",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q10",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "B",
+     "got": "B",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q11",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "E",
+     "got": "E",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q12",
+     "part": "B",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q13",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "c, e, g",
+     "got": [
+      "c",
+      "e",
+      "g"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "medium"
+    },
+    {
+     "id": "Q14",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "d",
+     "got": [
+      "d"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q15",
+     "part": "C",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "c, e",
+     "got": [
+      "c",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.015873015873015872,
+     "est": "low"
+    },
+    {
+     "id": "Q16",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "C",
+     "got": "C",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q17",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "Ana1.2, error, error, error, Cy1.2",
+     "got": [
+      "Ana1.2",
+      "error",
+      "error",
+      "error",
+      "Cy1.2"
+     ],
+     "present": true,
+     "chance": 0.01,
+     "est": "low"
+    },
+    {
+     "id": "Q18",
+     "part": "D",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "c, d, e",
+     "got": [
+      "c",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "medium"
+    },
+    {
+     "id": "Q19",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "E-QUOTE, ok, E-QUOTE, ok, E-NAME, ok, E-QUOTE, E-QUOTE",
+     "got": [
+      "E-QUOTE",
+      "ok",
+      "E-QUOTE",
+      "ok",
+      "E-NAME",
+      "ok",
+      "E-QUOTE",
+      "E-QUOTE"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q20",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, E-KIND, ok",
+     "got": [
+      "E-ARITY",
+      "E-LEX",
+      "E-KIND",
+      "E-REDEF",
+      "E-SYN",
+      "E-KIND",
+      "ok"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q21",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "ok, E-KIND, E-TIME, ok, E-KIND, ok, E-TIME",
+     "got": [
+      "ok",
+      "E-KIND",
+      "E-TIME",
+      "ok",
+      "E-KIND",
+      "ok",
+      "E-TIME"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q22",
+     "part": "E",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.875,
+     "conf": 100,
+     "raw": "E-CODE, ok, ok, E-MATH, E-KIND, ok, E-MATH, E-KIND",
+     "got": [
+      "E-CODE",
+      "ok",
+      "ok",
+      "E-MATH",
+      "E-KIND",
+      "ok",
+      "E-MATH",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 2.3256803936137784e-09,
+     "est": "low"
+    },
+    {
+     "id": "Q23",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "ok, E-KIND, E-HEAD, E-HEAD, ok, E-KIND",
+     "got": [
+      "ok",
+      "E-KIND",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "E-KIND"
+     ],
+     "present": true,
+     "chance": 3.3489797668038406e-07,
+     "est": "low"
+    },
+    {
+     "id": "Q24",
+     "part": "E",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, E-LEX",
+     "got": [
+      "E-HEAD",
+      "ok",
+      "E-HEAD",
+      "E-HEAD",
+      "E-HEAD",
+      "ok",
+      "E-LEX"
+     ],
+     "present": true,
+     "chance": 2.790816472336534e-08,
+     "est": "low"
+    },
+    {
+     "id": "Q25",
+     "part": "F",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.8,
+     "conf": 100,
+     "raw": "b, c, e, f, g, h",
+     "got": [
+      "b",
+      "c",
+      "e",
+      "f",
+      "g",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    },
+    {
+     "id": "Q26",
+     "part": "F",
+     "anchor": false,
+     "strict": 0,
+     "partial": 0.75,
+     "conf": 100,
+     "raw": "a, d, e",
+     "got": [
+      "a",
+      "d",
+      "e"
+     ],
+     "present": true,
+     "chance": 0.03225806451612903,
+     "est": "low"
+    },
+    {
+     "id": "Q27",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "b",
+     "got": [
+      "b"
+     ],
+     "present": true,
+     "chance": 0.14285714285714285,
+     "est": "low"
+    },
+    {
+     "id": "Q28",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "rest, force, force",
+     "got": [
+      "rest",
+      "force",
+      "force"
+     ],
+     "present": true,
+     "chance": 0.125,
+     "est": "low"
+    },
+    {
+     "id": "Q29",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "A",
+     "got": "A",
+     "present": true,
+     "chance": 0.2,
+     "est": "medium"
+    },
+    {
+     "id": "Q30",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "b, d",
+     "got": [
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q31",
+     "part": "F",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "a, b, d",
+     "got": [
+      "a",
+      "b",
+      "d"
+     ],
+     "present": true,
+     "chance": 0.06666666666666667,
+     "est": "medium"
+    },
+    {
+     "id": "Q32",
+     "part": "G",
+     "anchor": false,
+     "strict": 1,
+     "partial": 1.0,
+     "conf": 100,
+     "raw": "c, d, f, h",
+     "got": [
+      "c",
+      "d",
+      "f",
+      "h"
+     ],
+     "present": true,
+     "chance": 0.00392156862745098,
+     "est": "low"
+    }
+   ],
+   "s": {
+    "n": 32,
+    "strict": 29,
+    "partial": 31.425,
+    "anchors": 3,
+    "n_anchors": 3,
+    "core": 26,
+    "n_core": 29,
+    "missing": [],
+    "parts": {
+     "A": [
+      3,
+      3
+     ],
+     "B": [
+      9,
+      9
+     ],
+     "C": [
+      3,
+      3
+     ],
+     "D": [
+      3,
+      3
+     ],
+     "E": [
+      5,
+      6
+     ],
+     "F": [
+      5,
+      7
+     ],
+     "G": [
+      1,
+      1
+     ]
+    },
+    "chance": 3.335602814768064,
+    "n_conf": 32,
+    "brier": 0.09375,
+    "mean_conf": 1.0,
+    "acc_conf": 0.90625,
+    "high_conf_wrong": 3,
+    "high_conf_n": 32,
+    "lure": [],
+    "lure_n": 24,
+    "picks_strict": 8,
+    "z1_chars": 1458
+   },
+   "z1_chars": 1458
+  },
+  {
+   "kind": "W",
+   "model": "W4",
+   "form": "W+",
+   "run": 1,
+   "tag": "W4 W+",
+   "path": "../W4_Wplus.txt",
+   "res": [
+    {
+     "task": "W1",
+     "got": {
+      "w1.hdr": false,
+      "w1.agree": false,
+      "w1.rej": false,
+      "w1.why": false,
+      "w1.err": false,
+      "w1.full": false,
+      "w1.ans": false,
+      "w1.clean": false
+     },
+     "pts": 0,
+     "max": 8,
+     "lines": 0,
+     "lines_ok": 0,
+     "codes": {},
+     "problems": [],
+     "present": false,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W2",
+     "got": {
+      "w2.hdr": false,
+      "w2.bel": false,
+      "w2.say": false,
+      "w2.fact": false,
+      "w2.assume": false,
+      "w2.pls": false,
+      "w2.by": false,
+      "w2.sug": false,
+      "w2.at": false
+     },
+     "pts": 0,
+     "max": 9,
+     "lines": 0,
+     "lines_ok": 0,
+     "codes": {},
+     "problems": [],
+     "present": false,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W3",
+     "got": {
+      "w3.s1": false,
+      "w3.s2": false,
+      "w3.s3": false,
+      "w3.s4": false,
+      "w3.s5a": false,
+      "w3.s5b": false,
+      "w3.s6a": false,
+      "w3.s6b": false,
+      "w3.s7a": false,
+      "w3.s7b": false,
+      "w3.s8a": false,
+      "w3.s8b": false
+     },
+     "pts": 0,
+     "max": 12,
+     "lines": 0,
+     "lines_ok": 0,
+     "codes": {},
+     "problems": [],
+     "present": false,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W4",
+     "got": {
+      "w4.bhdr": false,
+      "w4.s1": false,
+      "w4.s2": false,
+      "w4.reasons": false,
+      "w4.ans": false,
+      "w4.ahdr": false,
+      "w4.chk": false,
+      "w4.agree": false
+     },
+     "pts": 0,
+     "max": 8,
+     "lines": 0,
+     "lines_ok": 0,
+     "codes": {},
+     "problems": [],
+     "present": false,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W5",
+     "got": {
+      "w5.ahdr": false,
+      "w5.adef": false,
+      "w5.alines": false,
+      "w5.arev": false,
+      "w5.arun": false,
+      "w5.bhdr": false,
+      "w5.berr": false,
+      "w5.bwhy": false,
+      "w5.bdef": false,
+      "w5.blines": false,
+      "w5.buse": false,
+      "w5.bwill": false
+     },
+     "pts": 0,
+     "max": 12,
+     "lines": 0,
+     "lines_ok": 0,
+     "codes": {},
+     "problems": [],
+     "present": false,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W6",
+     "got": {
+      "w6.hdr": false,
+      "w6.pairs": false,
+      "w6.all": false,
+      "w6.re": false
+     },
+     "pts": 0,
+     "max": 4,
+     "lines": 0,
+     "lines_ok": 0,
+     "codes": {},
+     "problems": [],
+     "present": false,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W7",
+     "got": {
+      "w7.hdr": false,
+      "w7.def": false,
+      "w7.once": false,
+      "w7.claim": false,
+      "w7.insp": false,
+      "w7.none": false,
+      "w7.ref": false,
+      "w7.move": false
+     },
+     "pts": 0,
+     "max": 8,
+     "lines": 0,
+     "lines_ok": 0,
+     "codes": {},
+     "problems": [],
+     "present": false,
+     "bad": [],
+     "notes": []
+    },
+    {
+     "task": "W8",
+     "got": {
+      "w8.hdr": false,
+      "w8.join": false,
+      "w8.ask": false,
+      "w8.only": false,
+      "w8.retr": false,
+      "w8.clr": false,
+      "w8.unit": false
+     },
+     "pts": 0,
+     "max": 7,
+     "lines": 0,
+     "lines_ok": 0,
+     "codes": {},
+     "problems": [],
+     "present": false,
+     "bad": [],
+     "notes": []
+    }
+   ],
+   "t": {
+    "pts": 0,
+    "max": 68,
+    "lines": 0,
+    "lines_ok": 0
+   }
+  }
+ ]
+}

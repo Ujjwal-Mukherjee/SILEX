@@ -1,0 +1,48 @@
+Z1 account
+
+Rae’s message 3 is addressed to both Kai and Lena (high priority). It answers Kai2 (so bare line numbers refer to lines of Kai2) and records that Rae had already read Lena1.
+
+- Line 1 (`agree(2)`): Rae agrees with line 2 of Kai2. This is a speech act of agreement; it asserts nothing further about the content of that line.
+- Line 2 (`rej(1, not(may(Me,"open vault")))`): Rae declines whatever request or proposal occupies line 1 of Kai2. The reason is asserted: Rae may not open the vault. A claim (if line 1 of Kai2 is one) is not thereby denied.
+- Line 3 (`hyp(cause("seal","leak"))`): Rae offers the hypothesis that the seal caused a leak. The causal claim is only mentioned, not asserted.
+- Line 4 (`prob(cause("seal","leak"), lo)`): Rae assigns low probability to the same causal claim. The claim itself is only mentioned.
+- Line 5 (`if(is(You,"on call"), pls(You,"check seal"))`): The condition is tested separately for each receiver. For whichever of Kai or Lena is on call, that agent is asked to check the seal. Neither the condition nor the request is asserted unconditionally.
+- Line 6 (`after(fin("flush"), act(Kai,"sample water"))`): Rae asserts that Kai’s sampling of water occurs after the flush finishes. The finishing of the flush is used only to name a time and is not itself asserted to have occurred.
+- Line 7 (`sug(at(2026-11-12T10:00, "replace seal"))`): Rae proposes that the seal be replaced at the stated time. The proposal is made to the receivers (and to Rae); nothing is adopted until the receivers agree.
+
+Only the agreement, the reason inside the rejection, and the temporal claim about Kai’s sampling are asserted. Everything else is mentioned, hypothesised, probabilistic, conditional, or merely proposed.
+
+```text
+Q1: D | 95
+Q2: B | 95
+Q3: C | 95
+Q4: E | 90
+Q5: D | 90
+Q6: C | 95
+Q7: D | 95
+Q8: B | 90
+Q9: A | 90
+Q10: B | 80
+Q11: E | 90
+Q12: A | 85
+Q13: c,e,g | 85
+Q14: d | 75
+Q15: c,e | 85
+Q16: C | 90
+Q17: Ana1.2, error, error, error, Cy1.2 | 90
+Q18: c,d,e | 90
+Q19: E-QUOTE, ok, E-QUOTE, ok, E-NAME, ok, E-QUOTE, E-QUOTE | 75
+Q20: E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, E-KIND, ok | 80
+Q21: ok, E-KIND, E-TIME, ok, E-KIND, ok, E-TIME | 85
+Q22: E-CODE, ok, ok, E-MATH, E-KIND, ok, E-MATH, E-KIND | 80
+Q23: ok, E-KIND, E-HEAD, E-HEAD, ok, E-KIND | 90
+Q24: E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, E-KIND | 85
+Q25: c,e,f,g,h | 70
+Q26: a,b,d,e | 80
+Q27:  | 50
+Q28: rest, force, force | 90
+Q29: A | 95
+Q30: b,d | 85
+Q31: a,b,d | 80
+Q32: c,d,e,f,h | 70
+```

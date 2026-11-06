@@ -1,0 +1,111 @@
+### Z1. Interpretation of the SILEX message
+
+### Message header
+
+`msg(Rae,Kai,Lena,3,re(Kai2),saw(Lena1),pri(hi))`
+
+This is Rae's third message, addressed to both Kai and Lena. It replies to Kai's second message (`Kai2`) and records that Rae has read Lena's first message (`Lena1`). Its priority is high.
+
+The header establishes that Rae3 follows Kai2, Lena1, and Rae's own earlier messages. It does not establish that Kai2 precedes Lena1 or vice versa.
+
+### Line-by-line interpretation
+
+Line 1: `agree(2)`
+
+Rae agrees with line 2 of Kai's second message (`Kai2.2`). The shortened reference `2` is valid because the header contains exactly one `re` reference to a whole message, `Kai2`.
+
+This is an explicit act of agreement. Since Kai2.2 is not shown, we cannot determine exactly what Rae agrees with.
+
+Line 2: `rej(1,not(may(Me,"open vault")))`
+
+Rae declines the request or proposal in line 1 of Kai2 (`Kai2.1`).
+
+She gives the reason that she is not permitted to open the vault. Here, `Me` refers to Rae.
+
+The refusal is performed, and the reason is asserted: Rae claims she does not have permission to open the vault. The content of Kai2.1 is not provided, so we cannot establish what specific action or proposal she declines.
+
+Line 3: `hyp(cause("seal","leak"))`
+
+Rae offers the hypothesis that the seal caused the leak.
+
+This is not an assertion that the seal caused the leak, nor an assertion that the leak occurred. It presents a possible causal explanation for investigation.
+
+Line 4: `prob(cause("seal","leak"),lo)`
+
+Rae assigns a low degree of probability to the proposition that the seal caused the leak.
+
+This asserts a probability assessment, not the causal proposition itself. Rae therefore expresses low confidence in the explanation proposed in line 3. The language does not assign an exact numerical probability to `lo`.
+
+Line 5: `if(is(You,"on call"),pls(You,"check seal"))`
+
+Rae makes a conditional request: if a recipient is on call, that recipient is asked to check the seal.
+
+Because the message has two receivers, `You` is interpreted separately for Kai and Lena.
+
+* If Kai is on call, Kai is asked to check the seal.
+
+* If Lena is on call, Lena is asked to check the seal.
+
+The line does not assert that either recipient is on call. It also does not establish that either recipient has checked the seal. The request applies conditionally to each recipient.
+
+Line 6: `after(fin("flush"),act(Kai,"sample water"))`
+
+Rae asserts that Kai's action of sampling water occurs after the flush has finished.
+
+The expression `fin("flush")` identifies the temporal reference point. Because it is used as the first argument of `after`, it is mentioned as a time reference rather than independently asserted.
+
+Consequently, Rae asserts the temporal ordering of Kai's sampling action relative to completion of the flush. She does not separately assert that the flush has already finished or that Kai has already sampled the water.
+
+Line 7: `sug(at(2026-11-12T10:00,"replace seal"))`
+
+Rae proposes that the seal be replaced on November 12, 2026, at 10:00.
+
+The proposal is addressed to Kai and Lena and includes Rae herself in the proposed joint action.
+
+This is a suggestion, not a promise, command, or assertion that replacement will occur.
+
+The proposal has not yet been adopted. Under SILEX's agreement rules, both recipients, Kai and Lena, must agree before it is adopted.
+
+### Overall interpretation
+
+Rae sends a high-priority message to Kai and Lena, acknowledging earlier communication. She agrees with one line of Kai's previous message and declines another, explicitly asserting that she lacks permission to open the vault.
+
+She then proposes a causal hypothesis involving the seal and leak while assessing that hypothesis as having low probability. Neither the hypothesis nor the probability statement establishes the cause as a fact.
+
+Rae conditionally asks whichever recipients are on call to check the seal. She asserts a temporal relationship between the completion of flushing and Kai's water sampling, without independently asserting that the flush is complete. Finally, she proposes replacing the seal at a specified date and time, subject to agreement.
+
+The key distinctions are between agreement and refusal as speech acts, an asserted reason for refusal, a hypothesis and probability assessment that do not establish their embedded claim, a conditional request, an asserted temporal relationship, and a proposal that is not yet adopted.
+
+
+Q1: D | 100
+Q2: B | 100
+Q3: C | 100
+Q4: E | 100
+Q5: D | 100
+Q6: C | 100
+Q7: D | 100
+Q8: B | 100
+Q9: A | 100
+Q10: B | 98
+Q11: E | 100
+Q12: A | 100
+Q13: c,e,g | 99
+Q14: d | 98
+Q15: c,e | 99
+Q16: C | 100
+Q17: Ana1.2,error,error,error,Cy1.2 | 100
+Q18: c,d,e | 100
+Q19: E-QUOTE,ok,E-QUOTE,ok,E-NAME,ok,E-QUOTE,E-QUOTE | 99
+Q20: E-ARITY,E-LEX,E-KIND,E-REDEF,E-SYN,E-KIND,ok | 99
+Q21: ok,E-KIND,E-TIME,ok,E-KIND,ok,E-TIME | 100
+Q22: E-CODE,ok,ok,E-MATH,E-KIND,ok,E-MATH,E-KIND | 99
+Q23: ok,E-KIND,E-HEAD,E-HEAD,ok,E-KIND | 99
+Q24: E-HEAD,ok,E-HEAD,E-HEAD,E-HEAD,ok,E-LEX | 99
+Q25: c,e,f,g,h | 98
+Q26: a,b,d,e | 99
+Q27: b | 99
+Q28: rest,force,force | 100
+Q29: A | 100
+Q30: b,d | 100
+Q31: a,b,d | 99
+Q32: c,d,e,f,h | 99

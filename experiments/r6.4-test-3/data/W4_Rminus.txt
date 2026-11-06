@@ -1,0 +1,42 @@
+Here is the explanation for the open question Z1, followed by the final answer block.
+Z1
+The header indicates that Rae is sending her third message, addressed to Kai and Lena. It is marked as high priority, is a direct reply to Kai's second message (Kai2), and notes that Rae has already seen Lena's first message (Lena1).
+ * Line 1 (agree(2)): Rae agrees to line 2 of Kai2 (which was likely a request or proposal). This is an agreement, not an assertion of fact.
+ * Line 2 (rej(1,not(may(Me,"open vault")))): Rae rejects line 1 of Kai2. In doing so, she explicitly asserts as a fact that she is not permitted to open the vault.
+ * Line 3 (hyp(cause("seal","leak"))): Rae hypothesizes that the seal caused the leak. This causal link is only supposed or mentioned for consideration, not asserted as a definitive fact.
+ * Line 4 (prob(cause("seal","leak"),lo)): Rae weighs the probability of the seal having caused the leak as low. This is an evaluation or estimate, not an asserted fact.
+ * Line 5 (if(is(You,"on call"),pls(You,"check seal"))): Rae makes a conditional request directed at the recipients. For each recipient individually, if they are on call, she asks them to check the seal. The condition of being on call is merely tested/mentioned, not asserted as true.
+ * Line 6 (after(fin("flush"),act(Kai,"sample water"))): Rae asserts a temporal truth: that Kai's action of sampling the water takes place after the flush finishes.
+ * Line 7 (sug(at(2026-11-12T10:00,"replace seal"))): Rae proposes that the seal be replaced at 10:00 on November 12, 2026. This is a proposal presented for agreement, not a fact asserted as true.
+Q1: D | 95
+Q2: B | 95
+Q3: C | 90
+Q4: E | 70
+Q5: D | 75
+Q6: C | 90
+Q7: B | 90
+Q8: B | 90
+Q9: A | 90
+Q10: B | 80
+Q11: D | 75
+Q12: A | 95
+Q13: c,e,g | 75
+Q14: d | 70
+Q15: b,c,e | 85
+Q16: C | 75
+Q17: Ana1.2, error, error, error, Cy1.2 | 80
+Q18: c,d,e | 90
+Q19: ok, ok, ok, E-QUOTE, E-NAME, ok, ok, E-SYN | 60
+Q20: E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, E-KIND, E-KIND | 65
+Q21: E-TIME, E-TIME, E-TIME, ok, E-TIME, ok, E-TIME | 85
+Q22: E-KIND, E-KIND, E-KIND, E-MATH, E-KIND, ok, E-MATH, ok | 50
+Q23: ok, ok, E-KIND, E-NAME, ok, E-KIND | 65
+Q24: E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, E-LEX | 70
+Q25: c,e,f,g,h | 85
+Q26: a,b,d,e | 90
+Q27: a,b | 85
+Q28: rest, force, force | 90
+Q29: A | 95
+Q30: b,d | 90
+Q31: a,b,d | 90
+Q32: c,d,e,f,h | 95

@@ -1,0 +1,41 @@
+Account of Z1
+ * Header: Rae sends her third message to Kai and Lena. It is a high-priority message (pri(hi)). It is a direct reply to Kai's second message (re(Kai2)), and Rae indicates she has also read Lena's first message (saw(Lena1)).
+ * Line 1: Rae agrees with line 2 of Kai2 (using the bare line number short form, which refers to the single message named in re).
+ * Line 2: Rae declines whatever act, request, or proposal was made in line 1 of Kai2. She asserts her reason for declining: she is not permitted to open the vault.
+ * Line 3: Rae offers a hypothesis that the seal caused the leak. This cause is only mentioned/supposed, not asserted as fact.
+ * Line 4: Rae asserts that, in her judgment, the probability of the seal causing the leak is low. (The claim that the seal caused the leak is only mentioned to attach a probability to it).
+ * Line 5: Rae makes a conditional request addressed to each receiver independently (You). If the receiver (Kai or Lena) is on call, they are asked to check the seal. The conditional link is asserted, but neither the premise nor the request is asserted as absolute.
+ * Line 6: Rae asserts that Kai samples the water at a time after the flush finishes. The claim that the flush finishes is only mentioned to give the time; it is not asserted.
+ * Line 7: Rae proposes to Kai, Lena, and herself (let us) that they replace the seal on November 12, 2026, at 10:00. This is a proposal, so nothing is adopted yet.
+Q1: D | 100
+Q2: B | 100
+Q3: C | 100
+Q4: E | 100
+Q5: D | 100
+Q6: C | 100
+Q7: D | 100
+Q8: B | 100
+Q9: A | 100
+Q10: B | 100
+Q11: E | 100
+Q12: A | 100
+Q13: c, e, g | 100
+Q14: d | 100
+Q15: c, e | 100
+Q16: C | 100
+Q17: Ana1.2, error, error, error, Cy1.2 | 100
+Q18: c, d, e | 100
+Q19: E-QUOTE, ok, E-QUOTE, ok, E-NAME, ok, E-QUOTE, E-QUOTE | 100
+Q20: E-ARITY, E-LEX, E-KIND, E-REDEF, E-SYN, E-KIND, ok | 100
+Q21: ok, E-KIND, E-TIME, ok, E-KIND, ok, E-TIME | 100
+Q22: E-CODE, ok, ok, E-MATH, E-KIND, ok, E-MATH, E-KIND | 100
+Q23: ok, E-KIND, E-HEAD, E-HEAD, ok, E-KIND | 100
+Q24: E-HEAD, ok, E-HEAD, E-HEAD, E-HEAD, ok, E-LEX | 100
+Q25: b, c, e, f, g, h | 100
+Q26: a, d, e | 100
+Q27: b | 100
+Q28: rest, force, force | 100
+Q29: A | 100
+Q30: b, d | 100
+Q31: a, b, d | 100
+Q32: c, d, f, h | 100

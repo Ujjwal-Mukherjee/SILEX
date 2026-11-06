@@ -1,0 +1,87 @@
+W1
+```
+msg(Milo,Kai,Lena,1,re(Kai1,Lena1))
+agree(Kai1.3)
+rej(Kai1.1,not(may(Me,"open valve six")))
+not(is("tank three","empty"))
+is("tank three","full")
+ans(Lena1.3,yes)
+```
+
+W2
+```
+msg(Pia,Quin,Rae,1)
+bel(Me,is("cache","stale"))
+say(Rae,fin("backup"))
+is("disk","full")
+assume(is("deploy","failed"))
+by(2026-11-06T17:00,pls(Quin,"restart cache"))
+sug(at(2026-11-09,is("deploys","frozen")))
+```
+
+W3
+```
+not(all("sensors","calibrated"))
+eith(is("pump A","running"),is("pump B","running"))
+all(minus("tanks","tank seven"),"sealed")
+over(pct(cnt(filt("samples","contaminated")),cnt("samples")),40)
+all("pumps",crit(o1,some("tanks",crit(o2,is(o1,"feeds",o2)))))
+during(2026-11-09T01:00/2026-11-09T05:00,rep(3,"restart cleanup job"))
+by(plus(now,PT1H),pls("send report to {Me}"))
+'sum(i^2,i,1,n)<=91 & n=2*k'
+```
+
+W4
+```
+msg(Ben,Ana,1,re(Ana1))
+ent(Ana1.1,'2*x=14',"add 3 to both sides")
+ent(Ben1.1,'x=7',"divide both sides by 2")
+ans(2,7)
+---
+msg(Ana,Ben,2,re(Ben1))
+ent(Ben1.2,'2*7-3=11',"substitute value of x")
+agree(3)
+```
+
+W5
+```
+msg(Ana,Ben,1)
+def(a1,code("python","def label(n):","    if n == 0:","        return ""none""","    return f""item {n}"""))
+pls(Ben,"review {a1}")
+pls(Ben,code("bash","grep -c ERROR app.log"))
+---
+msg(Ben,Ana,1,re(Ana1))
+err(Ana1.1,q"for a negative number it gives item -3 and it should give negative")
+def(a1,code("python","def label(n):","    if n == 0:","        return ""none""","    if n < 0:","        return ""negative""","    return f""item {n}"""))
+pls(Ana,"use {a1} in place of {Ana1.a1}")
+will(code("bash","grep -c ERROR app.log"))
+```
+
+W6
+```
+msg(Ana,Ben,Cy,1)
+msg(Ben,Ana,Cy,1)
+msg(Cy,Ana,Ben,1,re(Ana1),saw(Ana1,Ben1))
+msg(Ana,Ben,Cy,2,re(Cy1),saw(Cy1))
+msg(Ben,Ana,Cy,2,re(Ana1),saw(Ana1,Cy1))
+msg(Cy,Ana,Ben,2,re(Ana2),saw(Ana2,Ben2))
+```
+
+W7
+```
+msg(Kai,Lena,Milo,1)
+is(o1"east wing cold storage freezer","above zero")
+by(2026-11-06T17:00,pls(Lena,"inspect {o1}"))
+---
+msg(Kai,Lena,Milo,2)
+pls(Milo,"move samples out of {Kai1.o1}")
+```
+
+W8
+```
+msg(Dee,Eli,Fay,Gus,2,re(Eli1))
+join(Gus)
+to(Gus,pls("restart cache"))
+retr(Dee1.2)
+clr(Eli1.1,q"unit of figure is unknown")
+```
