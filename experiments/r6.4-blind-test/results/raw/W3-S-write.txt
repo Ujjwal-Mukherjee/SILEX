@@ -1,0 +1,55 @@
+P1.
+none("tractors","working")
+P2.
+all("fields","irrigated")
+P3.
+not(is("barn","locked"))
+P4.
+eq(cnt("goats"),14)
+P5.
+most("cows","healthy")
+P6.
+is("wheat field","next to","river")
+P7.
+must(by(2026-11-20,fin("harvest")))
+P8.
+at(2026-11-05,act(Marta,"water orchard"))
+P9.
+what(cnt("sheep in north pasture"))
+P10.
+and(can(Me,"drive truck"),not(may(Me,"use old tractor")))
+P11.
+prob(is("well","dry"))
+P12.
+val("fence","length in metres",200)
+P13.
+pls(Ben,before(2026-11-06T12:00,"feed horses"))
+P14.
+say(Tomas,cause("frost",is("tomatoes","dead")))
+P15.
+if(at(2026-11-07,is("weather","rainy")),pls(not("cut hay")))
+P16.
+will(at(2026-11-09,"pick up seed order"))
+P17.
+would(at(t"June",act(grp(Me,You),"sell cows")),act(grp(Me,You),"lose money"))
+P18.
+unk(why(is("pump","stopped")))
+P19.
+msg(Ana,Ben,Cy,1)
+pls(Ben,"feed horses")
+pls(Cy,"mend fence")
+P20.
+msg(Ben,Ana,Cy,1,re(Ana1))
+rej(1,is("truck","broken"))
+agree(2)
+P21.
+msg(Cy,Ben,1,re(Ben1))
+ans(2,yes)
+will(at(2026-11-06T17:00,"close gate"))
+P22.
+assume('y=2*a+3 & a=5')
+what(val("y","value"))
+P23.
+pls(Ben,code("bash","cd silo","./count.sh"))
+P24.
+say(Marta,and(want("buyer",before(when(is("price","dropped")),is("grain","delivered"))),not(fin(tell("buyer","new fee")))))

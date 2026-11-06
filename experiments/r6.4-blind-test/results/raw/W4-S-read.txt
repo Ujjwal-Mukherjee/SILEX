@@ -1,0 +1,68 @@
+### Part R: Reading SILEX
+
+R1. At least one sample is contaminated. This does not say that all samples are contaminated.
+
+R2. Not all sensors are calibrated. At least one sensor is not calibrated.
+
+R3. Every sensor is uncalibrated. This is stronger than R2: it says none of the sensors is calibrated.
+
+R4. The number of enrolled students is greater than 30, meaning at least 31 students.
+
+R5. Sample 12 has a mass of 4.5 grams. This is asserted as a fact.
+
+R6. If the freezer is above −18°C, the sender requests that the recipients move the samples to the backup freezer. The sender does not assert that the freezer is above −18°C, nor does the line assert that the samples have been moved.
+
+R7. The ethics review has been completed by December 1, 2026, at the latest. This is a claim about completion, not a request to complete it.
+
+R8. The sender asks Ben to submit the ethics form by December 1, 2026. This does not assert that Ben has agreed or submitted it.
+
+R9. The sender believes that a power cut caused data loss. The line asserts the sender's belief, not that the power cut occurred, that data was lost, or that the causal connection is established.
+
+R10. A power cut occurred, data loss occurred, and the power cut caused the data loss. Unlike R9, the causal claim and its two components are asserted.
+
+R11. The sender reports that Dana said the pump was not working. The line does not independently assert that the pump is malfunctioning, nor specify when Dana said it.
+
+R12. Each recipient is obligated not to open the sealed vials. The negation applies to the act of opening them: refraining from opening is required.
+
+R13. It is not obligatory for each recipient to open the sealed vials. This does not mean opening them is forbidden. The negation applies to the obligation itself, unlike R12.
+
+R14. If the training had been completed, the error rate would have been low. This is a counterfactual relationship. It does not assert that training was completed or that the error rate is low.
+
+R15. The number of failed trials divided by the total number of trials, expressed as a percentage, equals 20%. This asserts a failure rate of exactly 20%, not that 20 trials failed.
+
+R16. The probability that the vaccine batch is viable is 0.8, or 80%. The line assigns this probability; it does not assert that the batch is viable.
+
+R17. At least one laboratory owns every instrument in the group called "instruments." The same laboratory must own all those instruments. It does not say that every laboratory owns every instrument.
+
+R18. The sender declines to repeat the assay, giving two reasons: the sender cannot obtain reagent, and fewer than two clean plates are available. Both reasons are asserted. The plate count is therefore 0 or 1. The refusal does not mean that repeating the assay is logically impossible for everyone.
+
+R19. Ana proposes holding a laboratory meeting on November 12, 2026. Ben agrees to Ana's proposal. Cy declines, stating that Cy cannot attend on that date.
+
+No, Ana's proposal is not adopted. Adoption requires agreement from every recipient of the proposal, namely Ben and Cy. Ben agrees, but Cy rejects it.
+
+No, Ben did not know of Cy's reply when writing his. Both replies reference Ana1, but neither references the other. They are concurrent under SILEX, regardless of the order in which the three messages are displayed.
+
+R20. Ben asks for the incubator's temperature in degrees Celsius. Ana replies that she does not know the answer. Cy independently answers that the temperature is 37°C.
+
+Yes, Ben now has an answer: Cy has supplied 37°C. This is Cy's reported answer, not independent proof that the incubator actually measures 37°C.
+
+Ana's message says she does not know the answer to Ben's question. It does not claim that the temperature is unknowable.
+
+No, Ana had not read Cy's answer when she wrote her message, according to SILEX's ordering model. Ana1 and Cy1 both reference Ben1, and neither depends on the other. They are concurrent.
+
+### Part V: Checker verdicts
+
+| Item | Verdict | Reason                                                                                        |
+| ---- | ------- | --------------------------------------------------------------------------------------------- |
+| V1   | E-QUOTE | The scaffold contains the prohibited article the.                                             |
+| V2   | E-KIND  | none requires a criterion in its second position, not the number 3.                           |
+| V3   | ok      | is receives a thing and a criterion, both valid kinds.                                        |
+| V4   | E-TIME  | February 30, 2026 is not a valid date.                                                        |
+| V5   | E-KIND  | will takes an act, not an agent followed by an act.                                           |
+| V6   | E-SYN   | The closing parenthesis is missing.                                                           |
+| V7   | ok      | The explicitly typed criterion c"calibrated" is valid.                                        |
+| V8   | E-NAME  | Label o2 has not been defined.                                                                |
+| V9   | E-MATH  | The formula ends with an incomplete multiplication.                                           |
+| V10  | E-KIND  | 'x+2' is a numeric expression, not a claim or speech act, so it cannot stand alone as a line. |
+
+All 20 reading items and 10 validation items are answered using the supplied SILEX r6.4 reference.

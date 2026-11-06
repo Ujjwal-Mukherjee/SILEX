@@ -1,0 +1,13 @@
+condition,answer,item,claude,scorer2,scorer2_uncertain,owner_ruling,final
+N-read,W4,R14,1,2,,same meaning as intended,2
+N-read,W3,R17,1,2,,same meaning as intended,2
+N-read,W4,R18,2,1,,"same meaning: the caveat is about verification, not about whether the sender states the reasons",2
+N-read,W2,R19,2,1,,"same meaning: not adopted; both reply only to Ana, not to each other",2
+N-read,W4,R19,1,0,?,"partial: adoption left open and the basis is sequence, not concurrency",1
+S-read,W1,R14,2,1,?,"same meaning as intended (had finished, would be low; neither asserted)",2
+S-write,W1,P17,2,0,,"same meaning: June, we sell cows, money lost",2
+S-write,W3,P17,2,1,,same meaning: t June is June of this year in context,2
+S-write,W4,P17,2,1,,"same meaning: loss of money, we in the antecedent",2
+S-write,W1,P24,1,2,,"different meaning: want(buyer, deliver grain) makes the buyer the one who delivers",1
+S-write,W3,P24,2,1,,same meaning: the telling is not finished = nobody has told the buyer,2
+S-write,W4,P24,2,1,,same meaning: nobody tells the buyer (same tense as the key line),2

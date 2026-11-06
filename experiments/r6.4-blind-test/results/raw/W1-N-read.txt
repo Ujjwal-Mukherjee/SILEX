@@ -1,0 +1,66 @@
+**R1**
+Some samples are contaminated. (Asserted existence of at least one contaminated sample.)
+
+**R2**
+It is not the case that all sensors are calibrated. (Negation scopes over the universal claim; some sensors may be uncalibrated.)
+
+**R3**
+All sensors are uncalibrated. (Universal quantification with the negation inside; every sensor fails to be calibrated.)
+
+**R4**
+The number of enrolled students is greater than 30. (Asserted count.)
+
+**R5**
+Sample 12 has a mass of 4.5 grams. (Asserted measurement value.)
+
+**R6**
+If the freezer is above −18 degrees, then please move the samples to the backup freezer. (Conditional request only; the temperature condition itself is not asserted.)
+
+**R7**
+Finish the ethics review by 1 December 2026. (Deadline asserted for completion.)
+
+**R8**
+Please, Ben, submit the ethics form by 1 December 2026. (Request addressed to Ben, with a deadline.)
+
+**R9**
+I believe that a power cut caused the data loss. (Belief is asserted; the causal claim is only what is believed, not independently asserted.)
+
+**R10**
+A power cut caused the data loss. (Direct assertion of causation.)
+
+**R11**
+Dana says that the pump is not working. (Reports Dana’s speech act; the negation applies inside Dana’s claim.)
+
+**R12**
+You must not open sealed vials. (Obligation with internal negation; a prohibition.)
+
+**R13**
+It is not the case that you must open sealed vials. (Negation scopes over the obligation; you are not required to open them.)
+
+**R14**
+Finishing the training would result in the error rate being low. (Conditional/counterfactual relation; neither finishing nor the low rate is asserted as actual.)
+
+**R15**
+The percentage of failed trials (failed trials divided by total trials) equals 20. (Asserted exact percentage.)
+
+**R16**
+The probability that the vaccine batch is viable is 0.8. (Asserted probability of 80 %.)
+
+**R17**
+Some lab owns all the instruments. (Existential claim over labs, universal over instruments: there is at least one lab that owns every instrument.)
+
+**R18**
+Reject the repeat assay, for the reasons that I cannot get the reagent and that the number of clean plates is under 2. (Rejection asserted, with both conjuncts given as grounds.)
+
+**R19**
+Ana proposes holding a lab meeting on 12 November 2026. Ben agrees with that proposal. Cy rejects it because Cy cannot attend on 12 November 2026.
+
+Ana’s proposal is not adopted: Ben accepted it, but Cy rejected it.
+Ben did not know of Cy’s reply when he wrote his own; the messages appear in chronological order, and Ben’s agreement precedes Cy’s rejection.
+
+**R20**
+Ben asks what the incubator’s temperature in Celsius is. Ana replies that she does not know. Cy answers that it is 37.
+
+Ben now has an answer (from Cy: 37).
+Ana’s message says that she does not know the temperature.
+Ana had not read Cy’s answer when she wrote hers; her message precedes Cy’s in the sequence.

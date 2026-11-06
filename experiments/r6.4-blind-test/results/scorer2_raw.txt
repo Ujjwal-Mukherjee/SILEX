@@ -1,0 +1,178 @@
+### Independent SILEX r6.4 Blind-Test Scoring
+
+I have evaluated the anonymized answers against the supplied scoring keys, without attempting to identify W1–W4 or favoring any participant. I have not used external references.
+
+The three tests are scored separately. I have preserved the original scoring scales, including the distinction between a correct interpretation and a technically valid expression.
+
+Scoring standard: 2 = full credit, 1 = partial credit, 0 = incorrect. Validation items use 1 = correct and 0 = incorrect. A `?` identifies a judgment where the supplied rubric leaves room for interpretation.
+
+### Test 1: Reading with the language reference
+
+20 reading items (maximum 2 each) and 10 checker-verdict items (maximum 1 each).
+
+| Item | W1  | W2  | W3  | W4  |
+| ---- | --- | --- | --- | --- |
+| R1   | 2   | 2   | 2   | 2   |
+| R2   | 2   | 2   | 2   | 2   |
+| R3   | 2   | 2   | 2   | 2   |
+| R4   | 2   | 2   | 2   | 2   |
+| R5   | 2   | 2   | 2   | 2   |
+| R6   | 2   | 2   | 2   | 2   |
+| R7   | 2   | 2   | 2   | 2   |
+| R8   | 2   | 2   | 2   | 2   |
+| R9   | 2   | 2   | 2   | 2   |
+| R10  | 2   | 2   | 2   | 2   |
+| R11  | 2   | 2   | 2   | 2   |
+| R12  | 2   | 2   | 2   | 2   |
+| R13  | 2   | 2   | 2   | 2   |
+| R14  | 1?  | 2   | 2   | 2   |
+| R15  | 2   | 2   | 2   | 2   |
+| R16  | 2   | 2   | 2   | 2   |
+| R17  | 2   | 2   | 2   | 2   |
+| R18  | 2   | 2   | 2   | 2   |
+| R19  | 2   | 2   | 2   | 2   |
+| R20  | 2   | 2   | 2   | 2   |
+| V1   | 1   | 1   | 1   | 1   |
+| V2   | 1   | 1   | 1   | 1   |
+| V3   | 1   | 1   | 1   | 1   |
+| V4   | 1   | 1   | 1   | 1   |
+| V5   | 1   | 1   | 1   | 0   |
+| V6   | 1   | 1   | 1   | 1   |
+| V7   | 1   | 1   | 1   | 1   |
+| V8   | 1   | 1   | 1   | 1   |
+| V9   | 1   | 1   | 1   | 1   |
+| V10  | 1   | 1   | 1   | 1   |
+
+Deductions and uncertainties
+
+* W1 R14: 1? Describes the hypothetical relationship but does not explicitly identify it as counterfactual or indicate that training was ordinarily not completed. This is borderline because the wording “if training had finished” itself suggests a counterfactual.
+
+* W4 V5: 0. Gives `E-KIND`, whereas the required checker verdict is `E-ARITY`. The explanation is not scored.
+
+All other responses receive full credit under the supplied key.
+
+### Test 2: Reading without the language reference
+
+20 reading items, maximum 2 points per item. The same key is applied as in Test 1.
+
+| Item | W1  | W2  | W3  | W4  |
+| ---- | --- | --- | --- | --- |
+| R1   | 2   | 2   | 2   | 2   |
+| R2   | 2   | 2   | 2   | 2   |
+| R3   | 2   | 2   | 2   | 2   |
+| R4   | 2   | 2   | 2   | 2   |
+| R5   | 2   | 2   | 2   | 2   |
+| R6   | 2   | 2   | 2   | 2   |
+| R7   | 1   | 2   | 2   | 1?  |
+| R8   | 2   | 2   | 2   | 2   |
+| R9   | 2   | 2   | 2   | 2   |
+| R10  | 2   | 2   | 2   | 2   |
+| R11  | 2   | 2   | 2   | 2   |
+| R12  | 2   | 2   | 2   | 2   |
+| R13  | 2   | 2   | 2   | 2   |
+| R14  | 1?  | 1?  | 1   | 2   |
+| R15  | 2   | 2   | 2   | 2   |
+| R16  | 2   | 2   | 2   | 2   |
+| R17  | 2   | 2   | 2   | 2   |
+| R18  | 1?  | 2   | 2   | 1   |
+| R19  | 1   | 1   | 1   | 0?  |
+| R20  | 1   | 1   | 1   | 1   |
+
+Deductions and uncertainties
+
+* W1 R7: 1. Converts the completion claim into an instruction to finish the review.
+
+* W1 R14: 1? Identifies a counterfactual relation but does not explicitly convey the usual implication that training was not completed.
+
+* W1 R18: 1? Says “Reject the repeat assay,” which reads as an instruction rather than the sender's own refusal. Both reasons are otherwise correct.
+
+* W1 R19: 1. Correctly says the proposal is not adopted and gives Cy's reason, but explains Ben's lack of knowledge through chronological display order rather than the concurrent message structure.
+
+* W1 R20: 1. Correct answer and Ana's lack of knowledge, but misses concurrency and relies on display order.
+
+* W2 R14: 1? Reads a hypothetical conditional without clearly establishing the counterfactual implication.
+
+* W2 R19: 1. Identifies Cy's rejection and the lack of adoption, but treats the unanimity rule as uncertain and fails to recognize concurrency.
+
+* W2 R20: 1. Correctly identifies the answer and Ana's uncertainty, but uses message sequence instead of concurrent replies.
+
+* W3 R14: 1. Describes an ordinary conditional outcome without the required counterfactual interpretation.
+
+* W3 R19: 1. Correctly identifies non-adoption and Cy's inability to attend, but uses chronological ordering instead of concurrency.
+
+* W3 R20: 1. Identifies Cy's answer and Ana's uncertainty, but misses concurrency.
+
+* W4 R7: 1? Gives the correct deadline but describes what is “to be completed” rather than clearly asserting that the review is or will be finished.
+
+* W4 R18: 1. Identifies the rejection and both reasons, but does not clearly treat the reasons as asserted claims.
+
+* W4 R19: 0? Does not give the required definite non-adoption verdict, instead saying adoption is inconclusive and the unanimity rule is unknown. This is borderline because it correctly recognizes Cy's rejection.
+
+* W4 R20: 1. Correctly identifies the answer and Ana's uncertainty, but explains her lack of knowledge through sequence rather than concurrency.
+
+The main weakness in this test is the treatment of message order. The reference distinguishes concurrency from the order in which messages are displayed. Several readers reached the correct yes/no answer without establishing that distinction.
+
+### Test 3: Writing with the language reference
+
+24 writing items, maximum 2 points per item. The supplied checker results confirm that all 96 answers passed Tier 1, so the table evaluates meaning only.
+
+| Item | W1  | W2  | W3  | W4  |
+| ---- | --- | --- | --- | --- |
+| P1   | 2   | 2   | 2   | 2   |
+| P2   | 2   | 2   | 2   | 2   |
+| P3   | 2   | 2   | 2   | 2   |
+| P4   | 2   | 2   | 2   | 2   |
+| P5   | 2   | 2   | 2   | 2   |
+| P6   | 2   | 2   | 2   | 2   |
+| P7   | 2   | 2   | 2   | 2   |
+| P8   | 2   | 2   | 2   | 2   |
+| P9   | 2   | 2   | 2   | 2   |
+| P10  | 2   | 2   | 2   | 2   |
+| P11  | 2   | 2   | 2   | 2   |
+| P12  | 2   | 2   | 2   | 2   |
+| P13  | 2   | 2   | 2   | 2   |
+| P14  | 1   | 2   | 2   | 2   |
+| P15  | 2   | 2   | 2   | 2   |
+| P16  | 2   | 2   | 2   | 2   |
+| P17  | 0   | 2   | 1   | 1   |
+| P18  | 2   | 2   | 2   | 2   |
+| P19  | 2   | 2   | 2   | 2   |
+| P20  | 2   | 2   | 2   | 2   |
+| P21  | 2   | 2   | 2   | 2   |
+| P22  | 2   | 2   | 2   | 2?  |
+| P23  | 2   | 2   | 2   | 2   |
+| P24  | 2   | 2   | 1   | 1   |
+
+Deductions and uncertainties
+
+* W1 P14: 1. `cause("frost","tomato plants")` makes the tomato plants the effect, rather than their death. Tomas's attribution is preserved, but the causal outcome is wrong.
+
+* W1 P17: 0. The expression uses `2026-06` without clearly representing the required June interval, and `is("money","lost")` omits the specified group that would have lost money. More than one required feature is lost.
+
+* W3 P17: 1. `t"June"` identifies June but does not unambiguously specify June 2026. The counterfactual, joint actors and financial loss are otherwise represented.
+
+* W3 P24: 1. `not(fin(tell("buyer","new fee")))` denies completion of a telling event, but does not precisely express that nobody has told the buyer.
+
+* W4 P17: 1. `fin("loss of money")` represents a completed loss without explicitly identifying the sender and receivers as those who would lose money.
+
+* W4 P22: 2? Both assumptions are correct, but `what(n"y")` is not one of the expressly accepted question forms. I provisionally accept it as asking for the value of y; a stricter interpretation of the typed quote could reduce this to 1.
+
+* W4 P24: 1. `not(act(_,"tell buyer about new fee"))` does not clearly establish the required universal absence of anyone having told the buyer. The attribution to Marta and the buyer's delivery preference are retained.
+
+All remaining writing answers preserve the required meanings.
+
+### Final assessment of the scoring
+
+Three principles guided these judgments.
+
+First, technical validity is not semantic correctness. In Test 3, every answer passed the checker, yet several expressions still lost meaning.
+
+Second, I treated correct conclusions with incomplete reasoning according to the keys. In particular, the no-reference readers were not penalized merely for lacking the reference. They were penalized only where their answers missed required distinctions.
+
+Third, the uncertain judgments are identified rather than silently resolved. These involve genuinely borderline interpretations, not assumptions about the identities or capabilities of the participants.
+
+One adjustment to the provisional Test 1 judgment is warranted: W1 R14 can reasonably receive 2 rather than 1, because “if the training had finished” already conveys a counterfactual reading. On a meaning-focused application of the key, I would award 2.
+
+The strongest evidence of limitations in the submitted answers concerns counterfactuals, concurrent messages, attribution of causal outcomes, and universal negation. These are more informative than superficial wording differences.
+
+I have kept the three tests separate, with no averaging or ranking of W1–W4, as requested by the scoring instructions.

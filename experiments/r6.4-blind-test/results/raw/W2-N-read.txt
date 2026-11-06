@@ -1,0 +1,48 @@
+**R1.** At least one sample is contaminated. This is asserted, but it doesn't say how many or which.
+
+**R2.** Not every sensor is calibrated, so at least one isn't. It doesn't say whether any are calibrated.
+
+**R3.** Every sensor is uncalibrated, so none is calibrated. This is much stronger than R2.
+
+**R4.** The number of enrolled students is more than 30 (strictly over, so 31 or more). Asserted.
+
+**R5.** Sample 12's mass is 4.5 grams. Asserted as a recorded value.
+
+**R6.** A conditional request: if the freezer is above −18 °C, please move the samples to the backup freezer. Neither the warm freezer nor the move is asserted. The request only applies if the condition holds. No one is named, so it goes to whoever receives the message.
+
+**R7.** A statement, not a request: the ethics review will be finished by 1 Dec 2026. Nobody is assigned or asked. It could be read as a deadline, but my best guess is a plain claim about completion.
+
+**R8.** A request to Ben: please submit the ethics form by 1 Dec 2026. The request is made, but it isn't asserted that he will do it. Unlike R7, a named person is asked to act.
+
+**R9.** The speaker believes the power cut caused the data loss. Only the belief is asserted, not the causation.
+
+**R10.** The power cut caused the data loss. This is flat assertion of causation, with no hedge, unlike R9.
+
+**R11.** Dana says (or said) that the pump is not working. This is reported, so the writer doesn't vouch for it. The negation sits inside Dana's claim.
+
+**R12.** The addressee must not open sealed vials. This is a prohibition, and the negation is inside the obligation.
+
+**R13.** It is not the case that the addressee must open sealed vials. There's no obligation to open them, but nothing forbids it. This is very different from R12.
+
+**R14.** A hypothetical: if training were finished, the error rate would be low. It asserts neither that training is finished nor that the error rate is low. This is a best guess for "would".
+
+**R15.** 20% of the trials failed (failed trials divided by all trials, times 100, equals 20). Asserted.
+
+**R16.** The probability that the vaccine batch is viable is 0.8 (80%). It doesn't claim the batch is or isn't viable.
+
+**R17.** At least one lab owns every instrument. The order matters: "some lab" comes first, then "all instruments". That means one lab owns all of them, not that each instrument has some owner. I'm reading `crit` as binding a variable ("a lab o1 such that…").
+
+**R18.** The speaker rejects (declines) the repeat assay, giving two reasons: the speaker can't get reagent, and there are fewer than 2 clean plates (0 or 1). The negation applies only to the reagent clause. I'm treating both reasons as asserted, and reading `rej` as declining a proposal.
+
+**R19.** Ana proposes holding the lab meeting on 12 Nov 2026. Ben agrees. Cy rejects it, saying he can't attend that day.
+
+- **Adopted?** No, not as it stands. It's 1 agree and 1 reject, and Cy's objection is about the date itself. Nothing in these messages confirms the meeting or offers another date, and Ana hasn't replied. Whether a single objection blocks it depends on rules I haven't been given.
+- **Did Ben know of Cy's reply?** No. Ben's message comes before Cy's in the sequence, and both reply only to Ana's message, not to each other.
+
+**R20.** Ben asks Ana and Cy for the incubator's temperature in °C.
+
+- **Does Ben have an answer?** Yes, 37 (presumably °C), from Cy. It's one source's answer, not verified.
+- **What does Ana's message say?** That she doesn't know the answer. It's addressed to Ben only, so Cy didn't receive it. It doesn't say the temperature is unknowable.
+- **Had Ana read Cy's answer?** No. Her message comes before Cy's in the sequence, so Cy's answer didn't exist yet. Her "don't know" isn't contradicted by it.
+
+Least certain: R7, R14, R17 (the `crit` reading) and R18 (the exact meaning of `rej`).
