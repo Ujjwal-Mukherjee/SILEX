@@ -1,0 +1,53 @@
+condition,answer,item,tier1_checker,tier2_score,correct,scorer,note
+S-read,W1,R1-R13,,2,,claude,
+S-read,W1,R14,,2,,claude,borderline: counterfactual read right; does not say training was not finished; owner to rule (1 if required)
+S-read,W1,R15-R20,,2,,claude,
+S-read,W1,V1-V10,,1,,claude,all 10 verdicts match key
+S-write,W1,P1-P13,ok,2,yes,claude,
+S-write,W1,P14,ok,1,no,claude,cause(frost,"tomato plants"): effect is the plants not their death; key wording literal would give 2; owner to rule
+S-write,W1,P15-P16,ok,2,yes,claude,
+S-write,W1,P17,ok,2,yes,claude,REVISED from 1 after reviewing W3: the at-over-a-stretch objection does not hold (cookbook 4.5 itself uses at(date,act) for on that day); remaining points are month-only date 2026-06 (checker accepts; 1.6 does not define it) and a consequent without we; owner to rule
+S-write,W1,P18-P23,ok,2,yes,claude,
+S-write,W1,P24,ok,1,no,claude,want(buyer,deliver grain): buyer is the doer; English says grain delivered to buyer; meaning error passes checker
+S-read,W2,R1-R20,,2,,claude,all 20 scored 2; no borderline items
+S-read,W2,V1-V10,,1,,claude,all 10 verdicts match key
+S-write,W2,P1-P24,ok,2,yes,claude,all 24 correct; tier 1 24/24; P24 uses want over a claim (before(act(price drop),fin(delivery of grain))) so the buyer is not the doer
+S-read,W3,R1-R13,,2,,claude,
+S-read,W3,R14,,2,,claude,borderline (same as W1): counterfactual read right; does not say training was not finished; also would have been low vs would be low; owner to rule (1 if required)
+S-read,W3,R15-R20,,2,,claude,
+S-read,W3,V1-V10,,1,,claude,all 10 verdicts match key
+S-write,W3,P1-P24,ok,2,yes,claude,all 24 correct; tier 1 24/24; minor: P17 uses t"June" (valid time quote but the date is known and 1.6 says write the date) and at over a stretch; P15 uses at(date) so rain throughout the day by 1.6; P24 not(fin(tell(...))) leaves the doer open; all within the key
+S-read,W4,R1-R13,,2,,claude,R6 adds °C that the line does not state (not scored)
+S-read,W4,R14,,2,,claude,borderline (same as W1 and W3): counterfactual read right; does not say training was not finished; owner to rule (1 if required)
+S-read,W4,R15-R20,,2,,claude,
+S-read,W4,V1-V4,,1,,claude,
+S-read,W4,V5,,0,,claude,gave E-KIND; key E-ARITY (will takes one place; reference 3.8 states this exact case)
+S-read,W4,V6-V10,,1,,claude,
+S-write,W4,P1-P24,ok,2,yes,claude,all 24 correct; tier 1 24/24; notes: P14 effect fin(killing of tomatoes) keeps the death; P17 consequent impersonal like W1 (scored 2 for consistency); P22 what(n"y") links to the formula name by spelling only like the key val("y","value"); P24 not(act(_,...)) = nobody; want over a claim
+N-read,W1,R1-R6,,2,,claude,
+N-read,W1,R7,,1,,claude,read as an imperative (finish the review by...) not a claim about completion
+N-read,W1,R8-R13,,2,,claude,
+N-read,W1,R14,,1,,claude,would result in: a plain would-conditional; labels it conditional/counterfactual but does not commit; no had-finished
+N-read,W1,R15-R17,,2,,claude,
+N-read,W1,R18,,1,,claude,Reject the repeat assay reads as an imperative or a verdict not the sender declining to do it; both reasons given; least sure of this score; owner to rule
+N-read,W1,R19,,1,,claude,not adopted and Ben did not know are right; reasoning is display order not concurrency
+N-read,W1,R20,,1,,claude,answer 37 and Ana unk right; Ana had not read Cy: right by sequence not by concurrency
+N-read,W2,R1-R13,,2,,claude,R7 read correctly as a claim not a request (flagged as a best guess); R6 adds °C (not scored)
+N-read,W2,R14,,1,,claude,borderline: if training were finished then error rate would be low; called hypothetical not counterfactual and does not say the antecedent failed; rule used: 2 needs counterfactual named or antecedent false; owner to rule
+N-read,W2,R15-R18,,2,,claude,R18 reads declines with both reasons asserted
+N-read,W2,R19,,2,,claude,not adopted; both reply only to Ana not to each other; adoption rule hedged as unknown (guessed right)
+N-read,W2,R20,,1,,claude,37 and Ana does not know right; Ana had not read Cy right by sequence not concurrency; also notes Ana wrote to Ben only
+N-read,W3,R1-R13,,2,,claude,R6 does not say the condition is unasserted but frames it as conditional; R7 read as a claim
+N-read,W3,R14,,1,,claude,asserts a conditional outcome: a plain would-conditional; says asserts and does not say neither part is asserted; no counterfactual
+N-read,W3,R15-R16,,2,,claude,
+N-read,W3,R17,,1,,claude,some labs that own all instruments: plural and vague on the quantifier order; borderline; owner to rule
+N-read,W3,R18,,2,,claude,rejection of repeat assay by the sender with both reasons; borderline vs W1 N-read scored 1 for imperative wording
+N-read,W3,R19,,1,,claude,not adopted (hedged) right; no adoption rule; Ben did not know right but by chronology not concurrency
+N-read,W3,R20,,1,,claude,37 and Ana unk right; Ana had not read Cy right by sequence not concurrency
+N-read,W4,R1-R6,,2,,claude,R6 adds °C (not scored)
+N-read,W4,R7,,1,,claude,is to be completed by: deadline right; explicitly leaves open whether it is a claim or an obligation; vague gloss
+N-read,W4,R8-R13,,2,,claude,
+N-read,W4,R14,,1,,claude,borderline: hypothetical or counterfactual (hedged); does not say the antecedent failed; also says would is undefined in the file; owner to rule
+N-read,W4,R15-R18,,2,,claude,R18 passive the proposal to repeat the assay is rejected with both reasons from I; borderline
+N-read,W4,R19,,1,,claude,not conclusively; adoption rule hedged (if unanimous then not adopted); Ben did not know by sequence not concurrency
+N-read,W4,R20,,1,,claude,37 and Ana unk right; Ana had not read Cy right by sequence not concurrency

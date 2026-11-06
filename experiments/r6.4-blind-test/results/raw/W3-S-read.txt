@@ -1,0 +1,68 @@
+Here are the readings and verdicts based strictly on the SILEX r6.4 reference.
+Part R
+R1
+The sender asserts that at least one member of the group "samples" is "contaminated". The claim is asserted as true at the current time (now).
+R2
+The sender asserts that it is not the case that every member of the group "sensors" is "calibrated". The negation applies to the entire claim, meaning some sensors are not calibrated. This is asserted at the current time (now).
+R3
+The sender asserts that every member of the group "sensors" has the property of being not "calibrated". The negation applies to the criterion "calibrated", meaning no sensors are calibrated. This is asserted at the current time (now).
+R4
+The sender asserts that the exact count of "enrolled students" is greater than 30. This is asserted at the current time (now).
+R5
+The sender asserts that the value of the "mass in grams" for "sample 12" is exactly 4.5. This is asserted at the current time (now).
+R6
+The sender makes a conditional request addressed to every receiver. The sender asks that if the "freezer" is "above minus 18 degrees", the receivers should perform the act of "move samples to backup freezer". Neither the claim about the temperature nor the request to move the samples is asserted outright.
+R7
+The sender asserts that the act "ethics review" is finished at or before the date December 1, 2026.
+R8
+The sender asks the agent Ben to perform the act of "submit ethics form" at or before the deadline of December 1, 2026. The sender wants this to happen, but Ben's act is not asserted as completed.
+R9
+The sender asserts only that they (the sender, Me) believe that the "power cut" caused the "data loss". The causal link, the power cut, and the data loss are only mentioned as part of the sender's belief, not asserted as facts.
+R10
+The sender asserts that the "power cut" caused the "data loss". This root (cause) explicitly asserts both the cause ("power cut") and the effect ("data loss"), as well as the link between them.
+R11
+The sender asserts that the agent Dana said the "pump" is not "working". The negation applies to the pump working. The claim about the pump's status is reported speech and is only mentioned, not asserted by the sender. Because there is no time root wrapping it, it does not specify when Dana spoke.
+R12
+The sender asserts that each receiver (You) is required not to perform the act "open sealed vials". The negation applies to the act itself (not doing it).
+R13
+The sender asserts that the receivers (You) are not required to perform the act "open sealed vials". The negation applies to the obligation (must), meaning the requirement does not exist.
+R14
+The sender asserts a counterfactual link: if the act "training" had finished, the "error rate" would have been "low". The sender asserts neither that the training finished nor that the error rate is low.
+R15
+The sender asserts that the percentage of the count of failed trials out of the total count of trials is exactly 20. This is asserted at the current time (now).
+R16
+The sender asserts that the "vaccine batch" being "viable" has a probability of 0.8 (80%) in the sender's judgment.
+R17
+The sender asserts that there is at least one member in the group "labs" (bound to label o1) such that every member of the group "instruments" (bound to label o2) is owned by o1. This means at least one lab owns every instrument.
+R18
+The sender declines the proposed or requested act "repeat assay". The sender asserts the reason for declining: both that the sender (Me) cannot get the reagent (negation applies to the ability to get the reagent) and that the count of "clean plates" is less than 2.
+R19
+Ana proposes (to Ben, Cy, and herself) to hold a lab meeting on November 12, 2026. Ben agrees with Ana's proposal. Cy declines Ana's proposal, asserting the reason that Cy (Me) cannot attend on that date.
+ * Is Ana's proposal adopted? No. A proposal is adopted only when every receiver it was sent to has agreed. Cy rejected it.
+ * Did Ben know of Cy's reply when he wrote his? No. Ben's header names only Ana's message in re(Ana1) and does not name Cy's message, meaning Ben's reply is concurrent with Cy's and Ben had not read Cy's message.
+R20
+Ben asks a question for the value of the "incubator" "temperature in celsius". Ana states that she does not know the answer to Ben's question. Cy answers Ben's question with the value 37.
+ * Does Ben now have an answer? Yes, Cy's message provides the answer 37.
+ * What does Ana's message say? Ana's message says that the answer is not known to her.
+ * Had Ana read Cy's answer when she wrote it? No. Ana's message header answers Ben1 and does not name Cy's message, so it is concurrent with Cy's reply.
+Part V
+V1
+E-QUOTE. The quote "check the pump" contains the word "the", which is forbidden inside a quote.
+V2
+E-KIND. The root none takes a group and an optional criterion (Cr), but 3 is a number (Nu) and cannot act as a criterion.
+V3
+ok. The root is properly takes two places here (a value and a criterion) and fits the required kinds.
+V4
+E-TIME. The date 2026-02-30 is an impossible time that does not exist.
+V5
+E-ARITY. The root will takes exactly one place (the act or claim) because it intrinsically speaks for the sender; adding a doer (Ben) causes an arity error.
+V6
+E-SYN. The bracket is not closed on the line.
+V7
+ok. The line is well formed, and the class letter c appropriately marks the quote as a criterion.
+V8
+E-NAME. The label o2 is used but was not defined by any quote in this message.
+V9
+E-MATH. The formula is malformed because it ends prematurely after the multiplication operator (*) where more is needed.
+V10
+E-KIND. A formula without a comparison operator acts as a number (Nu), which cannot stand alone as a line; it needs to be a claim (Cl), question (Q), or line root (Ln).

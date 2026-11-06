@@ -1,0 +1,66 @@
+**R1.** The sender asserts that at least one member of the group "samples" is contaminated.
+
+**R2.** The sender asserts that it is not the case that every sensor is calibrated, so at least one sensor is not calibrated. Possibly none are.
+
+**R3.** The sender asserts that every sensor is not calibrated, so none is calibrated. The negation sits inside the criterion, which makes this stronger than R2.
+
+**R4.** The sender asserts that the number of enrolled students is greater than 30. It is strictly more than 30.
+
+**R5.** The sender asserts that sample 12 has a mass of 4.5 grams. It is a three-place `val`: thing, quantity (the unit is in the quote), value.
+
+**R6.** The sender asserts a conditional request. If the freezer is above minus 18 degrees, each receiver is asked to move the samples to the backup freezer. Neither the condition nor the request is asserted alone. The unit of "degrees" is not stated.
+
+**R7.** The sender asserts that the ethics review will have finished at or before 2026-12-01. It is a claim about completion, not a request, an obligation or a promise, and no doer is named. I am unsure whether a bare date means by the start or the end of that day. The reference says a date is the whole day.
+
+**R8.** The sender asks Ben, and only Ben, to submit the ethics form by 2026-12-01. It is a request with a deadline. Nothing is asserted about whether it will happen.
+
+**R9.** The sender asserts only that the sender believes the power cut caused the data loss. The cause itself is mentioned, not asserted.
+
+**R10.** The sender asserts that the power cut happened, that the data loss happened, and that the first caused the second. `cause` asserts both claims and the link.
+
+**R11.** The sender asserts only that Dana said the pump is not working. The pump's state is not asserted, and when Dana spoke is not stated. The negation is inside Dana's reported claim.
+
+**R12.** The sender asserts that each receiver is obliged not to open sealed vials. This is a prohibition, and the negation is on the act.
+
+**R13.** The sender asserts that it is not the case that each receiver is required to open sealed vials. This is weaker than R12: it does not forbid opening, it only denies the obligation to open. The negation is outside `must`.
+
+**R14.** The sender asserts a counterfactual: if training had finished, the error rate would be low. Neither claim is asserted. By convention the antecedent did not hold, so training probably did not finish, but the line does not assert that. I am unsure of the time of "low". I read it as now.
+
+**R15.** The sender asserts that the failed trials, as a percentage of all trials, equal 20. In other words, 20 percent of the trials failed.
+
+**R16.** The sender asserts that, in the sender's judgment, the probability is 0.8 that the vaccine batch is viable. The viability itself is not asserted.
+
+**R17.** The sender asserts that at least one lab is such that every instrument is something it owns. So some single lab owns all the instruments. It does not say that every lab owns some instrument.
+
+**R18.** The sender declines to repeat the assay. The sender gives a reason and asserts it: the sender cannot get the reagent, and the number of clean plates is less than 2. The negation covers only `can(Me,"get reagent")`. It is not a reply to a named request, since no message or line is named.
+
+**R19.** No, Ana's proposal is not adopted.
+- A proposal is adopted only when every receiver it was sent to has agreed. Those receivers are Ben and Cy.
+- Ben agreed with `Ana1.1`, but Cy declined it with `rej`, giving the reason that Cy cannot attend on 2026-11-12. Silence would not count as agreement either.
+- No, Ben did not know of Cy's reply. Ben1 names only Ana1, and Cy1 names only Ana1. Neither precedes the other, so they are concurrent.
+
+**R20.** Yes, Ben now has an answer, but only from Cy.
+- Ben asked for the incubator temperature in Celsius.
+- Ana's message says she does not know the answer to Ben1.1, so it is an `unk` and gives no value.
+- Cy answers Ben1.1 with 37, so Cy says the temperature is 37 degrees Celsius. That is Cy's claim, not a verified fact.
+- No, Ana had not read Cy's answer when she wrote hers. Ana1 names only Ben1, and Cy1 does not name Ana1, so the two are concurrent.
+
+**V1.** `E-QUOTE`. The quote contains "the".
+
+**V2.** `E-KIND`. The optional second place of `none` takes a criterion, and 3 is a number.
+
+**V3.** `ok`. A thing and a criterion fit `is`.
+
+**V4.** `E-TIME`. There is no 30 February.
+
+**V5.** `E-ARITY`. `will` takes one place, with no doer.
+
+**V6.** `E-SYN`. The bracket is not closed on the line.
+
+**V7.** `ok`. The class letter `c` only restates the kind that the place already gives.
+
+**V8.** `E-NAME`. The label `o2` is not defined in this message.
+
+**V9.** `E-MATH`. The formula ends after `*`, where more is needed.
+
+**V10.** `E-KIND`. A formula with no comparison is a number, and a number is not a line.

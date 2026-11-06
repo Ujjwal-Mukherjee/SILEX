@@ -1,0 +1,70 @@
+I'll interpret and solve all 20 items (R1–R20) using only the formal expressions in your uploaded file, without looking anything up. I'll distinguish assertions, beliefs, requests, negation, quantities, and timing.
+
+### Part R: Answers
+
+R1. At least one sample is contaminated. This does not assert that every sample is contaminated.
+
+R2. Not all sensors are calibrated. In ordinary classical logic, this means at least one sensor is not calibrated.
+
+R3. Every sensor is uncalibrated. The negation applies separately to each sensor, unlike R2.
+
+R4. More than 30 students are enrolled. The count is strictly greater than 30, so at least 31 students if the count is an integer.
+
+R5. Sample 12 has a mass of 4.5 grams. This is presented as a measured or assigned value, not as someone's belief or report.
+
+R6. If the freezer is above −18°C, there is a request to move the samples to the backup freezer. The request is conditional. It does not assert that the freezer is currently too warm or that the samples have already been moved. The requester and recipient are unspecified.
+
+R7. The ethics review is to be completed by December 1, 2026. The expression specifies a completion deadline, but does not explicitly identify who is responsible or whether completion is obligatory.
+
+R8. Someone requests that Ben submit the ethics form by December 1, 2026. Ben is the requested actor, and the deadline applies to submitting the form. Submission is not asserted to have occurred.
+
+R9. I believe that a power cut caused data loss. The causal relationship is inside a belief statement. It is not independently asserted as fact.
+
+R10. A power cut caused data loss. This is asserted directly, rather than attributed to someone's belief.
+
+R11. Dana says that the pump is not working. The negative statement is attributed to Dana; the expression does not independently establish that the pump is malfunctioning.
+
+R12. You must not open the sealed vials. This expresses a prohibition. The obligation applies to refraining from opening them.
+
+R13. It is not obligatory for you to open the sealed vials. This denies an obligation to open them, but does not prohibit opening them. Permission is not explicitly established.
+
+R14. If training were completed, the error rate would be low. This expresses a hypothetical or counterfactual relationship. It does not establish that training has been completed or that the error rate is currently low.
+
+R15. The percentage of trials that failed is 20%. The expression compares the count of failed trials with the total count of trials. It does not specify the absolute number of trials. This interpretation assumes `pct` calculates the conventional percentage and that the total count is nonzero.
+
+R16. The probability that the vaccine batch is viable is 0.8, or 80%. This is a probability assignment, not an assertion that the batch is definitely viable.
+
+R17. At least one laboratory owns every instrument.
+
+The same laboratory must own all the instruments. This does not merely say that every instrument belongs to some laboratory, potentially a different one. The variables `o1` and `o2` indicate the laboratory and instrument respectively.
+
+R18. The proposal to repeat the assay is rejected because both of these conditions hold in the stated reason: I cannot obtain the reagent, and fewer than two clean plates are available.
+
+The expression records a rejection with a conjunction of reasons. It does not assert that the assay has already been repeated. The `rej` operator indicates rejection, rather than necessarily establishing the reasons as independently verified facts.
+
+R19. Ana proposes holding a lab meeting on November 12, 2026, addressing Ben and Cy. Ben replies to Ana's proposal and agrees. Cy subsequently replies to the same proposal and rejects it because Cy cannot attend on November 12.
+
+Is Ana's proposal adopted? Not conclusively. Ben agrees, but Cy rejects it. No rule for collective adoption or consensus is provided. If unanimous agreement is required, it is not adopted.
+
+Did Ben know Cy's reply when he wrote his? No, not from the stated message sequence. Ben's message precedes Cy's reply, so Cy's reply had not yet occurred in this sequence.
+
+R20. Ben asks for the incubator's temperature in degrees Celsius. Ana responds that she does not know the answer. Cy subsequently answers that the temperature is 37°C.
+
+Does Ben now have an answer? Yes. Cy supplies an answer of 37°C. This does not independently verify the accuracy of the reported temperature.
+
+What does Ana's message say? Ana reports that she does not know the answer to Ben's temperature question. She does not claim that the temperature is unknown to everyone.
+
+Had Ana read Cy's answer when she wrote it? No, not within the stated sequence. Ana's message precedes Cy's answer, so that answer had not yet been sent.
+
+### Key logical distinctions
+
+| Items       | Important distinction                                               |
+| ----------- | ------------------------------------------------------------------- |
+| R2 vs. R3   | Not all are calibrated vs. all are not calibrated                   |
+| R9 vs. R10  | Believed causation vs. directly asserted causation                  |
+| R12 vs. R13 | Prohibition vs. absence of obligation                               |
+| R6 vs. R8   | Conditional request vs. request with a deadline                     |
+| R19         | Agreement by one participant does not establish collective adoption |
+| R20         | An answer being supplied does not guarantee its truth               |
+
+Overall: All 20 expressions have plausible interpretations from their structure, but the exact formal semantics of operators such as `would`, `rej`, `crit`, and `unk` are not defined in the file. These answers therefore reflect their most natural readings rather than a formally guaranteed decoding of an unspecified language.

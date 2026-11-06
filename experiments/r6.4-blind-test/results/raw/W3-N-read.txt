@@ -1,0 +1,45 @@
+R1
+Asserts that some samples are contaminated.
+R2
+Asserts that not all sensors are calibrated. The negation applies to the quantity "all".
+R3
+Asserts that all sensors are not calibrated (i.e., no sensors are calibrated). The negation applies to the state of being "calibrated".
+R4
+Asserts that the total count of enrolled students is greater than 30.
+R5
+Asserts that the specific value of the mass in grams for "sample 12" is 4.5.
+R6
+Requests an action: the recipient is asked to move samples to the backup freezer if the condition (the freezer being above minus 18 degrees) is met.
+R7
+Asserts that the "ethics review" will be (or is scheduled to be) finished by the date December 1, 2026.
+R8
+Asks a specific person, Ben, to perform the action of submitting the ethics form by the date December 1, 2026.
+R9
+Reports a belief: the sender ("Me") believes that a power cut caused data loss. The causal link itself is only mentioned as a belief, not asserted as an objective fact.
+R10
+Asserts directly as a fact that a power cut caused data loss.
+R11
+Reports that Dana says the pump is not working. The pump's failure is mentioned as Dana's statement, not asserted as a direct fact by the sender.
+R12
+Asserts a prohibition: the recipient ("You") must not open sealed vials. The negation applies to the action of opening them.
+R13
+Asserts a lack of obligation: it is not the case that the recipient ("You") must open sealed vials. The negation applies to the obligation itself (meaning you do not have to open them).
+R14
+Asserts a conditional outcome: finishing the training would result in the error rate being low.
+R15
+Asserts that the exact percentage of failed trials out of the total count of trials is 20.
+R16
+Asserts that the probability of the "vaccine batch" being viable is 0.8 (or 80%).
+R17
+Asserts that there exist some labs that own all instruments.
+R18
+Asserts the rejection of the action "repeat assay" and provides the reasons: the sender ("Me") cannot get the reagent (negation on ability to get it), and the total count of clean plates is less than 2.
+R19
+Ana proposes to Ben and Cy to hold a lab meeting on November 12, 2026. Ben replies to Ana agreeing to the proposal. Cy replies to Ana rejecting the proposal because Cy cannot attend on that date.
+ * Is Ana's proposal adopted? No (or likely not), because Cy explicitly rejected it due to an inability to attend.
+ * Did Ben know of Cy's reply when he wrote his? No. Ben replied directly to Ana's original message, and his message precedes Cy's chronologically.
+R20
+Ben asks Ana and Cy for the value of the incubator's temperature in Celsius. Ana replies to Ben that the answer is unknown. Cy replies to Ben answering that the value is 37.
+ * Does Ben now have an answer? Yes, 37.
+ * What does Ana's message say? Ana's message says she does not know the answer to Ben's question.
+ * Had Ana read Cy's answer when she wrote it? No. Ana replied directly to Ben's initial question, and her message was sent before Cy's reply.

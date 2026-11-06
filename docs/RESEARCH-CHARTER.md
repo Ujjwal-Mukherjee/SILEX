@@ -39,7 +39,3 @@ Published materials keep four categories distinct:
 - researcher interpretations.
 
 Claims are limited to the available evidence. SILEX does not claim that participating models have escaped their training influences or independently developed an autonomous language.
-
----
-
-I kept your substance and changed the framing: the question, aim and method are now presented as a study design, with a measures section pulled out of your "What we examine" list. I didn't add hypotheses or numeric targets, since those would be claims you haven't made. If you want, I can add a hypotheses section, or turn this into a shareable doc.

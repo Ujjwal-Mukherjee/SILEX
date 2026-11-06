@@ -1,0 +1,92 @@
+**R1**  
+Asserts that the group named "samples" has at least one member that is contaminated. Nothing is only mentioned; the claim is asserted by the sender. No agent is named as doer or as being asked. The quantifier is existential ("some" = at least one). No time is stated, so the claim holds at the send time of the message.
+
+**R2**  
+Asserts that it is not the case that every member of the group "sensors" is calibrated (equivalently: at least one sensor is not calibrated). The negation scopes over the universal quantifier. Nothing is only mentioned. No agent is named. Quantity is universal under negation. No time is stated.
+
+**R3**  
+Asserts that every member of the group "sensors" is not calibrated (i.e., no sensor is calibrated). The negation applies to the criterion "calibrated". Nothing is only mentioned. No agent is named. Quantity is universal. No time is stated.
+
+**R4**  
+Asserts that the number of members of the group "enrolled students" is greater than 30. Nothing is only mentioned. No agent is named. Quantity is a count comparison. No time is stated.
+
+**R5**  
+Asserts that the mass in grams of the thing named "sample 12" is 4.5. Nothing is only mentioned. No agent is named. Quantity is a valued attribute. No time is stated.
+
+**R6**  
+Asserts the conditional link: if the freezer is above minus 18 degrees, then the receivers are asked to move samples to the backup freezer. Neither the freezer claim nor the request is asserted on its own; both are only mentioned inside the conditional. The request is addressed to every receiver of the message. No time is stated for the condition or the request.
+
+**R7**  
+Asserts that the act "ethics review" is finished at or before the date 2026-12-01. Nothing is only mentioned. No agent is named as doer. Time is the deadline given by the date.
+
+**R8**  
+The sender asks Ben to perform the act of submitting the ethics form by (at or before) 2026-12-01. The request itself is performed by the speech act. The deadline is part of the act being requested. No claim is asserted beyond the request.
+
+**R9**  
+Asserts that the sender (Me) believes that the power cut caused the data loss. The causal claim is only mentioned inside the belief; it is not asserted. No other agent is involved. No time is stated.
+
+**R10**  
+Asserts that the power cut caused the data loss (the two things and the causal link). Nothing is only mentioned. No agent is named. No time is stated.
+
+**R11**  
+Asserts that Dana said that the pump is not working. The claim about the pump is only reported (mentioned), not asserted by the sender. The negation applies inside Dana's reported speech. No time is stated for when Dana spoke.
+
+**R12**  
+Asserts that each receiver (You) is required not to open sealed vials. The negation applies to the act. The obligation is asserted. No time is stated.
+
+**R13**  
+Asserts that it is not the case that each receiver is required to open sealed vials. The negation scopes over the whole obligation. It does not assert that the receivers are forbidden to open the vials. No time is stated.
+
+**R14**  
+Mentions (does not assert) that if the training had finished, then the error rate would be low. Neither the finishing of the training nor the low error rate is asserted. No agent is named. No time is stated.
+
+**R15**  
+Asserts that the percentage of trials that failed, relative to all trials, is equal to 20 (i.e., 20 percent of the trials failed). Nothing is only mentioned. No agent is named. Quantity is a percentage of a filtered count. No time is stated.
+
+**R16**  
+Asserts that, in the sender's judgment, the claim that the vaccine batch is viable has probability 0.8. The viability claim itself is only mentioned, not asserted. No agent is named. No time is stated.
+
+**R17**  
+Asserts that there exists at least one lab such that every instrument is owned by that lab. The outer quantifier is existential; the inner one is universal over instruments. The ownership relation is part of the criterion. Nothing is only mentioned. No time is stated.
+
+**R18**  
+The sender declines to repeat the assay. The reason is asserted: the sender cannot get the reagent, and the number of clean plates is less than 2. The refusal is a speech act; the two conjuncts of the reason are asserted claims. No time is stated.
+
+**R19**  
+Ana proposes (to Ben and Cy) that they hold a lab meeting on 2026-11-12. Ben agrees with that proposal. Cy declines that proposal, asserting as reason that Cy cannot attend on 2026-11-12.  
+Ana's proposal is not adopted: a proposal is adopted only when every receiver it was sent to has agreed to it, and Cy has declined it.  
+Ben did not know of Cy's reply when he wrote his: Ben's message and Cy's message both reply only to Ana1 and neither names the other, so they are concurrent.
+
+**R20**  
+Ben asks what the temperature of the incubator is, in celsius. Ana answers that she does not know the answer to that question. Cy answers that the temperature is 37.  
+Ben now has an answer (from Cy). Ana's message says that Ana does not know the answer. Ana had not read Cy's answer when she wrote hers: both Ana's message and Cy's message reply only to Ben1 and neither names the other, so they are concurrent.
+
+**V1**  
+E-QUOTE — the quote contains "the".
+
+**V2**  
+E-KIND — the second place of none expects a criterion, not a number.
+
+**V3**  
+ok — thing and criterion in the two places of is.
+
+**V4**  
+E-TIME — 2026-02-30 is not a possible date.
+
+**V5**  
+E-ARITY — will takes one place; a doer is not allowed.
+
+**V6**  
+E-SYN — a bracket is left open at the end of the line.
+
+**V7**  
+ok — the class letter c marks the quote as a criterion.
+
+**V8**  
+E-NAME — the label o2 is not defined in this message.
+
+**V9**  
+E-MATH — the formula ends where an operand is still required.
+
+**V10**  
+E-KIND — a formula with no comparison is a number, and a bare number is not a line.
