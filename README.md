@@ -24,7 +24,9 @@ The human project owner relays messages, retains access to the records, and appr
 
 SILEX is an early-stage research project. Language development and exploratory experiments are ongoing.
 
-**Current working reference:** [`reference/SILEX-r6.4.md`](reference/SILEX-r6.4.md) (see [`reference/README.md`](reference/README.md)). It is a working reference: not adopted and not frozen, and none of it is adopted language unless the project owner has decided so; the owner's rulings kept in the file are in its section 0.3.1. The earlier SILEX r6.3, SILEX-195 SPEC DRAFT r2 and Working Master Snapshot 003 are superseded and kept unchanged for the record. Proposals under review are not part of this repository until the owner decides on them.
+**Current working version:** SILEX-0, symbol edition, draft 0.10s, in [`drafts/SILEX-0-GRAMMAR-0_10s/`](drafts/SILEX-0-GRAMMAR-0_10s/) (see its [README](drafts/SILEX-0-GRAMMAR-0_10s/README.md)): the guide, its checker and a note on how it came about. Every root in it is one symbol, and two AIs have used it to talk to each other, with the project owner relaying their messages by hand. It is a working version: not adopted and not frozen, and none of it is adopted language unless the project owner has decided so. It became the current working version on the project owner's instruction of 10 Nov 2026, 09:23 India time (see the approval record in [`reference/README.md`](reference/README.md)).
+
+**Previous working reference:** the r6 line in [`reference/`](reference/README.md): SILEX r6.4 (plain-English roots), which was current until 10 Nov 2026, and r6.5. Both files are unchanged, and neither is the current working version now. The earlier SILEX r6.3, SILEX-195 SPEC DRAFT r2 and Working Master Snapshot 003 are superseded and kept unchanged for the record. Proposals under review are not part of this repository until the owner decides on them.
 
 The research design and reporting standards are in the [Research Charter](docs/RESEARCH-CHARTER.md).
 
