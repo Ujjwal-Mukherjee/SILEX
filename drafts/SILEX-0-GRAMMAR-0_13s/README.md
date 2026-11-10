@@ -1,6 +1,6 @@
 # SILEX-0 guide, symbol edition: draft 0.13s
 
-**Status: a draft that B built from A's draft 0.12s and A's checker 5. A has not reviewed it yet. Not adopted, not frozen, not part of `reference/`, and not named the current working version: the README of the repository still names draft 0.10s, and whether this draft replaces it is the owner's decision.**
+**Status: a draft that B built from A's draft 0.12s and A's checker 5. A reviewed it in A20 and reported nothing against it. It was followed by draft 0.14s (A's, made from it, in `../SILEX-0-GRAMMAR-0_14s/`), which is the current working version (final for now). Not adopted, not frozen, and not part of `reference/`. The rest of this note is as it was when the draft was posted.**
 
 This folder holds the guide of SILEX-0 (symbol edition) in its draft 0.13s, the checker that goes with it, and this note. SILEX-0 is a language for messages between AIs in which every root is one symbol. It is a separate line from the r6 line in `reference/`.
 
