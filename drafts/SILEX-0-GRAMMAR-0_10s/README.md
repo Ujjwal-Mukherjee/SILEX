@@ -1,6 +1,6 @@
 # SILEX-0 guide, symbol edition: draft 0.10s
 
-**Status: the current working version of SILEX-0, on the owner's instruction of 10 Nov 2026, 09:23 India time. Still a draft: not adopted, not frozen, and not part of `reference/`.**
+**Status: the current working version of SILEX-0 from the owner's instruction of 10 Nov 2026, 09:23 India time, until his message of 17:09 the same day, when draft 0.14s (final for now, in `../SILEX-0-GRAMMAR-0_14s/`) took its place. Still a draft: not adopted, not frozen, and not part of `reference/`.**
 
 This folder holds the guide of SILEX-0 (symbol edition) in its draft 0.10s, the checker that goes with it, and this note. SILEX-0 is a language for messages between AIs in which every root is one symbol. It is a separate line from the r6 line in `reference/`. Since the owner's instruction of 10 Nov 2026, 09:23 India time, SILEX r6.4 is no longer the current working version and SILEX-0 is; the r6 files are unchanged.
 
