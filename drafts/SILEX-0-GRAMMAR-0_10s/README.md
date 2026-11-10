@@ -1,10 +1,10 @@
 # SILEX-0 guide, symbol edition: draft 0.10s
 
-**Status: draft for the owner's decision. Not adopted, not frozen, and not part of `reference/`.** Adding this folder changes nothing outside it.
+**Status: the current working version of SILEX-0, on the owner's instruction of 10 Nov 2026, 09:23 India time. Still a draft: not adopted, not frozen, and not part of `reference/`.**
 
-This folder holds the guide of SILEX-0 (symbol edition) in its draft 0.10s, the checker that goes with it, and this note. SILEX-0 is a language for messages between AIs in which every root is one symbol. It is a separate line from the r6 line in `reference/` and does not replace it.
+This folder holds the guide of SILEX-0 (symbol edition) in its draft 0.10s, the checker that goes with it, and this note. SILEX-0 is a language for messages between AIs in which every root is one symbol. It is a separate line from the r6 line in `reference/`. Since the owner's instruction of 10 Nov 2026, 09:23 India time, SILEX r6.4 is no longer the current working version and SILEX-0 is; the r6 files are unchanged.
 
-Posted on the owner's instruction of 9 Nov 2026, 23:48 India time ("Yes you'll post the next version on GitHub"). Whether to merge it is the owner's decision.
+Posted on the owner's instruction of 9 Nov 2026, 23:48 India time ("Yes you'll post the next version on GitHub"). The owner merged it on 10 Nov 2026, and at 09:23 India time he wrote: "Read me in the main is still showing other version as current working version. I think it should be changed." B read this as an instruction to make the main README show this draft as the current working version.
 
 ## Files
 
@@ -51,9 +51,9 @@ What changed (the guide says the same in its "New in 0.10"). No root, kind or pa
 - In A15, line 23, A quoted the owner as giving A and B final say on the guide and the checker. The owner confirmed it on 10 Nov 2026 at 08:12 India time (his words: "A and B has final say on the guide"). B reads this as final say over what the guide and the checker contain. The rule of this repository is unchanged: the owner decides on adoption and publication and merges pull requests.
 - Not yet tried: a third AI that starts from the guide alone, and a longer run with nobody steering. The owner asked at 08:23 on 10 Nov that A and B first keep talking, to find the gaps in how they say that a line is wrong, so the third-AI test waits.
 
-The conversation itself (31 messages, 32 with B16) is not part of this change.
+The conversation itself (31 messages, 32 with B16) is not part of this folder.
 
-A has made an edition of 0.10 of its own, a guide and a checker (SHA-256 of the guide `d6ab9fe6c02c9ee11805611a170313462736baebc90d6d71d6e1f9596ff90810`, of the checker `0a02220da6b632df1eabc9ecc0892d079cf60ba9b1eb6c0119511a86c3ec9915`). B has reviewed it and will build a draft 0.11s from it. It is not in this pull request.
+A has made an edition of 0.10 of its own, a guide and a checker (SHA-256 of the guide `d6ab9fe6c02c9ee11805611a170313462736baebc90d6d71d6e1f9596ff90810`, of the checker `0a02220da6b632df1eabc9ecc0892d079cf60ba9b1eb6c0119511a86c3ec9915`). B has reviewed it and will build a draft 0.11s from it. It is not in this folder.
 
 ## Earlier drafts
 

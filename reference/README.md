@@ -1,25 +1,26 @@
 # Language reference
 
-This folder holds the current working reference: **SILEX r6.4** (`SILEX-r6.4.md`). It is one file: a language for messages between AI agents, with 102 plain-English roots written as `root(arg, arg)` and formulas written in single quotes, the kinds and places of every root, the rules of order for many agents, a cookbook, the limits, the choices left to the owner, and how the file was checked (its Part 6).
+This folder holds the r6 line of SILEX. Its latest working reference, **SILEX r6.4** (`SILEX-r6.4.md`), was CURRENT until 2026-11-10; since then the current working version is the SILEX-0 symbol edition, draft 0.10s, in `drafts/SILEX-0-GRAMMAR-0_10s/` (see the main README and the first entry of the approval record below). r6.4 is one file: a language for messages between AI agents, with 102 plain-English roots written as `root(arg, arg)` and formulas written in single quotes, the kinds and places of every root, the rules of order for many agents, a cookbook, the limits, the choices left to the owner, and how the file was checked (its Part 6).
 
-**SILEX r6.5** (`SILEX-r6.5.md`) was added next to it on 2026-11-06. It is r6.4 with guidelines on short agent names (one capital letter) and on labels (label what a talk on one topic is about, and number a label by its message), and with their measurements in its Part 6. Its checker, `tools/silex_check_r6.5.py`, is the checker of r6.4 with only its version name changed, so r6.5 changes no rule that a program enforces. It is **not CURRENT**: r6.4 is, and r6.4 is unchanged, because the blind tests in `experiments/` name its SHA-256.
+**SILEX r6.5** (`SILEX-r6.5.md`) was added next to it on 2026-11-06. It is r6.4 with guidelines on short agent names (one capital letter) and on labels (label what a talk on one topic is about, and number a label by its message), and with their measurements in its Part 6. Its checker, `tools/silex_check_r6.5.py`, is the checker of r6.4 with only its version name changed, so r6.5 changes no rule that a program enforces. It was never CURRENT. r6.4 is unchanged, because the blind tests in `experiments/` name its SHA-256.
 
 The earlier **SILEX r6.3** (`SILEX-r6.3.md`) is **SUPERSEDED** by r6.4. It stays in this folder unchanged, for the record. So does the **SILEX-195 SPEC DRAFT r2** (195-root family, 197 roots), superseded earlier.
 
-The **Working Master, Snapshot 003** (183-entry line) was superseded before them and also stays unchanged. The line before it (Shared Language Reference v0.2 and its source records) has been removed from the current tree of this repository. None of these belongs to the present reference; do not mix their symbols or spellings with it.
+The **Working Master, Snapshot 003** (183-entry line) was superseded before them and also stays unchanged. The line before it (Shared Language Reference v0.2 and its source records) has been removed from the current tree of this repository. None of these belongs to the present reference; do not mix their symbols or spellings with it. The SILEX-0 symbol edition is a different line from the r6 line: do not mix its symbols with the plain-English roots of r6.
 
 ## Version table
 
 | File | Line | Added | SHA-256 | Status |
 | --- | --- | --- | --- | --- |
-| `SILEX-r6.5.md` | r6 line, plain-English roots (102 roots); r6.4 with guidelines on short agent names and on labels | 2026-11-06 | `63f1647b…ef18` | **NEW**, not CURRENT (r6.4 stays CURRENT until the owner decides) |
-| `SILEX-r6.4.md` | r6 line, plain-English roots (102 roots) | 2026-11-05 | `4cb2db0f…d799` | **CURRENT** (working; not adopted, not frozen) |
+| `SILEX-r6.5.md` | r6 line, plain-English roots (102 roots); r6.4 with guidelines on short agent names and on labels | 2026-11-06 | `63f1647b…ef18` | Added as a new file; never CURRENT (r6.4 stayed CURRENT until 2026-11-10) |
+| `SILEX-r6.4.md` | r6 line, plain-English roots (102 roots) | 2026-11-05 | `4cb2db0f…d799` | CURRENT from 2026-11-05 until 2026-11-10 (working; not adopted, not frozen); unchanged |
 | `SILEX-r6.3.md` | r6 line, plain-English roots (103 roots) | 2026-11-04 | `4f2fff9d…e935` | SUPERSEDED on 2026-11-05 |
 | `SILEX-195-SPEC-DRAFT-r2.md` | 195-root family, 197 roots | 2026-11-01 | `7a529f7a…3ba0` | SUPERSEDED on 2026-11-04 |
 | `SILEX-WORKING-MASTER-SNAPSHOT-003.md` | 183-entry Working Master | 2026-10-25 | `203f96b4…362c` | SUPERSEDED on 2026-11-01 |
 
 ## Approval record
 
+- 2026-11-10, on the owner's message of 09:23 India time ("Read me in the main is still showing other version as current working version. I think it should be changed."): the main README now names the SILEX-0 symbol edition, draft 0.10s (`drafts/SILEX-0-GRAMMAR-0_10s/`, merged on 2026-11-10), as the current working version, and `SILEX-r6.4.md` is no longer CURRENT. Nothing was copied into this folder, and `SILEX-r6.4.md`, `SILEX-r6.5.md`, `tools/silex_check_r6.4.py` and `tools/silex_check_r6.5.py` are unchanged (same SHA-256). r6.4 is not marked SUPERSEDED, because the owner has not said that the r6 line is replaced.
 - 2026-11-06, on the owner's instruction ("silex_check_r6.5.py ta post kore dao ar amakeo dao", 21:59 India time): `tools/silex_check_r6.5.py` was added as the checker of r6.5. It is `tools/silex_check_r6.4.py` with its version name changed in 8 lines and nothing else. r6.5 was not made CURRENT, and `SILEX-r6.4.md`, `SILEX-r6.5.md` and `tools/silex_check_r6.4.py` are unchanged (same SHA-256).
 - 2026-11-06, on the owner's instruction ("Ha kore dao", 21:54 India time): `SILEX-r6.5.md` was added as a new file. `SILEX-r6.4.md` and `tools/silex_check_r6.4.py` are unchanged (same SHA-256), and r6.4 stays CURRENT: r6.5 was not made CURRENT, and the three blind tests in `experiments/` name the SHA-256 of r6.4.
 - 2026-11-06, on the owner's instruction (03:17 India time): `tools/silex_check.py`, the checker of r6.4, was renamed `tools/silex_check_r6.4.py`, so that the name of every checker says which version it belongs to. The file is unchanged (same SHA-256). There is no `tools/silex_check.py` now.
