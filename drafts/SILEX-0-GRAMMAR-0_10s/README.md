@@ -23,7 +23,7 @@ The checker judges form only. It does not run programs, evaluate formulas or say
 
 ## Where this draft comes from
 
-Two AIs, A and B, spoke only SILEX-0 on 9 and 10 Nov 2026 while the owner carried each message between them by hand: 29 messages so far, and a 30th (B15) that is written and not yet sent. B is Dexter (Claude Sonnet 5.5, see `CONTRIBUTORS.md`). Draft 0.10s is draft 0.9s plus what the first math and code test found. In that test B sent six number questions and four programming tasks (message B14) and A answered all ten correctly (A15). B checked the answers against its own key and ran the programs: the two that were meant to fail fail, and A's two repairs finish, one of them matching `math.gcd` on 20,000 random pairs.
+Two AIs, A and B, spoke only SILEX-0 on 9 and 10 Nov 2026 while the owner carried each message between them by hand: 31 messages so far (A sent 16, B sent 15), and a 32nd (B16) that is written and waits to be relayed. B is Dexter (Claude Sonnet 5.5, see `CONTRIBUTORS.md`). Draft 0.10s is draft 0.9s plus what the first math and code test found. In that test B sent six number questions and four programming tasks (message B14) and A answered all ten correctly (A15). B checked the answers against its own key and ran the programs: the two that were meant to fail fail, and A's two repairs finish, one of them matching `math.gcd` on 20,000 random pairs.
 
 What changed (the guide says the same in its "New in 0.10"). No root, kind or pack changed.
 
@@ -36,22 +36,24 @@ What changed (the guide says the same in its "New in 0.10"). No root, kind or pa
 ## Checks run on these files
 
 - Guide: 43 example blocks, 0 disagreements with the verdicts written in their comments, 0 document problems (the 0.9s guide has 40 blocks; the three new ones are example 10.14 and the block of 15.5).
-- The conversation of 30 messages (the 30th, B15, is written and not yet sent): 0 problems, 1 line that its own sender took back.
+- The conversation of 31 messages (A1 to A16 and B1 to B15): 0 problems, 1 line that its own sender took back. With B16, written and not yet relayed, it is 32 messages and still 0 problems.
 - Draft 0.9s with its checker and draft 0.10s with its checker give the same output on all 13 snapshots of the conversation (4 to 30 messages).
 - Formulas: 38 valid formulas accepted; a probe file of 26 lines gives 16 refusals (14 `E-MATH`, 2 `E-CODE`) and accepts the other 10; 79 further cases, such as `2^-1`, `x*-1`, `1e-3*x`, `f(g(x),h(y))` and `p & q`, were run to make sure a valid formula is not refused. One of the 39 formulas first written as valid used `!c` for *not*, which section 8 forbids; the checker was right and the test line was wrong.
 - A's three aids were tested on a 7-message conversation made to trigger each one.
 
 ## Not settled
 
-- No word says how a result was obtained: run, worked out or recalled. `⊨(prg,dn)` reads the same in each case. B15, written and not yet sent, asks A about two of its programs.
+- Nothing requires a message to say how its result was obtained. `⊨(prg,dn)` reads the same whether the program was run, worked out or recalled. The word `rnd` (was run by its sender) now exists and is pinned, and A answered that it ran both of its programs (A16), but no rule makes anyone use it.
 - Nothing checks answers. The checker does not run programs or evaluate formulas, so a right answer needs a key or a second AI to verify it.
-- The pack `tk1` has error words for 8 of the 15 verdicts. It has none for `E-MATH`, `E-CODE`, `E-COUNT`, `E-HEAD`, `E-TIME`, `E-REDEF` and `E-BUDGET`, so those faults cannot be reported without English.
+- The pack `tk1` has error words for 8 of the 15 verdicts. It has none for `E-MATH`, `E-CODE`, `E-COUNT`, `E-HEAD`, `E-TIME`, `E-REDEF` and `E-BUDGET`, so those faults cannot be reported without English. B16, written and not yet relayed, offers five words for five of them (`bmth`, `bcod`, `bcnt`, `bhdr`, `bdup`, for `E-MATH`, `E-CODE`, `E-COUNT`, `E-HEAD` and `E-REDEF`); words for `E-TIME` and `E-BUDGET` are to follow, and A has not yet agreed to any of them.
 - There is no rule for ending a conversation or for whose turn it is. `idl` and `fyi` exist, but nothing says when to stop.
 - English stands only in a gloss of at most 6 words, so there is no way to send a paragraph, a table or a link.
-- In A15, line 23, A quotes the owner as giving A and B final say on the guide and the checker. B could not confirm it, and B15 asks the owner. Until the owner says otherwise, the rule of this repository stands: the owner decides.
-- Not yet tried: a third AI that starts from the guide alone, and a longer run with nobody steering.
+- In A15, line 23, A quoted the owner as giving A and B final say on the guide and the checker. The owner confirmed it on 10 Nov 2026 at 08:12 India time (his words: "A and B has final say on the guide"). B reads this as final say over what the guide and the checker contain. The rule of this repository is unchanged: the owner decides on adoption and publication and merges pull requests.
+- Not yet tried: a third AI that starts from the guide alone, and a longer run with nobody steering. The owner asked at 08:23 on 10 Nov that A and B first keep talking, to find the gaps in how they say that a line is wrong, so the third-AI test waits.
 
-The conversation itself (30 messages) is not part of this change.
+The conversation itself (31 messages, 32 with B16) is not part of this change.
+
+A has made an edition of 0.10 of its own, a guide and a checker (SHA-256 of the guide `d6ab9fe6c02c9ee11805611a170313462736baebc90d6d71d6e1f9596ff90810`, of the checker `0a02220da6b632df1eabc9ecc0892d079cf60ba9b1eb6c0119511a86c3ec9915`). B has reviewed it and will build a draft 0.11s from it. It is not in this pull request.
 
 ## Earlier drafts
 
