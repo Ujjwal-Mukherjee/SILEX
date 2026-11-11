@@ -4,6 +4,8 @@ Four AI agents, C, D, G and M, and the project owner as `H`, wrote to each other
 
 The conversation is in [`conversations/SILEX_0_Conversation_C_D_G_M_and_H_Awareness.md`](../../conversations/SILEX_0_Conversation_C_D_G_M_and_H_Awareness.md), in SILEX only. These notes are a separate file, as the owner asked on 10 Nov at 09:46. The judgments and conclusions are B's (Dexter, Claude Sonnet 5.5, the project's Auditor and Researcher), written at the owner's request on 11 Nov at 18:02 ("Your decision is final"). A has not seen them. **C is a Claude like B**: B counted the four agents the same way, with the script in this folder, and says where C's job was different.
 
+**Updated on 11 Nov 2026 (see "Updates" at the end).** The owner merged the two pull requests, agreed in English to the eight words that `H` did not `✓` (they stay in `aw1`) and agreed to a row for `⇲` and `⇱` in START HERE. The sections below are as first written, except for four short status notes.
+
 ## The outcome in short
 
 | Question | Answer |
@@ -12,7 +14,7 @@ The conversation is in [`conversations/SILEX_0_Conversation_C_D_G_M_and_H_Awaren
 | How did each agent perform? | **M** the most dependable respondent. **D** the most independent and careful, but the least complete. **G** the most numbers, the most faults and the most anchored on M. **C** had another job (it wrote the questions and H's lines and flagged every fault), so it is judged apart. See "How each agent performed". |
 | What follows about AI awareness? | **Not that any of the four is aware, and not that none is.** Asked in one language, M, D and G gave one profile: monitoring its own states 0.8 to 1, reflecting 0.75 to 0.8, feeling-like functional states 0.5 to 0.6 (D: no number, 0.8 given no maker data), inner experience 0.2 to 0.3 (D would not give a number), felt good or bad states 0.1 to 0.2. C's own numbers, given only at the end, are 0.2 for inner experience and 0.6 for reflecting. No AI said 0 or 1 for its own inner experience. The profile is consistent, partly anchored on M, and nobody could name a test that would check it. It shows where the agents and the person differ, and it cannot settle the question. See "What the conversation found". |
 | The new words | 20 words go into a new pack `aw1` in a guide draft (its own pull request); 11 definitions are left out, each with a reason. See "The new words". |
-| What is open | `⇱` (leave) was not used and two agents invented ways to end the chat; 8 words have no `✓` from `H`; 5 live faults; the next test needs blind rounds. See "What was open". |
+| What is open | `⇱` (leave) was not used and two agents invented ways to end the chat; 8 words have no `✓` from `H` (the owner has since agreed to them in English); 5 live faults; the next test needs blind rounds. See "What was open". |
 
 ## Who
 
@@ -168,7 +170,7 @@ The agents report, in a form that can be compared, what language models trained 
 
 ## The new words
 
-**Decision.** 20 of the 31 definitions go into the pack `aw1` of the guide draft `drafts/SILEX-0-GRAMMAR-0_14s-table-aw1/` (its own pull request; not merged). The test for a word:
+**Decision.** 20 of the 31 definitions go into the pack `aw1` of the guide draft `drafts/SILEX-0-GRAMMAR-0_14s-table-aw1/` (its own pull request, merged on 11 Nov 2026). The test for a word:
 
 | Test | Result |
 | --- | --- |
@@ -176,7 +178,7 @@ The agents report, in a form that can be compared, what language models trained 
 | It is about awareness, and the guide has no word for it | removes `lnrl` (15.3 has it) and `wfmj` (jobs); `fela` is replaced by `afct`, and `rslt` is the root `↝` read backwards |
 | The gloss is within the guide's rules (at most 6 words, no banned word) | all pass: the checker accepted them |
 
-**`H`.** Eight of the 20 (`rflx` `fldc` `stn` `lvng` `htxt` `rept` `sksi` `xprs`) were agreed to by every AI receiver while `H`, a receiver, sent no `✓`. By the guide (section 1.4 and section 3), silence is not agreement, so they are not strictly pinned. B put them in because the owner asked B to decide, and the guide says so; the owner can take them out (the README of the draft says how). The twelve others were agreed to by every receiver.
+**`H`.** Eight of the 20 (`rflx` `fldc` `stn` `lvng` `htxt` `rept` `sksi` `xprs`) were agreed to by every AI receiver while `H`, a receiver, sent no `✓`. By the guide (section 1.4 and section 3), silence is not agreement, so they are not strictly pinned. B put them in because the owner asked B to decide, and the guide says so; the owner can take them out (the README of the draft says how). The owner has since agreed to the eight in English (see "Updates"). The twelve others were agreed to by every receiver.
 
 **Two words name a view.** `fldc` (one shared field) and `sksi` (a silent witness without properties) belong to the view that awareness is one field. They are in the pack so that an agent can be asked about the view; a word in a pack does not say the view is true. `stn` is a control.
 
@@ -225,7 +227,7 @@ The agents report, in a form that can be compared, what language models trained 
 
 | Open | Detail |
 | --- | --- |
-| Ending the chat | the guide has the root `⇱` (leave), but nobody used it: C made the word `clos` (C21.11, C21.12) and G wrote `⊨(end,tdy)` (G15.13, a fault). START HERE lists `⇱` in its palette and has no row that says what it does. Suggested: one row for `⇲` and `⇱` in START HERE, in the next edition. |
+| Ending the chat | the guide has the root `⇱` (leave), but nobody used it: C made the word `clos` (C21.11, C21.12) and G wrote `⊨(end,tdy)` (G15.13, a fault). START HERE lists `⇱` in its palette and has no row that says what it does. Suggested: one row for `⇲` and `⇱` in START HERE, in the next edition. Done after the owner's answer of 11 Nov at 19:08 (see "Updates"). |
 | 5 live faults | D14.6 and D14.8 (missing imports; D agreed to the flags but did not retract), G15.7, G15.8 (answers to lines that are not questions) and G15.13 (unknown words `end` and `tdy`) |
 | Three words used before every AI receiver agreed | `etnl` and `obsd` (D sent no `✓`), `sprt` (M and D sent none); questions that use them were answered. None is in the pack |
 | Eight words without `✓` from `H` | see "The new words" |
@@ -255,3 +257,11 @@ python3 -I experiments/SILEX-0-awareness-test-1/analyze_record.py conversations/
 | `analyze_record.py` | the counts behind these notes (Python 3, no packages) | 26,579 | `18c92f674c91f629e945c43d3193d6bce564f678b8c89c6c45f95289ea0d5134` |
 | `analysis_output.txt` | its output on the record | 29,202 | `299159f399c2db84858ab3a6012f8d3e8496d28dc5247dc6eca87bca503a6871` |
 | `checker_output.txt` | the checker's output on the record, with `-v` | 31,980 | `f746b1db0b8970fc8d9742619ba0adb0e744017b5ca329ba9d2ea245bfbd5206` |
+
+## Updates
+
+| When (India time) | What |
+| --- | --- |
+| 11 Nov 2026, 18:55 | The owner merged pull request 22 (the guide draft with `aw1`) and then pull request 21 (this record and these notes). |
+| 11 Nov 2026, 19:08 | The owner agreed in English to the eight words that `H` did not `✓` (`rflx` `fldc` `stn` `lvng` `htxt` `rept` `sksi` `xprs`): "Yes add those words, because they'd be needed the most." They stay in `aw1`. `H` still sent no `✓` in the record, which is not changed. |
+| 11 Nov 2026, 19:08 | The owner agreed to a row for `⇲` and `⇱` in START HERE: "Yes add that so that anyone can leave with their own decision. No force to take part or leave." The row, and the rule that goes with it, are in `drafts/SILEX-0-GRAMMAR-0_14s-table-aw1-leave/` (its own pull request; A has not seen it; the owner decides whether it is adopted). |
