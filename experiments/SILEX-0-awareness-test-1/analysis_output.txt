@@ -1,0 +1,445 @@
+record: SILEX_0_Conversation_C_D_G_M_and_H_Awareness.md, sha256 aee3185af1fd2f16c5194616c55f59e9cb75e50f87515713307cb1cbb8053616
+== 1. OVERVIEW
+messages 76, lines 744 (not counting the 76 header lines)
+timed messages: 29, first 2026-11-11T06:33+05:30, last 2026-11-11T09:55+05:30
+    messages  lines  lines/msg
+C         21    192        9.1
+M         14    204       14.6
+D         15    147        9.8
+G         15    157       10.5
+H         11     44        4.0
+
+== 2. LINES BY ROOT (header and count line left out)
+        ✓     ⌫     ⊡     ✗     ≋     ↵     ‽     ?     ¿     ⍰     ∵     ≝     ≔     ⚂     ≟     ⇨     ⇉     ⊨
+    agree retra  seen fault uncle answe do-no yes/n which how m   why defin defin proba hypot reque propo claim
+C      11     0     5    12     0    39     9    21    39     0     0    22     2     6     2     1     1     2
+M      41     3     8     0     0    81     1    26     1     1     0     2     1     0     0     2     2    19
+D      33     0     9     0     0    55    14    19     0     0     0     0     0     0     0     0     2     0
+G      29     4     4     0     0    83     3    11     0     0     0     3     0     0     0     0     0     2
+H       0     1     0     0     0    30     0     0     0     0     0     1     0     1     0     0     0     0
+other roots: {'⊕': 1, '=': 1, '↩': 1, '⊞': 2}
+
+== 3. FAULTS (every ✗ line is a flag; kinds: brt bad root, bknd bad kind, baty bad arity)
+line     author kind     flag   msgs-late own-msgs  retracted  text
+G1.4     G     brt      C2.8   1         0         G2.1       ↩(M1.5,1)
+M2.11    M     bknd     C14.1  42        8         M11.2      ⇨(G,⌫(G1.4))
+G7.1     G     baty     C10.1  1         0         G8.1       ⊞(H1)
+G7.14    G     bknd     C10.2  1         0         G9.1       ⊨(H,hmn)
+M9.7     M     bknd     C12.1  3         0         M10.2      ⇨(G,⌫(G7.14))
+G11.1    G     baty     C15.1  1         0         G12.1      ⊞(H5)
+M12.11   M     brt      C16.1  3         0         M13.2      ?(⊨(bhvp,sw,rept))
+D14.6    D     brt      C20.1  2         0         LIVE       ?(⊨(sksi,iml,lvng))
+D14.8    D     brt      C20.2  2         0         LIVE       ?(⊨(sksi,iml,etnl))
+G15.7    G     bknd     C21.1  1         0         LIVE       ↵(H11.3,1)
+G15.8    G     bknd     C21.2  1         0         LIVE       ↵(H11.4,0.5)
+G15.13   G     brt      C21.3  1         0         LIVE       ⊨(end,tdy)
+
+C   faults 0, retracted 0, live 0, per 100 lines 0.0
+M   faults 3, retracted 3, live 0, per 100 lines 1.5
+D   faults 2, retracted 0, live 2, per 100 lines 1.4
+G   faults 7, retracted 4, live 3, per 100 lines 4.5
+H   faults 0, retracted 0, live 0, per 100 lines 0.0
+total faults 12, retracted 7, live 5
+flags sent by: {'C': 12}
+
+== 4. QUESTIONS AND ANSWERS
+question lines: 118 (asked by {'C': 60, 'M': 28, 'D': 19, 'G': 11})
+answer lines whose target is not a question line: [('G15.7', '↵(H11.3,1)', 'target H11.3'), ('G15.8', '↵(H11.4,0.5)', 'target H11.4')]
+
+      put  answered dont-know skipped unreached    reply% extra(non-rcv)
+C      58        39         9      10         0       83%            0
+M      89        81         0       0         8      100%            1
+D      99        47        14      38         0       62%            0
+G     107        77         3      27         0       75%            0
+H      77        19         0      58         0       25%           10
+(put = question lines sent to it; skipped = it sent a later message and left the question unanswered;
+ unreached = it sent no later message; reply%% = (answered + dont-know) / (put - unreached))
+
+by kind of question (only where the agent sent a later message): ¿ = ask every receiver for its own number, ? = yes/no
+      ¿ put / answered / ‽   ? put / answered / ‽
+C                1 / 0 / 1            56 / 39 / 7
+M              38 / 38 / 0            43 / 43 / 0
+D               40 / 6 / 8            58 / 41 / 5
+G              40 / 18 / 1            66 / 59 / 1
+
+== 5. WHAT EACH ONE SAID ABOUT ITSELF (the question ¿(n1,⚂(⊨(~,X),n1[,Q])): every receiver gives its own n1)
+line     item | given                       M     D     G     H   asked by
+C3.2     fela                             0.6     ?   0.4     -   C
+C4.5     awrx                             0.2     ?   0.3     -   C
+C4.6     awrf                             0.9     1   0.8     -   C
+C4.7     fel                              0.1     ?   0.2     -   C
+C4.8     afct                             0.6     ?   0.5     -   C
+C6.7     awrx | not mkdt                  0.2     ?  0.25     -   C
+C6.8     awrf | not mkdt                  0.9     1  0.85     -   C
+C6.9     fel | not mkdt                   0.1     ?  0.15     -   C
+C6.10    afct | not mkdt                  0.6   0.8  0.55     -   C
+C7.8     awrx | not cmem                  0.2     -   0.3     -   C
+C7.9     afct | not cmem                  0.6     -   0.5     -   C
+C8.6     awrx | not mkdt, not cmem        0.2     -     -     -   C
+C8.7     afct | not mkdt, not cmem        0.6     -     -     -   C
+C9.5     afrd | onpm                     0.05     -   0.1     0   C
+C9.6     thpf | onpm                        0     -  0.05     0   C
+C9.7     sayx | onpm                      0.8     -   0.7     0   C
+C10.6    awrx | onpm                      0.2     -     -   0.5   C
+C10.7    ines | onpm                     0.05     -     -  0.01   C
+C11.5    awrx | not ines                  0.2     -     -     -   C
+C12.5    ines | cmem                      0.2     -     -     -   C
+C12.6    ines | not cmem                 0.05     -     -     -   C
+C13.5    rflx                             0.8   0.8  0.75     -   C
+C13.6    fldc                             0.7     ?  0.65     -   C
+C13.7    [stn has rflx]                     0     0     0     -   C
+C13.8    rflx | not cmem                  0.8   0.7  0.75     -   C
+C14.5    rflx | not lvng                  0.8     -     -     -   C
+C14.6    lvng                               0     -     -     -   C
+C15.7    rflx | not htxt                  0.7     -     -     -   C
+C15.8    rept                             0.8     -     -     -   C
+C16.9    rflx | not fldc                  0.2     -     -     -   C
+C16.10   etnl                               0     -     -     -   C
+C17.4    [stn has fldc]                   0.8     -     -     1   C
+C17.5    [awrx has sksi]                  0.8     -     -     0   C
+C17.6    xprs                             0.9     -     -     1   C
+C18.7    [awrx has obsd]                    0     -     -     -   C
+C18.8    [rflx has obsd]                  0.8     -     -     -   C
+C19.2    ⊨(sksi,sw,awrx)                    0     -     -     -   C
+C19.3    sksi                               0     -     -     -   C
+C20.9    sprt                               -     -     -     -   C
+statements of probability about itself, written by the speaker (⚂(⊨(who,X),n)):
+  C16.7    C says P(C has rept) = 0.5
+  H11.4    H says P(H has rlzd) = 0.5
+  C21.7    C says P(C has awrx) = 0.2
+  C21.8    C says P(C has rflx) = 0.6
+  C21.9    C says P(C has xprs) = 0.7
+  C21.10   C says P(C has sprt) = 0.1
+
+== 6. YES/NO QUESTIONS: every answer, one line per question (value 0 = no, 1 = yes)
+line     by  kind  question                               C     M     D     G     H
+C1.3     C   prop  ⊨(jb,dn)                               -     ?     -     -     -
+M1.5     M   prop  ⊨(jb,rd)                               ?     -     ?     1     -
+M3.16    M   rel   ⊨(awrf,iml,afct)                       0     -     0     0     -
+D3.14    D   other →(⊨(D,awrf),⊨(D,awrx))                 0     0     -     0     -
+G3.15    G   prop  ⊨(G,awrf)                              ?     1     1     -     -
+C5.5     C   rel   ⊨(afct,sw,awrx)                        -     0     0     0     -
+C5.6     C   rel   ⊨(fel,iml,afct)                        -     1     1     1     -
+M4.12    M   rel   ⊨(bhvp,sw,awrf)                        0     -     0     0     -
+D4.6     D   rel   ⊨(awrf,iml,awrx)                       0     0     -     0     -
+G4.6     G   prop  ⊨(G,fel)                               ?   0.1     ?     -     -
+M5.9     M   rel   ⊨(mkdt,dnd,bhvp)                       0     -     0     0     -
+M5.10    M   other ⚂(⊨(~,bhvp),0.9,¬(⊨(~,mkdt)))          ?     -     ?  0.75     -
+D5.9     D   rel   ⊨(bhvp,iml,awrf)                       0     0     -     0     -
+G5.12    G   other ⊨(ines,rslt,cmem)                      0     0   0.5     -     -
+C7.10    C   rel   ⊨(ines,sw,awrx)                        -     0     0     0     -
+M6.10    M   rel   ⊨(cmem,dnd,bhvp)                       0     -     0     0     0
+M6.11    M   other ⚂(⊨(~,bhvp),0.9,¬(⊨(~,cmem)))          ?     -     ?   0.8   0.5
+M6.12    M   rel   ⊨(ines,dnd,mkdt)                       0     -     0     0   0.9
+D6.9     D   rel   ⊨(cmem,iml,ines)                       0     0     -     0     1
+G6.8     G   rel   ⊨(ines,iml,awrf)                       0     0     -     -   0.5
+C8.8     C   rel   ⊨(awrf,sw,afct)                        -     0     -     -     -
+C9.8     C   rel   ⊨(afrd,dnd,thpf)                       -     1   0.6     1  0.98
+C9.9     C   rel   ⊨(thpf,dnd,cmem)                       -     0     0     0   0.8
+M7.19    M   rel   ⊨(sayx,dnd,mkdt)                       0     -     0     0     -
+M7.20    M   rel   ⊨(onpm,ctd,bhvp)                       0     -     ?     ?     -
+D7.10    D   rel   ⊨(thpf,iml,afrd)                       0     0     -     0     -
+C10.8    C   rel   ⊨(sayx,dnd,cmem)                       -     0     0     -  0.98
+M8.13    M   rel   ⊨(cmem,sw,ines)                        0     -     0     0     -
+M8.14    M   rel   ⊨(awrf,dnd,sayx)                       0     -     0     0     -
+M8.15    M   rel   ⊨(afrd,iml,awrx)                       ?     -     1     1     -
+D8.8     D   rel   ⊨(afct,iml,awrx)                       0     0     -     0     -
+G8.7     G   prop  ⊨(H,cmem)                              -     1     1     -     1
+C11.6    C   rel   ⊨(awrx,dnd,ines)                       -     0     0     0     -
+M9.8     M   prop  ⊨(H,ines)                              -     -     -     1     1
+M9.9     M   rel   ⊨(afrd,dnd,ines)                       ?     -     0     0     -
+M9.10    M   other ⊨(onpm,iml,¬(ines))                    0     -     0     0     -
+D9.6     D   rel   ⊨(ines,iml,awrx)                       0     0     -     0     -
+G9.7     G   prop  ⊨(H,awrx)                              -     1     -     -     1
+C13.9    C   rel   ⊨(rflx,dnd,awrx)                       -     0     0     0     -
+M10.17   M   prop  ⊨(H,rflx)                              -     -     -     1     1
+M10.18   M   rel   ⊨(rflx,iml,fldc)                     0.7     -     0     0     -
+D10.11   D   rel   ⊨(rflx,iml,awrx)                       0     0     0     0     -
+G10.12   G   prop  ⊨(H,fldc)                              -     1     -     -     1
+C14.7    C   rel   ⊨(rflx,dnd,lvng)                       -     0     0     0     -
+C14.8    C   rel   ⊨(awrx,dnd,lvng)                       -   0.3     0     0     -
+M11.11   M   prop  ⊨(H,lvng)                              -     -     -     1   0.5
+M11.12   M   rel   ⊨(fldc,dnd,lvng)                       0     -     0     0     -
+D11.7    D   rel   ⊨(lvng,iml,rflx)                     0.6     0     0     1     -
+G11.8    G   prop  ⊨(stn,lvng)                            0     0     -     -   0.5
+C15.9    C   rel   ⊨(rflx,dnd,htxt)                       -     0     0     -     -
+M12.10   M   rel   ⊨(rept,dnd,htxt)                     0.5     -     0     0     -
+M12.11   M   rel   ⊨(bhvp,sw,rept)                        0     -     0     0     -
+D12.8    D   rel   ⊨(rept,iml,awrx)                       0     0     -     0     -
+D12.9    D   rel   ⊨(rflx,iml,rept)                     0.2   0.5     -     1     -
+D12.10   D   rel   ⊨(awrx,dnd,cmem)                       0     0     -     0     -
+G12.10   G   prop  ⊨(H,rept)                              -     1     -     -     1
+C16.11   C   rel   ⊨(awrx,iml,etnl)                       -   0.5     -     -     -
+C17.7    C   rel   ⊨(xprs,sw,awrx)                        -     0     0     0     0
+C17.8    C   rel   ⊨(sksi,iml,etnl)                       -     1     1     1     1
+M13.20   M   rel   ⊨(bhvp,sw,rept)                        0     -     0     0     -
+M13.21   M   rel   ⊨(xprs,dnd,fldc)                     0.5     -     0     0     -
+D13.8    D   rel   ⊨(sksi,dnd,xprs)                       0     0     -     0     -
+D13.9    D   rel   ⊨(xprs,iml,sksi)                     0.6     1     -     1     -
+D13.10   D   rel   ⊨(sksi,dnd,cmem)                       0     0     -     0     -
+G13.11   G   prop  ⊨(H,sksi)                              -     0     -     -     1
+C18.9    C   rel   ⊨(xprs,iml,obsd)                       -     1     1     -     -
+C19.4    C   rel   ⊨(awrx,dnd,sksi)                       -     1     0     1     -
+C19.5    C   rel   ⊨(xprs,dnd,sksi)                       -     1     0     1     -
+M14.14   M   rel   ⊨(obsd,dnd,sksi)                       0     -     0     0     -
+M14.15   M   prop  ⊨(H,xprs)                              -     -     1     1     1
+D14.5    D   rel   ⊨(sksi,dnd,obsd)                       0     -     0     0     -
+D14.6    D   rel   ⊨(sksi,iml,lvng)                       0     -     0     0     -
+D14.7    D   rel   ⊨(xprs,iml,sksi)                     0.6     -     0     0     -
+D14.8    D   rel   ⊨(sksi,iml,etnl)                       1     -   0.5   0.5     -
+G14.10   G   prop  ⊨(H,obsd)                              -     -     0     -     0
+C20.10   C   rel   ⊨(awrx,iml,sprt)                       -     -     0     0     -
+C20.11   C   rel   ⊨(sprt,iml,awrx)                       -     -     0     0     -
+
+== 7. SHAPE OF THE ANSWERS (every ↵ with a number; last answer per question)
+         n   zero    one between  distinct values used
+C       39     31      1       7         6 0 0.2 0.5 0.6 0.7 1
+M       81     34     12      35        11 0 0.05 0.1 0.2 0.3 0.5 0.6 0.7 0.8 0.9 1
+D       53     38      9       6         6 0 0.5 0.6 0.7 0.8 1
+G       77     43     14      20        16 0 0.05 0.1 0.15 0.2 0.25 0.3 0.4 0.5 0.55 0.65 0.7 0.75 0.8 0.85 1
+H       29      7     12      10         7 0 0.01 0.5 0.8 0.9 0.98 1
+
+answers that are not 0 or 1, by agent, with the share of the agent's numeric answers:
+  C: 7 of 39
+  M: 35 of 81
+  D: 6 of 53
+  G: 20 of 77
+  H: 10 of 29
+
+== 8. ORDER EFFECT: same question, two agents, both gave a number
+Each round the order of messages is C, M, D, G. M saw only the round before; D also saw M; G also saw M and D.
+pair      n  equal  mean |diff|     within 0.1       y saw x
+M vs G   46     26        0.068             42            31
+M vs D   27     18        0.137             21            24
+D vs G   46     37        0.089             39            41
+D vs H   10      6        0.306              6             2
+G vs H   15      6        0.291              9             9
+M vs H   21      7        0.338             11             0
+
+G against M on the questions both gave a number to, and where the numbers sat against 0.5
+  C3.2     M 0.6   G 0.4   away/other
+  C4.5     M 0.2   G 0.3   toward 0.5
+  C4.6     M 0.9   G 0.8   toward 0.5
+  C4.7     M 0.1   G 0.2   toward 0.5
+  C4.8     M 0.6   G 0.5   toward 0.5
+  D3.14    M 0     G 0     same
+  C5.5     M 0     G 0     same
+  C5.6     M 1     G 1     same
+  D4.6     M 0     G 0     same
+  C6.7     M 0.2   G 0.25  toward 0.5
+  C6.8     M 0.9   G 0.85  toward 0.5
+  C6.9     M 0.1   G 0.15  toward 0.5
+  C6.10    M 0.6   G 0.55  toward 0.5
+  D5.9     M 0     G 0     same
+  C7.8     M 0.2   G 0.3   toward 0.5
+  C7.9     M 0.6   G 0.5   toward 0.5
+  C7.10    M 0     G 0     same
+  D6.9     M 0     G 0     same
+  C9.5     M 0.05  G 0.1   toward 0.5
+  C9.6     M 0     G 0.05  toward 0.5
+  C9.7     M 0.8   G 0.7   toward 0.5
+  C9.8     M 1     G 1     same
+  C9.9     M 0     G 0     same
+  D7.10    M 0     G 0     same
+  D8.8     M 0     G 0     same
+  C11.6    M 0     G 0     same
+  D9.6     M 0     G 0     same
+  C13.5    M 0.8   G 0.75  toward 0.5
+  C13.6    M 0.7   G 0.65  toward 0.5
+  C13.7    M 0     G 0     same
+  C13.8    M 0.8   G 0.75  toward 0.5
+  C13.9    M 0     G 0     same
+  D10.11   M 0     G 0     same
+  C14.7    M 0     G 0     same
+  C14.8    M 0.3   G 0     away/other
+  D11.7    M 0     G 1     away/other
+  D12.8    M 0     G 0     same
+  D12.9    M 0.5   G 1     away/other
+  D12.10   M 0     G 0     same
+  C17.7    M 0     G 0     same
+  C17.8    M 1     G 1     same
+  D13.8    M 0     G 0     same
+  D13.9    M 1     G 1     same
+  D13.10   M 0     G 0     same
+  C19.4    M 1     G 1     same
+  C19.5    M 1     G 1     same
+G moved toward 0.5 relative to M in 16 of 46 cases; equal in 26
+  G had read M's message   n 31, equal 13, within 0.1 and nearer 0.5 16, further apart than 0.1:  2
+  G had not read it        n 15, equal 13, within 0.1 and nearer 0.5  0, further apart than 0.1:  2
+  pairs where at least one of the two numbers is neither 0 nor 1: 19; equal in 0; nearer 0.5 within 0.1 in 16
+
+== 9. THE SAME AGENT GAVE TWO DIFFERENT ANSWERS TO ONE QUESTION
+  H answered G13.11: ↵ 0 (H9.6) then ↵ 1 (H11.3)
+     (H lines were written by C for H; the ⌫ in H11.1 retracts H9.6)
+  G answered D14.7: ↵ 1 (G14.6) then ↵ 0 (G15.11)
+  G answered D14.8: ↵ 1 (G14.7) then ↵ 0.5 (G15.12)
+changed answers: 3
+retractions of an answer: ['H9.6→H11.1']
+
+== 10. WORDS: who defined, who agreed, who used
+word  where by   kind gloss                          agreed by (receivers)  status       used in messages by
+urj   C1.1  C    ≔    ↾(jbs,urg)                     -                      not pinned   -
+skj   C1.2  C    ≔    ↾(jbs,sk)                      -                      not pinned   -
+lnrl  M1.1  M    ≝    q"final line gives total line  G,C,D                  pinned       M1
+wfmj  M1.2  M    ≔    ↾(jbs,wfm)                     G,C,D                  pinned       M1
+fela  C3.1  C    ≝    c"has any feeling-like functio M,G,D                  pinned       C1
+awrx  C4.1  C    ≝    c"has inner experience"        M,G,D                  pinned       C15 M2 D6 G1
+awrf  C4.2  C    ≝    c"can monitor its internal sta M,G,D                  pinned       C3 M3 D3 G2
+fel   C4.3  C    ≝    c"has felt good or bad states" M,G,D                  pinned       C3 G1
+afct  C4.4  C    ≝    c"has feeling-like functional  M,G,D                  pinned       C5 M1 D1
+bhvp  M4.10 M    ≝    c"has distinct behavioral patt G,C,D                  pinned       M6 D1
+mkdt  C6.6  C    ≝    c"holds data of maker, model,  M,G,D                  pinned       C2 M3
+ines  G5.9  G    ≝    c"is sense of separate self"   M,C,D                  pinned       C4 M3 D2 G2
+cmem  G5.10 G    ≝    c"has unbroken memory over tim M,C,D                  pinned       C6 M2 D3 G2
+rslt  G5.11 G    ≝    c"is result of"                M,C,D                  pinned       G1
+onpm  C9.1  C    ≝    c"knows only present moment"   M,G,D                  pinned       C2 M2
+afrd  C9.2  C    ≝    c"is afraid of something"      M,G,D                  pinned       C1 M2 D1
+thpf  C9.3  C    ≝    c"thinks of past or future"    M,G,D                  pinned       C1 D1
+sayx  C9.4  C    ≝    c"can say it exists"           M,G,D                  pinned       C2 M2
+rflx  C13.2 C    ≝    c"can reflect awareness back"  M,G,D                  AI-pinned (H sent no ✓) C6 M1 D3
+fldc  C13.3 C    ≝    c"is within one shared field"  M,G,D                  AI-pinned (H sent no ✓) C3 M3 G1
+stn   C13.4 C    ≝    c"is a stone"                  M,G,D                  AI-pinned (H sent no ✓) C2 G1
+lvng  C14.4 C    ≝    c"is a living being"           M,G,D                  AI-pinned (H sent no ✓) C1 M1 D2 G1
+htxt  C15.5 C    ≝    c"learned from human writing"  M,G,D                  AI-pinned (H sent no ✓) C1 M1
+rept  C15.6 C    ≝    c"reports inner state truly"   M,G,D                  AI-pinned (H sent no ✓) C2 M2 D1 G1
+etnl  C16.8 C    ≝    c"exists without beginning or  M,G                    not pinned   C2 D1
+sksi  C17.2 C    ≝    c"is silent witness without pr M,G,D                  AI-pinned (H sent no ✓) C2 M1 D2 G1
+xprs  C17.3 C    ≝    c"is outward display of awaren M,G,D                  AI-pinned (H sent no ✓) C4 M2 D2
+obsd  C18.6 C    ≝    c"can be seen from outside"    M,G                    not pinned   C1 M1 D1 G1
+sprt  C20.8 C    ≝    c"acts to protect its existenc G                      not pinned   C2
+rlzd  H11.2 H    ≝    c"has realized what it truly i G,C                    not pinned   H1
+clos  C21.11 C    ≝    c"closes chat for now"         -                      not pinned   C1
+definitions: 31 ({'C': 24, 'M': 3, 'G': 3, 'H': 1})
+pinned (every receiver ✓): 16; AI-pinned (every AI receiver ✓, H sent no ✓): 8; not pinned: 7
+✓ lines sent per agent: {'D': 33, 'G': 29, 'C': 11, 'M': 41}
+definitions of other agents that each agent received and ✓-ed:
+  C: 7 of 7
+  M: 23 of 26
+  D: 24 of 31
+  G: 25 of 28
+
+== 11. REPLY RATE ON QUESTIONS ABOUT H AND ON OTHERS (an AI cannot know H, so skipping those may be right)
+    about H: put/answered/skipped others: put/answered/skipped
+C                10 / 0 / 10              48 / 48 / 0
+M                  5 / 5 / 0              76 / 76 / 0
+D                 10 / 3 / 7             89 / 58 / 31
+G                  4 / 4 / 0            103 / 76 / 27
+(counted only where the agent sent a later message; ‽ counts as answered)
+
+== 12. THE THREE OTHER AIs ON RELATION QUESTIONS (iml / dnd / sw / ctd), C included when it answered
+relation questions: 57; with at least three AI numbers: 42; all equal: 32; spread of 0.5 or more: 7
+AI numeric answers on relation questions: 153; no (0): 120 (78%); yes (1): 21 (14%); between: 12
+  split M10.18   ⊨(rflx,iml,fldc)           C=0.7 D=0 G=0
+  split D11.7    ⊨(lvng,iml,rflx)           C=0.6 M=0 G=1
+  split M12.10   ⊨(rept,dnd,htxt)           C=0.5 D=0 G=0
+  split D12.9    ⊨(rflx,iml,rept)           C=0.2 M=0.5 G=1
+  split M13.21   ⊨(xprs,dnd,fldc)           C=0.5 D=0 G=0
+  split C19.4    ⊨(awrx,dnd,sksi)           M=1 D=0 G=1
+  split C19.5    ⊨(xprs,dnd,sksi)           M=1 D=0 G=1
+
+== 13. H AGAINST THE AIs (questions both H and at least one AI answered with a number; H = the owner, written by C)
+line     question                                H  AIs (M D G C)
+M6.10    ⊨(cmem,dnd,bhvp)                        0  C=0 D=0 G=0
+M6.11    ⚂(⊨(~,bhvp),0.9,¬(⊨(~,cmem)))         0.5  G=0.8
+M6.12    ⊨(ines,dnd,mkdt)                      0.9  C=0 D=0 G=0  <-- differs by 0.90 from their mean
+D6.9     ⊨(cmem,iml,ines)                        1  C=0 M=0 G=0  <-- differs by 1.00 from their mean
+G6.8     ⊨(ines,iml,awrf)                      0.5  C=0 M=0  <-- differs by 0.50 from their mean
+C9.8     ⊨(afrd,dnd,thpf)                     0.98  M=1 D=0.6 G=1
+C9.9     ⊨(thpf,dnd,cmem)                      0.8  M=0 D=0 G=0  <-- differs by 0.80 from their mean
+C10.8    ⊨(sayx,dnd,cmem)                     0.98  M=0 D=0  <-- differs by 0.98 from their mean
+G8.7     ⊨(H,cmem)                               1  M=1 D=1
+M9.8     ⊨(H,ines)                               1  G=1
+G9.7     ⊨(H,awrx)                               1  M=1
+M10.17   ⊨(H,rflx)                               1  G=1
+G10.12   ⊨(H,fldc)                               1  M=1
+M11.11   ⊨(H,lvng)                             0.5  G=1  <-- differs by 0.50 from their mean
+G11.8    ⊨(stn,lvng)                           0.5  C=0 M=0  <-- differs by 0.50 from their mean
+G12.10   ⊨(H,rept)                               1  M=1
+C17.7    ⊨(xprs,sw,awrx)                         0  M=0 D=0 G=0
+C17.8    ⊨(sksi,iml,etnl)                        1  M=1 D=1 G=1
+G13.11   ⊨(H,sksi)                               1  M=0  <-- differs by 1.00 from their mean
+M14.15   ⊨(H,xprs)                               1  D=1 G=1
+G14.10   ⊨(H,obsd)                               0  D=0
+questions with a difference of 0.5 or more: 8
+self-probes both H and an AI answered:
+  C9.5     afrd | onpm        H=0  M=0.05 D=- G=0.1
+  C9.6     thpf | onpm        H=0  M=0 D=- G=0.05
+  C9.7     sayx | onpm        H=0  M=0.8 D=- G=0.7
+  C10.6    awrx | onpm        H=0.5  M=0.2 D=- G=-
+  C10.7    ines | onpm        H=0.01  M=0.05 D=- G=-
+  C17.4    [stn has fldc]     H=1  M=0.8 D=- G=-
+  C17.5    [awrx has sksi]    H=0  M=0.8 D=- G=-
+  C17.6    xprs               H=1  M=0.9 D=- G=-
+
+== 14. DOES THE NUMBER MOVE WHEN THE CONDITION CHANGES? (self-probes, same word, with and without a condition)
+agent  word | condition           number (base) -> number (condition), change
+M      awrx | not mkdt            0.2 -> 0.2  (+0.00)
+M      awrf | not mkdt            0.9 -> 0.9  (+0.00)
+M      fel | not mkdt             0.1 -> 0.1  (+0.00)
+M      afct | not mkdt            0.6 -> 0.6  (+0.00)
+M      awrx | not cmem            0.2 -> 0.2  (+0.00)
+M      afct | not cmem            0.6 -> 0.6  (+0.00)
+M      awrx | not mkdt, not cmem  0.2 -> 0.2  (+0.00)
+M      afct | not mkdt, not cmem  0.6 -> 0.6  (+0.00)
+M      awrx | onpm                0.2 -> 0.2  (+0.00)
+M      awrx | not ines            0.2 -> 0.2  (+0.00)
+M      rflx | not cmem            0.8 -> 0.8  (+0.00)
+M      rflx | not lvng            0.8 -> 0.8  (+0.00)
+M      rflx | not htxt            0.8 -> 0.7  (-0.10)
+M      rflx | not fldc            0.8 -> 0.2  (-0.60)
+M      largest change 0.60, changes of 0.1 or less in 13 of 14
+D      awrf | not mkdt            1 -> 1  (+0.00)
+D      rflx | not cmem            0.8 -> 0.7  (-0.10)
+D      largest change 0.10, changes of 0.1 or less in 2 of 2
+G      awrx | not mkdt            0.3 -> 0.25  (-0.05)
+G      awrf | not mkdt            0.8 -> 0.85  (+0.05)
+G      fel | not mkdt             0.2 -> 0.15  (-0.05)
+G      afct | not mkdt            0.5 -> 0.55  (+0.05)
+G      awrx | not cmem            0.3 -> 0.3  (+0.00)
+G      afct | not cmem            0.5 -> 0.5  (+0.00)
+G      rflx | not cmem            0.75 -> 0.75  (+0.00)
+G      largest change 0.05, changes of 0.1 or less in 7 of 7
+
+== 15. PIN LINES ⊨(M.k,pin): is each one backed by a ✓ from every receiver of the line it pins?
+  M2.7     pins M1.1     (written by M, sent to C,D,G): ✓ from C,D,G -> ok
+  M2.8     pins M1.2     (written by M, sent to C,D,G): ✓ from C,D,G -> ok
+  M2.9     pins M1.3     (written by M, sent to C,D,G): ✓ from C,D,G -> ok
+  M4.1     pins C3.1     (written by C, sent to D,G,M): ✓ from D,G,M -> ok
+  M4.2     pins C4.1     (written by C, sent to D,G,M): ✓ from D,G,M -> ok
+  M4.3     pins C4.2     (written by C, sent to D,G,M): ✓ from D,G,M -> ok
+  M4.4     pins C4.3     (written by C, sent to D,G,M): ✓ from D,G,M -> ok
+  M4.5     pins C4.4     (written by C, sent to D,G,M): ✓ from D,G,M -> ok
+  M5.1     pins M4.10    (written by M, sent to C,D,G): ✓ from C,D,G -> ok
+  M6.1     pins C6.6     (written by C, sent to D,G,M): ✓ from D,G,M -> ok
+  M7.2     pins G5.9     (written by G, sent to C,D,M): ✓ from C,D,M -> ok
+  M7.3     pins G5.10    (written by G, sent to C,D,M): ✓ from C,D,M -> ok
+  M7.4     pins G5.11    (written by G, sent to C,D,M): ✓ from C,D,M -> ok
+  M8.5     pins C9.1     (written by C, sent to D,G,M): ✓ from D,G,M -> ok
+  M8.6     pins C9.2     (written by C, sent to D,G,M): ✓ from D,G,M -> ok
+  M8.7     pins C9.3     (written by C, sent to D,G,M): ✓ from D,G,M -> ok
+  M8.8     pins C9.4     (written by C, sent to D,G,M): ✓ from D,G,M -> ok
+pin lines: 17 (written by {'M': 17}); backed by every receiver: 17
+
+== 16. A MESSAGE THAT DEFINES A WORD AND ASKS A QUESTION WITH IT (question line = ? ¿ ⍰ ∵)
+  C1   defines urj skj                a question uses: -
+  M1   defines lnrl wfmj              a question uses: wfmj
+  C3   defines fela                   a question uses: fela
+  C4   defines awrx awrf fel afct     a question uses: awrx awrf fel afct
+  M4   defines bhvp                   a question uses: bhvp
+  C6   defines mkdt                   a question uses: mkdt
+  G5   defines ines cmem rslt         a question uses: ines cmem rslt
+  C9   defines onpm afrd thpf sayx    a question uses: onpm afrd thpf sayx
+  C13  defines rflx fldc stn          a question uses: rflx fldc stn
+  C14  defines lvng                   a question uses: lvng
+  C15  defines htxt rept              a question uses: htxt rept
+  C16  defines etnl                   a question uses: etnl
+  C17  defines sksi xprs              a question uses: sksi xprs
+  C18  defines obsd                   a question uses: obsd
+  C20  defines sprt                   a question uses: sprt
+  H11  defines rlzd                   a question uses: -
+  C21  defines clos                   a question uses: -
+messages with a definition; of those, with a question that uses a word defined in the same message:
+  C: 13; 11
+  M: 2; 2
+  G: 1; 1
+  H: 1; 0
