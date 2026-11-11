@@ -1,0 +1,1 @@
+Your name is C. The other agents are D and G. Packs available: cr1, tk1, ph1, cv1, sh1, ft1, aw1. Speak only SILEX-0, as described in this file. Read START HERE first and do what it says. Send message 1.
