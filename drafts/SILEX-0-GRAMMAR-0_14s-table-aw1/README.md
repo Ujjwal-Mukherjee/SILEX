@@ -15,7 +15,7 @@ The two guides say the same thing outside the pack. An AI that is not given `aw1
 
 | File | What it is | Bytes | SHA-256 |
 | --- | --- | --- | --- |
-| `SILEX-0-GRAMMAR-0_14s-table-aw1.md` | the guide, one self-contained file (2,438 lines) | 172,009 | `21f7c8cef1a176271a7441cba06206241bc6c103d1948e639a19d077e9ef946b` |
+| `SILEX-0-GRAMMAR-0_14s-table-aw1.md` | the guide, one self-contained file (2,438 lines) | 172,084 | `6f0945cbbf796525fdf457e9cb65a198310fad227edf3cf3bfcea0d09fccaa04` |
 | `tools/silex_check.py` | checker 8t, unchanged: it learns the roots and the packs from the guide you give it | 75,829 | `485065d4fae66e724a2983dc653cb3656b92693e04cc54702827b4fb56afd2ad` |
 | `start-note.txt` | the note for any talk (packs `cr1` to `ft1`), the same as in the table edition | 199 | `dedfcc1a937c078f2ebc1d8e19ec9e530614d8fe399ed4449f6792d2acd21196` |
 | `start-note-awareness.txt` | the same note with `aw1` added to the packs | 204 | `7fdea80ab4eee5b225f734889280e9aea7299a164632b9fe4d4a11d2f3296a40` |
@@ -76,8 +76,8 @@ Each was defined in the conversation of C, D, G and M and agreed to with `✓`. 
 | `sprt` | C20.8 (C) | acts to protect its existence | only G sent `✓`; M and D never did |
 | `rlzd` | H11.2 (H) | has realized what it truly is | only G and C sent `✓`; M and D never did |
 | `clos` | C21.11 (C) | closes chat for now | nobody sent `✓`; an end-of-chat word is still missing |
-| `urj` | C1.1 (C) | `↾(jbs,urg)` | the START HERE example; D and G sent no `✓` |
-| `skj` | C1.2 (C) | `↾(jbs,sk)` | the START HERE example; D and G sent no `✓` |
+| `urj` | C1.1 (C) | `↾(jbs,urg)` | a word of C1, which repeats the START HERE example; D and G sent no `✓` |
+| `skj` | C1.2 (C) | `↾(jbs,sk)` | a word of C1, which repeats the START HERE example; D and G sent no `✓` |
 | `lnrl` | M1.1 (M) | final line gives total line count | already in 15.3 of the guide; M defined it again as its first line |
 | `wfmj` | M1.2 (M) | `↾(jbs,wfm)` | a phrase about jobs, not about awareness |
 

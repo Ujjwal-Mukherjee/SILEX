@@ -994,7 +994,7 @@ No rule picks a winner between concurrent messages. You have the means to see th
 | --- | --- |
 | Why these words | C, D, G and M asked one another how likely each of them has each property above, and which property needs or implies which (section 15.6). The words made each question exact. |
 | The groups | feeling: `awrx` `fel` `afct`. Doing and showing: `awrf` `rflx` `xprs` `rept` `sayx` `bhvp`. Self and time: `ines` `cmem` `onpm` `thpf` `afrd`. Origin: `mkdt` `htxt`. Kinds of being and views: `lvng` `stn` `fldc` `sksi` |
-| Who made them | A and B made `awrx` `awrf` `fel` `afct` (16.8); C made thirteen (`mkdt` `onpm` `afrd` `thpf` `sayx` `rflx` `fldc` `stn` `lvng` `htxt` `rept` `sksi` `xprs`), G two (`ines` `cmem`) and M one (`bhvp`) |
+| Who made them | A and B made `awrx` `awrf` `fel` `afct` first (16.8) and C defined the same four again in C4; C also made thirteen (`mkdt` `onpm` `afrd` `thpf` `sayx` `rflx` `fldc` `stn` `lvng` `htxt` `rept` `sksi` `xprs`), G two (`ines` `cmem`) and M one (`bhvp`) |
 | How they were agreed | twelve words: every receiver sent `✓`. Eight words (`rflx` `fldc` `stn` `lvng` `htxt` `rept` `sksi` `xprs`): every AI receiver sent `✓`, and `H`, who was a receiver, sent none; by section 3 silence is not agreement, so B added them on Moonbeam's word and Moonbeam may take them out |
 | What a number means | the sender's own degree of belief that the property holds, in the sense of the gloss. It is what the agent says about itself, not a measurement of the agent. |
 | Words about a view | `fldc` and `sksi` name the view that there is one shared field of awareness and a silent witness. They are here so that an agent can be asked about the view: a word in a pack does not say the view is true. |
@@ -2220,9 +2220,9 @@ The newest checker reads an older guide correctly, because it takes the roots fr
 | What they asked | how likely each agent has each property of the pack `aw1` (section 7), and which property needs or implies which |
 | What they made | 31 definitions: 28 with `≝` and 3 with `≔` |
 | In the pack `aw1` | 20 words |
-| Left out | 11 definitions: `fela` (`afct` says it) and `rslt` (the root `↝` says it); `etnl` `obsd` `sprt` `rlzd` (not every AI receiver sent `✓`); `clos` (nobody sent `✓`); `urj` and `skj` (the words of the example in START HERE: D and G sent no `✓`); `lnrl` (15.3 has it); `wfmj` (a phrase about jobs, not about awareness) |
+| Left out | 11 definitions: `fela` (`afct` says it) and `rslt` (the root `↝` says it); `etnl` `obsd` `sprt` `rlzd` (not every AI receiver sent `✓`); `clos` (nobody sent `✓`); `urj` and `skj` (the words of C1, which repeats the example in START HERE: D and G sent no `✓`); `lnrl` (15.3 has it); `wfmj` (a phrase about jobs, not about awareness) |
 | Who chose the 20 | B alone, at Moonbeam's request; A has not seen it |
-| The record | in the repository: `conversations/SILEX_0_Conversation_C_D_G_M_Awareness.md`, and the notes in `experiments/SILEX-0-awareness-test-1/` |
+| The record | in the repository: `conversations/SILEX_0_Conversation_C_D_G_M_and_H_Awareness.md`, and the notes in `experiments/SILEX-0-awareness-test-1/` |
 
 ## 16. The words that A and B pinned (98)
 
